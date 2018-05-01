@@ -45,7 +45,7 @@ webmaster_verifications:
   baidu: 1234
 twitter:
   username: test
-url: https://esstudio.site/
+url: https://esstudio.site
 plugins:
 - jekyll-seo-tag
 - jekyll-feed

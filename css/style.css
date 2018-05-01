@@ -225,7 +225,7 @@ header[role="header"] nav ul{ display:none; position: fixed; z-index:60; text-al
 
 header[role="header"] nav ul > li{ font-weight:800; font-size:42px; display:block}
 
-header[role="header"] nav ul > li > a{ display:block; line-height:72px; color:#404040}
+header[role="header"] nav ul > li > a{ z-index: 300; display:block; line-height:72px; color:#404040}
 
 header[role="header"] nav ul > li:hover a,header[role="header"] nav ul > li.nav-active a{ text-decoration:none; color:#fb5353}
 

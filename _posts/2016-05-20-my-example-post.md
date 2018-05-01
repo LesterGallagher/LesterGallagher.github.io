@@ -1,6 +1,6 @@
 ---
 title: My Example Post
-date: 2016-05-20 00:00:00 Z
+date: 2016-05-20 02:00:00 +02:00
 layout: post
 image: images/blog-images/blog-2.jpg
 ---

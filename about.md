@@ -1,9 +1,9 @@
 ---
-layout: page
 title: About
+permalink: "/about/"
+layout: page
 greytitle: us
 description: Echo Sierra Studio's about page. Learn more about us.
-permalink: /about/
 ---
 
 Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam

@@ -1,9 +1,25 @@
 ---
 title: Echo Sierra Studio
 timezone: Europe/Amsterdam
+collections:
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+    image: ''
 volledige-titel: Echo Sierra Studio
-keywords: Polyism Studio Sem Postma Echo Sierra Studio Web Software Code Programming Hub
-description: Web, app and tooling development and graphic design studio. View all websites made by Echo Sierra Studio and contact us if your interested. 
+keywords: Polyism Studio Sem Postma Echo Sierra Studio Web Software Code Programming
+  Hub
+description: Web, app and tooling development and graphic design studio. View all
+  websites made by Echo Sierra Studio and contact us if your interested.
 theme_color: "#fb5353"
 baseurl: 
 abbrv: ESS
@@ -31,8 +47,8 @@ twitter:
   username: test
 url: 
 plugins:
-  - jekyll-seo-tag
-  - jekyll-feed
+- jekyll-seo-tag
+- jekyll-feed
 markdown: kramdown
 theme: minima
 author:
@@ -45,11 +61,3 @@ designer:
   from: Oosterhout, Noord Brabant, The Netherlands
   role: Developer
   email: sem.postma@gmail.com
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      image: ""

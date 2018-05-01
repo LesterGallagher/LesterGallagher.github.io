@@ -1,0 +1,57 @@
+---
+layout: default
+title: Work
+works: 
+    -
+        image: https://imgur.com/HzeAPGe.png
+        url: https://testurl.com
+        title: Ov Fiets
+        title_bold: App
+        description: Test desecription
+---
+
+<main role="main-home-wrapper" class="container">
+    <div class="row">
+        <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
+            <article role="pge-title-content">
+                <header>
+                    <h2>
+                        <span>{{ site.abbrv }}</span> development studio.</h2>
+                </header>
+                <p>Home page of {{ site.title }} and lander page for all projects by ESS.</p>
+            </article>
+        </section>
+        <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
+            <figure class="effect-oscar">
+                <img src="{{ "/images/home-images/portfolio.jpg" | absolute_url }}" alt="" class="img-responsive" />
+                <figcaption>
+                    <h2>Sem Postma
+                        <span> Portfolio</span>
+                    </h2>
+                    <p>Personal Portfolio.</p>
+                    <a href="https://bunkersem.github.io/portfolio/">View more</a>
+                </figcaption>
+            </figure>
+        </section>
+        <div class="clearfix"></div>
+        <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
+            <ul class="grid-lod effect-2" id="grid">
+                {%- for work in page.works -%}
+                <li>
+                    <figure class="effect-oscar">
+                        <img src="{{ work.image | absolute_url }}" alt="" class="img-responsive" />
+                        <figcaption>
+                            <h2>{{ work.title }}
+                                <span>{{ work.title_bold }}</span>
+                            </h2>
+                            <p>{{ work.description }}</p>
+                            <a href="{{ work.url | absolute_url }}">View more</a>
+                        </figcaption>
+                    </figure>
+                </li>
+                {%- endfor -%}
+            </ul>
+        </section>
+        <div class="clearfix"></div>
+    </div>
+</main>

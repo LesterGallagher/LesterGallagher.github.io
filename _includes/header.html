@@ -1,0 +1,27 @@
+{% assign default_paths = site.pages | map: "path" %} {% assign page_paths = site.header_pages | default: default_paths %}
+
+<header role="header">
+    <div class="container">
+        <h1>
+            <a href="./" title="{{ site.title }}">
+                <img src="{{ "images/logo.png" | absolute_url }}" title="{{ site.title }}" alt="{{ site.title }}" />
+            </a>
+        </h1>
+        <nav role="header-nav" class="navy">
+            <ul>
+                <li{% if page.title == "Work" %} class="nav-active"{% endif %}>
+                    <a href="{{ "/"  | absolute_url }}" title="Work">Work</a>
+                </li>
+                <li{% if page.title == "About" %} class="nav-active"{% endif %}>
+                    <a href="{{ "about" | absolute_url }}" title="About">About</a>
+                </li>
+                <li{% if page.title == "Blog" %} class="nav-active"{% endif %}>
+                    <a href="{{ "blog" | absolute_url }}" title="Blog">Blog</a>
+                </li>
+                <li{% if page.title == "Contact" %} class="nav-active"{% endif %}>
+                    <a href="{{ "contact" | absolute_url }}" title="Contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>

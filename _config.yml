@@ -10,7 +10,7 @@ collections:
     output: true
   works:
     title: works
-    output: true
+    output: false
 defaults:
 - scope:
     path: ''

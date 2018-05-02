@@ -6,4 +6,4 @@ url: https://play.google.com/store/apps/details?id=com.EchoSierraStudio.Simple_F
 title_bold: Plotter
 ---
 
-Expression solver.
+[Expression solver.](https://esstudio.site/SimpleFunctionPlotter/)

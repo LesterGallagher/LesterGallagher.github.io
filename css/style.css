@@ -112,6 +112,23 @@ body, img,.commentys-form input[type="text"],.commentys-form input[type="email"]
 	text-decoration: underline;
 }
 
+.work-item {
+	width: 100%;
+	width: calc(100% - 10px);
+	padding: 0 5px;
+}
+
+.work-item img {
+	width: 100%;
+}
+
+@media (min-width: 920px) {
+	.work-item {
+		width: 50%;
+		width: calc(50% - 10px);
+	}
+}
+
 footer .social-media-list {
 	text-align: center;
 }

@@ -2,7 +2,7 @@
 title: Tappy
 date: 2018-05-02 13:16:00 +02:00
 image: "/uploads/Capture9.JPG"
-url: https://play.google.com/store/apps/details?id=com.EchoSierraStudio.TappyTurbulance
+link: https://play.google.com/store/apps/details?id=com.EchoSierraStudio.TappyTurbulance
 title_bold: Turbulance
 ---
 

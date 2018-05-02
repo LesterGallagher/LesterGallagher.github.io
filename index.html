@@ -1,26 +1,20 @@
 ---
 title: Work
 layout: default
-works:
-- image: https://imgur.com/HzeAPGe.png
-  url: https://testurl.com
-  title: Ov Fiets
-  title_bold: App
-  description: Test desecription
 ---
 
 <main role="main-home-wrapper" class="container">
     <div class="row">
-        <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
+        <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6" style="padding-left: 5px">
             <article role="pge-title-content">
                 <header>
                     <h2>
                         <span>{{ site.abbrv }}</span> development studio.</h2>
                 </header>
-                <p>Home page of {{ site.title }} and lander page for all projects by ESS.</p>
+                <p>Home page of {{ site.title }} and lander page for all projects (and useless thingies) by ESS.</p>
             </article>
         </section>
-        <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
+        <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid" style="padding-left: 5px">
             <figure class="effect-oscar">
                 <img src="{{ "/images/home-images/portfolio.jpg" | absolute_url }}" alt="" class="img-responsive" />
                 <figcaption>
@@ -33,18 +27,18 @@ works:
             </figure>
         </section>
         <div class="clearfix"></div>
-        <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
+        <section class="grid">
             <ul class="grid-lod effect-2" id="grid">
-                {%- for work in page.works -%}
-                <li>
+                {%- for work in site.works -%}
+                <li class="work-item">
                     <figure class="effect-oscar">
-                        <img src="{{ work.image | absolute_url }}" alt="" class="img-responsive" />
+                        <img src="{{ work.image }}" alt="" />
                         <figcaption>
                             <h2>{{ work.title }}
                                 <span>{{ work.title_bold }}</span>
-                            </h2>
-                            <p>{{ work.description }}</p>
-                            <a href="{{ work.url | absolute_url }}">View more</a>
+                            </h2> 
+                            <p>{{ work.content }}</p>
+                            <a href="{{ work.link }}">View more</a>
                         </figcaption>
                     </figure>
                 </li>

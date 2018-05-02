@@ -39,7 +39,7 @@ flickr_username:
 github_username: LesterGallagher
 instagram_username: 
 linkedin_username: 
-pinterest_username: test
+pinterest_username: 
 twitter_username: 
 youtube_username: 9Wereld
 googleplus_username: 
@@ -49,12 +49,12 @@ facebook:
   admins: 
 webmaster_verifications:
   google: 1234
-  bing: 1234
-  alexa: 1234
-  yandex: 1234
-  baidu: 1234
+  bing: 
+  alexa: 
+  yandex: 
+  baidu: 
 twitter:
-  username: test
+  username: 
 url: https://esstudio.site
 enforce_ssl: esstudio.site
 plugins:

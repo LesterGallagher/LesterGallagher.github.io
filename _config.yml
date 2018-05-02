@@ -33,20 +33,20 @@ description: Web, app and tooling development and graphic design studio. View al
 theme_color: "#fb5353"
 baseurl: 
 abbrv: ESS
-dribbble_username: test
-facebook_username: test
-flickr_username: test
-github_username: test
-instagram_username: test
-linkedin_username: test
+dribbble_username: 
+facebook_username: 
+flickr_username: 
+github_username: LesterGallagher
+instagram_username: 
+linkedin_username: 
 pinterest_username: test
-twitter_username: test
-youtube_username: test
-googleplus_username: test
+twitter_username: 
+youtube_username: 9Wereld
+googleplus_username: 
 facebook:
-  app_id: 1234
-  publisher: 1234
-  admins: 1234
+  app_id: 
+  publisher: 
+  admins: 
 webmaster_verifications:
   google: 1234
   bing: 1234
@@ -72,4 +72,4 @@ designer:
   from: Oosterhout, Noord Brabant, The Netherlands
   role: Developer
   email: sem.postma@gmail.com
-google_analytics: test
+google_analytics: UA-112439526-3

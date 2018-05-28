@@ -113,21 +113,36 @@ body, img,.commentys-form input[type="text"],.commentys-form input[type="email"]
 }
 
 .work-item {
-	width: 100%;
-	width: calc(100% - 10px);
-	padding: 0 5px;
+	width: 50%;
+	padding: 0 10px;
 }
 
 .work-item img {
 	width: 100%;
 }
 
-@media (min-width: 920px) {
-	.work-item {
-		width: 50%;
-		width: calc(50% - 10px);
-	}
+
+::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
 }
+
+::-webkit-scrollbar
+{
+	width: 12px;
+	height: 12px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #fb5353;
+}
+
 
 footer .social-media-list {
 	text-align: center;

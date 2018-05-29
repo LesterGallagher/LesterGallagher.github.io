@@ -56,7 +56,6 @@ webmaster_verifications:
 twitter:
   username: 
 url: https://esstudio.site
-enforce_ssl: esstudio.site
 plugins:
 - jekyll-seo-tag
 - jekyll-feed

@@ -1,6 +1,6 @@
 ---
 title: Teaching a Neural Network to write text
-date: 2018-05-28 13:44:07 +0:00
+date: 2018-05-28 15:44:07 +02:00
 layout: post
 image: "/uploads/teaching-a-neural-net-how-to-code-visualization.png"
 ---

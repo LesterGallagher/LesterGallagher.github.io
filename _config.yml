@@ -58,9 +58,9 @@ twitter:
 url: https://esstudio.site
 enforce_ssl: esstudio.site
 plugins:
-  - jekyll-seo-tag
-  - jekyll-feed
-  - jekyll-gist
+- jekyll-seo-tag
+- jekyll-feed
+- jekyll-gist
 markdown: kramdown
 theme: minima
 author:

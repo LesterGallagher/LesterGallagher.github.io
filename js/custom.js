@@ -1,16 +1,32 @@
 
+
 // JavaScript Document
+
 $('#subscribeform').submit(function(){
 
+
+
 	var action = $(this).attr('action');
+
+
 
 		$("#mesaj").slideUp(750,function() {
 
 
 
+
+
+
+
 		$('#mesaj').hide();
 
+
+
 	$('#subsubmit')
+
+
+
+
 
 
 
@@ -18,9 +34,19 @@ $('#subscribeform').submit(function(){
 
 
 
+
+
+
+
 			.attr('disabled','disabled');
 
+
+
 	$.post(action, {
+
+
+
+
 
 
 
@@ -28,7 +54,15 @@ $('#subscribeform').submit(function(){
 
 
 
+
+
+
+
 		},
+
+
+
+
 
 
 
@@ -36,7 +70,15 @@ $('#subscribeform').submit(function(){
 
 
 
+
+
+
+
 				document.getElementById('mesaj').innerHTML = data;
+
+
+
+
 
 
 
@@ -44,7 +86,15 @@ $('#subscribeform').submit(function(){
 
 
 
+
+
+
+
 				$('#subscribeform img.subscribe-loader').fadeOut('slow',function(){$(this).remove()});
+
+
+
+
 
 
 
@@ -52,9 +102,19 @@ $('#subscribeform').submit(function(){
 
 
 
+
+
+
+
 				if(data.match('success') != null) $('#subscribeform').slideUp('slow');
 
+
+
 			}
+
+
+
+
 
 
 
@@ -62,7 +122,15 @@ $('#subscribeform').submit(function(){
 
 
 
+
+
+
+
 		});
+
+
+
+
 
 
 
@@ -70,4 +138,11 @@ $('#subscribeform').submit(function(){
 
 
 
+
+
+
+
 	});
+
+
+

@@ -42,6 +42,10 @@ html {
 
 }
 
+body {
+	overflow-x: hidden;
+}
+
 *, *:before, *:after {
 
 	-webkit-box-sizing: border-box;
@@ -81,6 +85,40 @@ body, img,.commentys-form input[type="text"],.commentys-form input[type="email"]
 	-webkit-transition: all .2s linear;
 
 }
+
+input[type="range"].flat-range-slider {
+	-webkit-appearance:none;
+	width:160px;
+	height:20px;
+	background: linear-gradient(to right, #c24040 0%, #c24040 100%);
+	background-size:150px 10px;
+	background-position:center;
+	background-repeat:no-repeat;
+	overflow:hidden;
+	outline: none;
+  }
+  
+  input[type="range"].flat-range-slider::-webkit-slider-thumb{
+	-webkit-appearance:none;
+	width:20px;
+	height:20px;
+	background:#f35353;
+	position:relative;
+	z-index:3;
+	box-shadow:0 0 5px 0 rgba(0,0,0,0.3);
+  }
+  
+  input[type="range"].flat-range-slider::-webkit-slider-thumb:after{
+	content:" ";
+	width:160px;
+	height:10px;
+	position:absolute;
+	z-index:1;
+	right:20px;
+	top:5px;
+	background: #fb5353;
+	background: linear-gradient(to right, #f088fc 1%, #AC6CFF 70%);
+  }
 
 /**
  * Icons
@@ -162,21 +200,13 @@ footer .social-media-list .svg-icon {
 }
 
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video, input, main {
-
 	-webkit-box-sizing: border-box;
-
 	-moz-box-sizing: border-box;
-
 	box-sizing: border-box;
-
 	margin: 0;
-
 	padding: 0;
-
 	vertical-align: baseline;
-
 	border: 0;
-
 	outline: 0;
 
 }
@@ -413,7 +443,7 @@ article[role="pge-title-content"].contact-header p a:hover{color:#fb5353; text-d
 
 /*== Work Details ==*/
 
-.work-details,.blog-details{ padding:0 69px; margin-top:73px}
+.work-details,.blog-details{ padding:0 69px; margin-top:73px; margin-bottom: 20px;}
 
 .work-details header h2{ color:#343434; font-size:36px; font-weight:800}
 

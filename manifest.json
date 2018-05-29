@@ -4,6 +4,8 @@
 {
     "default_locale": "{{ site.lang | default: "en" }}",
     "description": "{{ site.description }}",
+    "short_name": "{{ site.abbrv }}",
+    "start_url": ".",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme-color": "{{ site.theme_color }}",

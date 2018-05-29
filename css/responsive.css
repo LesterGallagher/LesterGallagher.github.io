@@ -87,7 +87,7 @@
 
 	section.blog-content figure .post-date{ padding-top:20px; height:100px; width:100px}
 
-	section.blog-content article{ padding:2% 5%; font-size:18px; line-height:24px;font-family: 'proxima_nova_cn_rgregular';}
+	section.blog-content article{ padding:2% 5%; font-size:18px; line-height:24px;}
 
 	article.contact-header[role="pge-title-content"] p a{ font-size:18px; padding-right:10px}
 

@@ -95,7 +95,6 @@ The difficult part is writing to serialization function. Objects with grandchild
 I used the code in this example to build a json2csv/csv2json converter which can be found [here](https://esstudio.site/json2csv).
 
 <div id="full-example">
-
 ## Full Example:
 
 {% gist a5197d8c1c6fba1349f074d2f4ca2e31 %}

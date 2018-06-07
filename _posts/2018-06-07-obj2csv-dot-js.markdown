@@ -6,6 +6,9 @@ image: "/uploads/icon-sm-7efc02.png"
 
 Checkout the website: [JSON2CSV](http://esstudio.site/json2csv) or the [example](#full-example).
 
+Let's start with creating the parser (csv2obj). Because of browser support i will try not to use a lot of es5/es6 specific syntax. The following function will do the job. There are some important caveats. The function will, in some cases, try to convert boolean, number and null values to their correct type. This only works if it matches the exact value. For example 
+"null" will be parsed as a null value/object, but " null" (with a leading space) will not.
+
 ```javascript
 function csv2obj(csv, opt) {
     opt = opt || {};
@@ -24,12 +27,14 @@ function csv2obj(csv, opt) {
                 || row[collumNum] === 'false' || row[collumNum] === 'null')) 
                 ret[rownum - 1][headers[collumNum]] = JSON.parse(row[collumNum]);
             else 
-                ret[rownum - 1][headers[collumNum]] = row[collumNum].replace(/(^\s*"*|"*\s*$)/g, '');;
+                ret[rownum - 1][headers[collumNum]] = row[collumNum].replace(/(^\s*"*|"*\s*$)/g, '');
         }
     }
     return ret;
 }
 ```
+
+The difficult part is writing to serialization function. 
 
 ```javascript
 function obj2csv(obj, opt) {
@@ -76,7 +81,9 @@ function obj2csv(obj, opt) {
     return '"' + headersArr.join('"' + delimeter + '"') + '"\n' + values.join('\n');
 }
 ```
+(Array.isArray is es5 syntax, be sure to polyfill when necessary)
 
 <div id="full-example">
+## Full Example:
 {% gist a5197d8c1c6fba1349f074d2f4ca2e31 %} 
 </div>

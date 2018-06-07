@@ -10,6 +10,7 @@
     "background_color": "#ffffff",
     "theme-color": "{{ site.theme_color }}",
     "name": "{{ site.title }}",
+    "scope": "./",
     "icons": [
         {
             "src": "{{ "/assets/img/meta-icons/android-icon-36x36.png" | absolute_url }}",

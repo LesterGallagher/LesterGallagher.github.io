@@ -7,4 +7,3 @@ title_bold: csv
 ---
 
 CSV2JSON (and back) converter.
-[See blog post](https://esstudio.site/2018/06/07/obj2csv-dot-js.html)

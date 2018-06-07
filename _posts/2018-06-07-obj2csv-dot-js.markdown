@@ -77,8 +77,6 @@ function obj2csv(obj, opt) {
 }
 ```
 
-
-
 <div id="full-example">
 { gist a5197d8c1c6fba1349f074d2f4ca2e31 } 
 </div>

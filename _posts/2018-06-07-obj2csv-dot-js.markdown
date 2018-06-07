@@ -15,7 +15,7 @@ image: "/uploads/icon-sm-7efc02.png"
 
 Checkout the website: [JSON2CSV](http://esstudio.site/json2csv) or the [example](#full-example).
 
-Let's start with creating the parser (csv2obj). Because of browser support i will try not to use a lot of es5/es6 specific syntax. The following function will do the job. There are some important caveats. The function will, in some cases, try to convert boolean, number and null values to their correct type. This only works if it matches the exact value. For example
+While searching for a good csv2obj library I couldn't find a good solution so I decided to write a very minimal csv2obj converter. Let's start with creating the parser (csv2obj). Because of browser support i will try not to use a lot of es5/es6 specific syntax. The following function will do the job. There are some important caveats. The function will, in some cases, try to convert boolean, number and null values to their correct type. This only works if it matches the exact value. For example
 "null" will be parsed as a null value/object, but " null" (with a leading space) will not.
 
 ```javascript
@@ -95,6 +95,7 @@ The difficult part is writing to serialization function. Objects with grandchild
 I used the code in this example to build a json2csv/csv2json converter which can be found [here](https://esstudio.site/json2csv).
 
 <div id="full-example">
+
 ## Full Example:
 
 {% gist a5197d8c1c6fba1349f074d2f4ca2e31 %}

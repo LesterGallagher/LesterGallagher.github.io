@@ -33,9 +33,10 @@ Let's start with creating the parser (csv2obj). Because of browser support i wil
         return ret;
     }
 ```
+
 The difficult part is writing to serialization function. Objects with grandchildren will be flattened and their names squashed together like this: "child.grandchild" -> "child/grandchild". It will recursively find all of the children and at them to a queue. So the function itself is not recursive! Which is important in terms of performance. We will use JSON.stringify as a trick to automatically put double quotes around strings. At last we loop through all the rows to join all the columns/rows and join them together.
 
-``` javascript
+```javascript
     function obj2csv(obj, opt) {
         if (typeof obj !== 'object') return null;
         opt = opt || {};
@@ -82,7 +83,7 @@ The difficult part is writing to serialization function. Objects with grandchild
 ```
 (Array.isArray is es5 syntax, be sure to polyfill when necessary)
 
-I used the code in this example to build a json2csv/csv2json converter which can be found
+I used the code in this example to build a json2csv/csv2json converter which can be found [here](https://esstudio.site/json2csv).
 
 <div id="full-example">
 

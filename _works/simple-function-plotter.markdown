@@ -6,3 +6,4 @@ url: https://esstudio.site/SimpleFunctionPlotter/
 title_bold: Website
 ---
 
+Website version of the Simple Function Plotter App

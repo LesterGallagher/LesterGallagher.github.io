@@ -23,7 +23,7 @@ defaults:
     type: works
   values:
     image: ''
-    url: ''
+    link: ''
     title_bold: ''
 volledige-titel: Echo Sierra Studio
 keywords: Polyism Studio Sem Postma Echo Sierra Studio Web Software Code Programming

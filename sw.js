@@ -67,9 +67,9 @@ self.addEventListener('install', function (event) {
                     "https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic",
                     "./assets/minima-social-icons.svg",
                     "./manifest.json",
-                    "./about.html",
-                    "./blog.html",
-                    "./contact.html",
+                    "./about",
+                    "./blog",
+                    "./contact",
                 ]
             );
         })

@@ -6,4 +6,4 @@ link: https://afirus.itch.io/mars-rover-explorer
 title_bold: 'Rover '
 ---
 
-Explorer
+6503679OuG7eeH.png

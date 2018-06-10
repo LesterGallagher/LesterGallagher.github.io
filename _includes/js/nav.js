@@ -119,16 +119,5 @@ $(document).ready(function () {
 		$(this).toggleClass('open');
 
 	});
-
-
-
-	var grid = document.getElementById('grid');
-	if (grid) {
-		new AnimOnScroll(grid, {
-			minDuration: 0.4,
-			maxDuration: 0.7,
-			viewportFactor: 0.2
-		});
-	}
 });
 

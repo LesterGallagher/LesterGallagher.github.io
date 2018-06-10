@@ -5,5 +5,7 @@ image: "/uploads/CodeJson.png"
 link: https://esstudio.site/encode-into-image/
 title_bold: Image
 url: 
+image_width: 357
+image_height: 320
 ---
 

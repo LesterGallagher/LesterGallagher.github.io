@@ -5,6 +5,8 @@ image: "/uploads/nnvisualizer-sm.png"
 link: https://github.com/LesterGallagher/synaptic-js-vizualizer-d3
 title_bold: Visualizer
 url: 
+image_width: 442
+image_height: 320
 ---
 
 For Synaptic.js

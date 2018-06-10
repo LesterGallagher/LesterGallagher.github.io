@@ -4,6 +4,8 @@ date: 2018-05-02 13:16:00 +02:00
 image: "/uploads/Capture9.JPG"
 link: https://play.google.com/store/apps/details?id=com.EchoSierraStudio.TappyTurbulance
 title_bold: Turbulance
+image_width: 545
+image_height: 428
 ---
 
 Another Tappy bird🐦 like game.

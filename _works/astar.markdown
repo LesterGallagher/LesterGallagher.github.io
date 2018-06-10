@@ -5,5 +5,7 @@ image: "/uploads/pathfinding.PNG"
 link: https://github.com/LesterGallagher/pathfinding
 title_bold: Pathfinding
 url: 
+image_width: 357
+image_height: 300
 ---
 

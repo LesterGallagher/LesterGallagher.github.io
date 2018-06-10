@@ -1,5 +1,3 @@
-
-
 // JavaScript Document
 
 $('#subscribeform').submit(function () {
@@ -25,7 +23,7 @@ $('#subscribeform').submit(function () {
 });
 
 if (navigator['serviceWorker']) {
-	navigator.serviceWorker.register('./sw.js', { scope: './' }).then(function (registration) {
+	navigator.serviceWorker.register(serviceWorkerUrl, { scope: './' }).then(function (registration) {
 		console.log('Service worker successfully registered on scope', registration.scope);
 
 	}).catch(function (error) {
@@ -33,5 +31,34 @@ if (navigator['serviceWorker']) {
 	});
 }
 
+new LazyLoad({
+	threshold: 0
+});
 
+$.fn.isInViewport = function () {
+	var elementTop = $(this).offset().top;
+	var elementBottom = elementTop + $(this).outerHeight();
+	var viewportTop = $(window).scrollTop();
+	var viewportBottom = viewportTop + $(window).height();
+	return elementBottom > viewportTop && elementTop < viewportBottom;
+};
 
+$(function () {
+	var grid = document.getElementById('grid');
+	if (grid) {
+		new AnimOnScroll(grid, {
+			minDuration: 0.4,
+			maxDuration: 0.7,
+			viewportFactor: 0.2
+		});
+	}
+
+	// preload
+	var $mainCss = $('#maincss');
+	$mainCss.attr('rel', 'stylesheet');
+	setTimeout(function () {
+		$mainCss.on('load', function (e) {
+			$(grid).masonry();
+		});
+	}, 0);
+});

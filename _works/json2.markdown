@@ -5,6 +5,8 @@ image: "/uploads/icon-sm-7efc02.png"
 link: https://esstudio.site/json2csv
 title_bold: csv
 url: 
+image_width: 320
+image_height: 320
 ---
 
 CSV2JSON (and back) converter.

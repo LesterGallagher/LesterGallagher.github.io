@@ -5,5 +5,7 @@ image: "/uploads/Capture-96c8cf.PNG"
 link: https://esstudio.site/maze-solver
 title_bold: Solver
 url: 
+image_width: 547
+image_height: 505
 ---
 

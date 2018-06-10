@@ -35,16 +35,10 @@
   <link rel="icon" type="image/png" sizes="96x96" href="{{ "/assets/img/meta-icons/favicon-96x96.png" | absolute_url }}">
   <link rel="icon" type="image/png" sizes="16x16" href="{{ "/assets/img/meta-icons/favicon-16x16.png" | absolute_url }}">
   <link rel="manifest" href="{{ "/manifest.json" | absolute_url }}">
-
-  <link href="{{ "/css/style.css" | absolute_url }}" rel="stylesheet" type="text/css">
-  <link href="{{ "/css/bootstrap.min.css" | absolute_url }}" rel="stylesheet" type="text/css">
-  <link href="{{ "/css/responsive.css" | absolute_url }}" rel="stylesheet" type="text/css">
-  <link href="{{ "/css/font-awesome.min.css" | absolute_url }}" rel="stylesheet" type="text/css">
-  <link href="{{ "/css/effects/set2.css" | absolute_url }}" rel="stylesheet" type="text/css">
-  <link href="{{ "/css/effects/normalize.css" | absolute_url }}" rel="stylesheet" type="text/css">
-  <link href="{{ "/css/effects/component.css" | absolute_url }}"  rel="stylesheet" type="text/css" >
-  <link href="{{ "/css/highlight.css" | absolute_url }}" rel="stylesheet" type="text/css">
   
+  <link as="style" id="maincss" rel="preload" href="{{ "/css/main.css" | absolute_url }}" >
+  <link rel="stylesheet" href="{{ "/css/critical.css" | absolute_url }}">
+
   {% feed_meta %}
   {% if jekyll.environment == 'production' and site.google_analytics %}
     {% include google-analytics.html %}

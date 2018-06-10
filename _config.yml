@@ -55,6 +55,9 @@ webmaster_verifications:
   baidu: 
 twitter:
   username: 
+sass:
+  style: compressed
+  sass_dir: _sass
 url: https://esstudio.site
 enforce_ssl: esstudio.site
 plugins:

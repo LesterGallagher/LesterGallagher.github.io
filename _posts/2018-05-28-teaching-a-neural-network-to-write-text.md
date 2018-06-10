@@ -63,9 +63,9 @@ SCRIPTS:
     <button id="retrain-nn-btn" class="btn btn-default">Retrain</button>
 </p>
 
-<script src="{{ "/js/lib/jimp.min.js" | absolute_url }}"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/synaptic/1.1.4/synaptic.min.js" integrity="sha256-t3MKDO0e1ULGddDg4QswIm9r1ZfOzguJLRk2TFuRsIg=" crossorigin="anonymous"></script>
-<script src="{{ "/js/lib/neural-net-image-writer.min.js" | absolute_url }}"></script>
+<script src="{{ "/js/jimp.min.js" | absolute_url }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/synaptic/1.1.4/synaptic.min.js"             integrity="sha256-t3MKDO0e1ULGddDg4QswIm9r1ZfOzguJLRk2TFuRsIg=" crossorigin="anonymous"></script>
+<script src="{{ "/js/neural-net-image-writer.min.js" | absolute_url }}"></script>
 <script>
     var canvas = document.getElementById('c');
     var ctx = canvas.getContext('2d');

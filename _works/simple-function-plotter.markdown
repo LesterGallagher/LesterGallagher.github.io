@@ -5,6 +5,8 @@ image: "/uploads/function-plotter-website.PNG"
 link: https://esstudio.site/SimpleFunctionPlotter/
 title_bold: Website
 url: 
+image_width: 438
+image_height: 347
 ---
 
 Website version of the Simple Function Plotter App

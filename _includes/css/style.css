@@ -52,6 +52,39 @@ body, img,.commentys-form input[type="text"],.commentys-form input[type="email"]
 
 }
 
+.aspect-ratio {
+	position: relative;
+	width: 100%;
+}
+
+.abs-fit {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+img[data-src].lazyload {
+	opacity: 0;
+	transition: opacity 1s;
+}
+img[data-src].lazyload.loaded,
+img[data-src].lazyload.error {
+	opacity: 1;
+}
+img[data-src].lazyload:not([src]) {
+	visibility: hidden;
+}
+
+figure.effect-oscar:hover img {
+	opacity: 0;
+}
+
+figure.effect-oscar:hover img.loaded {
+	opacity: 0.4;
+}
+
 input[type="range"].flat-range-slider {
 	-webkit-appearance:none;
 	width:160px;
@@ -123,7 +156,9 @@ input[type="range"].flat-range-slider {
 
 .work-item img {
 	width: 100%;
+	height: 100%;
 }
+
 
 
 ::-webkit-scrollbar-track

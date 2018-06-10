@@ -42,8 +42,6 @@
 
 	display: block;
 
-	min-height: 100%;
-
 	max-width: 100%;
 
 	opacity: 0.8;
@@ -304,7 +302,6 @@ figure.effect-oscar:hover figcaption {
 
 
 figure.effect-oscar:hover img {
-
 	opacity: 0.4;
 
 }

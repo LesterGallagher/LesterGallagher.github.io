@@ -1,5 +1,6 @@
 ---
 ---
+
 var serviceWorkerUrl = '{{ "/sw.js" | absolute_url }}'
 {% include js/jquery.min.js %}
 {% include js/lazyload.js %}

@@ -6,10 +6,5 @@ greytitle: us
 description: Echo Sierra Studio's about page. Learn more about us.
 ---
 
-Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam
-littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula
-quarta decima et quinta decima. Eodem modo typi, qui nunc, fiant sollemnes in futurum.
+My main focus when I'm writing a web-app, is to make the web-app responsive, learn about new tools and trying to use new techniques. SPA's, Build tools and other front-end tools are things i would like to learn more about. I mostly end up using some sort of combination of Node js tools to build the front-end of a web-app.
 
-
-Claritas est etiam processus dynamicus, qui sequitur mutationem consueum formas humanitatis per seacula quarta
-deciEodem modo tythepi, qui nunc, fiant sollemnes in futurum.

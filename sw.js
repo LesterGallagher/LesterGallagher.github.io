@@ -42,16 +42,18 @@ self.addEventListener('install', function (event) {
         caches.open(STATIC_CACHE).then(function (cache) {
             return cache.addAll(
                 [
-                    "./",
-                    "./css/main.css",
-                    "./js/main.js",
-                    "./images/logo.png",
-                    "./images/home-images/portfolio.jpg",
-                    "https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic",
-                    "./assets/minima-social-icons.svg",
-                    "./about/",
-                    "./blog/",
-                    "./contact/",
+                    "{{ "/" | absolute_url }}",
+                    "{{ "/assets/css/main.css" | absolute_url }}",
+                    "{{ "/assets/css/critical.css" | absolute_url }}",
+                    "{{ "/assets/img/logo.png" | absolute_url }}",
+                    "https://cdn.polyfill.io/v2/polyfill.min.js",
+                    "{{ "/assets/js/main.js" | absolute_url }}",
+                    "{{ "/assets/minima-social-icons.svg" | absolute_url }}",
+                    "{{ "/assets/img/home-images/portfolio.jpg" | absolute_url }}",
+                    "{{ "/uploads/my_logo_512.png" | absolute_url }}",
+                    "{{ "/about/" | absolute_url }}",
+                    "{{ "/blog/" | absolute_url }}",
+                    "{{ "/contact/" | absolute_url }}"
                 ]
             );
         })

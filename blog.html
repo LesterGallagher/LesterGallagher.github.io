@@ -7,9 +7,8 @@ description: Echo Sierra Studio's blog page.
 
 <main role="main-inner-wrapper" class="container">
     {%- if site.posts.size > 0 -%}
-    <ul class="grid-lod effect-2" id="grid">
-
-        <li class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+    <div class="grid-lod effect-2" id="grid">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
             <article role="pge-title-content" class="blog-header">
                 <header>
                     <h2>
@@ -17,9 +16,9 @@ description: Echo Sierra Studio's blog page.
                 </header>
                 <p>Get all information about our studio from latest news posts & updates page.</p>
             </article>
-        </li>
+        </div>
         {%- for post in site.posts -%}
-        <li class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 ">
             <section class="blog-content">
                 <a href="{{ post.url | absolute_url }}">
                     <figure>
@@ -29,9 +28,9 @@ description: Echo Sierra Studio's blog page.
                 </a>
                 <article> {{ post.title | escape }} </article>
             </section>
-        </li>
+        </div>
         {%- endfor -%}
-    </ul>
+    </div>
     <p class="rss-subscribe">subscribe
         <a href="{{ "/feed.xml" | absolute_url }}">via RSS</a>
     </p>

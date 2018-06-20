@@ -4,11 +4,12 @@
     <div class="container">
         <h1>
             <a href="{{ "/"  | absolute_url }}" title="{{ site.title }}">
-                <img class="lazyload" width="66" height="66" data-src="{{ "images/logo.png" | absolute_url }}" />
+                <img class="lazyload" width="66" height="66" data-src="{{ "/assets/img/logo.png" | absolute_url }}" />
             </a>
         </h1>
         <nav role="header-nav" class="navy">
-            <ul>
+            <div id="menu-button"><span></span><span></span><span></span>Navigation</div>
+            <ul id="nav-items">
                 <li{% if page.title == "Work" %} class="nav-active"{% endif %}>
                     <a href="{{ "/"  | absolute_url }}" title="Work">Work</a>
                 </li>

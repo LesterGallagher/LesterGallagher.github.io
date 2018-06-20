@@ -4,7 +4,7 @@ layout: default
 ---
 
 <main role="main-home-wrapper" class="container">
-    <div class="row works-wrapper">
+    <div class="works-wrapper">
         <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
             <article role="pge-title-content">
                 <header>
@@ -18,7 +18,7 @@ layout: default
             <figure class="effect-oscar">
                 <div class="aspect-ratio" style="padding-top: 75.8144%">
                     <div class="abs-fit">
-                        <img data-src="{{ "/images/home-images/portfolio.jpg" | absolute_url }}" alt="" class="lazyload img-responsive" />
+                        <img data-src="{{ "/assets/img/home-images/portfolio.jpg" | absolute_url }}" alt="" class="lazyload img-responsive" />
                     </div>
                 </div>
                 
@@ -32,30 +32,28 @@ layout: default
             </figure>
         </section>
         <div class="clearfix"></div>
-        <section class="grid">
-            <ul class="grid-lod effect-2" id="grid">
-                {%- for work in site.works -%}
-                <li class="work-item">
-                    <figure class="effect-oscar">
-                        {% assign width = work.image_width | default: 400 %}
-                        {% assign height = work.image_height | default: 320 %}
-                        {% assign percentage = height | times: 100.0 | divided_by: width | round: 4 %}
-                        <div class="aspect-ratio" style="padding-top: {{ percentage }}%">
-                            <div class="abs-fit">
-                                <img class="lazyload" data-src="{{ work.image | absolute_url }}" alt="" />
-                            </div>
+        <section class="grid" id="grid">
+            {%- for work in site.works -%}
+            <div class="grid-item work-item">
+                <figure class="effect-oscar">
+                    {% assign width = work.image_width | default: 400 %}
+                    {% assign height = work.image_height | default: 320 %}
+                    {% assign percentage = height | times: 100.0 | divided_by: width | round: 4 %}
+                    <div class="aspect-ratio" style="padding-top: {{ percentage }}%">
+                        <div class="abs-fit">
+                            <img class="lazyload" data-src="{{ work.image | absolute_url }}" alt="" />
                         </div>
-                        <figcaption>
-                            <h2>{{ work.title }}
-                                <span>{{ work.title_bold }}</span>
-                            </h2>
-                            <p>{{ work.content }}</p>
-                            <a href="{{ work.link }}">View more</a>
-                        </figcaption>
-                    </figure>
-                </li>
-                {%- endfor -%}
-            </ul>
+                    </div>
+                    <figcaption>
+                        <h2>{{ work.title }}
+                            <span>{{ work.title_bold }}</span>
+                        </h2>
+                        <p>{{ work.content }}</p>
+                        <a href="{{ work.link }}">View more</a>
+                    </figcaption>
+                </figure>
+            </div>
+            {%- endfor -%}
         </section>
         <div class="clearfix"></div>
     </div>

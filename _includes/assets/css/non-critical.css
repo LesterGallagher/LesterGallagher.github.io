@@ -1,0 +1,45 @@
+
+
+#noscript-modal {
+    position: fixed; 
+    z-index: 200000; 
+    padding-top: 100px; 
+    left: 0px; 
+    top: 0px; 
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.9); 
+    transition: 
+    padding-top 100ms ease-out; 
+    box-sizing: border-box; 
+    font-family: sans-serif, Verdana, Geneva, Tahoma;
+
+}
+
+#noscript-modal .modal-content {
+    margin: auto; 
+    display: block; 
+    width: 80%; 
+    max-width: 700px; 
+    padding: 40px; 
+    background: white;
+     box-sizing: border-box;
+}
+
+#noscript-modal .modal-content h2 {
+    color: rgb(236, 78, 32); 
+    margin-top: 6px; 
+    margin-bottom: 36px; 
+    box-sizing: border-box;
+}
+
+#noscript-modal .modal-content a {
+    background-color: transparent; 
+    color: rgb(1, 111, 185); 
+    box-sizing: border-box; 
+    text-decoration: none;
+
+}
+
+

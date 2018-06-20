@@ -26,7 +26,7 @@ The training data will be in the format "`{ input: number[26], output: number[25
 With the training data in place we can create our neural network by instantiating a new instance of Architect.Perceptron. Pass in the number of nodes per layer to the constructor. In this case we will use 26 nodes in our hidden layer. To train the network you can use the built-in synaptic.Trainer. It's important to set the learning rate to something below 0.05 for this example as a higher learning rate will make the neural network forget it's previous results. To improve the results you could use [LSTM Networks](http://colah.github.io/posts/2015-08-Understanding-LSTMs). 
 Check out a visualization of the network in the image below:
 
-{% include assets/teaching-a-neural-net-how-to-code-visualization.svg %}
+{% include assets/img/teaching-a-neural-net-how-to-code-visualization.svg %}
 
 <span style="color:green">Green</span> lines mean high weight values and <span style="color:red">red</span> lines low weight values.
 <span style="color:green">Green</span> nodes mean a high bias values and <span style="color:red">red</span> nodes a low bias values.
@@ -63,9 +63,13 @@ SCRIPTS:
     <button id="retrain-nn-btn" class="btn btn-default">Retrain</button>
 </p>
 
-<script src="{{ "/js/jimp.min.js" | absolute_url }}"></script>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script src="{{ "/assets/js/jimp.min.js" | absolute_url }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/synaptic/1.1.4/synaptic.min.js"             integrity="sha256-t3MKDO0e1ULGddDg4QswIm9r1ZfOzguJLRk2TFuRsIg=" crossorigin="anonymous"></script>
-<script src="{{ "/js/neural-net-image-writer.min.js" | absolute_url }}"></script>
+<script src="{{ "/assets/js/neural-net-image-writer.min.js" | absolute_url }}"></script>
 <script>
     var canvas = document.getElementById('c');
     var ctx = canvas.getContext('2d');

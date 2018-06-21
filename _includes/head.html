@@ -43,7 +43,8 @@
   <link rel="manifest" href="{{ "/manifest.json" | absolute_url }}">
   
   <link rel="stylesheet" href="{{ "/assets/css/critical.css" | absolute_url }}">
-  <link as="style" class="preload" rel="prefetch" href="{{ "/assets/css/main.css" | absolute_url }}" >
+  <link as="style" class="preload" rel="preload" href="{{ "/assets/css/main.css" | absolute_url }}" >
+  <link as="script" rel="preload" href="{{ "/assets/js/main.js" | absolute_url }}" >
   <noscript><link rel="stylesheet" href="{{ "/assets/css/main.css" | absolute_url }}" ></noscript>
 
   {% feed_meta %}

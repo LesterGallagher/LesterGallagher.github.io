@@ -38,6 +38,10 @@ img {
 	bottom: 0;
 }
 
+.highlighter-rouge .highlight {
+	overflow-x: auto;
+}
+
 img[data-src].lazyload {
 	opacity: 0;
 	transition: opacity 1s;
@@ -226,6 +230,10 @@ a {
 	transition-duration: 0.6s;
 	transition-property: all;
 	transition-timing-function: ease;
+}
+
+a:hover {
+	color: #fb5353;
 }
 
 a:focus,
@@ -571,6 +579,14 @@ section.blog-content figure img {
 
 section.blog-content:hover figure img {
 	opacity: 0.5
+}
+
+.blog-details .enter-content p {
+	margin: 20px 0;
+}
+
+.blog-details .enter-content a {
+	text-decoration: underline;
 }
 
 

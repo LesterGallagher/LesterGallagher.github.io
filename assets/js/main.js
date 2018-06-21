@@ -1,5 +1,6 @@
 ---
 ---
+
 var swUrl = '{{ "/sw.js" | absolute_url }}';
 {% comment %}
 {% include assets/js/bricks.js %}

@@ -87,6 +87,7 @@ figure.oa:hover img.loaded {
 .social-media-list {
 	list-style-type: none;
 	margin-left: 0;
+	text-align: center;
 }
 
 .social-media-list li {
@@ -94,6 +95,9 @@ figure.oa:hover img.loaded {
 	display: inline-block;
 }
 
+.social-media-list .username {
+	display: none;
+}
 
 #grid {
 	width: 100%!important;
@@ -604,6 +608,7 @@ section.blog-content:hover figure img {
 .contat-from-wrapper input[type="text"],
 .contat-from-wrapper input[type="email"],
 .contat-from-wrapper textarea {
+	font-family: Arial;
 	width: 100%;
 	display: block;
 	outline: none;
@@ -612,7 +617,7 @@ section.blog-content:hover figure img {
 	color: #404040;
 	font-size: 21px;
 	line-height: 23px;
-	padding-bottom: 24px
+	padding-bottom: 24px;
 }
 
 

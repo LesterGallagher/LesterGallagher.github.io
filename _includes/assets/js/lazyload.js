@@ -3,16 +3,21 @@ document.addEventListener("DOMContentLoaded", function () {
   var lazyImages = [].slice.call(document.getElementsByClassName('lazyload'));
   var active = false;
 
-  function lazyLoad () {
+  function lazyLoad() {
     if (active === false) {
       active = true;
-
       setTimeout(function () {
         for (var i = lazyImages.length - 1; i >= 0; i--) {
-          var lazyImage = lazyImages[i];
-          if (lazyImage.getBoundingClientRect().top <= window.innerHeight && lazyImage.getBoundingClientRect().bottom >= 0) {
-            lazyImage.setAttribute('src', lazyImage.getAttribute('data-src'));
-            lazyImage.classList.add('loaded');
+          if (lazyImages[i].getBoundingClientRect().top <= window.innerHeight && lazyImages[i].getBoundingClientRect().bottom >= 0) {
+            (function () {
+              var lazyImage = lazyImages[i];
+              var img = new Image();
+              img.onload = img.onerror = function () {
+                lazyImage.src = img.src;
+                lazyImage.classList.add('loaded');
+              };
+              img.src = lazyImage.getAttribute('data-src');
+            })();
             lazyImages.splice(i, 1);
           }
         }
@@ -32,7 +37,8 @@ document.addEventListener("DOMContentLoaded", function () {
   lazyLoad();
 
   var preloads = document.getElementsByClassName('preload');
-  for(var i = 0; i < preloads.length; i++) {
+  for (var i = 0; i < preloads.length; i++) {
     if (preloads[i].getAttribute('as') === 'style') preloads[i].setAttribute('rel', 'stylesheet');
+    if (preloads[i].getAttribute('as') === 'script') document.head.appendChild(document.createElement('script')).src = preloads[i].href;
   }
 });

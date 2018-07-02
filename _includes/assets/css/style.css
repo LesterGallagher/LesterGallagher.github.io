@@ -581,17 +581,20 @@ section.blog-content figure img {
 	min-height: 90px;
 }
 
-section.blog-content:hover figure img {
-	opacity: 0.5
+.blog-details .enter-content img {
+	max-width: 100%;
+}
+
+.blog-details .enter-content ul,
+.blog-details .enter-content ol {
+	padding-left: 20px;
 }
 
 .blog-details .enter-content p {
 	margin: 20px 0;
 }
 
-.blog-details .enter-content a {
-	text-decoration: underline;
-}
+
 
 
 /*===== Contact ===*/

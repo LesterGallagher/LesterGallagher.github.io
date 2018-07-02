@@ -124,3 +124,17 @@ input[type="range"].flat-range-slider::-webkit-slider-thumb:after {
 	background: #fb5353;
 	background: linear-gradient(to right, #f088fc 1%, #AC6CFF 70%);
 }
+
+section.blog-content:hover figure img {
+	opacity: 0.5
+}
+
+.blog-details .enter-content {
+	font-family: sans-serif;
+}
+
+.blog-details .enter-content a {
+	text-decoration: underline;
+	color: #fb5353;
+}
+

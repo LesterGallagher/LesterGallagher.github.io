@@ -8,23 +8,11 @@ lang: nl-NL
 Verbeter punten:
 
 * App opslagruimte meer dan gehalveerd!
-  
-
 * Updated voor de laatste versie van android
-  
-
 * Android 4.4 ondersteuning
-  
-
 * Refresh scroll (pullhook) verwijderd
-  
-
 * Oude versies van android chrome ondersteuning
-  
-
 * Bugs waarin de app niet goed offline functioneerde zijn opgelost
-  
-
 * Snelheid optimalisaties
 
 [Google Play](https://play.google.com/store/apps/details?id=com.EchoSierraStudio.Ov_Fiets_App)
@@ -39,16 +27,15 @@ Ook is er nu een website versie van de OV Fiets App die [hier](https://esstudio.
 
 ![native-prompt.PNG](/uploads/native-prompt.PNG)
 
-Er verschijnt nu een dialoog, klik op installeren. 
+Er verschijnt nu een dialoog, klik op installeren.
 
 ![pwa-86c881.PNG](/uploads/pwa-86c881.PNG)De web app is nu geïnstalleerd op je startscherm.
 
-![offline-pwa.PNG](/uploads/offline-pwa.PNG)Wanneer de internet verbinding onderbroken wordt zie je de melding "Je bent niet verbonden met het internet. Deg gegevens die worden weergegeven zijn mogelijk verouderd. 
+![offline-pwa.PNG](/uploads/offline-pwa.PNG)Wanneer de internet verbinding onderbroken wordt zie je de melding "Je bent niet verbonden met het internet. Deg gegevens die worden weergegeven zijn mogelijk verouderd.
 
-[![pwas-unninstall.PNG](/uploads/pwas-unninstall.PNG)](chrome://apps/)Als je de app weer wilt verwijderen dan kun je naar deze link gaan: "chrome://apps/". 
+![pwas-unninstall.PNG](/uploads/pwas-unninstall.PNG)Als je de app weer wilt verwijderen dan kun je naar deze link gaan: "chrome://apps/".
 
-\
-[![pwas-unninstall-context.PNG](/uploads/pwas-unninstall-context.PNG)](chrome://apps/)Klik met de rechter muis op de web app en klik op verwijderen. In android, IOS en andere mobiele apparaten kun je de app vanaf het startscherm verwijderen (net als elke andere app).
+![pwas-unninstall-context.PNG](/uploads/pwas-unninstall-context.PNG)Klik met de rechter muis op de web app en klik op verwijderen. In android, IOS en andere mobiele apparaten kun je de app vanaf het startscherm verwijderen (net als elke andere app).
 
 **Meer:**
 

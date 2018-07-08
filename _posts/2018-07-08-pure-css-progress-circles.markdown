@@ -5,6 +5,7 @@ tags:
 - css
 - animation
 - visualization
+image: "/uploads/circle-progress.png"
 ---
 
 Progress elements can be usefull in alot of different situations. Showing them as loading indicators, using them as part of a task flow.

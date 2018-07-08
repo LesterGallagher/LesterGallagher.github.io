@@ -145,4 +145,6 @@ Pie chart example:
 
 <p data-height="265" data-theme-id="0" data-slug-hash="mKNjYW" data-default-tab="css,result" data-user="Afirus" data-embed-version="2" data-pen-title="Pie Progress CSS" class="codepen">See the Pen <a href="https://codepen.io/Afirus/pen/mKNjYW/">Pie Progress CSS</a> by LesterGallagher (<a href="https://codepen.io/Afirus">@Afirus</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 
+Live example: (http://esstudio.site/tana-soundboad/)[http://esstudio.site/tana-soundboad/].
+
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>

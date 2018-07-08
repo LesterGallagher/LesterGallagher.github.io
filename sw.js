@@ -46,7 +46,7 @@ self.addEventListener('install', function (event) {
                     "{{ "/assets/css/main.css" | absolute_url }}",
                     "{{ "/assets/css/critical.css" | absolute_url }}",
                     "{{ "/assets/img/logo.png" | absolute_url }}",
-                    "https://static.codepen.io/assets/embed/ei.js"
+                    "https://static.codepen.io/assets/embed/ei.js",
                     "https://cdn.polyfill.io/v2/polyfill.min.js",
                     "{{ "/assets/js/main.js" | absolute_url }}",
                     "{{ "/assets/minima-social-icons.svg" | absolute_url }}",

@@ -8,7 +8,7 @@ tags:
 image: "/uploads/circle-progress.png"
 ---
 
-Progress elements can be usefull in alot of different situations. Showing them as loading indicators, using them as part of a task flow.
+Progress elements can be usefull in alot of different situations. Showing them as loading indicators, using them as part of a task flow or for data visualization.
 
 Let's start by creating the html:
 
@@ -24,7 +24,7 @@ Let's start by creating the html:
 </div>
 ```
 
-Now let's add some CSS
+Now let's add some CSS:
 
 ```css
 

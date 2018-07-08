@@ -1,6 +1,7 @@
 ---
 title: Pure CSS Progress Circles
 date: 2018-07-08 15:31:00 +02:00
+published: false
 ---
 
 Progress elements can be usefull in alot of different situations. Showing them as loading indicators, using them as part of a task flow.

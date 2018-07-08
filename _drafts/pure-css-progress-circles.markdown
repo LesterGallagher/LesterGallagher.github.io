@@ -1,7 +1,10 @@
 ---
 title: Pure CSS Progress Circles
 date: 2018-07-08 15:31:00 +02:00
-published: false
+tags:
+- css
+- animation
+- visualization
 ---
 
 Progress elements can be usefull in alot of different situations. Showing them as loading indicators, using them as part of a task flow.
@@ -114,6 +117,7 @@ Now we can set the rotate and fill class values manualy:
 
 Or use javascript to set the values:
 
+```javascript
 var players = document.getElementsByClassName('player');
 
 setProgress(.4, players[0]);
@@ -125,20 +129,20 @@ function setProgress(ratio, player) {
     leftSide.classList[ratio > .5 ? 'add' : 'remove']('fill');
     leftSide.setAttribute('style', 'transform: rotate(' + rot + 'deg)');
 }   
+```
+
+And your done!
+
+Full example:
 
 <p data-height="335" data-theme-id="0" data-slug-hash="aKejNP" data-default-tab="css,result" data-user="Afirus" data-embed-version="2" data-pen-title="Pure CSS Progress Circle" class="codepen">See the Pen <a href="https://codepen.io/Afirus/pen/aKejNP/">Pure CSS Progress Circle</a> by LesterGallagher (<a href="https://codepen.io/Afirus">@Afirus</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 
+Animation example:
 
+<p data-height="265" data-theme-id="0" data-slug-hash="eKqjxX" data-default-tab="css,result" data-user="Afirus" data-embed-version="2" data-pen-title="Animated CSS Progress Circle" class="codepen">See the Pen <a href="https://codepen.io/Afirus/pen/eKqjxX/">Animated CSS Progress Circle</a> by LesterGallagher (<a href="https://codepen.io/Afirus">@Afirus</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 
+Pie chart example:
 
-
-
-
-
-
-
-
-
-
+<p data-height="265" data-theme-id="0" data-slug-hash="mKNjYW" data-default-tab="css,result" data-user="Afirus" data-embed-version="2" data-pen-title="Pie Progress CSS" class="codepen">See the Pen <a href="https://codepen.io/Afirus/pen/mKNjYW/">Pie Progress CSS</a> by LesterGallagher (<a href="https://codepen.io/Afirus">@Afirus</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>

@@ -51,9 +51,9 @@ self.addEventListener('install', function (event) {
                     "{{ "/assets/minima-social-icons.svg" | absolute_url }}",
                     "{{ "/assets/img/home-images/portfolio.jpg" | absolute_url }}",
                     "{{ "/uploads/my_logo_512.png" | absolute_url }}",
-                    "{{ "/about/" | absolute_url }}",
-                    "{{ "/blog/" | absolute_url }}",
-                    "{{ "/contact/" | absolute_url }}"
+                    "{{ "/about" | absolute_url }}",
+                    "{{ "/blog" | absolute_url }}",
+                    "{{ "/contact" | absolute_url }}"
                 ]
             );
         })

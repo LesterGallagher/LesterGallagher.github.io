@@ -3,6 +3,11 @@ title: OV Fiets App 1.2
 date: 2018-07-02 15:58:00 +02:00
 image: "/uploads/ov-fiets-webapp-sm.png"
 lang: nl-NL
+portal_title: OV Fiets App
+portal_description: Met de OV Fiets Website kunt u gemakkelijk informatie opzoeken
+  over OV Fiets huurlocaties.
+portal_image: "/uploads/my_logo_512.png"
+portal_link: "/ov-fiets-app/"
 ---
 
 **Verbeter punten:**
@@ -16,6 +21,8 @@ lang: nl-NL
 * Snelheid optimalisaties
 
 [Google Play](https://play.google.com/store/apps/details?id=com.EchoSierraStudio.Ov_Fiets_App)
+
+{% include "app-portal" %}
 
 Ook is er nu een website versie van de OV Fiets App die [hier](https://esstudio.site/ov-fiets-app/) gevonden kan worden.  De website versie werkt in essentie hetzelfde als de app alleen kan het ook op IOS, windows en desktops gebruiken. De website kan zelfs offline gebruikt worden (met verouderde informatie over ov fiets locaties totdat je weer online bent), wanneer je het installeert als web app. Dat kan heel handig kan zijn als je bijvoorbeeld net even geen wifi hebt. De instructies voor installeren van de web app zijn staan hieronder:
 

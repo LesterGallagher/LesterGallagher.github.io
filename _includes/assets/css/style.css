@@ -625,7 +625,7 @@ section.blog-content figure img {
 }
 
 
-.contat-from-wrapper input[type="submit"] {
+.btn {
 	display: block;
 	border: none;
 	outline: none;
@@ -638,7 +638,8 @@ section.blog-content figure img {
 	letter-spacing: 2px;
 	background-color: #e84d49;
 	margin: 41px auto;
-	margin-bottom: 0
+	margin-bottom: 0;
+	cursor: pointer;
 }
 
 
@@ -663,4 +664,3 @@ section.blog-content figure img {
 	font-size: 36px;
 	font-weight: normal
 }
-

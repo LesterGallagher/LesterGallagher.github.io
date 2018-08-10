@@ -138,3 +138,28 @@ section.blog-content:hover figure img {
 	color: #fb5353;
 }
 
+.app-portal {
+	width: 400px; 
+	max-width: 100%; 
+	margin: 0 auto; 
+	border-radius: 8px; 
+	box-shadow: 0 0 5px #ccc; 
+	padding: 20px; 
+	background: #fff; 
+	text-align: center;
+}
+
+.app-portal a.btn {
+	color: #fff;
+	text-decoration: none;
+}
+
+.app-portal a.btn {
+	box-shadow: 0 0 60px -10px #000
+}
+
+.app-portal a.btn > * {
+	vertical-align: middle;
+}
+
+

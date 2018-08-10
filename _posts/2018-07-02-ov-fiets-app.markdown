@@ -22,9 +22,11 @@ portal_link: "/ov-fiets-app/"
 
 [Google Play](https://play.google.com/store/apps/details?id=com.EchoSierraStudio.Ov_Fiets_App)
 
+Ook is er nu een website versie van de OV Fiets App die [hier](https://esstudio.site/ov-fiets-app/) gevonden kan worden. 
+
 {% include "app-portal.html" %}
 
-Ook is er nu een website versie van de OV Fiets App die [hier](https://esstudio.site/ov-fiets-app/) gevonden kan worden.  De website versie werkt in essentie hetzelfde als de app alleen kan het ook op IOS, windows en desktops gebruiken. De website kan zelfs offline gebruikt worden (met verouderde informatie over ov fiets locaties totdat je weer online bent), wanneer je het installeert als web app. Dat kan heel handig kan zijn als je bijvoorbeeld net even geen wifi hebt. De instructies voor installeren van de web app zijn staan hieronder:
+De website versie werkt in essentie hetzelfde als de app alleen kan het ook op IOS, windows en desktops gebruiken. De website kan zelfs offline gebruikt worden (met verouderde informatie over ov fiets locaties totdat je weer online bent), wanneer je het installeert als web app. Dat kan heel handig kan zijn als je bijvoorbeeld net even geen wifi hebt. De instructies voor installeren van de web app zijn staan hieronder:
 
 ![website.PNG](/uploads/website.PNG)
 

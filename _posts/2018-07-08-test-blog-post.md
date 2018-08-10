@@ -6,9 +6,9 @@ tags:
 - test2
 - test
 image: "/uploads/circle-progress.png"
-portal_title: "test"
-portal_description: "Description"
-portal_image: /uploads/magnifying-glass.png
+portal_title: test
+portal_description: Description
+portal_image: "/uploads/magnifying-glass.png"
 portal_link: https://play.google.com/store/apps/details?id=com.EchoSierraStudio.Kadaster_Kaart
 ---
 

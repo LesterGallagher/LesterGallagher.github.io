@@ -16,4 +16,4 @@ Newsfeeder (also known as "feedfetish") is a search engine and modern RSS/Atom r
 
 The app is available in the browser and on the google play store. 
 
-{% include app-portal %}
+{% include app-portal.html %}

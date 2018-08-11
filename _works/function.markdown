@@ -8,4 +8,4 @@ image_width: 720
 image_height: 741
 ---
 
-[Expression solver.](https://esstudio.site/SimpleFunctionPlotter/)
+Expression solver.

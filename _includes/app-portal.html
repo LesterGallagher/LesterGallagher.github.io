@@ -7,7 +7,7 @@
 {% assign link=include.link %}
 {% if link %}{% else %}{% assign link=page.portal_link %}{% endif %}
 
-<div class="app-portal" style="width: 400px; max-width: 100%; margin: 10px auto;">
+<div class="app-portal" style="width: 400px; max-width: 100%; padding: 10px">
     <img src="{{ image | absolute_url }}"
         style="max-width: 50%; margin: 20px auto">
     <h1>{{ title }}</h1>

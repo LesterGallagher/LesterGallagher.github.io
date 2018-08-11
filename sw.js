@@ -1,8 +1,8 @@
 ---
 ---
 
-var DYNAMIC_CACHE = 'dynamic-cache-v2';
-var STATIC_CACHE = 'static-cache-v2'
+var DYNAMIC_CACHE = 'dynamic-cache-v3';
+var STATIC_CACHE = 'static-cache-v3'
 
 // listen for outgoing network request
 self.addEventListener('fetch', function (event) {

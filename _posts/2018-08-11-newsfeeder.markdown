@@ -12,7 +12,7 @@ portal_image: "/uploads/logo-6c4e4d.png"
 
 Newsfeeder (also known as "feedfetish") is a search engine and modern RSS/Atom reader. It let's you combine all of your different news/blog, like Reddit, Cnn, Lifehacker, etc. 
 
-![Newsfeeder screenshot](https://esstudio.site/newsfeeder/images/news-feed-added-item.png)
+![Newsfeeder screenshot](/newsfeeder/images/news-feed-added-item.png)
 
 The app is available in the browser and on the google play store. 
 

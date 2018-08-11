@@ -12,3 +12,5 @@ portal_image: "/uploads/logo.png"
 Deze app maakt het mogelijk om bioscopen in nederland te zoeken. Je kunt gemakkelijk het adres, het aantal doeken en stoelen vinden. De app kan ook offline gebruikt worden. De app gebruikt een offline kaart waardoor je deze zonder internet nog steeds kan gebruiken.
 
 {% include app-portal.html %}
+
+Download op [google play](https://play.google.com/store/apps/details?id=com.EchoSierraStudio.Bioscopen_Nederland).

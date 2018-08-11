@@ -11,3 +11,5 @@ portal_link: "/laika-notes/"
 A simple notes managing app inspired by laika the dog. Can be added to your homescreen and works offline.
 
 {% include app-portal.html %}
+
+Download op [google play](https://play.google.com/store/apps/details?id=com.EchoSierraStudio.Laika_Notes)

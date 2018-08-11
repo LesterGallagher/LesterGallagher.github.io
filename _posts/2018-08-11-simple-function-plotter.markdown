@@ -9,3 +9,5 @@ portal_link: "/SimpleFunctionPlotter/"
 ---
 
 This app let's you plot algebreic equations, plot computational expressions, solve conversions, do matrix operations, etc. You can save the graph as a vector image (svg) and easily create a lot of graphs.
+
+{% include app-portal.html %}

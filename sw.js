@@ -1,8 +1,8 @@
 ---
 ---
 
-var DYNAMIC_CACHE = 'dynamic-cache-v3';
-var STATIC_CACHE = 'static-cache-v3'
+var DYNAMIC_CACHE = 'esstudio-dynamic-cache-v4';
+var STATIC_CACHE = 'esstudio-static-cache-v4'
 
 // listen for outgoing network request
 self.addEventListener('fetch', function (event) {
@@ -13,7 +13,7 @@ self.addEventListener('fetch', function (event) {
             return cache.match(event.request).then(function (response) {
                 if (response) return response;
 
-                return fetch(event.request).then(function (networkResponse) {
+                return fetch(event.request).catch(console.warn).then(function (networkResponse) {
                     if (!networkResponse || (networkResponse.status !== 200 && !networkResponse.ok)) {
                         return caches.open(DYNAMIC_CACHE).then(function (dynCache) {
                             return dynCache.match(event.request);

@@ -74,6 +74,8 @@ body {
 
 Next we have to create a round border on the element with a variable circumference. Using a few tricks this can be achieved whith pure CSS. We need to halfs of a circle, a left side and a right side. If the progress is less than 50% we rotate the left side over the right side and give the left side the same color as the background. This allows us to hide the right side and show values from 0% to 50%. To show values above 50%. We chage the color of the left side to the color of the progress circle and do essentially the same thing as before only now we are extending the other circle from 50% to a 100%. 
 
+{% include adsense.html %}
+
 ```css
 .left-side {
     position: absolute;
@@ -134,6 +136,8 @@ function setProgress(ratio, player) {
 
 And your done!
 
+{% include adsense.html %}
+
 Full example:
 
 <p data-height="335" data-theme-id="0" data-slug-hash="aKejNP" data-default-tab="css,result" data-user="Afirus" data-embed-version="2" data-pen-title="Pure CSS Progress Circle" class="codepen">See the Pen <a href="https://codepen.io/Afirus/pen/aKejNP/">Pure CSS Progress Circle</a> by LesterGallagher (<a href="https://codepen.io/Afirus">@Afirus</a>) on <a href="https://codepen.io">CodePen</a>.</p>
@@ -149,3 +153,5 @@ Pie chart example:
 Live example: [http://esstudio.site/tana-soundboad/](http://esstudio.site/tana-soundboad/).
 
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+{% include adsense.html %}

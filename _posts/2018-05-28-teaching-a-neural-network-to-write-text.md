@@ -23,6 +23,8 @@ The training data will be in the format "`{ input: number[26], output: number[25
 
 {% gist ba2beef73f2545aafbc0f68e69dcd720/3a6a3b7df98a6a36728b4dff137628b32f3abbf4 %}
 
+{% include adsense.html %}
+
 With the training data in place we can create our neural network by instantiating a new instance of Architect.Perceptron. Pass in the number of nodes per layer to the constructor. In this case we will use 26 nodes in our hidden layer. To train the network you can use the built-in synaptic.Trainer. It's important to set the learning rate to something below 0.05 for this example as a higher learning rate will make the neural network forget it's previous results. To improve the results you could use [LSTM Networks](http://colah.github.io/posts/2015-08-Understanding-LSTMs). 
 Check out a visualization of the network in the image below:
 
@@ -36,6 +38,8 @@ Check out a visualization of the network in the image below:
 If you are running this example in the browser you can add a loading message.
 
 {% gist ba2beef73f2545aafbc0f68e69dcd720/6f6373d145aad7677ee1964807f874e0f87e851d %}
+
+{% include adsense.html %}
 
 Remove the loading message when the neural network is done training.
 
@@ -114,4 +118,5 @@ SCRIPTS:
         });
     }, false );
 </script>
+{% include adsense.html %}
 

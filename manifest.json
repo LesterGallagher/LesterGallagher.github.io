@@ -8,7 +8,7 @@
     "start_url": ".",
     "display": "standalone",
     "background_color": "#ffffff",
-    "theme-color": "{{ site.theme_color }}",
+    "theme_color": "{{ site.theme_color }}",
     "name": "{{ site.title }}",
     "scope": "./",
     "icons": [

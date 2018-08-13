@@ -1,5 +1,6 @@
 ---
 ---
+
 var DYNAMIC_CACHE = 'esstudio-dynamic-cache-v5';
 var STATIC_CACHE = 'esstudio-static-cache-v5'
 

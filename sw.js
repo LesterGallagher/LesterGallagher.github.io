@@ -1,8 +1,8 @@
 ---
 ---
 
-var DYNAMIC_CACHE = 'esstudio-dynamic-cache-v5';
-var STATIC_CACHE = 'esstudio-static-cache-v5'
+var DYNAMIC_CACHE = 'esstudio-dynamic-cache-v6';
+var STATIC_CACHE = 'esstudio-static-cache-v6'
 
 // listen for outgoing network request
 self.addEventListener('fetch', function (event) {

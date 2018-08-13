@@ -12,7 +12,7 @@ image: "/uploads/icon-sm-7efc02.png"
 
 Checkout the website: [JSON2CSV](http://esstudio.site/json2csv) or the [full example](#full-example).
 
-While searching for a good csv2obj library I couldn't find a good solution so I decided to write a very minimal csv2obj converter. Let's start with creating the parser (csv2obj). Because of browser support i will try not to use a lot of es5/es6 specific syntax. The following function will do the job. There are some important caveats. The function will, in some cases, try to convert boolean, number and null values to their correct type. This only works if it matches the exact value. For example
+While searching for a csv2obj javascript library I couldn't find a good solution, so I decided to write a very minimal csv2obj converter. Let's start with creating the parser (csv2obj). Because of cross browser support i will try not to use a lot of es5/es6 specific syntax. The following function will do the job. There are some important caveats. The function will, in some cases, try to convert boolean, number and null values to their correct type. This only works if it matches the exact value. For example
 "null" will be parsed as a null value/object, but " null" (with a leading space) will not.
 
 ```javascript
@@ -42,7 +42,7 @@ While searching for a good csv2obj library I couldn't find a good solution so I 
 
 {% include adsense.html %}
 
-The difficult part is writing to serialization function. Objects with grandchildren will be flattened and their names squashed together like this: "child.grandchild" -> "child/grandchild". It will recursively find all of the children and at them to a queue. So the function itself is not recursive! Which is important in terms of performance. We will use JSON.stringify as a trick to automatically put double quotes around strings. At last we loop through all the rows to join all the columns/rows and join them together.
+The difficult part is writing the serialization function. Objects with grandchildren will be flattened and their names squashed together like this: "child.grandchild" -> "child/grandchild". It will recursively find all of the children and push them to a queue. The function itself is not recursive! This is important in terms of performance. We will use JSON.stringify as a trick to automatically put double quotes around strings. Lastly we loop through all the rows and join the columns together.
 
 ```javascript
     function obj2csv(obj, opt) {

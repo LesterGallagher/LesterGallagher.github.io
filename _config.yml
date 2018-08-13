@@ -67,6 +67,9 @@ plugins:
 - jekyll-gist
 - jekyll-sitemap
 markdown: kramdown
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
 theme: minima
 author:
   name: Sem Postma

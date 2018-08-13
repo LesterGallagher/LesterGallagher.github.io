@@ -2,7 +2,7 @@
 ---
 
 var DYNAMIC_CACHE = 'esstudio-dynamic-cache-v4';
-var STATIC_CACHE = 'esstudio-static-cache-v4'
+var STATIC_CACHE = 'esstudio-static-cache-v4';
 
 
 // listen for outgoing network request

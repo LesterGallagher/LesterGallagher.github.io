@@ -10,7 +10,7 @@ for (var i = 0; i < anchors.length; i++) {
             var id = this.getAttribute('href').replace('#', '');
             var el = document.getElementById(id);
             if (el !== null) {
-                scrollToAnim(window.offsetTop(el), function () {
+                scrollToAnim(offsetTop(el), function () {
                     el.focus();
                     if (document.activeElement === el) {
                         return false;

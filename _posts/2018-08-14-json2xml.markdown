@@ -6,12 +6,14 @@ image: "/uploads/logo-json2xml.png"
 
 Checkout the website: [JSON2XML](https://esstudio.site/json2xml) or the [full example](#full-example).
 
-As it turns out, finding a good xml to json javascript library is not as easy as it sounds. I did find (https://davidwalsh.name/convert-xml-json)[this] implementation does the job but sometimes the output can be a bit confusing:
+As it turns out, finding a good xml to json javascript library is not as easy as it sounds. I did find [this](https://davidwalsh.name/convert-xml-json) implementation does the job but sometimes the output can be a bit confusing:
 
 ```javascript
 xmlToJson((new DOMParser).parseFromString('<root root-attr="value">    <child child-attr="value"> text  \n  </child>\n</root>', 'application/xml'));
 ```
+
 will output:
+
 ```json
 {
     "root": {
@@ -32,7 +34,7 @@ will output:
 }
 ```
 
-Borrowing from David Walsh's implementation, let's implement the obj2xml function:
+Borrowing from [David Walsh's](https://davidwalsh.name/convert-xml-json) implementation, let's implement the obj2xml function:
 
 ```javascript
 function xml2obj(xml, opt) {
@@ -202,7 +204,9 @@ This will return the desired output. The function takes in an xml string or an `
 ```javascript
 xml2obj('<root root-attr="value">    <child child-attr="value"> text  \n  </child>\n</root>', );
 ```
+
 For example this xml string will become:
+
 ```json
 {
     "root-attr": "value",
@@ -214,10 +218,13 @@ For example this xml string will become:
 ```
 
 You can also pass in `{ attrPrefix: '@' }` as a second argument to prevent name collisions between attributes and child elements:
+
 ```javascript
 xml2obj('<root samename="value">    <samename child-attr="value"> text  \n  </samename>\n</root>', { attrPrefix: '@' });
 ```
+
 Will become:
+
 ```json
 {
     "@samename": "value",
@@ -228,7 +235,7 @@ Will become:
 }
 ```
 
-To convert a json object to xml, you can use the following function. 
+To convert a json object to xml, you can use the following function.:
 
 ```javascript
 var endScopeObj = {};
@@ -342,15 +349,19 @@ window.obj2xml = function (obj, opt) {
 ```
 
 Which turns:
+
 ```javascript
 obj2xml({ child: { key: 'value' } });
 ```
-into
+
+into:
+
 ```xml
 <root><child key="value"></child></root>
 ```
 
 The function `obj2xml(obj, {...options})` takes the following options:
+
 ```javascript
 {
     rootName: 'name of the root', // defaults to 'root'

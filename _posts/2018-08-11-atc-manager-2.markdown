@@ -8,7 +8,7 @@ portal_link: "/atc-manager-2/"
 portal_image: "/uploads/schiphol.PNG"
 ---
 
-Web based aire traffic control game. Manage airspace of busy airports like Schiphol or Heathrow in a realistic simulator.
+Web based air traffic control game. Manage airspace of busy airports like Schiphol or Heathrow in a realistic simulator.
 
 {% include app-portal.html %}
 

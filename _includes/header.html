@@ -1,13 +1,13 @@
 {% assign default_paths = site.pages | map: "path" %} {% assign page_paths = site.header_pages | default: default_paths %}
 
-<header role="header">
+<header>
     <div class="container">
         <h1>
             <a href="{{ "/"  | absolute_url }}" title="{{ site.title }}">
-                <img class="lazyload" width="66" height="66" data-src="{{ "/assets/img/logo.png" | absolute_url }}" />
+                <img class="lazyload" alt="logo" width="66" height="66" data-src="{{ "/assets/img/logo.png" | absolute_url }}" />
             </a>
         </h1>
-        <nav role="header-nav" class="navy">
+        <nav class="navy">
             <div id="menu-button"><span></span><span></span><span></span>Navigation</div>
             <ul id="nav-items">
                 <li{% if page.title == "Work" %} class="nav-active"{% endif %}>

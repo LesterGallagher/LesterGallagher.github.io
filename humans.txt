@@ -3,13 +3,13 @@
 
 /* http://humanstxt.org/ */
 /* TEAM */
-    {{ site.author.role }}: {{ site.author.name }}
-    From: {{ site.author.from }}
-    Contact: {{ site.author.email }}
+    {{ site.humanstxt_author.role }}: {{ site.humanstxt_author.name }}
+    From: {{ site.humanstxt_author.from }}
+    Contact: {{ site.humanstxt_author.email }}
     
-    {{ site.designer.role }}: {{ site.designer.name }}
-    From: {{ site.designer.from }}
-    Contact: {{ site.designer.email }}
+    {{ site.humanstxt_designer.role }}: {{ site.humanstxt_designer.name }}
+    From: {{ site.humanstxt_designer.from }}
+    Contact: {{ site.humanstxt_designer.email }}
 
 
 /* SITE */

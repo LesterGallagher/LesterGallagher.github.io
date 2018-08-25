@@ -3,10 +3,10 @@ title: Work
 layout: default
 ---
 
-<main role="main-home-wrapper" class="container home">
+<main class="container home">
     <div class="works-wrapper">
         <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
-            <article role="pge-title-content">
+            <article>
                 <header>
                     <h2>
                         <span>{{ site.abbrv }}</span> development studio.</h2>
@@ -18,7 +18,7 @@ layout: default
             <figure class="oa">
                 <div class="ar" style="padding-top: 75.8144%">
                     <div class="af">
-                        <img data-src="{{ "/assets/img/home-images/portfolio.jpg" | absolute_url }}" alt="" class="lazyload img-responsive" />
+                        <img data-src="{{ "/assets/img/home-images/portfolio.jpg" | absolute_url }}" alt="portfolio website" class="lazyload img-responsive" />
                     </div>
                 </div>
                 
@@ -41,7 +41,7 @@ layout: default
                     {% assign percentage = height | times: 100.0 | divided_by: width | round: 4 %}
                     <div class="ar" style="padding-top: {{ percentage }}%">
                         <div class="af">
-                            <img class="lazyload" data-src="{{ work.image | absolute_url }}" alt="" />
+                            <img class="lazyload" data-src="{{ work.image | absolute_url }}" alt="{{ work.title }} image" />
                         </div>
                     </div>
                     <figcaption>

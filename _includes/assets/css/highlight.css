@@ -29,17 +29,17 @@
   color: #a6e22e;
 }
 .highlight .gd {
-  color: #f92672;
+  color: #fb5353;
 }
 .highlight .ge {
   color: #1b1d1e;
   font-style: italic;
 }
 .highlight .gr {
-  color: #f92672;
+  color: #fb5353;
 }
 .highlight .gt {
-  color: #f92672;
+  color: #fb5353;
 }
 .highlight .gh {
   color: #403d3d;
@@ -81,15 +81,15 @@
   font-weight: bold;
 }
 .highlight .kn {
-  color: #f92672;
+  color: #fb5353;
   font-weight: bold;
 }
 .highlight .ow {
-  color: #f92672;
+  color: #fb5353;
   font-weight: bold;
 }
 .highlight .o {
-  color: #f92672;
+  color: #fb5353;
   font-weight: bold;
 }
 .highlight .mf {
@@ -200,9 +200,5 @@
   font-weight: bold;
 }
 .highlight .nt {
-  color: #f92672;
-}
-.highlight {
-  color: #f8f8f2;
-  background-color: #1b1d1e;
+  color: #fb5353;
 }

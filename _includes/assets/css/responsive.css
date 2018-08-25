@@ -9,7 +9,7 @@
 /* sm */
 
 @media (min-width: 768px) and (max-width: 991px) {
-	header[role="header"] {
+	header {
 		padding: 8% 0;
 	}
 	#nav-items {
@@ -47,7 +47,7 @@
 	article.contact-header p a {
 		padding-right: 10px
 	}
-	.contat-from-wrapper {
+	.contact-form-wrapper {
 		margin-top: 10px;
 		padding: 0 15px
 	}
@@ -61,11 +61,9 @@
 	}
 }
 
-
 /* xs */
-
 @media (max-width: 767px) {
-	header[role="header"] {
+	header {
 		padding: 8% 0;
 	}
 	#nav-items {
@@ -126,15 +124,15 @@
 		font-size: 18px;
 		padding-right: 10px
 	}
-	.contat-from-wrapper {
+	.contact-form-wrapper {
 		margin-top: 10px;
 		padding: 0 15px
 	}
-	.contat-from-wrapper input[type="text"],
-	.contat-from-wrapper input[type="email"] {
+	.contact-form-wrapper input[type="text"],
+	.contact-form-wrapper input[type="email"] {
 		margin-bottom: 20px
 	}
-	.contat-from-wrapper textarea {
+	.contact-form-wrapper textarea {
 		margin-top: 0
 	}
 	.work-images {
@@ -151,10 +149,10 @@
 		width: 100% !important;
 		position: static !important
 	}
-	.bog-header h3 {
+	.blog-header h3 {
 		padding-bottom: 0
 	}
-	.bog-header {
+	.blog-header {
 		padding-bottom: 20px
 	}
 }

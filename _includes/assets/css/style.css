@@ -1,3 +1,10 @@
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
 html {
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
@@ -9,20 +16,16 @@ body {
 	font-family: sans-serif, Arial, Helvetica;
 }
 
-.img-responsive {
-	max-width: 100%;
-}
-
-.nopadding {
-	padding: 0;
-}
-
 body,
 img {
 	transition: all .2s linear;
 	-o-transition: all .2s linear;
 	-moz-transition: all .2s linear;
 	-webkit-transition: all .2s linear;
+}
+
+.img-responsive {
+	max-width: 100%;
 }
 
 .ar {
@@ -40,7 +43,15 @@ img {
 
 .highlighter-rouge .highlight {
 	overflow-x: auto;
-    padding: 5px;
+	padding: 5px;
+	color: #f8f8f2;
+	background-color: #1b1d1e;
+	background-color: #1f1514;
+}
+
+.highlighter-rouge .highlight::-webkit-scrollbar-track,
+.highlighter-rouge .highlight::-webkit-scrollbar-thumb {
+	border-radius: 0;
 }
 
 img[data-src].lazyload {
@@ -63,12 +74,6 @@ figure.oa:hover img {
 
 figure.oa:hover img.loaded {
 	opacity: 0.4;
-}
-
-*,
-*::after,
-*::before {
-	box-sizing: border-box;
 }
 
 /**
@@ -122,8 +127,8 @@ figure.oa:hover img.loaded {
 }
 
 ::-webkit-scrollbar {
-	width: 12px;
-	height: 12px;
+	width: 10px;
+	height: 8px;
 	background-color: #F5F5F5;
 }
 
@@ -281,7 +286,6 @@ header nav {
 	transition-timing-function: ease;
 }
 
-/* header[role="header"] nav ul */
 #nav-items {
 	display: none;
 	position: fixed;
@@ -433,7 +437,6 @@ main.main-inner-wrapper article header {
 main.home article header h2,
 main.main-inner-wrapper article header h2 {
 	font-size: 46px;
-	line-height: 53px;
 	color: #404040;
 	font-weight: 800;
 	word-wrap: break-word;
@@ -600,18 +603,9 @@ section.blog-content figure img {
 
 /*===== Contact ===*/
 
-.contact-header {
-	padding-bottom: 218px
-}
-
-.contact-header p a {
-	color: #343434;
-	padding-right: 34px
-}
-
-.contat-from-wrapper input[type="text"],
-.contat-from-wrapper input[type="email"],
-.contat-from-wrapper textarea {
+.contact-form-wrapper input[type="text"],
+.contact-form-wrapper input[type="email"],
+.contact-form-wrapper textarea {
 	font-family: Arial;
 	width: 100%;
 	display: block;
@@ -645,22 +639,22 @@ section.blog-content figure img {
 
 /*== Blog Details ==*/
 
-.bog-header {
+.blog-header {
 	padding-bottom: 62px
 }
 
-.bog-header h3 {
+.blog-header h3 {
 	color: #404040;
 	font-weight: 800;
 	padding-bottom: 24px;
 	display: block
 }
 
-.bog-header h3 span {
+.blog-header h3 span {
 	color: #fb5353
 }
 
-.bog-header h2 {
+.blog-header h2 {
 	font-size: 36px;
 	font-weight: normal
 }

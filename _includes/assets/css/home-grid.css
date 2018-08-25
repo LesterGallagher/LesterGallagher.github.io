@@ -27,7 +27,6 @@
 	font-size: 1.25em;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
-	line-height: 100%;
 }
 
 .grid figure figcaption header a {}
@@ -124,6 +123,7 @@ figure.oa figcaption::before {
 }
 
 figure.oa h2 {
+	text-shadow: 0 0 4px rgba(0,0,0,0.4);
 	font-weight: 400;
 	margin: 20% 0 10px 0;
 	-webkit-transition: -webkit-transform 0.35s;

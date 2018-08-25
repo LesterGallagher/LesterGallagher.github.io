@@ -1,8 +1,8 @@
 ---
 ---
 
-var DYNAMIC_CACHE = 'esstudio-dynamic-cache-v6';
-var STATIC_CACHE = 'esstudio-static-cache-v6'
+var DYNAMIC_CACHE = 'esstudio-dynamic-cache-{{ site.time | date: "%s" }}';
+var STATIC_CACHE = 'esstudio-static-cache-{{ site.time | date: "%s" }}';
 
 // listen for outgoing network request
 self.addEventListener('fetch', function (event) {

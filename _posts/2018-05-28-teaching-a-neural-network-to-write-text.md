@@ -1,8 +1,8 @@
 ---
 title: Teaching a Neural Network to write text
-date: 2018-05-28 15:44:07 +02:00
-layout: post
+date: 2018-05-28 15:44:00 +02:00
 image: "/uploads/teaching-a-neural-net-how-to-code-visualization.png"
+layout: post
 ---
 
 A simple neural network that writes letters using [synaptic](https://github.com/cazala/synaptic) and [jimp](https://github.com/oliver-moran/jimp) in pure javascirpt.
@@ -25,7 +25,7 @@ The training data will be in the format "`{ input: number[26], output: number[25
 
 {% include adsense.html %}
 
-With the training data in place we can create our neural network by instantiating a new instance of Architect.Perceptron. Pass in the number of nodes per layer to the constructor. In this case we will use 26 nodes in our hidden layer. To train the network you can use the built-in synaptic.Trainer. It's important to set the learning rate to something below 0.05 for this example as a higher learning rate will make the neural network forget it's previous results. To improve the results you could use [LSTM Networks](http://colah.github.io/posts/2015-08-Understanding-LSTMs). 
+With the training data is in place we can create our neural network by instantiating a new instance of Architect.Perceptron. Pass in the number of nodes per layer to the constructor. In this case we will use 26 nodes in our hidden layer. To train the network you can use the built-in synaptic.Trainer. It's important to set the learning rate to something below 0.05 for this example as a higher learning rate will make the neural network forget it's previous results. To improve the results you could use [LSTM Networks](http://colah.github.io/posts/2015-08-Understanding-LSTMs). 
 Check out a visualization of the network in the image below:
 
 {% include assets/img/teaching-a-neural-net-how-to-code-visualization.svg %}

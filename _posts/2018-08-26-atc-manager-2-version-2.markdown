@@ -29,7 +29,7 @@ Goals:
 
 Check out the [gofundme page](https://www.gofundme.com/manage/atc-manager-2)
 
-You can also donate using [paypal](https://bit.ly/2vTu7jp):  
+You can also donate using [paypal](https://bit.ly/2vTu7jp)  
 
 # Changelog
 All notable changes to this project will be documented in this file.

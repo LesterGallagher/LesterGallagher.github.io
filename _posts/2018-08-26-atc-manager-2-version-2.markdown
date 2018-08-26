@@ -35,7 +35,6 @@ You can also donate using [paypal](https://bit.ly/2vTu7jp)
 All notable changes to this project will be documented in this file.
 
 ## [2.0.0] - 2018-08-26
-<br>
 ### Added✅
 - Better icons
 - Android icons
@@ -93,7 +92,7 @@ All notable changes to this project will be documented in this file.
 - Altimeter setting
 - Atis info
 - Pilot messages are now included in the logs
-<br>
+<br><br>
 ### Changed ❗
 - Fixed an issue where saving a map without a name caused issues
 - Better checkboxes (the old ones were ugly)
@@ -104,6 +103,7 @@ All notable changes to this project will be documented in this file.
 - Runway left/right switched fix
 - Default airport/map colors changed
 - Optimized web-app size
+<br>
 <br>
 ### Removed❌
 - Speech recognition option is removed (because it hasn't yet been implemented)

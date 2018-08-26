@@ -14,7 +14,7 @@ With the release of version 2 a lot of things have changed (check out the change
 
 Check out the [reddit post](https://www.reddit.com/r/ATC/comments/8r1843/i_created_an_atc_simulator_game_in_the_browser)
 
-If you like the game and you want the game to stay (advertisement) free, please consider giving a small amount.
+If you like the game and you want the game to stay (advertisement) free, please consider giving a small amount💰.
 
 Goals:
 

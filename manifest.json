@@ -23,7 +23,7 @@
             "type": "image\/png"
         },
         {
-            "src": "{{ "/assets/img/meta-icons\android-icon-72x72.png" | absolute_url }}",
+            "src": "{{ "/assets/img/meta-icons/android-icon-72x72" | absolute_url }}",
             "sizes": "72x72",
             "type": "image\/png"
         },

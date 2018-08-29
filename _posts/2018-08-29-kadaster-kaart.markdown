@@ -1,7 +1,7 @@
 ---
 title: Kadaster Kaart
 date: 2018-08-29 12:23:00 +02:00
-image: "/uploads/kadaster-kaart-logo.png"
+image: "/uploads/screenshot2-cropped-95167b.png"
 ---
 
 Met de kadaster kaart kunt u gemakkelijk online kadaster informatie bekijken in Nederland. De actuele gegevens zijn makkelijk in te zien en op te slaan. Vind voor elk perceel, ligplaats, pand, verblijfplaats en standplaats in Nederland en groot aantal gegevens. De app gebruikt een minimaal gedeelte van u opslag en zeer gemakkelijk te gebruiken.

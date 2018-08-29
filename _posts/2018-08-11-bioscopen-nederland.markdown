@@ -7,6 +7,10 @@ portal_title: Bioscopen Nederland
 portal_description: Zoek bioscopen in Nederland.
 portal_link: "/bioscopen-nederland/"
 portal_image: "/uploads/logo.png"
+description: Deze app maakt het mogelijk om bioscopen in Nederland te zoeken. Je kunt
+  gemakkelijk het adres, het aantal doeken en stoelen vinden. De app kan ook offline
+  gebruikt worden. De app gebruikt een offline kaart waardoor je deze zonder internet
+  nog steeds kan gebruiken.
 ---
 
 Deze app maakt het mogelijk om bioscopen in Nederland te zoeken. Je kunt gemakkelijk het adres, het aantal doeken en stoelen vinden. De app kan ook offline gebruikt worden. De app gebruikt een offline kaart waardoor je deze zonder internet nog steeds kan gebruiken.

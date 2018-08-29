@@ -2,6 +2,8 @@
 title: Converting JSON from and to XML in Javascript
 date: 2018-08-14 00:26:00 +02:00
 image: "/uploads/logo-json2xml.png"
+description: Creating a JSON to XML (and back) converter in javascript. Check out
+  the code below.
 ---
 
 Checkout the website: [JSON2XML](https://esstudio.site/json2xml) or the [full example](#full-example).

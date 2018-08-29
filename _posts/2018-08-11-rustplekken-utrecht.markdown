@@ -7,6 +7,8 @@ portal_link: "/rustplekken-utrecht/"
 portal_description: Interactieve kaart met rustpunten in Utrecht.
 portal_title: Rustplekken Utrecht
 portal_image: "/uploads/logo-054ffa.png"
+description: Interactieve kaart met rustpunten in Utrecht. De app bevat ook een offline
+  kaartje zodat je de app ook offline kan gebruiken.
 ---
 
 Interactieve kaart met rustpunten in Utrecht. De app bevat ook een offline kaartje zodat je de app ook offline kan gebruiken.

@@ -2,13 +2,13 @@
 title: ATC Manager 2 - version 2
 date: 2018-08-26 18:38:00 +02:00
 image: "/uploads/schiphol.PNG"
+description: With the release of version 2 a lot of things have changed (check out
+  the changelog below). New airplanes, operators, icons, ATIS info and a bunch of
+  improvements.
 portal_title: ATC Manager 2
 portal_description: "ATC Manager on the web.\n\n"
 portal_link: "/atc-manager-2/"
 portal_image: "/uploads/schiphol.PNG"
-description: With the release of version 2 a lot of things have changed (check out
-  the changelog below). New airplanes, operators, icons, ATIS info and a bunch of
-  improvements.
 ---
 
 With the release of version 2 a lot of things have changed (check out the changelog below). New airplanes, operators, icons, ATIS info and a bunch of improvements.
@@ -22,14 +22,14 @@ If you like the game and you want the game to stay (advertisement) free, please 
 
 ## Goals:
 
-1€ Bug fixing
-2€ Buy me a coffee
-50€ New airport
-100€ New airlines
-200€ New airplanes
-250€ Custom Feature (for individual donation, include your email, also the feature request has to be fair and achievable)
-500€ Speech synthesis for pilots
-1000€ Speech recognition
+- 1€ Bug fixing
+- 2€ Buy me a coffee
+- 50€ New airport
+- 100€ New airlines
+- 200€ New airplanes
+- 250€ Custom Feature (for individual donation, include your email, also the feature - - request has to be fair and achievable)
+- 500€ Speech synthesis for pilots
+- 1000€ Speech recognition
 
 Check out the [gofundme page](https://www.gofundme.com/manage/atc-manager-2)
 

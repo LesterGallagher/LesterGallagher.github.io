@@ -7,6 +7,8 @@ portal_description: Check your twitter personality. On which side of the politic
   spectrum do you fall?
 portal_link: "/echochamber-affinity/"
 portal_image: "/uploads/android-chrome-512x512.png"
+description: Check your twitter personality. On which side of the political spectrum
+  do you fall?
 ---
 
 Check your twitter personality. On which side of the political spectrum do you fall?

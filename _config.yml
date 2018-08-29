@@ -18,6 +18,7 @@ defaults:
   values:
     layout: post
     image: ''
+    description: ''
 - scope:
     path: ''
     type: works

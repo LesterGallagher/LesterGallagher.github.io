@@ -6,6 +6,9 @@ portal_title: ATC Manager 2
 portal_description: "ATC Manager on the web.\n\n"
 portal_link: "/atc-manager-2/"
 portal_image: "/uploads/schiphol.PNG"
+description: With the release of version 2 a lot of things have changed (check out
+  the changelog below). New airplanes, operators, icons, ATIS info and a bunch of
+  improvements.
 ---
 
 With the release of version 2 a lot of things have changed (check out the changelog below). New airplanes, operators, icons, ATIS info and a bunch of improvements.

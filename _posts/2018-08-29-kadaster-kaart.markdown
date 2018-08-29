@@ -1,0 +1,13 @@
+---
+title: Kadaster Kaart
+date: 2018-08-29 12:23:00 +02:00
+image: "/uploads/kadaster-kaart-logo.png"
+---
+
+Met de kadaster kaart kunt u gemakkelijk online kadaster informatie bekijken in Nederland. De actuele gegevens zijn makkelijk in te zien en op te slaan. Vind voor elk perceel, ligplaats, pand, verblijfplaats en standplaats in Nederland en groot aantal gegevens. De app gebruikt een minimaal gedeelte van u opslag en zeer gemakkelijk te gebruiken.
+
+U kunt verschillende kaarten gebruiken zoals satelliet en plattegrond. 
+
+Deze digitale kaart gebruikt open data die voor iedereen beschikbaar is (zie: [Publieke Dienstverlening Op de Kaart (PDOK)](https://www.pdok.nl/))
+
+<a class="button" href="https://play.google.com/store/apps/details?id=com.EchoSierraStudio.Kadaster_Kaart">Download de App</a>

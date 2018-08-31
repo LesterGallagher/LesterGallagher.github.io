@@ -12,23 +12,31 @@ portal_image: "/uploads/my_logo_512.png"
 portal_link: "/ov-fiets-app/"
 ---
 
-Niet genoeg OV Fietsen op het station? Deze app laat het aantal fietsen zien, beschikbaarheid en de openingstijden voor elke OV Fiets huurlocatie in nederland.
+Niet genoeg OV Fietsen op het station? Deze app laat het aantal fietsen zien, beschikbaarheid en de openingstijden voor elke OV Fiets huurlocatie in nederland. Beschikbaar als [app](https://play.google.com/store/apps/details?id=com.EchoSierraStudio.Ov_Fiets_App) en in de [browser](https://esstudio.site/ov-fiets-app/)
+
+![esstudio.site_ov-fiets-app_(Nexus 5X) (Custom).png](/uploads/esstudio.site_ov-fiets-app_(Nexus%205X)%20(Custom).png)
 
 Met de OV Fiets App kunt u gemakkelijk informatie opzoeken over OV Fiets huurlocaties. U kunt de zoekbalk bovenaan de homepage van de app gebruiken om locaties te zoeken.
 
-**Verbeter punten:**
+**Verbeter punten in update 1.2:**
 
 * App opslagruimte meer dan gehalveerd!
+
 * Updated voor de laatste versie van android
+
 * Android 4.4 ondersteuning
+
 * Refresh scroll (pullhook) verwijderd
+
 * Oude versies van android chrome ondersteuning
+
 * Bugs waarin de app niet goed offline functioneerde zijn opgelost
+
 * Snelheid optimalisaties
 
 [Google Play](https://play.google.com/store/apps/details?id=com.EchoSierraStudio.Ov_Fiets_App)
 
-Ook is er nu een website versie van de OV Fiets App die [hier](https://esstudio.site/ov-fiets-app/) gevonden kan worden. 
+Ook is er nu een website versie van de OV Fiets App die [hier](https://esstudio.site/ov-fiets-app/) gevonden kan worden.
 
 {% include app-portal.html %}
 
@@ -69,9 +77,13 @@ Klik met de rechter muis op de web app en klik op verwijderen. In android, IOS e
 **Meer:**
 
 * [Android Apps](https://play.google.com/store/apps/developer?id=EchoSierraStudio)
+
 * [Kadaster App](https://play.google.com/store/apps/details?id=com.EchoSierraStudio.Kadaster_Kaart)
+
 * [Projecten](https://esstudio.site/)
+
 * [Contact](https://esstudio.site/contact)
+
 * [Website of app laten maken](https://esstudio.site/contact)
 
 **Lighthouse Progressive Web App score:**

@@ -13,8 +13,8 @@ portal_image: "/uploads/comment.PNG"
 
 Searching for a good youtube comments generator?
 
-Free youtube comments generator. The created random comments are based on the existing comments on that video. If a youtube video has alot of comments the results will be best.
+![youtube-comments-are-evil-screenshot.png](/uploads/youtube-comments-are-evil-screenshot.png)
+
+This website is a free youtube comments generator. The created random comments are based on the existing comments on that video. If a youtube video has alot of comments the results will be best.
 
 {% include app-portal.html %}
-
-![youtube-comments-are-evil-screenshot.png](/uploads/youtube-comments-are-evil-screenshot.png)

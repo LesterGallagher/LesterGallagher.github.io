@@ -2,6 +2,8 @@
 title: OV Fiets App 1.2
 date: 2018-07-02 15:58:00 +02:00
 image: "/uploads/ov-fiets-webapp-sm.png"
+description: Met de OV Fiets App kunt u gemakkelijk informatie opzoeken over OV Fiets
+  huurlocaties.
 lang: nl-NL
 portal_title: OV Fiets App
 portal_description: Met de OV Fiets Website kunt u gemakkelijk informatie opzoeken
@@ -9,6 +11,10 @@ portal_description: Met de OV Fiets Website kunt u gemakkelijk informatie opzoek
 portal_image: "/uploads/my_logo_512.png"
 portal_link: "/ov-fiets-app/"
 ---
+
+Niet genoeg OV Fietsen op het station? Deze app laat het aantal fietsen zien, beschikbaarheid en de openingstijden voor elke OV Fiets huurlocatie in nederland.
+
+Met de OV Fiets App kunt u gemakkelijk informatie opzoeken over OV Fiets huurlocaties. U kunt de zoekbalk bovenaan de homepage van de app gebruiken om locaties te zoeken.
 
 **Verbeter punten:**
 

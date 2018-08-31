@@ -13,7 +13,10 @@ portal_image: "/uploads/schiphol.PNG"
 
 With the release of version 2 a lot of things have changed (check out the changelog below). New airplanes, operators, icons, ATIS info and a bunch of improvements.
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/w--RyJ3FaBk?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 {% include app-portal.html %}
+
 [Also check out the android app](https://play.google.com/store/apps/details?id=com.EchoSierraStudio.ATCManager)
 
 Check out the [reddit post](https://www.reddit.com/r/ATC/comments/8r1843/i_created_an_atc_simulator_game_in_the_browser)

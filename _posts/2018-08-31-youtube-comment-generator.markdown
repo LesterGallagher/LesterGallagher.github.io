@@ -12,3 +12,7 @@ portal_image: "/uploads/comment.PNG"
 ---
 
 Free youtube comments generator. The created random comments are based on the existing comments on that video. If a youtube video has alot of comments the results will be best.
+
+{% include app-portal.html %}
+
+![youtube-comments-are-evil-screenshot.png](/uploads/youtube-comments-are-evil-screenshot.png)

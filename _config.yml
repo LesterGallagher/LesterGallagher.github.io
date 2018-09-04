@@ -29,7 +29,7 @@ defaults:
     image_width: ''
     image_height: ''
 volledige-titel: Echo Sierra Studio
-logo: '/assets/img/image_src.png'
+logo: "/assets/img/image_src.png"
 keywords: Polyism Studio Sem Postma Echo Sierra Studio Web Software Code Programming
   Hub
 exclude:

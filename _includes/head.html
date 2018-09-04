@@ -25,7 +25,8 @@
   <meta property="og:site_name" content="{{ site.title }}">
   <script type="application/ld+json">
   {"name":"{{ site.title }}","description":"{{ site.description }}","author":{"@type":"Person","name":"{{ site.author }}"},"@type":"WebSite","url":"http://localhost:4000/","headline":"{{ page.title }}","@context":"http://schema.org"}</script>
-
+  <link rel="image_src" href="{{ post.image | default: page.image | default: site.image_src }}">
+    
   <link rel="apple-touch-icon" sizes="57x57" href="{{ "/assets/img/meta-icons/apple-icon-57x57.png" | absolute_url }}">
   <link rel="apple-touch-icon" sizes="60x60" href="{{ "/assets/img/meta-icons/apple-icon-60x60.png" | absolute_url }}">
   <link rel="apple-touch-icon" sizes="72x72" href="{{ "/assets/img/meta-icons/apple-icon-72x72.png" | absolute_url }}">

@@ -19,13 +19,14 @@
   <meta name="msapplication-TileImage" content="{{ "/assets/img/meta-icons/ms-icon-144x144.png" | absolute_url }}">
 
   <meta property="og:title" content="{{ page.title }}">
-  <meta property="og:description" content="{{ site.description }}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <link rel="canonical" href="{{ page.url | absolute_url }}">
   <meta property="og:url" content="{{ page.url }}">
   <meta property="og:site_name" content="{{ site.title }}">
   <script type="application/ld+json">
-  {"name":"{{ site.title }}","description":"{{ site.description }}","author":{"@type":"Person","name":"{{ site.author }}"},"@type":"WebSite","url":"http://localhost:4000/","headline":"{{ page.title }}","@context":"http://schema.org"}</script>
-  <link rel="image_src" href="{{ post.image | default: page.image | default: site.image_src }}">
+  {"name":"{{ site.title }}","image":"{{ post.image | default: page.image | default: site.image_src | absolute_url }}","description":"{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}","author":{"@type":"Person","name":"{{ site.author }}"},"@type":"WebSite","url":"{{ site.url }}","headline":"{{ page.title }}","@context":"http://schema.org"}</script>
+  <meta property="og:image" content="{{ post.image | default: page.image | default: site.image_src | absolute_url }}">
+  <link rel="image_src" href="{{ post.image | default: page.image | default: site.image_src | absolute_url }}">
     
   <link rel="apple-touch-icon" sizes="57x57" href="{{ "/assets/img/meta-icons/apple-icon-57x57.png" | absolute_url }}">
   <link rel="apple-touch-icon" sizes="60x60" href="{{ "/assets/img/meta-icons/apple-icon-60x60.png" | absolute_url }}">

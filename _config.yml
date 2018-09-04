@@ -30,6 +30,7 @@ defaults:
     image_height: ''
 volledige-titel: Echo Sierra Studio
 image_src: "/assets/img/image_src.png"
+logo: "/assets/img/image_src.png"
 keywords: Polyism Studio Sem Postma Echo Sierra Studio Web Software Code Programming
   Hub
 exclude:
@@ -39,21 +40,21 @@ description: Web, app and tooling development and graphic design studio. View al
 theme_color: "#fb5353"
 baseurl: 
 abbrv: ESS
-dribbble_username: 
-facebook_username: 
+dribbble_username: es_studio
+facebook_username: ES-Studio-2052606714783317
 flickr_username: 
 github_username: LesterGallagher
 instagram_username: 
 linkedin_username: 
-pinterest_username: 
-twitter_username: 
+pinterest_username: eestudio0040
+twitter_username: esstudio_site
 youtube_username: 9Wereld
 googleplus_username: 
 rss: true
-facebook:
-  app_id: 
-  publisher: 
-  admins: 
+facebook: 
+  app_id: 1015809515263840
+  publisher: 2052606714783317
+  admins: 100028399686104
 webmaster_verifications:
   google: 
   bing: 
@@ -61,7 +62,7 @@ webmaster_verifications:
   yandex: 
   baidu: 
 twitter:
-  username: 
+  username: esstudio_site
 sass:
   style: compressed
   sass_dir: _sass

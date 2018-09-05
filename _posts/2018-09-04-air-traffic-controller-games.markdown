@@ -1,9 +1,10 @@
 ---
 title: Air Traffic Controller Games
 date: 2018-09-04 12:48:00 +02:00
-image: "/uploads/Screenshot_20180830-181012.png"
+image: "/uploads/tracon.jpg"
 description: "A List of air traffic controller games of 2018/2019. \n\n"
 ---
+
 
 # Air Traffic Controller Games/Simulators
 

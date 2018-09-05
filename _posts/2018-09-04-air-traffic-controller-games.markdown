@@ -5,9 +5,6 @@ image: "/uploads/tracon.jpg"
 description: "A List of air traffic controller games of 2018/2019. \n\n"
 ---
 
-
-# Air Traffic Controller Games/Simulators
-
 Not all of the ATC apps listed here are games. Alot of them are simulators. If you are a real Air Traffic Controller and like to preted to be at work when you come home. Not all of these ATC games are free but i will take that into account.
 
 ## [Air Control Madness](https://play.google.com/store/apps/details?id=com.EchoSierraStudio.AirControlMadness&hl=en_US)

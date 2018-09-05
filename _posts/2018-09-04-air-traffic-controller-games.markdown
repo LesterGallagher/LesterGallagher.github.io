@@ -35,7 +35,7 @@ ATC Manager 2 is a free web based app with a ton of features. It has support for
 
 ## **[Unmatched Air Traffic Control](https://www.facebook.com/unmatchedairtraffic/)**
 
- Unmatched Air Traffic Controll is a very fun 3D air traffic control game. Unmatched Air traffic Control is a game for Android iOS and Windows Phone. A new version of this game, Unmatched Air Traffic Control 2, has also been released.
+Unmatched Air Traffic Controll is a very fun 3D air traffic control game. Unmatched Air traffic Control is a game for Android iOS and Windows Phone. A new version of this game, Unmatched Air Traffic Control 2, has also been released.
 
 ## **[Air Traffic Controller 4](https://www.amazon.com/Techno-Traffic-Controller-International-Airport/dp/B01EK2460S)**
 

@@ -21,7 +21,7 @@ Air Control Madness is an adictive  atc game which puts the job of handling inco
 
 ![atc-manager-screenshot.png](/uploads/atc-manager-screenshot.png)
 
-[Link.](https://play.google.com/store/apps/details?id=com.EchoSierraStudio.ATCManager)
+[Checkout the App.](https://play.google.com/store/apps/details?id=com.EchoSierraStudio.ATCManager)
 
 ATC Manager is an ATC TRACON sim. Load and save your progress. It features a variety of real world airlines and aircraft (all with their own specifications) dynamic runway use, infinite flights, different speed settings and an easy to use interface.
 

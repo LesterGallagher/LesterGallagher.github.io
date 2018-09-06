@@ -6,7 +6,7 @@ description: Met de kadaster kaart kunt u gemakkelijk online kadaster informatie
   in Nederland. De actuele gegevens zijn makkelijk in te zien en op te slaan. Vind
   voor elk perceel, ligplaats, pand, verblijfplaats en standplaats in Nederland en
   groot aantal gegevens.
-lang: nl
+lang: nl-nl
 ---
 
 Met de kadaster kaart kunt u gemakkelijk online kadasterdata bekijken in Nederland. De actuele gegevens zijn makkelijk in te zien en op te slaan. Vind voor elk perceel, ligplaats, pand, verblijfplaats en standplaats in Nederland en groot aantal andere gegevens. De app gebruikt een minimaal gedeelte van u opslag en is zeer gemakkelijk te gebruiken. Wilt u bij Kadasterplan online een kadasterplan opvragen, bekijk dan eerst of u deze app kunt gebruiken.

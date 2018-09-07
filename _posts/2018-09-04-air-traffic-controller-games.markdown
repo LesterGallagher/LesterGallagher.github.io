@@ -25,7 +25,7 @@ ATC Manager is an ATC TRACON sim. Load and save your progress. It features a var
 
 ## [ATC Manager 2 ✈️](https://esstudio.site/atc-manager-2)
 
-![esstudio.site_atc-manager-2_.png](/uploads/esstudio.site_atc-manager-2_.png)
+![atc.PNG](/uploads/atc.PNG)
 
 {% include app-portal.html title='ATC Manager 2' description='ATC Manager 2 is a web based air traffic control game. Manage airspace of busy airports like Schiphol or Heathrow in a realistic simulator.' link='/atc-manager-2' image='/uploads/schiphol.PNG' %}
 

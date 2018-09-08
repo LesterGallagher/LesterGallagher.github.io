@@ -5,8 +5,8 @@
   <meta http-equiv="Content-Security-Policy" content="worker-src 'self' http: https: ;">
     
   <title>{{ page.title | default: site.title }}</title>
-  <meta name="author" content="{{ site.author.name }}, {{ site.author.email }}">
-  <meta name="designer" content="{{ site.designer.name }}, {{ site.designer.email }}">
+  <meta name="author" content="{{ site.author }}">
+  <meta name="designer" content="{{ site.designer }}">
   <link rel="author" href="{{ '/humans.txt' | absolute_url }}">
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
   <meta name="keywords" content="{{ site.keywords }}">

@@ -21,3 +21,5 @@ fields:
 - type: text
   name: portal_link
   label: portal_link
+pages:
+- _posts/3d-texturing-using-curvature-maps.md

@@ -39,7 +39,7 @@ You can also donate using [paypal](https://bit.ly/2vTu7jp)
 
 # Changelog
 
-## \[1.3.0\] - 2018-09-13
+## \[1.2.0\] - 2018-08-26
 
 ### Added✅
 

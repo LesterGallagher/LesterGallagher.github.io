@@ -39,8 +39,6 @@ You can also donate using [paypal](https://bit.ly/2vTu7jp)
 
 # Changelog
 
-All notable changes to this project will be documented in this file.
-
 ## \[1.2.0\] - 2018-08-26
 
 ### Added✅

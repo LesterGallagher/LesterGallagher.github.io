@@ -658,3 +658,7 @@ section.blog-content figure img {
 	font-size: 36px;
 	font-weight: normal
 }
+
+.enter-content h1, .enter-content h2, .enter-content h3, .enter-content h4, .enter-content h5 {
+    margin-top: 20px;   
+}

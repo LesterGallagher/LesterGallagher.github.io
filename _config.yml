@@ -42,7 +42,7 @@ baseurl:
 abbrv: ESS
 dribbble_username: es_studio
 facebook_username: ES-Studio-2052606714783317
-flickr_username: ESStudio Website
+flickr_username: es_studio
 github_username: LesterGallagher
 instagram_username: 
 linkedin_username: 
@@ -51,7 +51,7 @@ twitter_username: esstudio_site
 youtube_username: 9Wereld
 googleplus_username: 
 rss: true
-facebook: 
+facebook:
   app_id: 1015809515263840
   publisher: 2052606714783317
   admins: 100028399686104

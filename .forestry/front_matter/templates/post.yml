@@ -1,0 +1,25 @@
+---
+label: Post
+hide_body: false
+is_partial: false
+fields:
+- type: file
+  name: image
+  label: image
+- type: textarea
+  label: description
+  name: description
+- type: text
+  label: portal_title
+  name: portal_title
+- type: text
+  label: portal_description
+  name: portal_description
+- type: file
+  label: portal_image
+  name: portal_image
+- type: text
+  name: portal_link
+  label: portal_link
+pages:
+- _posts/2018-09-10-3d-texturing-using-curvature-maps.md

@@ -6,6 +6,7 @@ link: https://play.google.com/store/apps/details?id=com.EchoSierraStudio.Newtoni
 title_bold: 3D
 image_width: 720
 image_height: 480
+weight: 60
 ---
 
 Newtonian simulator

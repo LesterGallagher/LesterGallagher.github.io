@@ -6,6 +6,7 @@ link: https://github.com/LesterGallagher/planetary-factsheet
 title_bold: Factsheet
 image_width: 594
 image_height: 515
+weight: 52
 ---
 
 Nasa's planetary factsheet in JSON format

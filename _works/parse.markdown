@@ -6,6 +6,7 @@ link: https://github.com/bunkersem/parse-json
 title_bold: JSON
 image_width: 619
 image_height: 584
+weight: 60
 ---
 
 Extremely simple json-parsing C library

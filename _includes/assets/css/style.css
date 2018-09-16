@@ -235,7 +235,7 @@ main {
 a {
 	text-decoration: none;
 	outline: none;
-	color: #010101;
+	color: inherit;
 	transition-delay: 0s;
 	transition-duration: 0.6s;
 	transition-property: all;
@@ -589,6 +589,10 @@ section.blog-content figure img {
 	max-width: 100%;
 }
 
+.blog-details .enter-content input {
+	padding: 10px;
+}
+
 .blog-details .enter-content ul,
 .blog-details .enter-content ol {
 	padding-left: 20px;
@@ -636,7 +640,7 @@ section.blog-content figure img {
 	cursor: pointer;
 }
 
-.article.contact-header {
+.contact-header {
 	padding-bottom: 80px;
 }
 
@@ -665,4 +669,8 @@ section.blog-content figure img {
 
 .enter-content h1, .enter-content h2, .enter-content h3, .enter-content h4, .enter-content h5 {
     margin-top: 20px;   
+}
+
+.affiliate img {
+	display: inline-block;
 }

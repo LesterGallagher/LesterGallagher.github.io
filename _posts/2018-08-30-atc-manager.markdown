@@ -56,3 +56,9 @@ Download it on [Google Play](https://play.google.com/store/apps/details?id=com.E
 * Time limitations
 
 * Better penalties system
+
+<br>
+## Learning how to program or improving programmings skills:
+
+{% include gamedev_affiliate.html %}
+

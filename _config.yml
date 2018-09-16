@@ -23,6 +23,7 @@ defaults:
     path: ''
     type: works
   values:
+    weight: 50
     image: ''
     link: ''
     title_bold: ''

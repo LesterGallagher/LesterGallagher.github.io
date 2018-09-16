@@ -6,6 +6,7 @@ link: https://play.google.com/store/apps/details?id=com.EchoSierraStudio.Kadaste
 title_bold: Kaart
 image_width: 512
 image_height: 512
+weight: 80
 ---
 
 Kadastrale informatie app

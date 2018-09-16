@@ -6,6 +6,7 @@ link: https://play.google.com/store/apps/details?id=com.EchoSierraStudio.ATCMana
 title_bold: Manager
 image_width: 504
 image_height: 427
+weight: 60
 ---
 
 Realistic ATC Control manager.

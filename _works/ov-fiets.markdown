@@ -6,6 +6,7 @@ link: https://play.google.com/store/apps/details?id=com.EchoSierraStudio.Ov_Fiet
 title_bold: App
 image_width: 512
 image_height: 512
+weight: 80
 ---
 
 Monitor the amount of bikes at a rental location

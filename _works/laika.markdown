@@ -7,6 +7,7 @@ title_bold: Notes
 image_width: 427
 image_height: 320
 url: 
+weight: 55
 ---
 
 Note taking app

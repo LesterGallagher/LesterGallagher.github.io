@@ -7,6 +7,7 @@ title_bold: Website
 url: 
 image_width: 438
 image_height: 347
+weight: 54
 ---
 
 Website version of the Simple Function Plotter App

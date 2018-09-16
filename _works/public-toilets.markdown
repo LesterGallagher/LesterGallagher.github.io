@@ -6,6 +6,7 @@ link: https://esstudio.site/public-toilets-amsterdam/
 title_bold: Amsterdam
 image_width: 512
 image_height: 512
+weight: 75
 ---
 
 Android/Web app

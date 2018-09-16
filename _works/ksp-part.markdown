@@ -6,5 +6,7 @@ link: https://ksp-part-catalog.space/
 title_bold: Catalog
 image_width: 753
 image_height: 480
+weight: 75
+
 ---
 

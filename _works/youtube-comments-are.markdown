@@ -6,6 +6,7 @@ link: https://ycae.esstudio.site/
 title_bold: Evil
 image_width: 473
 image_height: 233
+weight: 60
 ---
 
 Uses Markov Text generation to create fake youtube comments specific to a youtube video.

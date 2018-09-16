@@ -118,5 +118,6 @@ SCRIPTS:
         });
     }, false );
 </script>
+{% include javascript_affiliate.html %}
 {% include adsense.html %}
 

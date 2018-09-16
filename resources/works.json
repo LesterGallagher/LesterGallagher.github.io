@@ -1,7 +1,8 @@
 ---
 ---
+{% assign works_list = site.works | sort:"weight" %}
 [
-  {% for work in site.works %}
+  {% for work in works_list reversed %}
     {
       "title": "{{ work.title }} {{ work.title_bold }}",
       "category": "{{ work.category }}",

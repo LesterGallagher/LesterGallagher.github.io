@@ -6,6 +6,7 @@ link: https://esstudio.site/rustplekken-utrecht/
 title_bold: Utrecht
 image_width: 512
 image_height: 512
+weight: 55
 ---
 
 Android/Web app

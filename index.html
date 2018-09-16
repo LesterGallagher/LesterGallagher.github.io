@@ -3,6 +3,7 @@ title: Work
 layout: default
 ---
 
+{% assign works_list = site.works | sort: "weight" %}
 <main class="container home">
     <div class="works-wrapper">
         <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
@@ -33,7 +34,7 @@ layout: default
         </section>
         <div class="clearfix"></div>
         <section class="grid" id="grid">
-            {%- for work in site.works -%}
+            {%- for work in works_list reversed -%}
             <div class="work-item">
                 <figure class="oa">
                     {% assign width = work.image_width | default: 400 %}

@@ -636,6 +636,10 @@ section.blog-content figure img {
 	cursor: pointer;
 }
 
+.article.contact-header {
+	padding-bottom: 80px;
+}
+
 
 /*== Blog Details ==*/
 

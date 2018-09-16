@@ -106,8 +106,7 @@
 	main.main-inner-wrapper .about-content {
 		padding: 5%
 	}
-	article.blog-header,
-	article.contact-header {
+	article.blog-header {
 		padding-bottom: 30px
 	}
 	section.blog-content figure .post-date {

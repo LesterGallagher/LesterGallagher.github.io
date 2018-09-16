@@ -38,23 +38,14 @@ Download it on [Google Play](https://play.google.com/store/apps/details?id=com.E
 **Road map:**
 
 * Commands to speech ability
-
 * Editable content (create your own airplanes & airports)
-
 * More realistic flight behavior
-
 * SID/STARS
-
 * General Aviation (GA)
-
 * More interesting weather dynamics
-
 * Scenario's
-
 * ATC log
-
 * Time limitations
-
 * Better penalties system
 
 <br>

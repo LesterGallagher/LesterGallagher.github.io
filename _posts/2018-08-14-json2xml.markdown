@@ -385,3 +385,5 @@ I used the code in this example to build a json2xml/xml2json converter which can
 {% gist 9bf7b79fc9c02c525e4ddffcfdc8bea6%}
 
 {% include adsense.html %}
+<br>
+{% include javascript_affiliate.html %}

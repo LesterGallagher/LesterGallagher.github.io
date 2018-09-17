@@ -6,6 +6,7 @@ GEM
     colorator (1.1.0)
     faraday (0.15.2)
       multipart-post (>= 1.2, < 3)
+    ffi (1.9.25)
     ffi (1.9.25-x64-mingw32)
     forwardable-extended (2.6.0)
     jekyll (3.6.2)
@@ -69,6 +70,7 @@ GEM
       tzinfo (>= 1.0.0)
 
 PLATFORMS
+  ruby
   x64-mingw32
 
 DEPENDENCIES
@@ -80,4 +82,4 @@ DEPENDENCIES
   tzinfo-data
 
 BUNDLED WITH
-   1.16.0
+   1.16.2

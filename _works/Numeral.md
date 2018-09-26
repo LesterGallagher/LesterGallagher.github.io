@@ -12,6 +12,5 @@ title_bold: Converter
 image_width: 664
 image_height: 664
 weight: 70
-published: false
 
 ---

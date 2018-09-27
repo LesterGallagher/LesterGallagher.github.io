@@ -23,6 +23,8 @@ General Aviation
 
 Some work needs to to be put in to collision avoidance, correct states for each type of VFR (visual flight rules) flight (Inbound, Outbound, Enroute, Closed Pattern), Go-arounds, Touch and go's and new general aviation airplanes. Feedback is welcome because the feature is not done yet, so i can still change things without to much hassle. General aviation airplanes do not always fly VFR, you will also see them in the regular IFR (instrument flight rules) traffic.
 
+{% include app-portal.html %}
+
 ![](/uploads/vfrpanel.png)
 VFR Traffic
 

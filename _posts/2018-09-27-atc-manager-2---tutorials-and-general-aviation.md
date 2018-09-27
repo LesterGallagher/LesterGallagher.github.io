@@ -23,14 +23,14 @@ General Aviation
 
 Some work needs to to be put in to collision avoidance, correct states for each type of VFR (visual flight rules) flight (Inbound, Outbound, Enroute, Closed Pattern), Go-arounds, Touch and go's and new general aviation airplanes. Feedback is welcome because the feature is not done yet, so i can still change things without to much hassle. General aviation airplanes do not always fly VFR, you will also see them in the regular IFR (instrument flight rules) traffic.
 
-{% include app-portal.html %}
-
 ![](/uploads/vfrpanel.png)
 VFR Traffic
 
 VFR traffic is not controlled by setting heading and altitude. You can give the instructions listed above.
 
 {% include gamedev_affiliate.html %}
+
+{% include app-portal.html %}
 
 <blockquote class="reddit-card" data-card-created="1538064249"><a href="https://www.reddit.com/r/ATCManager2/comments/9jb89w/tutorials_and_general_aviation/">Tutorials and General Aviation</a> from <a href="http://www.reddit.com/r/ATCManager2">r/ATCManager2</a></blockquote>
 <script async src="//embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>

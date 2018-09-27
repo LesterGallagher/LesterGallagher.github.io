@@ -19,13 +19,11 @@ I'm in the process of writing tutorials for the general aviation feature of the 
 The next update of the game will include general aviation. It will be put behind a checkbox to keep the game simple (and because there could be a lot of changed to it in the future). I really like the feature because it makes the game a lot more dynamic.
 
 ![](/uploads/vfr.png)
-
 General Aviation
 
 Some work needs to to be put in to collision avoidance, correct states for each type of VFR (visual flight rules) flight (Inbound, Outbound, Enroute, Closed Pattern), Go-arounds, Touch and go's and new general aviation airplanes. Feedback is welcome because the feature is not done yet, so i can still change things without to much hassle. General aviation airplanes do not always fly VFR, you will also see them in the regular IFR (instrument flight rules) traffic.
 
 ![](/uploads/vfrpanel.png)
-
 VFR Traffic
 
 VFR traffic is not controlled by setting heading and altitude. You can give the instructions listed above.

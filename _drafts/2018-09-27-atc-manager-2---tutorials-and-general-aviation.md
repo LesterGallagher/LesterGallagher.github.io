@@ -31,3 +31,6 @@ VFR Traffic
 VFR traffic is not controlled by setting heading and altitude. You can give the instructions listed above.
 
 {% include gamedev_affiliate.html %}
+
+<blockquote class="reddit-card" data-card-created="1538064249"><a href="https://www.reddit.com/r/ATCManager2/comments/9jb89w/tutorials_and_general_aviation/">Tutorials and General Aviation</a> from <a href="http://www.reddit.com/r/ATCManager2">r/ATCManager2</a></blockquote>
+<script async src="//embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>

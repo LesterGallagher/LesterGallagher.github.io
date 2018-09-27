@@ -1,12 +1,13 @@
 ---
 title: ATC Manager 2 - Tutorials and General Aviation
 date: 2018-09-27 17:57:08 +0200
-image: ''
-description: ''
-portal_title: ''
-portal_description: ''
-portal_image: ''
-portal_link: ''
+image: "/uploads/vfr.png"
+description: General aviation and tutorials progress blog post.
+portal_title: ATC Manager 2
+portal_description: Web based air traffic control game. Manage airspace of busy airports
+  like Schiphol or Heathrow in a realistic simulator.
+portal_image: "/uploads/vfr.png"
+portal_link: https://esstudio.site/atc-manager-2
 
 ---
 **Tutorials**
@@ -28,3 +29,5 @@ Some work needs to to be put in to collision avoidance, correct states for each 
 VFR Traffic
 
 VFR traffic is not controlled by setting heading and altitude. You can give the instructions listed above.
+
+{% include gamedev_affiliate.html %}

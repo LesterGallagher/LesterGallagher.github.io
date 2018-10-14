@@ -3,7 +3,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="Content-Security-Policy" content="worker-src 'self' http: https: ;">
-    
+
   <title>{{ page.title | default: site.title }}</title>
   <meta name="author" content="{{ site.author }}">
   <meta name="designer" content="{{ site.designer }}">
@@ -28,7 +28,7 @@
   {"name":"{{ site.title }}","image":"{{ post.image | default: page.image | default: site.image_src | absolute_url }}","description":"{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}","author":{"@type":"Person","name":"{{ site.author }}"},"@type":"WebSite","url":"{{ site.url }}","headline":"{{ page.title }}","@context":"http://schema.org"}</script>
   <meta property="og:image" content="{{ post.image | default: page.image | default: site.image_src | absolute_url }}">
   <link rel="image_src" href="{{ post.image | default: page.image | default: site.image_src | absolute_url }}">
-    
+
   <link rel="apple-touch-icon" sizes="57x57" href="{{ "/assets/img/meta-icons/apple-icon-57x57.png" | absolute_url }}">
   <link rel="apple-touch-icon" sizes="60x60" href="{{ "/assets/img/meta-icons/apple-icon-60x60.png" | absolute_url }}">
   <link rel="apple-touch-icon" sizes="72x72" href="{{ "/assets/img/meta-icons/apple-icon-72x72.png" | absolute_url }}">

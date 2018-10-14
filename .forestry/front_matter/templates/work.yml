@@ -1,0 +1,25 @@
+---
+label: Work
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  label: link
+  name: linklink
+- type: file
+  name: image
+  label: image
+- type: text
+  label: title bold
+  name: title_bold
+- type: number
+  name: image_width
+  label: image width
+- type: number
+  label: image height
+  name: image_height
+- type: text
+  name: weight
+  label: weight
+pages:
+- _works/Numeral.md

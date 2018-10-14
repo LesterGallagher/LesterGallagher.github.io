@@ -155,3 +155,5 @@ Live example: [http://esstudio.site/tana-soundboad/](http://esstudio.site/tana-s
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 {% include adsense.html %}
+<br>
+{% include javascript_affiliate.html %}

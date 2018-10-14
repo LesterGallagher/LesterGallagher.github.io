@@ -100,3 +100,4 @@ I used the code in this example to build a json2csv/csv2json converter which can
 </div>
 
 {% include adsense.html %}
+{% include javascript_affiliate.html %}

@@ -39,7 +39,7 @@ exclude:
 description: Web, app and tooling development and graphic design studio. View all
   websites made by Echo Sierra Studio and contact us if your interested.
 theme_color: "#fb5353"
-diqus: https-esstudio-site
+disqus: https-esstudio-site
 baseurl: 
 abbrv: ESS
 dribbble_username: es_studio
@@ -51,6 +51,7 @@ linkedin_username:
 pinterest_username: eestudio0040
 twitter_username: esstudio_site
 youtube_username: 9Wereld
+disqus_username: https://disqus.com/by/echosierrastudio/
 googleplus_username: 
 rss: true
 facebook:

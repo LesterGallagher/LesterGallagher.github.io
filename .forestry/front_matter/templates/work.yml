@@ -22,4 +22,5 @@ fields:
   name: weight
   label: weight
 pages:
+- _works/ahs-style.md
 - _works/Numeral.md

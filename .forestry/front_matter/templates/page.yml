@@ -15,3 +15,5 @@ fields:
 - type: text
   name: layout
   label: layout
+pages:
+- links.md

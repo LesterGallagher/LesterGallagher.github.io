@@ -6,7 +6,7 @@ image: "/uploads/styleguide_logo.jpg"
 title_bold: Guide
 image_width: 766
 image_height: 486
-weight: 80
+weight: 60
 
 ---
 An inspiration style to ahs characters.

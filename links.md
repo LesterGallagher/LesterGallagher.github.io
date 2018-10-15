@@ -12,7 +12,7 @@ description: Esstudio social and public profiles.
 layout: page
 
 ---
-A list of links and echo sierra studio social profiles:
+# A list of links and echo sierra studio social profiles:
 
 * [https://issuu.com/esstudio](https://issuu.com/esstudio3 "Issuu")
 * [https://www.theverge.com/users/spell-checker](https://www.theverge.com/users/spell-checker?return_to=https://www.theverge.com/ "https://www.theverge.com/users/spell-checker?return_to=https://www.theverge.com/")

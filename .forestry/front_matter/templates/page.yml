@@ -2,4 +2,13 @@
 label: Page
 hide_body: false
 is_partial: false
-fields: []
+fields:
+- type: text
+  label: title
+  name: title
+- type: textarea
+  name: description
+  label: description
+- type: text
+  name: permalink
+  label: permalink

@@ -6,7 +6,7 @@ layout: default
   <article>
     <header class="blog-header text-center">
       <h3>
-        <span>{{ page.date | date: '%d' }}</span> {{ page.date | date: '%B %Y' }}
+        <span>{{ page.date | date: "%d" }}</span> {{ page.date | date: "%B %Y" }}
         <h2> {{ page.title }}</h2>
     </header>
     <figure>
@@ -16,7 +16,7 @@ layout: default
     </div>
     {% include share.html size=small %}
     <a href="/feed" title="rss feed link" target="blank"><img class="inline-block" height="28" src="/assets/img/rss.png" alt="rss icon"></a>
-    <a href='https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fesstudio.site%2Ffee'  target='blank'><img id='feedlyFollow' src='http://s3.feedly.com/img/follows/feedly-follow-rectangle-flat-medium_2x.png' alt='follow us in feedly' width='71' height='28'></a>
+    <a href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fesstudio.site%2Ffee"  target="blank"><img id="feedlyFollow" src="https://s3.feedly.com/img/follows/feedly-follow-rectangle-flat-medium_2x.png" alt="follow us in feedly" width="71" height="28"></a>
     {% include disqus.html %}
   </article>
 </div>

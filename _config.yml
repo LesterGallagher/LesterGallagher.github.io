@@ -32,6 +32,7 @@ defaults:
     image_height: ''
 has_comments: true
 disqus: https-esstudio-site
+feedburner: https://feeds.feedburner.com/echosierrastudio
 share:
 - facebook
 - twitter

@@ -2,7 +2,7 @@
 title: Blog
 permalink: "/blog/"
 layout: default
-description: Echo Sierra Studio's blog page.
+description: Echo Sierra Studio"s blog page.
 ---
 
 <main class="main-inner-wrapper container">
@@ -15,6 +15,10 @@ description: Echo Sierra Studio's blog page.
                         <span>News</span> Updates from studio</h2>
                 </header>
                 <p>Get all information about our studio from latest news posts & updates page.</p>
+                <p>&nbsp;</p>
+                <a href="/feed" title="rss feed link" target="blank"><img class="inline-block" height="56" src="/assets/img/rss.png" alt="rss icon"></a>
+                <a href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fesstudio.site%2Ffeedd"  target="blank"><img class="inline-block" id="feedlyFollow" src="http://s3.feedly.com/img/follows/feedly-follow-rectangle-flat-big_2x.png" alt="follow us in feedly" width="131" height="56"></a>
+                <p>&nbsp;</p>
             </article>
         </div>
         {%- for post in site.posts -%}
@@ -23,7 +27,7 @@ description: Echo Sierra Studio's blog page.
                 <a href="{{ post.url | absolute_url }}">
                     <figure>
                         <div class="post-date">
-                            <span>{{ post.date | date: '%d' }}</span> {{ post.date | date: '%B %Y' }} </div>
+                            <span>{{ post.date | date: "%d" }}</span> {{ post.date | date: "%B %Y" }} </div>
                         <img src="{{ post.image | absolute_url }}" alt="{{ post.title }} image" class="img-responsive" /> </figure>
                 </a>
                 <article>{{ post.title | escape }}</article>

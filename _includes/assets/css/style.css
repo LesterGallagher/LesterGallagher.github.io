@@ -5,6 +5,8 @@
 	box-sizing: border-box;
 }
 
+.resp-sharing-button__link
+
 html {
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
@@ -672,5 +674,13 @@ section.blog-content figure img {
 }
 
 .affiliate img {
+	display: inline-block;
+}
+
+.resp-sharing-button__link {
+	margin: 0 8px 8px 0;
+}
+
+.inline-block {
 	display: inline-block;
 }

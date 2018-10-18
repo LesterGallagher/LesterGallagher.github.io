@@ -17,6 +17,7 @@ defaults:
     type: posts
   values:
     layout: post
+    has_comments: true
     image: ''
     description: ''
 - scope:
@@ -29,6 +30,24 @@ defaults:
     title_bold: ''
     image_width: ''
     image_height: ''
+has_comments: true
+disqus: https-esstudio-site
+share:
+- facebook
+- twitter
+- tumblr
+- pinterest
+- reddit
+- google
+- tumblr
+- email
+- pinterest
+- linkedin
+- xing
+- whatsapp
+- hackernews
+- vk
+- telegram
 volledige-titel: Echo Sierra Studio
 image_src: "/assets/img/image_src.png"
 logo: "/assets/img/image_src.png"

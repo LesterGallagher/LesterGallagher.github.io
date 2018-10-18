@@ -14,5 +14,10 @@ layout: default
     <div class="enter-content">
       {{ content }}
     </div>
+    {% include share.html size=small %}
+    <a href='https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fesstudio.site%2Ffeed' target='blank'><img id='feedlyFollow'
+        src='http://s3.feedly.com/img/follows/feedly-follow-rectangle-flat-big_2x.png' alt='follow us in feedly' width='131'
+        height='56'></a>
+    {% include disqus.html %}
   </article>
 </div>

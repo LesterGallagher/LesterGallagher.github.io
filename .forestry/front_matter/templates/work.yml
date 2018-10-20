@@ -22,6 +22,7 @@ fields:
   name: weight
   label: weight
 pages:
+- _works/wt.md
 - _works/salary.md
 - _works/bespaar.md
 - _works/ahs-style.md

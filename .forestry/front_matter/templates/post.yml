@@ -21,6 +21,9 @@ fields:
 - type: text
   name: portal_link
   label: portal_link
+- type: text
+  name: title
+  label: Title
 pages:
 - _posts/atc-manager-2-text-commands-tutorial.md
 - _posts/2018-10-22-atc-manager-2-tutorial.md

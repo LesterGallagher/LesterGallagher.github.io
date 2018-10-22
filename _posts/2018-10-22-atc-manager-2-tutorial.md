@@ -1,5 +1,5 @@
 ---
-title: ATC Manager 2 Tutorial
+title: ATC Manager 2 - Tutorial
 date: 2018-10-22 21:35:23 +0200
 image: "/uploads/atctut2.png"
 description: Start by selecting an area (default). You can leave everything on default

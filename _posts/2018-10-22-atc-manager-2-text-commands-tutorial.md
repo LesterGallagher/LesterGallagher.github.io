@@ -21,7 +21,7 @@ To enable text commands you have to go into advanced settings.
 
 !\[Open advanced settings\](
 
-![](https://esstudio.site/atc-manager-2/assets/images/tutorials/text-commands/advanced-settings.png) 
+![](https://esstudio.site/atc-manager-2/assets/images/tutorials/text-commands/advanced-settings.png)
 
 "Open advanced settings")
 
@@ -41,8 +41,6 @@ Commands are case insensitive
 
 <airplane callsign> turn left heading <heading in degrees>
 
-  
-
 e.g DLH213 turn left heading 200
 
 \##### Changing altitude
@@ -50,8 +48,6 @@ e.g DLH213 turn left heading 200
 <airplane callsign> alt <flightlevel or altitude in feet>
 
 <airplane callsign> climb and maintain <flightlevel or altitude in feet>
-
-  
 
 DLH213 alt fl230
 
@@ -62,8 +58,6 @@ DLH213 alt fl230
 <airplane callsign> direct <waypoint/runway callsign>
 
 <airplane callsign> direct to <waypoint/runway callsign>
-
-  
 
 e.g DLH213 dct EH11
 
@@ -77,8 +71,6 @@ e.g DLH213 dct EH11
 
 <airplane callsign> reduce speed to <speed in knots>
 
-  
-
 e.g DLH213 spd 200
 
 \##### Takeoff
@@ -86,8 +78,6 @@ e.g DLH213 spd 200
 <airplane callsign> takeoff
 
 <airplane callsign> clear for takeoff
-
-  
 
 e.g DLH213 clear for takeoff
 
@@ -97,16 +87,14 @@ e.g DLH213 clear for takeoff
 
 <airplane callsign> goaround
 
-  
-
 e.g DLH213 go around
 
 \##### Target State (VFR)
 
 <airplane callsign> extend <vfr state>
 
-  
-
 e.g DLH213 extend downwind
 
-All TutorialsDone
+<br>
+
+{% include javascript_affiliate.html %}

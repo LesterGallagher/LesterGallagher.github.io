@@ -2,7 +2,10 @@
 title: Creating a Javascript spellingchecker with bjspell
 date: 2018-10-22 22:11:31 +0200
 image: "/uploads/spellchecker.jpg"
-description: ''
+description: Client-side spellchecker with bjspell in a contenteditable div, using
+  javascript. Let's start with writing the HTML. We need a contenteditable div with
+  the spellcheck attribute set to false. This is because we don't want to use the
+  default browser spellchecking, we want our own implementation.
 portal_title: ''
 portal_description: ''
 portal_image: ''

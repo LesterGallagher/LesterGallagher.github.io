@@ -1,6 +1,6 @@
 ---
 title: ATC Manager 2 - Text Commands Tutorial
-date: 2018-10-22 21:49:22 +0200
+date: 2018-10-22 19:49:22 +0000
 image: "/uploads/text-commands2-1.png"
 description: Text commands allow for faster interaction. To enable text commands you
   have to go into advanced settings. Then switch the "Text commands" to "On"
@@ -13,13 +13,13 @@ portal_link: https://esstudio.site/atc-manager-2
 ---
 All Tutorials
 
-\### Text Comands Tutorial
+### Text Comands Tutorial
 
-\#### Enable text commands
+#### Enable text commands
 
 To enable text commands you have to go into advanced settings.
 
-!\[Open advanced settings\](
+![Open advanced settings](
 
 ![](https://esstudio.site/atc-manager-2/assets/images/tutorials/text-commands/advanced-settings.png)
 
@@ -27,13 +27,13 @@ To enable text commands you have to go into advanced settings.
 
 Then switch the "Text commands" to "On"
 
-!\[Enable text commands\](![](https://esstudio.site/atc-manager-2/assets/images/tutorials/text-commands/text-commands.png) "Enable text commands")
+![Enable text commands](https://esstudio.site/atc-manager-2/assets/images/tutorials/text-commands/text-commands.png)
 
-\#### Command formats
+#### Command formats
 
 Commands are case insensitive
 
-\##### Changing heading
+##### Changing heading
 
 <airplane callsign> HDG <heading in degrees>
 
@@ -43,7 +43,7 @@ Commands are case insensitive
 
 e.g DLH213 turn left heading 200
 
-\##### Changing altitude
+##### Changing altitude
 
 <airplane callsign> alt <flightlevel or altitude in feet>
 
@@ -51,7 +51,7 @@ e.g DLH213 turn left heading 200
 
 DLH213 alt fl230
 
-\##### Changing "Direct to"
+##### Changing "Direct to"
 
 <airplane callsign> dct <waypoint/runway callsign>
 
@@ -61,7 +61,7 @@ DLH213 alt fl230
 
 e.g DLH213 dct EH11
 
-\##### Changing speed
+##### Changing speed
 
 <airplane callsign> spd <speed in knots>
 
@@ -73,7 +73,7 @@ e.g DLH213 dct EH11
 
 e.g DLH213 spd 200
 
-\##### Takeoff
+##### Takeoff
 
 <airplane callsign> takeoff
 
@@ -81,7 +81,7 @@ e.g DLH213 spd 200
 
 e.g DLH213 clear for takeoff
 
-\##### Go-around
+##### Go-around
 
 <airplane callsign> go around
 
@@ -89,7 +89,7 @@ e.g DLH213 clear for takeoff
 
 e.g DLH213 go around
 
-\##### Target State (VFR)
+##### Target State (VFR)
 
 <airplane callsign> extend <vfr state>
 

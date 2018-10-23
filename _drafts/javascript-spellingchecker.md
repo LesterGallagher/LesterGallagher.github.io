@@ -9,13 +9,11 @@ portal_image: ''
 portal_link: ''
 
 ---
-
 ```html
 <div id="text" contenteditable spellcheck="false"></div>
 ```
 
 ```javascript
-m 
 ```
 
 ```javascript
@@ -30,4 +28,5 @@ lang = BJSpell("./assets/js/" + name + ".js", function() {
   editor.$elem.off('spellcheck')
   }
 });
+
 ```

@@ -1,6 +1,6 @@
 ---
 title: ATC Manager 2 - Tutorials and General Aviation
-date: 2018-09-27 17:57:08 +0200
+date: 2018-09-27 15:57:08 +0000
 image: "/uploads/vfr.png"
 description: General aviation and tutorials progress blog post.
 portal_title: ATC Manager 2
@@ -34,3 +34,7 @@ VFR traffic is not controlled by setting heading and altitude. You can give the 
 
 <blockquote class="reddit-card" data-card-created="1538064249"><a href="https://www.reddit.com/r/ATCManager2/comments/9jb89w/tutorials_and_general_aviation/">Tutorials and General Aviation</a> from <a href="http://www.reddit.com/r/ATCManager2">r/ATCManager2</a></blockquote>
 <script async src="//embed.redditmedia.com/widgets/platform.js" charset="UTF-8"></script>
+
+<br>
+
+{% include javascript_affiliate.html %}

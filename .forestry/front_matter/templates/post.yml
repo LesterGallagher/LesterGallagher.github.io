@@ -25,8 +25,8 @@ fields:
   name: portal_link
   label: portal_link
 pages:
-- _posts/2018-09-27-atc-manager-2---tutorials-and-general-aviation.md
-- _posts/2018-10-22-javascript-spellingchecker.md
-- _posts/2018-10-22-atc-manager-2-text-commands-tutorial.md
 - _posts/2018-10-22-atc-manager-2-tutorial.md
+- _posts/2018-10-22-atc-manager-2-text-commands-tutorial.md
+- _posts/2018-10-22-javascript-spellingchecker.md
+- _posts/2018-09-27-atc-manager-2---tutorials-and-general-aviation.md
 - _posts/2018-09-10-3d-texturing-using-curvature-maps.md

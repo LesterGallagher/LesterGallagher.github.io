@@ -1,6 +1,6 @@
 ---
 title: Creating a Javascript spellingchecker with bjspell
-date: 2018-10-22 22:11:31 +0200
+date: 2018-10-22 20:11:31 +0000
 image: "/uploads/spellchecker.jpg"
 description: Client-side spellchecker with bjspell in a contenteditable div, using
   javascript. Let's start with writing the HTML. We need a contenteditable div with
@@ -12,7 +12,7 @@ portal_image: ''
 portal_link: ''
 
 ---
-I saw this question on stackoverflow: [Need Client side spell checker for DIV](https://stackoverflow.com/questions/6252358/need-client-side-spell-checker-for-div). There are not a lot of libraries available that will allow you to do this but I did find an older library called [bjspell](http://code.google.com/p/bjspell) which does the job. 
+I saw this question on stackoverflow: [Need Client side spell checker for DIV](https://stackoverflow.com/questions/6252358/need-client-side-spell-checker-for-div). There are not a lot of libraries available that will allow you to do this but I did find an older library called [bjspell](http://code.google.com/p/bjspell) which does the job.
 
 BJSpell in production: [spell-checker.site](https://spell-checker.site)
 
@@ -55,7 +55,7 @@ var lang = BJSpell(dictionary, function() {
 });
 ```
 
-Next, add a click handler to the "check button". Below is a very simple implementation. You could do a spelling check everytime the div changes, and save/store the user selection and cursor position. In short, we get all words from the div as text. Then we individually check every word for spelling mistakes. If we find a spelling mistake, we add a list of suggestions and save the word as a span element. After we've finished mapping every word, we join the all the span elements together and store it in the div's innerHTML. 
+Next, add a click handler to the "check button". Below is a very simple implementation. You could do a spelling check everytime the div changes, and save/store the user selection and cursor position. In short, we get all words from the div as text. Then we individually check every word for spelling mistakes. If we find a spelling mistake, we add a list of suggestions and save the word as a span element. After we've finished mapping every word, we join the all the span elements together and store it in the div's innerHTML.
 
 ```javascript
 check.addEventListener('click', function() {
@@ -84,6 +84,7 @@ reset.addEventListener('click', function() {
 #### Full example:
 
 <p data-height="265" data-theme-id="0" data-slug-hash="VEGdqo" data-default-tab="js,result" data-user="Afirus" data-pen-title="Client-side spellchecking, contenteditable DIV" class="codepen">See the Pen <a href="https://codepen.io/Afirus/pen/VEGdqo/">Client-side spellchecking, contenteditable DIV</a> by LesterGallagher (<a href="https://codepen.io/Afirus">@Afirus</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 A complete spellchecker using BJSpell: [spell-checker.site](https://spell-checker.site)
 

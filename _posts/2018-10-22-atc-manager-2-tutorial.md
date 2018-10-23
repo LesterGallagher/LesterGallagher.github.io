@@ -95,4 +95,4 @@ Then click "GIVE COMMAND".
 
 Hopefully you know how to start. If you don't or you have a question,\[visit the subreddit\]([https://en.wikipedia.org/wiki/Knot_](https://en.wikipedia.org/wiki/Knot_ "https://en.wikipedia.org/wiki/Knot_")(unit)). If you want to continue learning, you can check out more tutorials by clicking the "All TUTORIALS" button below.
 
-All TutorialsDone
+{% include javascript_affiliate.html %}

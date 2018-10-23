@@ -21,8 +21,6 @@ To enable text commands you have to go into advanced settings.
 
 ![Open advanced settings](https://esstudio.site/atc-manager-2/assets/images/tutorials/text-commands/advanced-settings.png)
 
-"Open advanced settings")
-
 Then switch the "Text commands" to "On"
 
 ![Enable text commands](https://esstudio.site/atc-manager-2/assets/images/tutorials/text-commands/text-commands.png)

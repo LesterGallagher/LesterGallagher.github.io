@@ -1,12 +1,12 @@
 ---
-title: Other Profiles
+title: Social Profiles
 date: 2018-10-28 11:40:40 +0100
-description: A list of other ESStudio public profiles
+description: A list of all ESStudio public profiles
 permalink: other-profiles
 layout: page
 
 ---
-Other ESStudio public profiles:
+All ESStudio public profiles:
 
 [https://dribbble.com/es_studio](https://dribbble.com/es_studio "https://dribbble.com/es_studio")
 

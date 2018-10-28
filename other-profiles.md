@@ -2,7 +2,7 @@
 title: Social Profiles
 date: 2018-10-28 11:40:40 +0100
 description: A list of all ESStudio public profiles
-permalink: other-profiles
+permalink: social-profiles
 layout: page
 
 ---

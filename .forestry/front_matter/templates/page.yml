@@ -16,4 +16,5 @@ fields:
   name: layout
   label: layout
 pages:
+- other-profiles.md
 - links.md

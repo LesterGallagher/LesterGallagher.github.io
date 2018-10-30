@@ -63,7 +63,7 @@ Let's log the "xmlDoc" to the console. This will show a list of entry elements, 
 
 ![Atom Feed console.log](/uploads/rssfeed.PNG)
 
-Because the xmlDoc is of type "Document" and not "HTMLDocument", we can't use functions like ".querySelector" so we will use ".getElementsByTagName" to select the entry tags. This will return an array like object. To convert an array like object or iterable object, to an array, use [Array.from(arrayLikeObject)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from). 
+Because the xmlDoc is of type "Document" and not "HTMLDocument", we can't use functions like ".querySelector" so we will use ".getElementsByTagName" to select the entry tags. This will return an array like object. To convert an array like object or iterable object, to an array, use [Array.from(arrayLikeObject)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from).
 
 ```javascript
 const html = Array.from(xmlDoc.getElementsByTagName('entry')).map(entry => `<div class="entry"></div>`);
@@ -85,10 +85,12 @@ const html2txt = html => html.replace(/<(?:.|\n)*?>/gm, '');
 const content = entry => html2txt(t(entry, 'content').textContent).slice(0, 200);
 ```
 
-Now, replace the template string 
+Now, replace the template string
+
 ```javascript
 `<div class="entry"></div>`
-``` 
+```
+
 with the template string below.
 
 ```javascript
@@ -122,5 +124,4 @@ The RSS reader I talked about earlier is a serverless javascript website/app cal
 
 [NewsFeeder on Google Play](https://play.google.com/store/apps/details?id=com.EchoSierraStudio.Newsfeeder).
 
-{% javascript_affiliate.html %}
-
+{% include javascript_affiliate.html %}

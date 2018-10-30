@@ -11,7 +11,7 @@
 </a>
 {% endif %}
 {% if site.share contains 'twitter' or page.share contains 'twitter' %}
-<a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?text={{ page.description | absolute_url | default: page.excerpt | default: site.description | cgi_escape }}&url={{ page.url | cgi_escape }}"
+<a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?text={{ page.description | default: page.excerpt | default: site.description | cgi_escape }}&url={{ page.url | absolute_url | cgi_escape }}"
   target="_blank" aria-label="">
   <span class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--{{ include.size | default: 'medium' }}"><span
       aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">

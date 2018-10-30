@@ -25,7 +25,7 @@ fields:
   name: portal_link
   label: portal_link
 pages:
-- _posts/creating-an-rss-reader-in-javascript.md
+- _posts/creating-an-atom-feed-reader-in-javascript.md
 - _posts/2018-10-30-base-converter.md
 - _posts/2018-10-22-atc-manager-2-text-commands-tutorial.md
 - _posts/2018-10-22-javascript-spellingchecker.md

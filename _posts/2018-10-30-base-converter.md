@@ -18,4 +18,4 @@ You can also find it in the \[play store\]([https://play.google.com/store/apps/d
 
 For example: If we convert the decimal number "123456789" to base 16 (hexadecimal) we get: "75bcd15", octal is "726746425" and with binary we get "111010110111100110100010101". You can use the tool to automate or simplify your work.
 
-Also, checkout \[simple function plotter\]([https://esstudio.site/SimpleFunctionPlotter/](https://esstudio.site/SimpleFunctionPlotter/ "https://esstudio.site/SimpleFunctionPlotter/")) Which allows you to plot, visualize and save algebraic forumula's.
+Also, checkout \[simple function plotter\]([https://esstudio.site/SimpleFunctionPlotter/](https://esstudio.site/SimpleFunctionPlotter/ "https://esstudio.site/SimpleFunctionPlotter/")) Which allows you to plot, visualize and save algebraic formula's.

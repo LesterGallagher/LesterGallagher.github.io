@@ -14,6 +14,7 @@ portal_link: ''
 A heap tree is a type of data structure where the each node is either greater than or equal or less than or equal to the node's children. Binary heaps are often used to implement priority queues. Priority queues are used in pathfinding for example.
 
 Even though it might sound like a difficult subject it's actually not that difficult. We will start by establishing some basics. The first one being that a node will always be equal to or smaller than it's children. This means that the smallest value is always on top (the root node). The reason that a binary heap is so fast compared to sorting arrays, is that everytime we add or delete an item, we "sort" the heap. This heap "sorting" is very fast because we only need to check the parent node if it's bigger than the child. As the tree grows exponentially the time to sort the heap does not (grow exponentially). This is called time complexity, which is "O(log n)" for heap insertion and deletion. Binary heaps can perform very well with very large data-sets compared to other algorithms. 
+
 ```
         6
       /   \
@@ -25,6 +26,7 @@ Even though it might sound like a difficult subject it's actually not that diffi
 We can implement a heap in two different ways:
 
 #### First - Object reference implementation:
+
 ```javascript
 var node1 = { val: 6, parent: null };
 var node2 = { val: 7, parent: node1 };

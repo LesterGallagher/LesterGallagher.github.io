@@ -217,7 +217,7 @@ document.getElementById('pop').addEventListener('click', function() {
 
 The [Codepen](https://codepen.io/Afirus/pen/JmQZeq) below shows the full example, visualization and code.
 
-<p data-height="265" data-theme-id="0" data-slug-hash="JmQZeq" data-default-tab="js,result" data-user="Afirus" data-pen-title="Heap tree" class="codepen">See the Pen <a href="https://codepen.io/Afirus/pen/JmQZeq/">Heap tree</a> by LesterGallagher (<a href="https://codepen.io/Afirus">@Afirus</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="434" data-theme-id="0" data-slug-hash="JmQZeq" data-default-tab="js,result" data-user="Afirus" data-pen-title="JmQZeq" class="codepen">See the Pen <a href="https://codepen.io/Afirus/pen/JmQZeq/">JmQZeq</a> by LesterGallagher (<a href="https://codepen.io/Afirus">@Afirus</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 An example of using a heap with pathfinding can be found [here](https://esstudio.site/maze-solver). It searches the shortest route from A to B. A min-heap is used as a priority queue in the [A* search algorithm](https://en.wikipedia.org/wiki/A*_search_algorithm).

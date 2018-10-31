@@ -222,4 +222,6 @@ The [Codepen](https://codepen.io/Afirus/pen/JmQZeq) below shows the full example
 
 An example of using a heap with pathfinding can be found [here](https://esstudio.site/maze-solver). It searches the shortest route from A to B. A min-heap is used as a priority queue in the [A* search algorithm](https://en.wikipedia.org/wiki/A*_search_algorithm).
 
+<br><br>
+
 {% include javascript_affiliate.html %}

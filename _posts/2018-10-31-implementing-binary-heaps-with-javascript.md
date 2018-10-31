@@ -193,6 +193,7 @@ We can visualize the tree using the following html and javascript:
 <canvas id="heap-visualization" width="600" height="280"></canvas><br>
 ```
 
+
 ```javascript
 const heap = new MinHeap(x => x);
 heap.heapify([1, 0, 4, 6, 5, 9, 7, 2, 3, 8]);

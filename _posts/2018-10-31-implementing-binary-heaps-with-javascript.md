@@ -193,7 +193,6 @@ We can visualize the tree using the following html and javascript:
 <canvas id="heap-visualization" width="600" height="280"></canvas><br>
 ```
 
-
 ```javascript
 const heap = new MinHeap(x => x);
 heap.heapify([1, 0, 4, 6, 5, 9, 7, 2, 3, 8]);
@@ -222,7 +221,5 @@ The [Codepen](https://codepen.io/Afirus/pen/JmQZeq) below shows the full example
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 An example of using a heap with pathfinding can be found [here](https://esstudio.site/maze-solver). It searches the shortest route from A to B. A min-heap is used as a priority queue in the [A* search algorithm](https://en.wikipedia.org/wiki/A*_search_algorithm).
-
-<br><br>
 
 {% include javascript_affiliate.html %}

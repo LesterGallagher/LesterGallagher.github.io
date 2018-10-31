@@ -50,7 +50,7 @@ To navigate the array we use these rules:
 * The right child is located at (index + 1) * 2
 * The parent child is located at Math.floor((i + 1) / 2 - 1)
 
-For example if we have a node located at index 7, we know that it's left child is located at `15 = (7 + 1) * 2 - 1`, the right child is located at index `16 = (7 + 1) * 2` and the parent is located at index `3 = Math.floor((7 + 1) / 2 - 1)`. If you're still struggling with how binary trees work, you can checkout [https://www.cs.cmu.edu/\~adamchik/15-121/lectures/Binary%20Heaps/heaps.html](this article) by Carnegie Mellon University which helped me out a lot.
+For example if we have a node located at index 7, we know that it's left child is located at `15 = (7 + 1) * 2 - 1`, the right child is located at index `16 = (7 + 1) * 2` and the parent is located at index `3 = Math.floor((7 + 1) / 2 - 1)`. If you're still struggling with how binary trees work, you can checkout [this article](https://www.cs.cmu.edu/\~adamchik/15-121/lectures/Binary%20Heaps/heaps.html) by Carnegie Mellon University which helped me out a lot.
 
 Using these rules we can write the following code:
 

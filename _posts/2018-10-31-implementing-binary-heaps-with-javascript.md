@@ -24,7 +24,7 @@ Even though it might sound like a difficult subject it's actually not that diffi
 We can implement a heap in two different ways:
 
 #### First - Object reference implementation:
-
+<p></p>
 ```javascript
 var node1 = { val: 6, parent: null };
 var node2 = { val: 7, parent: node1 };

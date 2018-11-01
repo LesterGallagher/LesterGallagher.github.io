@@ -25,7 +25,7 @@ fields:
   name: portal_link
   label: portal_link
 pages:
-- _posts/create-draggable-elements-with-javascript.md
+- _posts/2018-08-26-create-draggable-elements-with-javascript.md
 - _posts/2018-10-31-implementing-binary-heaps-with-javascript.md
 - _posts/2018-10-30-creating-an-atom-feed-reader-with-javascript.md
 - _posts/2018-10-30-base-converter.md

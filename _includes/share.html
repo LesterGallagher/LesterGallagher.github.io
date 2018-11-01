@@ -11,7 +11,7 @@
 </a>
 {% endif %}
 {% if site.share contains 'twitter' or page.share contains 'twitter' %}
-<a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?text={{ page.description | default: page.excerpt | default: site.description | cgi_escape }}&url={{ page.url | absolute_url | cgi_escape }}"
+<a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?text=={{ page.title | default: site.title | cgi_escape }}%0D%0A{{ page.description | default: page.excerpt | default: site.description | cgi_escape }}&url={{ page.url | absolute_url | cgi_escape }}"
   target="_blank" aria-label="">
   <span class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--{{ include.size | default: 'medium' }}"><span
       aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
@@ -34,7 +34,7 @@
 </a>
 {% endif %}
 {% if site.share contains 'tumblr' or page.share contains 'tumblr' %}
-<a class="resp-sharing-button__link" href="https://www.tumblr.com/widgets/share/tool?posttype=link&title={{ page.description | default: page.excerpt | default: site.description | cgi_escape }}&caption={{ page.description | default: page.excerpt | default: site.description | cgi_escape }}&content={{ page.url | cgi_escape }}&canonicalUrl={{ page.url | absolute_url | cgi_escape }}&shareSource=tumblr_share_button"
+<a class="resp-sharing-button__link" href="https://www.tumblr.com/widgets/share/tool?posttype=link&title={{ page.title  default: site.title | cgi_escape }}&caption={{ page.description | default: page.excerpt | default: site.description | cgi_escape }}&content={{ page.url | cgi_escape }}&canonicalUrl={{ page.url | absolute_url | cgi_escape }}&shareSource=tumblr_share_button"
   target="_blank" aria-label="">
   <span class="resp-sharing-button resp-sharing-button--tumblr resp-sharing-button--{{ include.size | default: 'medium' }}"><span
       aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
@@ -47,7 +47,7 @@
 </a>
 {% endif %}
 {% if site.share contains 'email' or page.share contains 'email' %}
-<a class="resp-sharing-button__link" href="mailto:?subject={{ page.description | default: page.excerpt | default: site.description | cgi_escape }}&body={{ page.url | cgi_escape }}"
+<a class="resp-sharing-button__link" href="mailto:?subject={{ page.title | default: site.title | cgi_escape }}&body={{ page.description | default: page.excerpt | default: site.description | cgi_escape }}%0D%0A{{ page.url | absolute_url | cgi_escape }}"
   target="_self" aria-label="">
   <span class="resp-sharing-button resp-sharing-button--email resp-sharing-button--{{ include.size | default: 'medium' }}"><span
       aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
@@ -59,7 +59,7 @@
 </a>
 {% endif %}
 {% if site.share contains 'pinterest' or page.share contains 'pinterest' %}
-<a class="resp-sharing-button__link" href="https://pinterest.com/pin/create/button/?url={{ page.url | absolute_url | cgi_escape }}&media={{ page.url | cgi_escape }}&description={{ page.description | default: page.excerpt | default: site.description | cgi_escape }}"
+<a class="resp-sharing-button__link" href="https://pinterest.com/pin/create/button/?url={{ page.url | absolute_url | cgi_escape }}&media={{ page.image | absolute_url | cgi_escape }}&description=={{ page.title | default: site.title | cgi_escape }}%0D%0A{{ page.description | default: page.excerpt | default: site.description | cgi_escape }}"
   target="_blank" aria-label="">
   <span class="resp-sharing-button resp-sharing-button--pinterest resp-sharing-button--{{ include.size | default: 'medium' }}"><span
       aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
@@ -70,7 +70,7 @@
 </a>
 {% endif %}
 {% if site.share contains 'linkedin' or page.share contains 'linkedin' %}
-<a class="resp-sharing-button__link" href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url | cgi_escape }}&title={{ page.description | default: page.excerpt | default: site.description | cgi_escape }}&summary={{ page.description | default: page.excerpt | default: site.description | cgi_escape }}&source={{ page.url | cgi_escape }}"
+<a class="resp-sharing-button__link" href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url | absolute_url | cgi_escape }}&title={{ page.title | default: site.title | cgi_escape }}&summary={{ page.description | default: page.excerpt | default: site.description | cgi_escape }}&source={{ page.url | cgi_escape }}"
   target="_blank" aria-label="">
   <span class="resp-sharing-button resp-sharing-button--linkedin resp-sharing-button--{{ include.size | default: 'medium' }}"><span
       aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
@@ -98,7 +98,7 @@
 </a>
 {% endif %}
 {% if site.share contains 'xing' or page.share contains 'xing' %}
-<a class="resp-sharing-button__link" href="https://www.xing.com/app/user?op=share;url={{ page.url | absolute_url | cgi_escape }};title={{ page.description | default: page.excerpt | default: site.description | cgi_escape }}"
+<a class="resp-sharing-button__link" href="https://www.xing.com/app/user?op=share;url={{ page.url | absolute_url | cgi_escape }};title={{ page.title | default: site.title | cgi_escape }}"
   target="_blank" aria-label="">
   <span class="resp-sharing-button resp-sharing-button--xing resp-sharing-button--{{ include.size | default: 'medium' }}"><span
       aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
@@ -120,7 +120,7 @@
 </a>
 {% endif %}
 {% if site.share contains 'hackernews' or page.share contains 'hackernews' %}
-<a class="resp-sharing-button__link" href="https://news.ycombinator.com/submitlink?u={{ page.url | absolute_url | cgi_escape }}&t={{ page.description | default: page.excerpt | default: site.description | cgi_escape }}"
+<a class="resp-sharing-button__link" href="https://news.ycombinator.com/submitlink?u={{ page.url | absolute_url | cgi_escape }}&t={{ page.title | default: site.title | cgi_escape }}%0D%0A{{ page.description | default: page.excerpt | default: site.description | cgi_escape }}"
   target="_blank" aria-label="">
   <span class="resp-sharing-button resp-sharing-button--hackernews resp-sharing-button--{{ include.size | default: 'medium' }}"><span
       aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
@@ -131,7 +131,7 @@
 </a>
 {% endif %}
 {% if site.share contains 'vk' or page.share contains 'vk' %}
-<a class="resp-sharing-button__link" href="http://vk.com/share.php?title={{ page.description | default: page.excerpt | default: site.description | cgi_escape }}&url={{ page.url | absolute_url | cgi_escape }}"
+<a class="resp-sharing-button__link" href="http://vk.com/share.php?title={{ page.title | default: site.title | cgi_escape }}&url={{ page.url | absolute_url | cgi_escape }}"
   target="_blank" aria-label="">
   <span class="resp-sharing-button resp-sharing-button--vk resp-sharing-button--{{ include.size | default: 'medium' }}"><span
       aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
@@ -142,7 +142,7 @@
 </a>
 {% endif %}
 {% if site.share contains 'telegram' or page.share contains 'telegram' %}
-<a class="resp-sharing-button__link" href="https://telegram.me/share/url?text={{ page.description | default: page.excerpt | default: site.description | cgi_escape }}&url={{ page.url | absolute_url | cgi_escape }}"
+<a class="resp-sharing-button__link" href="https://telegram.me/share/url?text=={{ page.title | default: site.title | cgi_escape }}%0D%0A{{ page.description | default: page.excerpt | default: site.description | cgi_escape }}&url={{ page.url | absolute_url | cgi_escape }}"
   target="_blank" aria-label="">
   <span class="resp-sharing-button resp-sharing-button--telegram resp-sharing-button--{{ include.size | default: 'medium' }}"><span
       aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">

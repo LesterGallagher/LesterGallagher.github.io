@@ -1,6 +1,6 @@
 ---
 title: Create draggable elements with Javascript
-date: 2018-11-01 19:26:00 +0000
+date: 2018-11-01 20:26:00 +0100
 image: "/uploads/simple draggable elements2.gif"
 description: Draggable elements are an important part of modern interfaces. This seemingly
   simple functionality means, loading hundreds of kilobytes of Javascript and CSS.

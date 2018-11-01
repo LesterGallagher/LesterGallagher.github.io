@@ -16,8 +16,8 @@ description: Echo Sierra Studio"s blog page.
                 </header>
                 <p>Get all information about our studio from latest news posts & updates page.</p>
                 <p>&nbsp;</p>
-                <a href="/feed" title="rss feed link" target="blank"><img class="inline-block" height="56" src="/assets/img/rss.png" alt="rss icon"></a>
-                <a href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fesstudio.site%2Ffeed"  target="blank"><img class="inline-block" id="feedlyFollow" src="https://s3.feedly.com/img/follows/feedly-follow-rectangle-flat-big_2x.png" alt="follow us in feedly" width="131" height="56"></a>
+                <a href="/feed" title="rss feed link" target="_blank"><img class="inline-block" height="56" src="/assets/img/rss.png" alt="rss icon"></a>
+                <a href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fesstudio.site%2Ffeed"  target="_blank"><img class="inline-block" id="feedlyFollow" src="https://s3.feedly.com/img/follows/feedly-follow-rectangle-flat-big_2x.png" alt="follow us in feedly" width="131" height="56"></a>
                 <p>&nbsp;</p>
             </article>
         </div>
@@ -36,7 +36,7 @@ description: Echo Sierra Studio"s blog page.
         {%- endfor -%}
     </div>
     <p class="rss-subscribe">subscribe
-        <a href="{{ "/feed.xml" | absolute_url }}">via RSS</a>
+        <a target="_blank" href="{{ "/feed.xml" | absolute_url }}">via RSS</a>
     </p>
     {%- endif -%}
     </div>

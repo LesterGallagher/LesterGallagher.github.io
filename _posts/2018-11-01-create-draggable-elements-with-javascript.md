@@ -1,6 +1,6 @@
 ---
 title: Create draggable elements with Javascript
-date: 2018-11-01 20:26:00 +0100
+date: 2018-11-01 19:26:00 +0000
 image: "/uploads/simple draggable elements2.gif"
 description: Draggable elements are an important part of modern interfaces. This seemingly
   simple functionality means, loading hundreds of kilobytes of Javascript and CSS.
@@ -32,28 +32,30 @@ Because there is no initialization code, you can dynammicly add these elements a
 
 Here are the CSS rules that I used. The only required rules are that a ".draggable" must have the "position" rule set to "relative" or "absolute". This is because we will manipulate the "left" and "top" CSS rules. If you have multiple draggable elements and you're using "position: absolute", the elements will initially overlap. And if you haven't set a fixed height for the draggable area, the draggable area will collapse to "height = 0" and you're draggable elements will not be visible/work. If you don't understand position absolute or position relative, you can checkout the [W3Schools tutorial on CSS Layout](https://www.w3schools.com/css/css_positioning.asp).
 
-    .draggable {
-      width: 300px;
-      height: 200px;
-      background: #ccc;
-      position: relative;
-    }
-    
-    .draggable.dragging {
-      user-select: none;
-    }
-    
-    .dragger {
-      height: 30px;
-      background: #555;
-    }
-    
-    .dragger::before {
-      content: "window";
-      color: #fff;
-      margin: 5px;
-      display: inline-block;
-    }
+```css
+.draggable {
+  width: 300px;
+  height: 200px;
+  background: #ccc;
+  position: relative;
+}
+
+.draggable.dragging {
+  user-select: none;
+}
+
+.dragger {
+  height: 30px;
+  background: #555;
+}
+
+.dragger::before {
+  content: "window";
+  color: #fff;
+  margin: 5px;
+  display: inline-block;
+}
+```
 
 ### The Javascript
 

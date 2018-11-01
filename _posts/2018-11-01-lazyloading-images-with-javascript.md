@@ -24,7 +24,7 @@ The only requirement for this implementation is, that you have to have to native
 
 ### Implementation
 
-Because we don't want the page to wait untill all images are loaded untill showing the page, and we don't want the layout to change everytime an image is loaded in we have to set an initial width, you can also do this with CSS. You want the img element to have the correct size before the image is even loaded. 
+Because we don't want the page to wait untill all images are loaded untill showing the page, and we don't want the layout to change everytime an image is loaded in we have to set an initial width, you can also do this with CSS. You want the img element to have the correct size before the image is even loaded.
 
 Now we fill the image to it's correct size using Javascript.
 
@@ -49,7 +49,7 @@ img[data-src] {
 }
 ```
 
-But ofcourcse, we want to show the image so let's change the javascript to the following. Bassicly we load another image in the background. Once it's loaded we set it's "src" to our initial image's "src" and remove the padding which we used to fill the image initially.  
+But of courcse, we want to show the image so let's change the javascript to the following. Bassicly we load another image in the background. Once it's loaded we set it's "src" to our initial image's "src" and remove the padding which we used to fill the image initially.
 
 ```javascript
 var img = document.querySelector('img[data-src]');
@@ -119,13 +119,17 @@ window.addEventListener('load', load);
 And we're done. This is all you need to lazy load images. I've included some extra examples below, their all using the "lazyLoad" function above.
 
 ### Start lazy loading images immidiately
+
 <p></p>
+
 ```javascript
 document.querySelectorAll('img[data-src]').forEach(img => lazyLoad(img).load());
 ```
 
 ### Wait for DOMContentLoaded
+
 <p></p>
+
 ```javascript
 document.querySelectorAll('img[data-src]').forEach(img => {
   var load = lazyLoad(img).load;
@@ -134,7 +138,9 @@ document.querySelectorAll('img[data-src]').forEach(img => {
 ```
 
 ### Wait untill image is visible
+
 <p></p>
+
 ```javascript
 document.querySelectorAll('img[data-src]').forEach(img => {
   var load = lazyLoad(img).load;

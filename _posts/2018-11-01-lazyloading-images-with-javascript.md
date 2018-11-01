@@ -166,7 +166,7 @@ document.querySelectorAll('img[data-src]').forEach(img => {
 
 ### Full example
 
-You can try out these examples in [the Codepen](https://codepen.io/Afirus/pen/wYVMOw) below.
+You edit the full example below and try out the examples above by going to [the Codepen](https://codepen.io/Afirus/pen/wYVMOw).
 
 <p data-height="413" data-theme-id="0" data-slug-hash="wYVMOw" data-default-tab="js,result" data-user="Afirus" data-pen-title="Easy Lazyloading" class="codepen">See the Pen <a href="https://codepen.io/Afirus/pen/wYVMOw/">Easy Lazyloading</a> by LesterGallagher (<a href="https://codepen.io/Afirus">@Afirus</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>

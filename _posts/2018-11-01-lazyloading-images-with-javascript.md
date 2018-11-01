@@ -80,7 +80,7 @@ lazy.onload = function() {
   img.classList.add('loaded');
 }
 
-// Wait for some kind of event. In this example i'm using "window.load"
+// Wait for some kind of event. In this example I'm using "window.load"
 
 window.addEventListener('load', function() {
   img.classList.add('loading');
@@ -111,7 +111,7 @@ function lazyLoad(img) {
 var img = document.querySelector('img[data-src]');
 var load = lazyLoad(img).load;
 
-// Wait for some kind of event. In this example i'm using "window.load"
+// Wait for some kind of event. In this example I'm using "window.load"
 
 window.addEventListener('load', load);
 ```

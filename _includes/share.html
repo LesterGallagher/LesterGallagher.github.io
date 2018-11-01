@@ -11,7 +11,7 @@
 </a>
 {% endif %}
 {% if site.share contains 'twitter' or page.share contains 'twitter' %}
-<a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?text=={{ page.title | default: site.title | cgi_escape }}%0D%0A{{ page.description | default: page.excerpt | default: site.description | cgi_escape }}&url={{ page.url | absolute_url | cgi_escape }}"
+<a class="resp-sharing-button__link" target="_blank" href="https://twitter.com/intent/tweet/?text=={{ page.title | default: site.title | cgi_escape }}%0D%0A{{ page.description | default: page.excerpt | default: site.description | cgi_escape }}&url={{ page.url | absolute_url | cgi_escape }}"
   target="_blank" aria-label="">
   <span class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--{{ include.size | default: 'medium' }}"><span
       aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
@@ -34,7 +34,7 @@
 </a>
 {% endif %}
 {% if site.share contains 'tumblr' or page.share contains 'tumblr' %}
-<a class="resp-sharing-button__link" href="https://www.tumblr.com/widgets/share/tool?posttype=link&title={{ page.title  default: site.title | cgi_escape }}&caption={{ page.description | default: page.excerpt | default: site.description | cgi_escape }}&content={{ page.url | cgi_escape }}&canonicalUrl={{ page.url | absolute_url | cgi_escape }}&shareSource=tumblr_share_button"
+<a class="resp-sharing-button__link" target="_blank" href="https://www.tumblr.com/widgets/share/tool?posttype=link&title={{ page.title  default: site.title | cgi_escape }}&caption={{ page.description | default: page.excerpt | default: site.description | cgi_escape }}&content={{ page.url | cgi_escape }}&canonicalUrl={{ page.url | absolute_url | cgi_escape }}&shareSource=tumblr_share_button"
   target="_blank" aria-label="">
   <span class="resp-sharing-button resp-sharing-button--tumblr resp-sharing-button--{{ include.size | default: 'medium' }}"><span
       aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
@@ -48,7 +48,7 @@
 {% endif %}
 {% if site.share contains 'email' or page.share contains 'email' %}
 <a class="resp-sharing-button__link" href="mailto:?subject={{ page.title | default: site.title | cgi_escape }}&body={{ page.description | default: page.excerpt | default: site.description | cgi_escape }}%0D%0A{{ page.url | absolute_url | cgi_escape }}"
-  target="_self" aria-label="">
+  target="_blank" aria-label="">
   <span class="resp-sharing-button resp-sharing-button--email resp-sharing-button--{{ include.size | default: 'medium' }}"><span
       aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">

@@ -14,7 +14,7 @@ portal_link: ''
 ---
 Lazy Loading doesn't have to be hard. This is a very simple example/tutorial on how to do lazy loading. Lazy loading works best if you have to load in a lot of large images which slows down the page load.
 
-The only requirement for this implementation is, that you have to have to native image width and native image height. This can easilfy be done server-side.
+The only requirement for this implementation is, that you have to have to native image width and native image height. This can easily be done server-side.
 
 ### The HTML
 
@@ -24,7 +24,7 @@ The only requirement for this implementation is, that you have to have to native
 
 ### Implementation
 
-Because we don't want the page to wait untill all images are loaded untill showing the page, and we don't want the layout to change everytime an image is loaded in we have to set an initial width, you can also do this with CSS. You want the img element to have the correct size before the image is even loaded.
+Because we don't want the page to wait until all images are loaded until showing the page, and we don't want the layout to change every time an image is loaded in we have to set an initial width, you can also do this with CSS. You want the img element to have the correct size before the image is even loaded.
 
 Now we fill the image to it's correct size using Javascript.
 
@@ -49,7 +49,7 @@ img[data-src] {
 }
 ```
 
-But of courcse, we want to show the image so let's change the javascript to the following. Bassicly we load another image in the background. Once it's loaded we set it's "src" to our initial image's "src" and remove the padding which we used to fill the image initially.
+But of course, we want to show the image so let's change the javascript to the following. Basically we load another image in the background. Once it's loaded we set it's "src" to our initial image "src" and remove the padding which we used to fill the image initially.
 
 ```javascript
 var img = document.querySelector('img[data-src]');
@@ -118,7 +118,7 @@ window.addEventListener('load', load);
 
 And we're done. This is all you need to lazy load images. I've included some extra examples below, their all using the "lazyLoad" function above.
 
-### Start lazy loading images immidiately
+### Start lazy loading images immediately
 
 <p></p>
 
@@ -137,7 +137,7 @@ document.querySelectorAll('img[data-src]').forEach(img => {
 });
 ```
 
-### Wait untill image is visible
+### Wait until image is visible
 
 <p></p>
 

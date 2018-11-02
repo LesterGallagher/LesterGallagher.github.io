@@ -22,10 +22,12 @@ self.addEventListener('fetch', function (event) {
                             else return networkResponse;
                         });
                     }
-                    var cachedResponse = networkResponse.clone();
-                    caches.open(DYNAMIC_CACHE).then(function (dynCache) {
-                        dynCache.put(event.request, cachedResponse);
-                    });
+                    if (event.request.method === 'GET') {
+                        var cachedResponse = networkResponse.clone();
+                        caches.open(DYNAMIC_CACHE).then(function (dynCache) {
+                            dynCache.put(event.request, cachedResponse);
+                        });
+                    }
                     return networkResponse;
                 });
             });
@@ -70,3 +72,24 @@ self.addEventListener('install', function (event) {
         })
     );
 });
+
+self.addEventListener('push', ev => {
+    const data = ev.data.json();
+    console.log('Got push', data);
+    data.badge = 'https://esstudio.site/assets/img/meta-icons/mstile-144x144.png';
+    data.icon = 'https://esstudio.site/assets/img/meta-icons/apple-touch-icon-180x180.png';
+    ev.waitUntil(
+        self.registration.showNotification(data.title, data)
+    );
+});
+
+
+self.addEventListener('notificationclick', function (event) {
+    if (event.notification.data && event.notification.data.url) {
+        event.notification.close();
+        event.waitUntil(
+            clients.openWindow(event.notification.data.url)
+        );
+    }
+});
+

@@ -40,7 +40,7 @@ Ook kun je informatie vinden over ligplaatsen, woonplaatsen, en standplaatsen.
 
 Deze app kan voor veel verschillende doeleinden handig zijn. Voor bedrijven om gemakkelijk toegang te hebben tot deze dataset, maar je kunt ook gewoon even kijken wat de oppervlakte van het huis van de buren is.
 
-{% include app-portal %}
+{% include app-portal.html %}
 
 Er is ook een app versie beschikbaar via [google play](https://play.google.com/store/apps/details?id=com.EchoSierraStudio.Kadaster_Kaart).
 

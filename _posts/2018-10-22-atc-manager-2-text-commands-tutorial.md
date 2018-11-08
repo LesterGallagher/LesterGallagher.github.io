@@ -10,6 +10,7 @@ portal_description: Web based air traffic control game. Manage airspace of busy 
 portal_image: "/uploads/schiphol.PNG"
 portal_link: https://esstudio.site/atc-manager-2
 
+categories: [atc manager 2]
 ---
 All Tutorials
 

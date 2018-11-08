@@ -1,7 +1,7 @@
 ---
 title: Links
 date: 2018-10-16 00:25:26 +0200
-linklink: ''
+link: ''
 image: ''
 title_bold: ''
 image_width: ''

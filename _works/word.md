@@ -1,7 +1,7 @@
 ---
 title: Word
 date: 2018-10-30 16:07:37 +0100
-linklink: https://wordfinder.esstudio.site
+link: https://wordfinder.esstudio.site
 image: "/uploads/padded-white.png"
 title_bold: Finder
 image_width: 700

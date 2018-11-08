@@ -1,7 +1,7 @@
 ---
 title: 'Salary '
 date: 2018-10-20 19:01:22 +0200
-linklink: https://salary-comparison.esstudio.site
+link: https://salary-comparison.esstudio.site
 image: "/uploads/icon.jpg"
 title_bold: Comparison
 image_width: 512

@@ -8,7 +8,7 @@ portal_description: Web based air traffic control game. Manage airspace of busy 
   like Schiphol or Heathrow in a realistic simulator.
 portal_image: "/uploads/vfr.png"
 portal_link: https://esstudio.site/atc-manager-2
-
+categories: [atc manager 2]
 ---
 **Tutorials**
 

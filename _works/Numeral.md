@@ -7,7 +7,7 @@ portal_title: ''
 portal_description: ''
 portal_image: ''
 portal_link: ''
-linklink: https://basecalc.esstudio.site/
+link: https://basecalc.esstudio.site/
 title_bold: Converter Website
 image_width: 664
 image_height: 664

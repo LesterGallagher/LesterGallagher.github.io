@@ -5,7 +5,7 @@ is_partial: false
 fields:
 - type: text
   label: link
-  name: linklink
+  name: link
 - type: file
   name: image
   label: image

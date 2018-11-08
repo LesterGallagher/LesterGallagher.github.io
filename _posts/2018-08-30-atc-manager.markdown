@@ -4,7 +4,7 @@ date: 2018-08-30 16:07:00 +0000
 image: "/uploads/Screenshot_20180830-180953.png"
 description: Guide incoming and outgoing traffic safely to their destination. Air
   Traffic Control(ATC) manager has been updated to version 2,
-
+categories: [atc manager]
 ---
 **Version 2 is out!**
 

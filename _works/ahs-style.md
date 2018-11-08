@@ -1,7 +1,7 @@
 ---
 title: AHS Style
 date: 2018-10-15 23:29:48 +0200
-linklink: https://americanhorrorstory.style/
+link: https://americanhorrorstory.style/
 image: "/uploads/styleguide_logo.jpg"
 title_bold: Guide
 image_width: 766

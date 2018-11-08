@@ -43,9 +43,7 @@
   {% assign count = 10 %}
   {% for post in posts %}
     {% if page.category %}
-      {% if post.categories contains page.category %}
-      {% else %}
-      {{ post.categories }} contains {{ page.category }}
+      {% if post.categories contains page.category %}{% else %}
         {% if post.category != page.category %}
           {% continue %}
         {% endif %}

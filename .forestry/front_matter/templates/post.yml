@@ -31,7 +31,7 @@ fields:
   name: portal_link
   label: portal_link
 pages:
-- _posts/a-pathfinding-in-javascript.md
+- _posts/2018-11-14-a-pathfinding-in-javascript.md
 - _posts/2018-09-10-3d-texturing-using-curvature-maps.md
 - _posts/2018-10-30-creating-an-atom-feed-reader-with-javascript.md
 - _posts/2018-11-14-html2js-loader-tutorial.md

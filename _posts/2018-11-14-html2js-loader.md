@@ -11,13 +11,7 @@ portal_image: ''
 portal_link: ''
 
 ---
-[![GitHub license](https://img.shields.io/github/license/LesterGallagher/html2js-loader.svg)](https://github.com/LesterGallagher/html2js-loader/blob/master/LICENSE.txt)
-[![GitHub issues](https://img.shields.io/github/issues/LesterGallagher/html2js-loader.svg)](https://github.com/LesterGallagher/html2js-loader/issues)
-[![Twitter](https://img.shields.io/twitter/url/https/www.npmjs.com/package/html2js-loader.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Fhtml2js-loader)
-
 Exports HTML to javascript instructions. Create javascript functions from HTML templates.
-
-[![npm](/uploads/npm.png)](https://www.npmjs.com/package/html2js-loader)
 
 Dynammicly creating HTML in javascript is actually quiete easy right? You just save the html as a string and use ".innerHTML" to insert it into the document. Well, if you're doing that a lot it can get slow. The browser has to parse the HTML string everytime. This also means that you're putting HTML snippets in you're javascript code, which violates the "separation of concerns" priniciple. Putting HTML strings in your javascript also prevents you're editor/IDE from giving intellisense, code-completion, linting, etc. A solution would be to convert these html strings to javascript instructions:
 
@@ -58,6 +52,8 @@ document.querySelector('#some-selector').innerHTML = createArticle();
 ```
 
 This combines the best of both worlds. It's easy to maintain, easy to read and fast. If you're not using a fancy build tool like webpack can copy [this code snippet](https://github.com/LesterGallagher/html2js/blob/master/src/index.js) and implement it yourself. You can also use [https://html2js.esstudio.site](this) online converter if you just need to convert once.
+
+[![npm](/uploads/npm.png)](https://www.npmjs.com/package/html2js-loader)
 
 ## Install
 

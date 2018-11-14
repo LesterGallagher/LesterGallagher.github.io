@@ -1,6 +1,6 @@
 ---
 title: Creating an Atom feed reader with Javascript
-date: 2018-10-30 21:26:22 +0100
+date: 2018-10-30 20:26:22 +0000
 image: "/uploads/rssreader.jpg"
 description: Atom is a type of webfeed like RSS. The Atom format was developed as
   an alternative to RSS. In this tutorial we will learn how create an Atom feed reader
@@ -10,9 +10,10 @@ portal_description: Easily search for news on multiple platforms, find feeds on 
   websites and more. Also works as a classic RSS/Atom reader.
 portal_image: "/uploads/logo-6c4e4d.png"
 portal_link: https://esstudio.site/newsfeeder
+author: ''
 
 ---
-First of all, Atom is an extension of XML, just like RSS. Atom uses the `.atom` and `.xml` extensions and the `application/atom+xml` mimetype. Below is an example of an Atom feed from [https://americanhorrorstory.style/](AHS Blog). Having an atom feed on your website is a good idea, you can get more exposure via rss readers like [https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Famericanhorrorstory.style%2Ffeed](Feedly), NewsBlur or [NewsFeeder (a website/app i created)](https://esstudio.site/newsfeeder/).
+First of all, Atom is an extension of XML, just like RSS. Atom uses the `.atom` and `.xml` extensions and the `application/atom+xml` mimetype. Below is an example of an Atom feed from [https://americanhorrorstory.style/](AHS Blog). Having an atom feed on your website is a good idea, you can get more exposure via rss readers like [Feedly](https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Famericanhorrorstory.style%2Ffeed), NewsBlur or [NewsFeeder (a website/app i created)](https://esstudio.site/newsfeeder/).
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -44,6 +45,8 @@ First of all, Atom is an extension of XML, just like RSS. Atom uses the `.atom` 
 </feed>
 ```
 
+{% include adsense.html %}
+
 Let's fetch the feed with [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API). You can use any valid Atom feed you want.
 
 ```javascript
@@ -62,6 +65,8 @@ const xmlDoc = parser.parseFromString(xml,"text/xml");
 Let's log the "xmlDoc" to the console. This will show a list of entry elements, which we need to display our posts.
 
 ![Atom Feed console.log](/uploads/rssfeed.PNG)
+
+{% include adsense.html %}
 
 Because the xmlDoc is of type "Document" and not "HTMLDocument", we can't use functions like ".querySelector" so we will use ".getElementsByTagName" to select the entry tags. This will return an array like object. To convert an array like object or iterable object, to an array, use [Array.from(arrayLikeObject)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/from).
 
@@ -112,6 +117,8 @@ Let's join the html strings together and put it on the page.
 ```javascript
 document.getElementById('items').innerHTML = html.join('');
 ```
+
+{% include adsense.html %}
 
 You can checkout the full example, with code below. I've also added some extra css and html markup.
 

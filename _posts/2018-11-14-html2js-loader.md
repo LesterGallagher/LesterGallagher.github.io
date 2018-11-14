@@ -17,16 +17,8 @@ portal_link: ''
 
 [![npm](/uploads/npm.png)](https://www.npmjs.com/package/html2js-loader)
 
-<div align="center">
-<a href="https://github.com/webpack/webpack">
-<img width="200" height="200" vspace="" hspace="25"
-src="https://worldvectorlogo.com/logos/webpack.svg">
-</a>
-<a href="https://html2js.esstudio.site">
-<img width="200" height="200" vspace="" hspace="25"
-src="https://html2js.esstudio.site/android-chrome-256x256.png">
-</a>
-</div>
+[![](https://worldvectorlogo.com/logos/webpack.svg)](https://github.com/webpack/webpack)
+[![](https://html2js.esstudio.site/android-chrome-256x256.png)](https://html2js.esstudio.site)
 
 Exports HTML to javascript instructions. Create javascript functions from HTML templates.
 
@@ -68,7 +60,7 @@ const createArticle = require('./template.html'); // or import createArticle fro
 document.querySelector('#some-selector').innerHTML = createArticle();
 ```
 
-This combines the best of both worlds. It's easy to maintain, easy to read and fast. If you're not using a fancy build tool like webpack can copy [this code snippet](https://github.com/LesterGallagher/html2js/blob/master/src/index.js) and implement it yourself. You can also use [https://html2js.esstudio.site](this) online converter if you just need to convert once. 
+This combines the best of both worlds. It's easy to maintain, easy to read and fast. If you're not using a fancy build tool like webpack can copy [this code snippet](https://github.com/LesterGallagher/html2js/blob/master/src/index.js) and implement it yourself. You can also use [https://html2js.esstudio.site](this) online converter if you just need to convert once.
 
 ## Install
 

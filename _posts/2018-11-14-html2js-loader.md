@@ -38,12 +38,37 @@ Dynammicly creating HTML in javascript is actually quiete easy right? You just s
 document.querySelector('#some-selector').innerHTML = `
 <article>
 	<h2>My dynamically generated html</h2>
-</article>
-`
+</article>`;
 ```
 
 ```javascript
+// to 
+
+var container = document.querySelector('#some-selector');
+var article = document.createElement('article');
+var h2 = document.createElement('h2');
+h2.innerText = 'My dynamically generated html';
+article.appendChild(h2);
+container.appendChild(article);
 ```
+
+Although this is faster, this kind of code can become long, unclear, tedius and difficult to maintain. You will also need to use document fragments if you're doing this in a loop because adding an element to the DOM every time you iterate through a loop can be even more expensive than setting the ".innerHTML" of the container in the first place. Why can't we write like this:
+
+```html
+<!-- template.html --!>
+
+<article>
+	<h2>My dynamically generated html</h2>
+</article>
+```
+
+```javascript
+const createArticle = require('./template.html'); // or import createArticle from './template.html';
+
+document.querySelector('#some-selector').innerHTML = createArticle();
+```
+
+This combines the best of both worlds. It's easy to maintain, easy to read and fast. If you're not using a fancy build tool like webpack can copy [this code snippet](https://github.com/LesterGallagher/html2js/blob/master/src/index.js) and implement it yourself. You can also use [https://html2js.esstudio.site](this) online converter if you just need to convert once. 
 
 ## Install
 

@@ -156,3 +156,6 @@ And the following minified javascript instructions for the html template:
 ```javascript
 var e=a("ul");c(e,"role","list");var f=a("li");d(f,b("Item one"));d(e,f);f=a("li");d(f,b("Item two"));d(e,f);f=a("li");d(f,b("Item three"));d(e,f);
 ```
+
+{% include javascript_affiliate.html %}
+

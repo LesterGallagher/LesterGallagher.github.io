@@ -15,12 +15,9 @@ portal_link: ''
 [![GitHub issues](https://img.shields.io/github/issues/LesterGallagher/html2js-loader.svg)](https://github.com/LesterGallagher/html2js-loader/issues)
 [![Twitter](https://img.shields.io/twitter/url/https/www.npmjs.com/package/html2js-loader.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=https%3A%2F%2Fwww.npmjs.com%2Fpackage%2Fhtml2js-loader)
 
-[![npm](/uploads/npm.png)](https://www.npmjs.com/package/html2js-loader)
-
-[![](https://worldvectorlogo.com/logos/webpack.svg)](https://github.com/webpack/webpack)
-[![](https://html2js.esstudio.site/android-chrome-256x256.png)](https://html2js.esstudio.site)
-
 Exports HTML to javascript instructions. Create javascript functions from HTML templates.
+
+[![npm](/uploads/npm.png)](https://www.npmjs.com/package/html2js-loader)
 
 Dynammicly creating HTML in javascript is actually quiete easy right? You just save the html as a string and use ".innerHTML" to insert it into the document. Well, if you're doing that a lot it can get slow. The browser has to parse the HTML string everytime. This also means that you're putting HTML snippets in you're javascript code, which violates the "separation of concerns" priniciple. Putting HTML strings in your javascript also prevents you're editor/IDE from giving intellisense, code-completion, linting, etc. A solution would be to convert these html strings to javascript instructions:
 

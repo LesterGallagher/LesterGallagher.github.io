@@ -3,7 +3,9 @@ title: html2js-loader tutorial
 date: 2018-11-14 13:35
 image: "/uploads/tut.PNG"
 author: ''
-description: ''
+description: This tutorial covers how you setup the html2js-loader and webpack. If
+  you don't know what html2js does, you can read this blog post or use the online
+  converter tool.
 portal_title: ''
 portal_description: ''
 portal_image: ''

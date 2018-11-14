@@ -28,6 +28,8 @@ Let's begin with creating the draggable area. We will give it a height of 340px,
 
 Because there is no initialization code, you can dynammicly add these elements and it will just work.
 
+{% include adsense.html %}
+
 ### The CSS
 
 Here are the CSS rules that I used. The only required rules are that a ".draggable" must have the "position" rule set to "relative" or "absolute". This is because we will manipulate the "left" and "top" CSS rules. If you have multiple draggable elements and you're using "position: absolute", the elements will initially overlap. And if you haven't set a fixed height for the draggable area, the draggable area will collapse to "height = 0" and you're draggable elements will not be visible/work. If you don't understand position absolute or position relative, you can checkout the [W3Schools tutorial on CSS Layout](https://www.w3schools.com/css/css_positioning.asp).
@@ -62,6 +64,8 @@ Here are the CSS rules that I used. The only required rules are that a ".draggab
 Finnaly, the Javascript. If you don't want to create global variables you can wrap the code in an iffy: `(function(){<code>})()`. This is called an immediately-invoked function expression (or IIFE, pronounced "iffy").
 
 Let's start by listening for "mousedown" events. Then we loop through the event path to see if we clicked on the "dragger" element (the handle). Then we continue untill we find the draggable element. We save the draggable element to the variable "target" and save the cursor position relative to the target position (the "left" and "right" CSS rules). We use slice to get red of the "px" at the end of the CSS rule (`"100px".slice(0, -2) === "100"`). If the CSS rule string is an empty string the minus operator will type coerce it to zero.
+
+{% include adsense.html %}
 
 Now, let's listen for the "mousemove" event. If the target is null we immediately return. If it's not, we move the element using the CSS "top" and "left" rules. Then we check if the element is within the parent. If it's not, we set change the position so it's clamped inside the parent.
 

@@ -221,7 +221,7 @@ Else, we set the node's index on the closedSet. Marking it as discovered. Then w
 // }
 ```
 
-Now we start looping over every neighbour. If the neighbour is in the closed set, we skip that node and continue. Then we set the tentative gscore of the neighbour to the gscore of the previous node plus one. If the neighbour is not in the fscore set we add the nieghbour with the heuristic cost estimate plus the tentaive gscore. Then we set the camefrom and gscore set, and we push the neighbour onto the open set. If the nieghbour is in the fscore set, we check if the current tentative gscore is lower then the previous gscore. If so we set it onto the camefrom, gscore and fscore sets. We also delete and push the neighbour to trigger the openset the resort the binary tree. 
+Now we start looping over every neighbour. If the neighbour is in the closed set, we skip that node and continue. Then we set the tentative gscore of the neighbour to the gscore of the previous node plus one. If the neighbour is not in the fscore set we add the nieghbour with the heuristic cost estimate plus the tentaive gscore. Then we set the camefrom and gscore set, and we push the neighbour onto the open set. If the nieghbour is in the fscore set, we check if the current tentative gscore is lower then the previous gscore. If so we set it onto the camefrom, gscore and fscore sets. We also delete and push the neighbour to trigger the openset the resort the binary tree.
 
 And we're done, we now only need to define the "reconstructPath(cameFrom, currentI)" function:
 

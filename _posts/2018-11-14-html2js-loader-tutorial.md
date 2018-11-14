@@ -196,9 +196,4 @@ h1 {
 }
 ```
 
-
-
-
-
-
-
+{% include javascript_affiliate.html %}

@@ -11,7 +11,7 @@ portal_image: ''
 portal_link: ''
 
 ---
-There are a lot of libraries that offer this type of functionaly but this often means, loading hundreds of kilobytes of Javascript and CSS. I my case i justed wanted simple sticky note functionaly. I want a draggable element and a "dragger" handle with which I can drag the element. It had to be simple and flexible, extendible, no initialization code, it had to have support for nested draggables and should always stay within the parent element (the draggable area).
+There are a lot of libraries that offer this type of functionally but this often means, loading hundreds of kilobytes of Javascript and CSS. I my case I justed wanted simple sticky note functionally. I want a draggable element and a "dragger" handle with which I can drag the element. It had to be simple and flexible, extendible, no initialization code, it had to have support for nested draggables and should always stay within the parent element (the draggable area).
 
 ### The HTML
 
@@ -26,13 +26,13 @@ Let's begin with creating the draggable area. We will give it a height of 340px,
 </div>
 ```
 
-Because there is no initialization code, you can dynammicly add these elements and it will just work.
+Because there is no initialization code, you can dynamically add these elements and it will just work.
 
 {% include adsense.html %}
 
 ### The CSS
 
-Here are the CSS rules that I used. The only required rules are that a ".draggable" must have the "position" rule set to "relative" or "absolute". This is because we will manipulate the "left" and "top" CSS rules. If you have multiple draggable elements and you're using "position: absolute", the elements will initially overlap. And if you haven't set a fixed height for the draggable area, the draggable area will collapse to "height = 0" and you're draggable elements will not be visible/work. If you don't understand position absolute or position relative, you can checkout the [W3Schools tutorial on CSS Layout](https://www.w3schools.com/css/css_positioning.asp).
+Here are the CSS rules that I used. The only required rules are that a ".draggable" must have the "position" rule set to "relative" or "absolute". This is because we will manipulate the "left" and "top" CSS rules. If you have multiple draggable elements and you're using "position: absolute", the elements will initially overlap. And if you haven't set a fixed height for the draggable area, the draggable area will collapse to "height = 0" and your draggable elements will not be visible/work. If you don't understand position absolute or position relative, you can check out the [W3Schools tutorial on CSS Layout](https://www.w3schools.com/css/css_positioning.asp).
 
 ```css
 .draggable {
@@ -61,9 +61,9 @@ Here are the CSS rules that I used. The only required rules are that a ".draggab
 
 ### The Javascript
 
-Finnaly, the Javascript. If you don't want to create global variables you can wrap the code in an iffy: `(function(){<code>})()`. This is called an immediately-invoked function expression (or IIFE, pronounced "iffy").
+Finally, the Javascript. If you don't want to create global variables you can wrap the code in an iffy: `(function(){<code>})()`. This is called an immediately-invoked function expression (or IIFE, pronounced "iffy").
 
-Let's start by listening for "mousedown" events. Then we loop through the event path to see if we clicked on the "dragger" element (the handle). Then we continue untill we find the draggable element. We save the draggable element to the variable "target" and save the cursor position relative to the target position (the "left" and "right" CSS rules). We use slice to get red of the "px" at the end of the CSS rule (`"100px".slice(0, -2) === "100"`). If the CSS rule string is an empty string the minus operator will type coerce it to zero.
+Let's start by listening for "mousedown" events. Then we loop through the event path to see if we clicked on the "dragger" element (the handle). Then we continue until we find the draggable element. We save the draggable element to the variable "target" and save the cursor position relative to the target position (the "left" and "right" CSS rules). We use slice to get rid of the "px" at the end of the CSS rule (`"100px".slice(0, -2) === "100"`). If the CSS rule string is an empty string the minus operator will type coerce it to zero.
 
 {% include adsense.html %}
 

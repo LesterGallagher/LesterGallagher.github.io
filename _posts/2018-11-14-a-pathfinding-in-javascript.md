@@ -1,6 +1,6 @@
 ---
 title: A* Pathfinding in Javascript
-date: 2018-11-14 14:19
+date: 2018-11-14 14:19:03 +0100
 image: "/uploads/download.png"
 author: ''
 description: A Star Search Algorithm on a grid in Javascript. A* Search is a best-first
@@ -11,71 +11,74 @@ portal_image: ''
 portal_link: ''
 
 ---
-Because we'll be using binary heaps (min heap) in this tutorial i would recommend [this tutorial](https://esstudio.site/2018/10/31/implementing-binary-heaps-with-javascript.html) on implementing binary heaps with javascript.
+Because we'll be using binary heaps (min heap) in this tutorial I would recommend [this tutorial](https://esstudio.site/2018/10/31/implementing-binary-heaps-with-javascript.html) on implementing binary heaps with javascript.
 
 The code for the min heap is:
 
-    // I'm using a "MinHeap" in this example. If you don't know what priority queues or binary trees are, checkout this article: https://esstudio.site/2018/10/31/implementing-binary-heaps-with-javascript.html
+```javascript
+
+// I'm using a "MinHeap" in this example. If you don't know what priority queues or binary trees are, checkout this article: https://esstudio.site/2018/10/31/implementing-binary-heaps-with-javascript.html
     
-    class MinHeap {
-        constructor(selector) {
-            this.items = [];
-            this.selector = selector;
-        }
-    
-        seek() { return this.items[0]; }
-    
-        push(item) {
-            let i = this.items.length;
-            this.items.push(item);
-            while (i > 0 && this.selector(this.items[Math.floor((i + 1) / 2 - 1)]) > this.selector(this.items[i])) {
-                let t = this.items[i];
-                this.items[i] = this.items[Math.floor((i+1)/2-1)];
-                this.items[Math.floor((i+1)/2-1)] = t;
-                i = Math.floor((i + 1) / 2 - 1);
-            }
-        }
-    
-        pop() {
-            if (this.items.length <= 1) return this.items.pop();
-            const ret = this.items[0];
-            this.items[0] = this.items.pop();
-            let i = 0;
-            while (true) {
-                let lowest = this.selector(this.items[(i + 1) * 2]) < this.selector(this.items[(i + 1) * 2 - 1]) 
-                    ? (i + 1) * 2 : (i + 1) * 2 - 1;
-                if (this.selector(this.items[i]) > this.selector(this.items[lowest])) {
-                    let t = this.items[i];
-                    this.items[i] = this.items[lowest];
-                    this.items[lowest] = t;
-                    i = lowest             
-                } else break;
-            }
-            return ret;
-        }
-    
-        delete(item) {
-            let i = this.items.indexOf(item);
-            // heapify
-            this.items[i] = this.items.pop();
-            while (true) {
-                let lowest = this.selector(this.items[(i + 1) * 2]) < this.selector(this.items[(i + 1) * 2 - 1]) 
-                    ? (i + 1) * 2 : (i + 1) * 2 - 1;
-                if (this.selector(this.items[i]) > this.selector(this.items[lowest])) {
-                    let t = this.items[i];
-                    this.items[i] = this.items[lowest];
-                    this.items[lowest] = t;
-                    i = lowest             
-                } else break;
-            }
-        }
-    
-        heapify(arr) {
-            for (let i = 0; i < arr.length; i++) {
-                this.push(arr[i]);
-            }
-        }
+class MinHeap {
+  constructor(selector) {
+    this.items = [];
+    this.selector = selector;
+  }
+
+  seek() { return this.items[0]; }
+
+  push(item) {
+    let i = this.items.length;
+    this.items.push(item);
+    while (i > 0 && this.selector(this.items[Math.floor((i + 1) / 2 - 1)]) > this.selector(this.items[i])) {
+      let t = this.items[i];
+      this.items[i] = this.items[Math.floor((i+1)/2-1)];
+      this.items[Math.floor((i+1)/2-1)] = t;
+      i = Math.floor((i + 1) / 2 - 1);
     }
+  }
+
+  pop() {
+    if (this.items.length <= 1) return this.items.pop();
+    const ret = this.items[0];
+    this.items[0] = this.items.pop();
+    let i = 0;
+    while (true) {
+      let lowest = this.selector(this.items[(i + 1) * 2]) < this.selector(this.items[(i + 1) * 2 - 1]) 
+      ? (i + 1) * 2 : (i + 1) * 2 - 1;
+      if (this.selector(this.items[i]) > this.selector(this.items[lowest])) {
+        let t = this.items[i];
+        this.items[i] = this.items[lowest];
+        this.items[lowest] = t;
+        i = lowest             
+      } else break;
+    }
+    return ret;
+  }
+
+  delete(item) {
+    let i = this.items.indexOf(item);
+    // heapify
+    this.items[i] = this.items.pop();
+    while (true) {
+      let lowest = this.selector(this.items[(i + 1) * 2]) < this.selector(this.items[(i + 1) * 2 - 1]) 
+      ? (i + 1) * 2 : (i + 1) * 2 - 1;
+      if (this.selector(this.items[i]) > this.selector(this.items[lowest])) {
+        let t = this.items[i];
+        this.items[i] = this.items[lowest];
+        this.items[lowest] = t;
+        i = lowest             
+      } else break;
+    }
+  }
+
+  heapify(arr) {
+    for (let i = 0; i < arr.length; i++) {
+      this.push(arr[i]);
+    }
+  }
+}
+```
 
 Again if you don't understand something you can refer to [this blog post](https://esstudio.site/2018/10/31/implementing-binary-heaps-with-javascript.html).
 

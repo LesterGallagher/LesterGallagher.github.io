@@ -13,7 +13,7 @@ portal_link: https://esstudio.site/newsfeeder
 author: ''
 
 ---
-First of all, Atom is an extension of XML, just like RSS. Atom uses the `.atom` and `.xml` extensions and the `application/atom+xml` mimetype. Below is an example of an Atom feed from [https://americanhorrorstory.style/](AHS Blog). Having an atom feed on your website is a good idea, you can get more exposure via rss readers like [Feedly](https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Famericanhorrorstory.style%2Ffeed), NewsBlur or [NewsFeeder (a website/app i created)](https://esstudio.site/newsfeeder/).
+Atom is an extension of XML, just like RSS. Atom uses the `.atom` and `.xml` extensions and the `application/atom+xml` mimetype. Below is an example of an Atom feed from [https://americanhorrorstory.style/](AHS Blog). Having an atom feed on your website is a good idea, you can get more exposure via rss readers like [Feedly](https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Famericanhorrorstory.style%2Ffeed), NewsBlur or [NewsFeeder (a website/app i created)](https://esstudio.site/newsfeeder/).
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

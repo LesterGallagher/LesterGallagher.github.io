@@ -35,7 +35,7 @@ article.appendChild(h2);
 container.appendChild(article);
 ```
 
-Although this is faster, this kind of code can become long, unclear, tedius and difficult to maintain. You will also need to use document fragments if you're doing this in a loop because adding an element to the DOM every time you iterate through a loop can be even more expensive than setting the ".innerHTML" of the container in the first place. Why can't we write like this:
+Although this is faster, this kind of code can become long, unclear, tedious and difficult to maintain. You will also need to use document fragments if you're doing this in a loop because adding an element to the DOM every time you iterate through a loop can be even more expensive than setting the ".innerHTML" of the container in the first place. Why can't we write like this:
 
 ```html
 <!-- template.html --!>
@@ -135,7 +135,7 @@ module.exports = {
 };
 ```
 
-This will enable the compiler to name mangle these function calls. For example if we convert the following html:
+This will enable the compiler to name mangle these function calls. For example, if we convert the following html:
 
 ```html
 <ul role="list">
@@ -158,4 +158,3 @@ var e=a("ul");c(e,"role","list");var f=a("li");d(f,b("Item one"));d(e,f);f=a("li
 ```
 
 {% include javascript_affiliate.html %}
-

@@ -12,10 +12,10 @@ portal_image: ''
 portal_link: ''
 
 ---
-This tutorial covers how you setup the html2js-loader and webpack. If you don't know what html2js does, you can read [this blog post](https://esstudio.site/2018/11/14/html2js-loader.html) or use the [online converter tool](https://html2js.esstudio.site/). 
+This tutorial covers how you set up the html2js-loader and webpack. If you don't know what html2js does, you can read [this blog post](https://esstudio.site/2018/11/14/html2js-loader.html) or use the [online converter tool](https://html2js.esstudio.site/).
 
-- [Github repo](https://github.com/LesterGallagher/html2js-loader)
-- [NPM package]()
+* [Github repo](https://github.com/LesterGallagher/html2js-loader)
+* [NPM package]()
 
 To get started you can use the following instructions.
 
@@ -32,11 +32,9 @@ git clone https://github.com/LesterGallagher/html2js-loader-demo-tutorial.git
 
 When the loader and webpack have finished installing, add the following line to your scripts:
 
-```
-"scripts": {
-    "start": "webpack --config webpack.config.js --watch"
-}
-```
+    "scripts": {
+        "start": "webpack --config webpack.config.js --watch"
+    }
 
 Create a "webpack.config.js" file.
 
@@ -71,7 +69,7 @@ module.exports = {
 }
 ```
 
-Now create a folder called "dist" and add a "index.html":
+Now create a folder called "dist" and add an "index.html" file:
 
 ```html
 <!-- dist/index.html -->

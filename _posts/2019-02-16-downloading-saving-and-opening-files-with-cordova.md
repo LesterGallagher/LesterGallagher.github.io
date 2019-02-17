@@ -311,4 +311,4 @@ document.addEventListener("deviceready", function(dataURI) {
 });
 ```
 
-{% include javascript-affiliate.html %}
+{% include javascript_affiliate.html %}

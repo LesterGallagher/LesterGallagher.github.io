@@ -13,7 +13,9 @@ portal_link: ''
 ---
 In the browser, downloading files is actually quite easy.  You can just do:
 
-`<a download="filename.txt" href="data:text/plain;charset=utf-8,hello world!">Download</a>`
+```javascript
+<a download="filename.txt" href="data:text/plain;charset=utf-8,hello world!">Download</a>
+```
 
 But this doesn't work in webview. I've expanded on the answer given in this [stackoverflow question](https://stackoverflow.com/questions/43575581/cordova-download-a-file-in-download-folder) to work in both the browser and in a webview. It also let's the user open the files in a webview and polyfills the anchor's download attribute.
 

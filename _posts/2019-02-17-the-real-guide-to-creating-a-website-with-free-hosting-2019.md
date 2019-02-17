@@ -126,7 +126,11 @@ And you're done!
 
 To edit you're pages I recommend [forestry.io](https://forestry.io/ "https://forestry.io/"). To get started with foresty.io, click "login" and then "login with github". Import your github repository as a jekyll project and you can start adding pages. If you want to learn more check out the [documentation](https://forestry.io/docs/welcome/ "https://forestry.io/docs/welcome/").
 
-To change you're website's theme, 
+To change you're website's theme, you can select [these]( "https://pages.github.com/themes/") themes. Click on one of the themes, for example cayman. If you scroll down, you will probably see a "usage" section. You only need to do the first instruction which looks like this in the case of the cayman theme:
+
+Add the following to your site's `_config.yml`:
+
+    theme: jekyll-theme-cayman
 
 ## Note to programmers
 

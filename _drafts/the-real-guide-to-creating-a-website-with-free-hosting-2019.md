@@ -20,7 +20,7 @@ Go to [https://www.namecheap.com/domains/](https://www.namecheap.com/domains/ "h
 
 ![](/uploads/namecheap.png)
 
-In this example I'm using namecheap but you can use any service you want. If you want to follow along I suggest you buy the domain via namecheap, they provide good pricing and a nice user interface (I'm not sponsored). For example this domain costs 0.88 euro/yr which is about a 1 USD. Click "add to cart", create an account if you haven't already and buy the domain. 
+In this example I'm using namecheap but you can use any service you want. If you want to follow along I suggest you buy the domain via namecheap, they provide good pricing and a nice user interface (I'm not sponsored). For example this domain costs 0.88 euro/yr which is about a 1 USD. Click "add to cart", create an account if you haven't already and buy the domain.
 
 ## Step 2
 
@@ -42,7 +42,7 @@ Go back to cloudflare and wait untill cloudflare completes your nameserver setup
 
 ![](/uploads/cname-www.png)
 
-You need to add three records to your DNS table. 
+You need to add three records to your DNS table.
 
 1. Add an "A" record by clicking the dropdown in the top left in the above image and give it the name of your domain in my example it's "esstudio.site". Make sure you don't include any slashes or the "https://" part of the url. In the value field put in "192.30.252.153".
 2. Add another "A" record by clicking the dropdown in the top left in the above image and give it the name of your domain in my example it's "esstudio.site". Make sure you don't include any slashes or the "https://" part of the url. In the value field put in "192.30.252.154".
@@ -56,7 +56,7 @@ Next, go to [https://github.com/](https://github.com/ "https://github.com/"), an
 
 ![](/uploads/github-create.PNG)
 
-Choose a repository name and description, keep the repository public (it's going to be a website so it will be public anyway) and click "Create repository". 
+Choose a repository name and description, keep the repository public (it's going to be a website so it will be public anyway) and click "Create repository".
 
 The following page might be a bit confusing if you're not a programmer or you're not familiar with git(hub) but you need to click the "Create a new file" link/button.
 
@@ -90,16 +90,64 @@ You will probably see something like this. Because we want an absolute URL (with
 
 ![](/uploads/cname.png)
 
-Enter the domain name you just purchased. It's important that you don't include any slashes or the "https://" part in the domain name. Save the file and we're done with github. 
+Enter the domain name you just purchased. It's important that you don't include any slashes or the "https://" part in the domain name. Save the file and we're done with github.
 
 ## Step 4
 
-After completing the previous step, wait a minute and open your domain and see if it's working. If it's not, please leave a message in the comments. 
+After completing the previous step, wait a minute and open your domain and see if it's working. If it's not, please leave a message in the comments.
 
-To improve performance and enable SSL and HTTPS, go to back to cloudflare. For non-programmers, if you use HTTPS you're users will see a little security lock next to the URL to show that the page is secure. 
-
- 
+To improve performance and enable SSL and HTTPS, go to back to cloudflare. For non-programmers, if you use HTTPS you're users will see a little security lock next to the URL to show that the page is secure.
 
 ![](/uploads/ssl.png)
 
-Click on the crypto icon and enable full SSL. 
+Click on the crypto icon and enable full SSL.
+
+![](/uploads/https.png)
+
+Scroll down and make sure that "Always Use HTTPS" is selected.
+
+![](/uploads/speed.png)
+
+Click the speed icon. And enable "Auto Minify" of Javascript, CSS and HTML.
+
+![](/uploads/brotli.png)
+
+Scroll down and enable Brotli compression.
+
+![](/uploads/caching-menu.png)
+
+Scroll down and click the caching icon.
+
+![](/uploads/caching.png)
+
+Scroll down and select the Standard caching level. Set the browser cache expiration to 4 hours and make sure that "always online" is set to "On".
+
+And you're done!
+
+To edit you're pages I recommend [forestry.io](https://forestry.io/ "https://forestry.io/"). To get started with foresty.io, click "login" and then "login with github". Import your github repository and you can start adding pages. If you want to learn more 
+
+## Note to programmers
+
+If you're using a javascript framework or a build tool you can use git to push you're dist folder to the github-pages branch using the steps below. These steps are copied from:  [https://gist.github.com/cobyism/4730490](https://gist.github.com/cobyism/4730490 "https://gist.github.com/cobyism/4730490").
+
+#### Step 1
+
+Remove the dist directory from the project’s .gitignore file (it’s ignored by default by Yeoman).
+
+#### Step 2
+
+Make sure git knows about your subtree (the subfolder with your site).
+
+```bash
+git add dist && git commit -m "Initial dist subtree commit"
+```
+
+#### Step 3
+
+Use subtree push to send it to the gh-pages branch on GitHub.
+
+```bash
+git subtree push --prefix dist origin gh-pages
+```
+
+Boom. If your folder isn’t called dist, then you’ll need to change that in each of the commands above.

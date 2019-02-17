@@ -281,7 +281,7 @@ function download(filename, data, mimeType) {
   });
 }
 
-document.addEventListener("deviceready", function(dataURI) {
+function dataURItoBlob(dataURI) {
   var isBase64 = dataURI.split(",")[0].split(";")[1] === "base64";
   var byteString;
 

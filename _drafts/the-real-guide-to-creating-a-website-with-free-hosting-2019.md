@@ -126,6 +126,8 @@ And you're done!
 
 To edit you're pages I recommend [forestry.io](https://forestry.io/ "https://forestry.io/"). To get started with foresty.io, click "login" and then "login with github". Import your github repository as a jekyll project and you can start adding pages. If you want to learn more check out the [documentation](https://forestry.io/docs/welcome/ "https://forestry.io/docs/welcome/").
 
+To change you're website's theme, 
+
 ## Note to programmers
 
 If you're using a javascript framework or a build tool you can use git to push you're dist folder to the github-pages branch using the steps below. These steps are copied from:  [https://gist.github.com/cobyism/4730490](https://gist.github.com/cobyism/4730490 "https://gist.github.com/cobyism/4730490").

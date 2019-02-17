@@ -124,7 +124,7 @@ Scroll down and select the Standard caching level. Set the browser cache expirat
 
 And you're done!
 
-To edit you're pages I recommend [forestry.io](https://forestry.io/ "https://forestry.io/"). To get started with foresty.io, click "login" and then "login with github". Import your github repository and you can start adding pages. If you want to learn more 
+To edit you're pages I recommend [forestry.io](https://forestry.io/ "https://forestry.io/"). To get started with foresty.io, click "login" and then "login with github". Import your github repository as a jekyll project and you can start adding pages. If you want to learn more check out the [documentation](https://forestry.io/docs/welcome/ "https://forestry.io/docs/welcome/").
 
 ## Note to programmers
 

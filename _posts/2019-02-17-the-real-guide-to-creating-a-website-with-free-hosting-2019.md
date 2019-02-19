@@ -92,7 +92,7 @@ You will probably see something like this. Because we want an absolute URL (with
 
 Enter the domain name you just purchased. It's important that you don't include any slashes or the "https://" part in the domain name. Save the file and we're done with github.
 
-## Step 4
+## Step 5
 
 After completing the previous step, wait a minute and open your domain and see if it's working. If it's not, please leave a message in the comments.
 

@@ -16,6 +16,6 @@ Een nieuwe versie van de kadaster kaart is uitgebracht met een aantal vernieuwin
 
 Open de [proefversie](https://esstudio.site/kadaster-app/).
 
-Open in [Google Play](https://play.google.com/store/apps/details?id=com.EchoSierraStudio.Kadaster_Kaart).
+<a href='https://play.google.com/store/apps/details?id=com.EchoSierraStudio.Kadaster_Kaart&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Ontdek het op Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/nl_badge_web_generic.png'/></a>
 
 {% include app-portal.html %}

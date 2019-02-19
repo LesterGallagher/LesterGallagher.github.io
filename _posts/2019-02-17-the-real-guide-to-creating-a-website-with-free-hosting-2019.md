@@ -102,8 +102,6 @@ To improve performance and enable SSL and HTTPS, go to back to cloudflare. For n
 
 Click on the crypto icon and enable full SSL.
 
-![](/uploads/https.png)
-
 Scroll down and make sure that "Always Use HTTPS" is selected.
 
 ![](/uploads/speed.png)

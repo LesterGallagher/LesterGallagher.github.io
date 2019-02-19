@@ -62,7 +62,7 @@ The following page might be a bit confusing if you're not a programmer or you're
 
 If you know [HTML](https://www.w3schools.com/html/ "https://www.w3schools.com/html/") you can put in the following:
 
-![A screenshot of an index.html file](/uploads/html-file.png "HTML")
+![](/uploads/html-file.png)
 
 Otherwise enter the following:
 

@@ -24,7 +24,7 @@ In this example I'm using namecheap but you can use any service you want. If you
 
 ## Step 2
 
-When you're done, go to [https://www.cloudflare.com/](https://www.cloudflare.com/ "https://www.cloudflare.com/"), create an account and add a website:
+When you're done, go to [https://www.cloudflare.com/](https://www.cloudflare.com/ "https://www.cloudflare.com/"){:target="_blank"}, create an account and add a website:
 
 ![](/uploads/cloudflare-add-site.png)
 
@@ -52,7 +52,7 @@ For all the recods keep the TTL setting at "Automatic TTL".
 
 ## Step 3
 
-Next, go to [https://github.com/](https://github.com/ "https://github.com/"), and create an account if you haven't already. Click on the little plus icon in the top right and choose "New repository". You can also go to your repositories and click "New". You will see the following dialog:
+Next, go to [https://github.com/](https://github.com/ "https://github.com/"){:target="_blank"}, and create an account if you haven't already. Click on the little plus icon in the top right and choose "New repository". You can also go to your repositories and click "New". You will see the following dialog:
 
 ![](/uploads/github-create.PNG)
 
@@ -60,7 +60,7 @@ Choose a repository name and description, keep the repository public (it's going
 
 The following page might be a bit confusing if you're not a programmer or you're not familiar with git(hub) but you need to click the "Create a new file" link/button.
 
-If you know [HTML](https://www.w3schools.com/html/ "https://www.w3schools.com/html/") you can put in the following:
+If you know [HTML](https://www.w3schools.com/html/ "https://www.w3schools.com/html/"){:target="_blank"} you can put in the following:
 
 ![](/uploads/html-file.png)
 
@@ -68,9 +68,9 @@ Otherwise enter the following:
 
 ![A screenshot of an index.md file](/uploads/markdown.png "Markdown")
 
-The above picture shows a markdown file but that's to only thing you need to know. If you don't know anything about HTML or Markdown you can a website called [forestry.io](https://forestry.io/ "https://forestry.io/") to edit and create pages. I'm actually using it right now to write this article.
+The above picture shows a markdown file but that's to only thing you need to know. If you don't know anything about HTML or Markdown you can a website called [forestry.io](https://forestry.io/ "https://forestry.io/"){:target="_blank"} to edit and create pages. I'm actually using it right now to write this article.
 
-If you're a programmer, keep in mind that even though this is just a static website hosted on github, a lot of websites nowadays are just static web apps running react or angular which fetch data from an API. You can even use [https://firebase.google.com/](https://firebase.google.com/ "https://firebase.google.com/") for a full [serverless architecture](https://towardsdatascience.com/go-serverless-with-firebase-5348dedb70e9) or use something like heroku to create an API. You can use [forestry.io](https://forestry.io/ "https://forestry.io/") as a CMS for your github repositories. It actually commits and pushes your edits to github. You can even use [jekyll](https://jekyllrb.com/ "https://jekyllrb.com/") which has builtin support for sass, coffeescript, markdown and does a lot more. You can even use jekyll to [output data as JSON](https://www.techiediaries.com/how-to-use-jekyll-like-a-pro-output-data-as-json/). I've created an RSS reader using the methods above which can be found here: [https://newsfeeder.esstudio.site/](https://newsfeeder.esstudio.site/ "https://newsfeeder.esstudio.site/").
+If you're a programmer, keep in mind that even though this is just a static website hosted on github, a lot of websites nowadays are just static web apps running react or angular which fetch data from an API. You can even use [https://firebase.google.com/](https://firebase.google.com/ "https://firebase.google.com/"){:target="_blank"} for a full [serverless architecture](https://towardsdatascience.com/go-serverless-with-firebase-5348dedb70e9){:target="_blank"} or use something like heroku to create an API. You can use [forestry.io](https://forestry.io/ "https://forestry.io/"){:target="_blank"} as a CMS for your github repositories. It actually commits and pushes your edits to github. You can even use [jekyll](https://jekyllrb.com/ "https://jekyllrb.com/"){:target="_blank"} which has builtin support for sass, coffeescript, markdown and does a lot more. You can even use jekyll to [output data as JSON](https://www.techiediaries.com/how-to-use-jekyll-like-a-pro-output-data-as-json/){:target="_blank"}. I've created an RSS reader using the methods above which can be found here: [https://newsfeeder.esstudio.site/](https://newsfeeder.esstudio.site/ "https://newsfeeder.esstudio.site/"){:target="_blank"}.
 
 ## Step 4
 
@@ -124,9 +124,9 @@ Scroll down and select the Standard caching level. Set the browser cache expirat
 
 And you're done!
 
-To edit you're pages I recommend [forestry.io](https://forestry.io/ "https://forestry.io/"). To get started with foresty.io, click "login" and then "login with github". Import your github repository as a jekyll project and you can start adding pages. If you want to learn more check out the [documentation](https://forestry.io/docs/welcome/ "https://forestry.io/docs/welcome/").
+To edit you're pages I recommend [forestry.io](https://forestry.io/ "https://forestry.io/"){:target="_blank"}. To get started with foresty.io, click "login" and then "login with github". Import your github repository as a jekyll project and you can start adding pages. If you want to learn more check out the [documentation](https://forestry.io/docs/welcome/ "https://forestry.io/docs/welcome/"){:target="_blank"}.
 
-To change you're website's theme, you can select [these]( "https://pages.github.com/themes/") themes. Click on one of the themes, for example cayman. If you scroll down, you will probably see a "usage" section. You only need to do the first instruction which looks like this in the case of the cayman theme:
+To change you're website's theme, you can select [these]( "https://pages.github.com/themes/"){:target="_blank"} themes. Click on one of the themes, for example cayman. If you scroll down, you will probably see a "usage" section. You only need to do the first instruction which looks like this in the case of the cayman theme:
 
 Add the following to your site's `_config.yml`:
 
@@ -134,7 +134,7 @@ Add the following to your site's `_config.yml`:
 
 ## Note to programmers
 
-If you're using a javascript framework or a build tool you can use git to push you're dist folder to the github-pages branch using the steps below. These steps are copied from:  [https://gist.github.com/cobyism/4730490](https://gist.github.com/cobyism/4730490 "https://gist.github.com/cobyism/4730490").
+If you're using a javascript framework or a build tool you can use git to push you're dist folder to the github-pages branch using the steps below. These steps are copied from:  [https://gist.github.com/cobyism/4730490](https://gist.github.com/cobyism/4730490 "https://gist.github.com/cobyism/4730490"){:target="_blank"}.
 
 #### Step 1
 

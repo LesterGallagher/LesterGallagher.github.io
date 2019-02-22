@@ -22,9 +22,9 @@ fields:
   name: weight
   label: weight
 pages:
-- _works/wt.md
 - _works/salary.md
-- _works/Numeral.md
-- _works/ahs-style.md
-- _works/bespaar.md
+- _works/wt.md
 - _works/word.md
+- _works/bespaar.md
+- _works/ahs-style.md
+- _works/Numeral.md

@@ -15,6 +15,19 @@ fields:
 - type: text
   name: layout
   label: layout
+- type: text
+  label: portal_title
+  name: portal_title
+- type: text
+  label: portal_description
+  name: portal_description
+- type: file
+  label: portal_image
+  name: portal_image
+- type: text
+  name: portal_link
+  label: portal_link
 pages:
-- other-profiles.md
+- newsfeeder.md
 - links.md
+- other-profiles.md

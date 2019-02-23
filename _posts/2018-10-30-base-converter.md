@@ -1,6 +1,6 @@
 ---
 title: Base Converter
-date: 2018-10-30 11:50:18 +0100
+date: 2018-10-30 10:50:18 +0000
 image: "/uploads/basecalc.png"
 description: ''
 portal_title: Base Converter
@@ -8,9 +8,10 @@ portal_description: An easy to use application which converts to different numer
   systems.
 portal_image: "/uploads/basecalc.png"
 portal_link: https://basecalc.esstudio.site/
+author: ''
 
 ---
-This simple simple conversion tool converts the same number between different number systems. You can convert from any base, for example, hexadecimal, decimal, binary, octal, up to base 36, which is the largest base you can represent using letters, and numbers (0-9 + A-Z). 
+This simple simple conversion tool converts the same number between different number systems. You can convert from any base, for example, hexadecimal, decimal, binary, octal, up to base 36, which is the largest base you can represent using letters, and numbers (0-9 + A-Z).
 
 {% include app-portal.html %}
 

@@ -1,6 +1,6 @@
 ---
 title: Implementing Binary Heaps with Javascript
-date: 2018-10-31 17:23:28 +0100
+date: 2018-10-31 16:23:28 +0000
 image: "/uploads/binaryheap.png"
 description: A heap tree is a type of data structure where the each node is either
   greater than or equal or less than or equal to the node's children. Binary heaps
@@ -9,6 +9,7 @@ portal_title: ''
 portal_description: ''
 portal_image: ''
 portal_link: ''
+author: ''
 
 ---
 A heap tree is a type of data structure where the each node is either greater than or equal or less than or equal to the node's children. Binary heaps are often used to implement priority queues. Priority queues are used in pathfinding for example.
@@ -20,6 +21,8 @@ Even though it might sound like a difficult subject it's actually not that diffi
          7    12
         / \   /
        10 15 17
+
+{% include adsense.html %}
 
 We can implement a heap in two different ways:
 
@@ -51,6 +54,8 @@ To navigate the array we use these rules:
 * The parent child is located at Math.floor((i + 1) / 2 - 1)
 
 For example if we have a node located at index 7, we know that it's left child is located at `15 = (7 + 1) * 2 - 1`, the right child is located at index `16 = (7 + 1) * 2` and the parent is located at index `3 = Math.floor((7 + 1) / 2 - 1)`. If you're still struggling with how binary trees work, you can checkout [this article](https://www.cs.cmu.edu/\~adamchik/15-121/lectures/Binary%20Heaps/heaps.html) by Carnegie Mellon University which helped me out a lot.
+
+{% include adsense.html %}
 
 Using these rules we can write the following code:
 
@@ -182,6 +187,8 @@ class MaxHeap extends Heap {
 ```
 
 This basic implementation only implements push, pop and delete, but most of the time this is all you need.
+
+{% include adsense.html %}
 
 We can visualize the tree using the following html and javascript:
 

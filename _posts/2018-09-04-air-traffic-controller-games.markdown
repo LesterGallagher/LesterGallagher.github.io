@@ -1,10 +1,10 @@
 ---
 title: Air Traffic Controller Games
-date: 2018-09-04 12:48:00 +02:00
+date: 2018-09-04 10:48:00 +0000
 image: "/uploads/tracon.jpg"
 description: "A List of air traffic controller games of 2018/2019. \n\n"
----
 
+---
 Not all of the ATC apps listed here are games. Alot of them are simulators. If you are a real Air Traffic Controller and like to preted to be at work when you come home. Not all of these ATC games are free but i will take that into account.
 
 ## [Air Control Madness](https://play.google.com/store/apps/details?id=com.EchoSierraStudio.AirControlMadness&hl=en_US)
@@ -12,6 +12,8 @@ Not all of the ATC apps listed here are games. Alot of them are simulators. If y
 ![image-a460e5.png](/uploads/image-a460e5.png)
 
 Air Control Madness is an adictive  atc game which puts the job of handling incoming traffic, in your hands. [Link.](https://play.google.com/store/apps/details?id=com.EchoSierraStudio.AirControlMadness)
+
+{% include adsense.html %}
 
 ## [ATC Manager](https://play.google.com/store/apps/details?id=com.EchoSierraStudio.ATCManager)
 
@@ -31,34 +33,40 @@ ATC Manager is an ATC TRACON sim. Load and save your progress. It features a var
 
 ATC Manager 2 is a free web based app with a ton of features. It has support for speech synthesis. It has alot of customization options. Unlike alot of other ATC games it allows you to save and load progress.
 
-## **[Unmatched Air Traffic Control](https://www.facebook.com/unmatchedairtraffic/)**
+## [**Unmatched Air Traffic Control**](https://www.facebook.com/unmatchedairtraffic/)
 
 Unmatched Air Traffic Controll is a very fun 3D air traffic control game. Unmatched Air traffic Control is a game for Android iOS and Windows Phone. A new version of this game, Unmatched Air Traffic Control 2, has also been released.
 
-## **[Air Traffic Controller 4](https://www.amazon.com/Techno-Traffic-Controller-International-Airport/dp/B01EK2460S)**
+{% include adsense.html %}
+
+## [**Air Traffic Controller 4**](https://www.amazon.com/Techno-Traffic-Controller-International-Airport/dp/B01EK2460S)
 
 Air Traffic Controller 4 is a simulator game  that simulates the operation of an airport. The player's mission is to direct planes onto the correct ILS, land them on the runway, taxi them to the correct gate, and to direct takeoffs.
 
-## **[Take Control of the Tower](https://play.google.com/store/apps/details?id=air.nu.strafwerk.takecontrol)**
+## [**Take Control of the Tower**](https://play.google.com/store/apps/details?id=air.nu.strafwerk.takecontrol)
 
 This game is rather more difficulat. You must align the aircraft with the runway while separating between arrivals and departure.
 
-## **[ATC-SIM](https://atc-sim.com/)**
+## [**ATC-SIM**](https://atc-sim.com/)
 
 ## ![maxresdefault.jpg](/uploads/maxresdefault.jpg)
 
 ATC-SIM is a browser-based air traffic control simulator. It works by typing commands into a textbox. The game is simple and very addictive to play.
 
-## **[Air Control Lite](https://play.google.com/store/apps/details?id=dk.logisoft.aircontrol&hl=nl)**
+{% include adsense.html %}
+
+## [**Air Control Lite**](https://play.google.com/store/apps/details?id=dk.logisoft.aircontrol&hl=nl)
 
 ![download.jpg](/uploads/download.jpg)
 
 This simple and addictive game where the player has to control an airport with two runways and one helipad. The planes have different colors, Red, Blue and Green. Red for large incoming flights, blue for smaller planes, and green for incoming helicopters. It has the number one ranking in ATC games category on Google Play Store.
 
-## **[Endless ATC](https://store.steampowered.com/app/666610/Endless_ATC/)**
+## [**Endless ATC**](https://store.steampowered.com/app/666610/Endless_ATC/)
 
 Endless ATC is an easy to play simulation game, where you are an air traffic controller at the approach radar of a busy airport. The goal is to guide the planes safely to the runways to get a high score. If you make no errors, the number of planes you have to control gets larger and larger. How many flights at a time can you handle?
 
-## **[FlightRadar24](https://www.flightradar24.com/60,15/6)**
+## [**FlightRadar24**](https://www.flightradar24.com/60,15/6)
 
 The world's most popular flight tracker. Watch aircraft move around the world in real-time on detailed map, get up-to-date flight status & airport information.
+
+{% include adsense.html %}

@@ -9,8 +9,10 @@ portal_description: Web based air traffic control game. Manage airspace of busy 
   like Schiphol or Heathrow in a realistic simulator.
 portal_image: "/uploads/schiphol.PNG"
 portal_link: https://esstudio.site/atc-manager-2
+categories:
+- atc manager 2
+author: ''
 
-categories: [atc manager 2]
 ---
 All Tutorials
 
@@ -30,65 +32,65 @@ Then switch the "Text commands" to "On"
 
 Commands are case insensitive
 
-##### Changing heading
+###### Changing heading
 
-<airplane callsign> HDG <heading in degrees>
+&lt;airplane callsign&gt; HDG &lt;heading in degrees&gt;
 
-<airplane callsign> turn <heading in degrees>
+&lt;airplane callsign&gt; turn &lt;heading in degrees&gt;
 
-<airplane callsign> turn left heading <heading in degrees>
+&lt;airplane callsign&gt; turn left heading &lt;heading in degrees&gt;
 
 e.g DLH213 turn left heading 200
 
-##### Changing altitude
+###### Changing altitude
 
-<airplane callsign> alt <flightlevel or altitude in feet>
+&lt;airplane callsign&gt; alt &lt;flightlevel or altitude in feet&gt;
 
-<airplane callsign> climb and maintain <flightlevel or altitude in feet>
+&lt;airplane callsign&gt; climb and maintain &lt;flightlevel or altitude in feet&gt;
 
 DLH213 alt fl230
 
-##### Changing "Direct to"
+###### Changing "Direct to"
 
-<airplane callsign> dct <waypoint/runway callsign>
+&lt;airplane callsign&gt; dct &lt;waypoint/runway callsign&gt;
 
-<airplane callsign> direct <waypoint/runway callsign>
+&lt;airplane callsign&gt; direct &lt;waypoint/runway callsign&gt;
 
-<airplane callsign> direct to <waypoint/runway callsign>
+&lt;airplane callsign&gt; direct to &lt;waypoint/runway callsign&gt;
 
 e.g DLH213 dct EH11
 
-##### Changing speed
+###### Changing speed
 
-<airplane callsign> spd <speed in knots>
+&lt;airplane callsign&gt; spd &lt;speed in knots&gt;
 
-<airplane callsign> increase speed <speed in knots>
+&lt;airplane callsign&gt; increase speed &lt;speed in knots&gt;
 
-<airplane callsign> reduce speed <speed in knots>
+&lt;airplane callsign&gt; reduce speed &lt;speed in knots&gt;
 
-<airplane callsign> reduce speed to <speed in knots>
+&lt;airplane callsign&gt; reduce speed to &lt;speed in knots&gt;
 
 e.g DLH213 spd 200
 
-##### Takeoff
+###### Takeoff
 
-<airplane callsign> takeoff
+&lt;airplane callsign&gt; takeoff
 
-<airplane callsign> clear for takeoff
+&lt;airplane callsign&gt; clear for takeoff
 
 e.g DLH213 clear for takeoff
 
-##### Go-around
+###### Go-around
 
-<airplane callsign> go around
+&lt;airplane callsign&gt; go around
 
-<airplane callsign> goaround
+&lt;airplane callsign&gt; goaround
 
 e.g DLH213 go around
 
-##### Target State (VFR)
+###### Target State (VFR)
 
-<airplane callsign> extend <vfr state>
+&lt;airplane callsign&gt; extend &lt;vfr state&gt;
 
 e.g DLH213 extend downwind
 

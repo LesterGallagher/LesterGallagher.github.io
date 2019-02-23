@@ -17,7 +17,7 @@ Lazy Loading doesn't have to be hard. This is a very simple example/tutorial on 
 The only requirement for this implementation is, that you have to have to native image width and native image height. This can easily be done server-side.
 
 ### The HTML
-
+<p></p>
 ```html
 <img width="500" data-width="6000" data-height="4000" data-src="www.example.com/image">
 ```
@@ -25,6 +25,8 @@ The only requirement for this implementation is, that you have to have to native
 ### Implementation
 
 Because we don't want the page to wait until all images are loaded until showing the page, and we don't want the layout to change every time an image is loaded in we have to set an initial width, you can also do this with CSS. You want the img element to have the correct size before the image is even loaded.
+
+{% include adsense.html %}
 
 Now we fill the image to it's correct size using Javascript.
 
@@ -65,6 +67,8 @@ lazy.onload = function() {
 img.classList.add('loading');
 lazy.src = img.getAttribute('data-src'); 
 ```
+
+{% include adsense.html %}
 
 But what if we don't want to start loading every image on the page in the background. Let's say we only want to load in the images that are currently visible or we want to wait for some kind of event (click, load, DOMContentLoad, etc.).
 
@@ -116,6 +120,8 @@ var load = lazyLoad(img).load;
 window.addEventListener('load', load);
 ```
 
+{% include adsense.html %}
+
 And we're done. This is all you need to lazy load images. I've included some extra examples below, their all using the "lazyLoad" function above.
 
 ### Start lazy loading images immediately
@@ -163,6 +169,8 @@ document.querySelectorAll('img[data-src]').forEach(img => {
   };
 });
 ```
+
+{% include adsense.html %}
 
 ### Full example
 

@@ -8,9 +8,11 @@ description: Searching for a bicycle rental location? Use this app to quickly fi
 ---
 Having trouble finding a bike rental location in Amsterdam? View all NS bikes, bike hire and NS rental locations in Amsterdam and the rest of Holland/the Netherlands.
 
-{% include app-portal.html title="OV Bike Rentals" description="NS bikes rental locations in Amsterdam/The Netherlands. <a href='https://play.google.com/store/apps/details?id=com.EchoSierraStudio.Ov_Fiets_App\' target='_blank'>Google Play</a>" link="/ov-fiets-app" image="/uploads/my_logo_512.png" %}
+{% include app-portal.html title="OV Bike Rentals" description="NS bikes rental locations in Amsterdam/The Netherlands. <a href='https://play.google.com/store/apps/details?id=com.EchoSierraStudio.Ov_Fiets_App' target='_blank'>Google Play</a>" link="/ov-fiets-app" image="/uploads/my_logo_512.png" %}
 
 You can use the "OV Fiets App" to easily find information about NS bike rental locations. When you type in a city or location, the app will show you a list of suggested bike rental locations. When you've found the right rental location you click the "Go" button or select the station. This will open a page showing  the location's status (open or closed), the amount of bikes available, time since the last update, opening hours and the position of the bike rental location.
+
+{% include adsense.html %}
 
 If you're visiting Amsterdam this app might also come in handy:
 

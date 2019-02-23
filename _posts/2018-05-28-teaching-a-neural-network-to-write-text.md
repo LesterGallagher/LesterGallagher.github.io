@@ -1,23 +1,23 @@
 ---
 title: Teaching a Neural Network to write text
-date: 2018-05-28 15:44:00 +02:00
+date: 2018-05-28 13:44:00 +0000
 image: "/uploads/teaching-a-neural-net-how-to-code-visualization.png"
 layout: post
----
 
-A simple neural network that writes letters using [synaptic](https://github.com/cazala/synaptic) and [jimp](https://github.com/oliver-moran/jimp) in pure javascirpt.
+---
+A simple neural network that writes letters using [synaptic](https://github.com/cazala/synaptic) and [jimp](https://github.com/oliver-moran/jimp) in pure javascript.
 
 # [Checkout a working example below](#nn-example-text-writer)
 
 {% gist 26afb76d0bee8ec00dff89946901ed0e/b5c23bb621fe6bf75b4c2461b1d5c28df8b9245a %}
-I will be running the code in the browser but you are free to use Node.js. We need to include two libraries: [Jimp](https://github.com/oliver-moran/jimp) and [Synaptic](https://github.com/cazala/synaptic). 
+I will be running the code in the browser but you are free to use Node.js. We need to include two libraries: [Jimp](https://github.com/oliver-moran/jimp) and [Synaptic](https://github.com/cazala/synaptic).
 {% gist ba2beef73f2545aafbc0f68e69dcd720/91fda2ab12eb89e11a1190f16a36fe0e3f592804 %}
-We will be using the Architect and the Trainer from synaptic.js to create our neural network. If you are using Node.js, you will also have to require Jimp. Next create the "catagorical" helper function. This will transform a letter to a valid input for the neural network. For example: 1(B) => [ 0, 1, 0, 0, ..., 0 ]. 
+We will be using the Architect and the Trainer from synaptic.js to create our neural network. If you are using Node.js, you will also have to require Jimp. Next create the "catagorical" helper function. This will transform a letter to a valid input for the neural network. For example: 1(B) => \[ 0, 1, 0, 0, ..., 0 \].
 
 {% gist ba2beef73f2545aafbc0f68e69dcd720/633da86798d0d54f60fb18e5dbc70e91ef5a754c %}
 
-To create the images from letters we will use Jimp. After loading a jimp font we will start constructing the training data. 
-For every letter in the alphabet we will create an image version of the uppercase letter. "String.fromCharCode" takes in a ascii code and returns the character. 
+To create the images from letters we will use Jimp. After loading a jimp font we will start constructing the training data.
+For every letter in the alphabet we will create an image version of the uppercase letter. "String.fromCharCode" takes in a ascii code and returns the character.
 In ascii, 65 is the character code for "A". 66 is the character code for "B". etc. If you are using Node.js you can write the image (using image.write) to your file system.
 The training data will be in the format "`{ input: number[26], output: number[256] }`". Now use the raw pixel data from image.bitmap.data as output and the catagorical letter index as input. To calculate the greyscale value lets take the sum of the rgb channels and divide by 765. Lets's console.log to check our training data.
 
@@ -25,7 +25,7 @@ The training data will be in the format "`{ input: number[26], output: number[25
 
 {% include adsense.html %}
 
-With the training data is in place we can create our neural network by instantiating a new instance of Architect.Perceptron. Pass in the number of nodes per layer to the constructor. In this case we will use 26 nodes in our hidden layer. To train the network you can use the built-in synaptic.Trainer. It's important to set the learning rate to something below 0.05 for this example as a higher learning rate will make the neural network forget it's previous results. To improve the results you could use [LSTM Networks](http://colah.github.io/posts/2015-08-Understanding-LSTMs). 
+With the training data is in place we can create our neural network by instantiating a new instance of Architect.Perceptron. Pass in the number of nodes per layer to the constructor. In this case we will use 26 nodes in our hidden layer. To train the network you can use the built-in synaptic.Trainer. It's important to set the learning rate to something below 0.05 for this example as a higher learning rate will make the neural network forget it's previous results. To improve the results you could use [LSTM Networks](http://colah.github.io/posts/2015-08-Understanding-LSTMs).
 Check out a visualization of the network in the image below:
 
 {% include assets/img/teaching-a-neural-net-how-to-code-visualization.svg %}
@@ -52,33 +52,36 @@ SCRIPTS:
 {% endcomment %}
 
 <div id="nn-example-text-writer"></div>
+
 # Start Writing:
+
 <div id="nn-network-msg" class="alert alert-warning">Loading neural network...</div>
 <canvas height="16" id="c"></canvas>
-<input placeholder="Write some Text" name="input-text" id="input-text" type="text" pattern="[A-Za-z ]*">
+<input placeholder="Write some Text" name="input-text" id="input-text" type="text" pattern="\[A-Za-z \]*">
 <button id="write-some-text-go-btn" class="btn btn-default">Go</button>
 
 # Retrain:
+
 **Learning iterations:**
 <div class="alert alert-warning">Retraining with a <b>high</b> amount of learning iterations may take up to a minute to complete</div>
 <p>
-    <input step="1" min="1" max="300" value="50" type="range" class="flat-range-slider" name="learning-iterations" id="learning-iterations-slider">
-    <output id="iterations-output">50 iterations</output>
-    <button id="retrain-nn-btn" class="btn btn-default">Retrain</button>
+<input step="1" min="1" max="300" value="50" type="range" class="flat-range-slider" name="learning-iterations" id="learning-iterations-slider">
+<output id="iterations-output">50 iterations</output>
+<button id="retrain-nn-btn" class="btn btn-default">Retrain</button>
 </p>
 
 <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
+src="https://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
 <script src="{{ "/assets/js/jimp.min.js" | absolute_url }}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/synaptic/1.1.4/synaptic.min.js"             integrity="sha256-t3MKDO0e1ULGddDg4QswIm9r1ZfOzguJLRk2TFuRsIg=" crossorigin="anonymous"></script>
 <script src="{{ "/assets/js/neural-net-image-writer.min.js" | absolute_url }}"></script>
 <script>
-    var canvas = document.getElementById('c');
-    var ctx = canvas.getContext('2d');
-    var f = function(x) { return Math.floor(Math.max(0, Math.min(255, x))) }
-    
+var canvas = document.getElementById('c');
+var ctx = canvas.getContext('2d');
+var f = function(x) { return Math.floor(Math.max(0, Math.min(255, x))) }
+
     window.addEventListener('load', function(e) {
         $.getJSON("{{ "/resources/pretrained-nn.json" | absolute_url }}", function(nn) {
             $('#learning-iterations-slider').on('input', function(e) { 
@@ -117,7 +120,7 @@ SCRIPTS:
             }
         });
     }, false );
+
 </script>
 {% include javascript_affiliate.html %}
 {% include adsense.html %}
-

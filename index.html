@@ -1,18 +1,18 @@
 ---
 title: Work
-layout: default
+classname: home
+layout: lander
 ---
-
 {% assign works_list = site.works | sort: "weight" %}
 <main class="container home">
-    <div class="works-wrapper">
+    <div class="works-wrapper row">
         <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
             <article>
                 <header>
                     <h2>
                         <span>{{ site.abbrv }}</span> development studio.</h2>
                 </header>
-                <p>Home page of {{ site.title }} and lander page for all projects (and useless thingies) by ESS.</p>
+                <p>Home page of {{ site.title }} and lander page for all projects (and useless thingies) by ESStudio.</p>
             </article>
         </section>
         <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
@@ -42,7 +42,7 @@ layout: default
                     {% assign percentage = height | times: 100.0 | divided_by: width | round: 4 %}
                     <div class="ar" style="padding-top: {{ percentage }}%">
                         <div class="af">
-                            <img class="lazyload" data-src="{{ work.image | absolute_url }}" alt="{{ work.title }} image" />
+                            <img class="lazyload{% if work.padded %} padded{% endif %}" data-src="{{ work.image | absolute_url }}" alt="{{ work.title }} image" />
                         </div>
                     </div>
                     <figcaption>

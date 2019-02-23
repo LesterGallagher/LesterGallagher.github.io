@@ -5,8 +5,6 @@
 	box-sizing: border-box;
 }
 
-.resp-sharing-button__link
-
 html {
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
@@ -15,7 +13,7 @@ html {
 body {
 	overflow-x: hidden;
 	background-color: #f6f6f6;
-	font-family: sans-serif, Arial, Helvetica;
+	font-family: 'Raleway', sans-serif;
 }
 
 body,
@@ -24,6 +22,10 @@ img {
 	-o-transition: all .2s linear;
 	-moz-transition: all .2s linear;
 	-webkit-transition: all .2s linear;
+}
+
+.nopadding {
+	padding: 0;
 }
 
 .img-responsive {
@@ -120,6 +122,10 @@ figure.oa:hover img.loaded {
 .work-item img {
 	width: 100%;
 	height: 100%;
+}
+
+.work-item img.padded {
+	padding: 20px;
 }
 
 ::-webkit-scrollbar-track {
@@ -535,7 +541,7 @@ main.main-inner-wrapper .about-content p {
 /*===== Blog ===*/
 
 article.blog-header {
-	padding-bottom: 218px
+	padding-bottom: 148px
 }
 
 section.blog-content {
@@ -732,3 +738,90 @@ section.blog-content figure img {
 	width: 28px;
 	height: 28px;
 }
+
+.lander-banner {
+	min-height: 800px;
+	background-image: url('/uploads/trianglify.svg');
+	background-size: cover;
+	background-position: center center;
+	color: #fff;
+	margin-bottom: 80px;
+	padding-bottom: 80px;
+}
+
+.lander-banner .newsfeeder {
+	
+}
+
+.lander-banner .newsfeeder h1 {
+	font-size: 5em;
+	margin-top: 0;
+}
+
+.lander-banner .newsfeeder img {
+	margin: auto;
+	margin-top: 80px;
+}
+
+@media screen and (min-width: 768px) {
+	.lander-banner .newsfeeder img {
+		margin-top: -110px;
+	}
+	.lander-banner .newsfeeder h1 {
+		font-size: 3.5em;
+		margin-top: 130px;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.lander-banner .newsfeeder img {
+	}
+	.lander-banner .newsfeeder h1 {
+		font-size: 5em;
+	}
+}
+
+@media screen and (max-width: 530px) {
+	.lander-banner .newsfeeder h1 {
+		font-size: 4em;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.lander-banner .newsfeeder h1 {
+		font-size: 3em;
+	}
+}
+
+.lander-banner .logo {
+	filter: invert(1);
+}
+
+.lander-banner #menu-button span {
+	background-color: #fff;
+}
+
+.lander-banner #menu-button.open span {
+	background-color: #111111;
+}
+
+.lander-banner .newsfeeder .btn-white {
+	margin: 0;
+	margin-top: 40px;
+	background-color: transparent;
+	border: 1px solid #fff;
+	border-radius: 100px;
+	color: #fff;
+	display: inline-block;
+	padding: 20px;
+	line-height: 1em;
+	width: auto;
+	letter-spacing: normal;
+	font-weight: normal;
+}
+
+.lander-banner .newsfeeder .btn-white:hover {
+	background-color: #fff;
+	color: #ec493e;
+}
+

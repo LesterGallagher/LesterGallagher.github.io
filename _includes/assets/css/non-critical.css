@@ -122,10 +122,6 @@ section.blog-content:hover figure img {
 	opacity: 0.5
 }
 
-.blog-details .enter-content {
-	font-family: sans-serif;
-}
-
 .blog-details .enter-content a {
 	text-decoration: underline;
 	color: #fb5353;

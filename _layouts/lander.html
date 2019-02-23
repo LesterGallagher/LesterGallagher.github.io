@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {% include head.html %}
+  <body>
+    <div class="lander-banner">
+        {% include header.html %}
+        <div class="newsfeeder container">
+          <div class="col-sm-6 col-xs-12 nopadding">
+            <h1>Newsfeeder</h1>
+            <p class="lead">
+              The easiest way to follow news from your favorite websites, blogs 
+              and news sites. Easily search for news on multiple platforms, find feeds on popular 
+              websites and more. Also works as a classic RSS/Atom reader.
+            </p>
+            <a target="_blank" href="https://newsfeeder.esstudio.site" class="btn btn-white">Open Newsfeeder</a>
+          </div>
+          <div class="col-sm-6 col-xs-12 nopadding">
+            <img src="/uploads/newsfeeder-screenshot.png" class="img-responsive" alt="Newsfeeder screenshot banner.">
+          </div>
+        </div>
+    </div>
+    {{ content }}
+    {% include footer.html %}
+  </body>
+</html>

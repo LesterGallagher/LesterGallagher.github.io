@@ -10,7 +10,7 @@ portal_link: "/newsfeeder/"
 portal_image: "/uploads/logo-6c4e4d.png"
 ---
 
-Newsfeeder (also known as "feedfetish") is a search engine and modern RSS/Atom reader. It let's you combine all of your different news/blog, like Reddit, Cnn, Lifehacker, etc. All of your your favorite websites and blogs in one place. Get started for free without the need to sign up below by clicking the launch button.
+Newsfeeder (also known as "feedfetish") is a search engine and modern RSS/Atom reader. It let's you combine all of your different news/blog, like Reddit, Cnn, Lifehacker, etc. All of your your favorite websites, blogs in one place. Get started for free without the need to sign up below by clicking the launch button.
 
 ![Newsfeeder screenshot](/newsfeeder/images/news-feed-added-item.png)
 

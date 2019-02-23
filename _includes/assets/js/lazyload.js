@@ -35,10 +35,4 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("resize", lazyLoad);
   window.addEventListener("orientationchange", lazyLoad);
   lazyLoad();
-
-  var preloads = document.getElementsByClassName('preload');
-  for (var i = 0; i < preloads.length; i++) {
-    if (preloads[i].getAttribute('as') === 'style') preloads[i].setAttribute('rel', 'stylesheet');
-    if (preloads[i].getAttribute('as') === 'script') document.head.appendChild(document.createElement('script')).src = preloads[i].href;
-  }
 });

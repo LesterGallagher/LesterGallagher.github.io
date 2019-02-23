@@ -57,7 +57,6 @@ self.addEventListener('install', function (event) {
                 [
                     "{{ "/" | absolute_url }}",
                     "{{ "/assets/css/main.css" | absolute_url }}",
-                    "{{ "/assets/css/critical.css" | absolute_url }}",
                     "{{ "/assets/img/logo.png" | absolute_url }}",
                     "https://cdn.polyfill.io/v2/polyfill.min.js",
                     "{{ "/assets/js/main.js" | absolute_url }}",

@@ -21,6 +21,9 @@ fields:
 - type: text
   name: weight
   label: weight
+- type: text
+  name: title
+  label: title
 pages:
 - _works/atc-chatbot.md
 - _works/salary.md

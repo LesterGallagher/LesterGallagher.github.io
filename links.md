@@ -6,7 +6,6 @@ image: ''
 title_bold: ''
 image_width: ''
 image_height: ''
-weight: ''
 permalink: "/links"
 description: Esstudio social and public profiles.
 layout: page

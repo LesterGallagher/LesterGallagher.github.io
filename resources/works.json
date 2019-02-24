@@ -2,18 +2,18 @@
 ---
 {% assign works_list = site.works | sort:"weight" %}
 [
-  {% for work in works_list reversed %}
-    {
-      "title": "{{ work.title }} {{ work.title_bold }}",
-      "category": "{{ work.category }}",
-      "content": {{ work.content | jsonify }},
-      "date": "{{ work.date }}",
-      "excerpt": {{ work.excerpt | jsonify }},
-      "image": "{{ work.image | absolute_url }}",
-      "image_width": "{{ work.image_width }}",
-      "image_height": "{{ work.image_height }}",
-      "link": "{{ work.link | absolute_url }}",
-      "url": "{{ work.url | absolute_url }}"
-    }{% unless forloop.last %},{% endunless %}
+  {% for work in works_list %}
+  {
+    "title": "{{ work.title }} {{ work.title_bold }}",
+    "category": "{{ work.category }}",
+    "content": {{ work.content | jsonify }},
+    "date": "{{ work.date }}",
+    "excerpt": {{ work.excerpt | jsonify }},
+    "image": "{{ work.image | absolute_url }}",
+    "image_width": "{{ work.image_width }}",
+    "image_height": "{{ work.image_height }}",
+    "link": "{{ work.link | absolute_url }}",
+    "url": "{{ work.url | absolute_url }}"
+  }{% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]

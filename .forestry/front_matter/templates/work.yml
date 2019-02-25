@@ -25,6 +25,7 @@ fields:
   name: title
   label: title
 pages:
+- _works/info.md
 - _works/peilingen.md
 - _works/atc-chatbot.md
 - _works/salary.md

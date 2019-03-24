@@ -57,7 +57,7 @@ Next, go to [https://github.com/](https://github.com/ "https://github.com/"){:ta
 
 ![](/uploads/github-create.PNG)
 
-Choose a repository name and description, keep the repository public (it's going to be a website so it will be public anyway) and click "Create repository".
+Choose a repository name and description, keep the repository public (it's going to be a public website so it will be public anyway) and click "Create repository".
 
 The following page might be a bit confusing if you're not a programmer or you're not familiar with git(hub) but you need to click the "Create a new file" link/button.
 

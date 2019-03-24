@@ -10,13 +10,14 @@ portal_title: ''
 portal_description: ''
 portal_image: ''
 portal_link: ''
+lang: ''
 
 ---
 If you search google for "How to create a free website" you will see a bunch of website builders and websites who will give you a domain like: "yourname.theirname.com" or "theirname.com/yourname". But in this tutorial/guide I will show you the secret to creating a real website completely customizable website. The only payment you will need to do is a 0.89 dollar one year domain.
 
 ## Step 1
 
-Go to [https://www.namecheap.com/domains/](https://www.namecheap.com/domains/ "https://www.namecheap.com/domains/"){:target="_blank"} and search for a domain name. I would suggest choosing an uncommon domain name try to find one that costs as little as possible. This is probably the best because if you're starting out. You can always buy a more expensive domain later. If you've found a cheap domain it's probably because it's very unique and original so  it's a good thing. One thing to keep in mind though is to keep the domain name as short as possible.
+Go to [https://www.namecheap.com/domains/](https://www.namecheap.com/domains/ "https://www.namecheap.com/domains/"){:target="_blank"} and search for a domain name. I would suggest choosing an uncommon domain name. Try to find one that costs as little as possible. This is probably the best because if you're starting out, you can always buy a more expensive domain later. If you've found a cheap domain it's probably because it's very unique and original so it's a good thing. One thing to keep in mind though is to keep the domain name as short as possible.
 
 ![](/uploads/namecheap.png)
 
@@ -28,7 +29,7 @@ When you're done, go to [https://www.cloudflare.com/](https://www.cloudflare.com
 
 ![](/uploads/cloudflare-add-site.png)
 
-Cloudflare will now fetch your DNS records. If you are not familiar with those, it doesn't matter, you can just click continue until you get to the following dialog:
+Cloudflare will now get your DNS records. If you are not familiar with those, it doesn't matter, you can just click continue until you get to the following dialog:
 
 ![](/uploads/cloudflare-nameservers.png)
 
@@ -38,15 +39,15 @@ If you're not using namecheap, search for the nameserver setting, there should b
 
 ![](/uploads/namecheap-nameservers.png)
 
-Go back to cloudflare and wait untill cloudflare completes your nameserver setup. This can take a (very) long time. If it's not immediately working just give it an hour's worth of time.
+Go back to cloudflare, click "continue", and wait untill cloudflare completes your nameserver setup. This can take a (very) long time. If it's not immediately working just give it an hour's worth of time.
 
 ![](/uploads/cname-www.png)
 
 You need to add three records to your DNS table.
 
-1. Add an "A" record by clicking the dropdown in the top left in the above image and give it the name of your domain in my example it's "esstudio.site". Make sure you don't include any slashes or the "https://" part of the url. In the value field put in "192.30.252.153".
+1. Add an "A" record by clicking the dropdown in the top left in the above image and give it the name of your domain in my example it's "esstudio.site". Make sure you don't include any slashes or the "https://" part of the url. In the value field, put in "192.30.252.153".
 2. Add another "A" record by clicking the dropdown in the top left in the above image and give it the name of your domain in my example it's "esstudio.site". Make sure you don't include any slashes or the "https://" part of the url. In the value field put in "192.30.252.154".
-3. Finally, add a CNAME record with the name "www". In the value field, put in the name of your github account plus ".github.io" as seen in the image above.
+3. Finally, add a CNAME record with the name "www". In the value field, put in the name of your github username plus ".github.io" If you don't have a github account, you can do this after step 3.
 
 For all the recods keep the TTL setting at "Automatic TTL".
 

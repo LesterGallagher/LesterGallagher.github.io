@@ -24,6 +24,7 @@ fields:
   name: title
   label: title
 pages:
+- _works/mindmapper.md
 - _works/info.md
 - _works/peilingen.md
 - _works/atc-chatbot.md

@@ -7,6 +7,5 @@ image_height: 512
 weight: 60
 title: Mindmapper
 date: 2019-03-26 09:17:23 +0100
-published: false
 
 ---

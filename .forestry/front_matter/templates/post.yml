@@ -34,6 +34,7 @@ fields:
   label: Language
   default: en
 pages:
+- _posts/windows-menubar.md
 - _posts/2019-02-19-nieuwe-versie-van-de-kadaster-kaart.md
 - _posts/2019-02-17-the-real-guide-to-creating-a-website-with-free-hosting-2019.md
 - _posts/2019-02-16-downloading-saving-and-opening-files-with-cordova.md

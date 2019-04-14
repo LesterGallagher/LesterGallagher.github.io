@@ -8,7 +8,9 @@ document.addEventListener("DOMContentLoaded", function () {
       active = true;
       setTimeout(function () {
         for (var i = lazyImages.length - 1; i >= 0; i--) {
-          if (lazyImages[i].getBoundingClientRect().top <= window.innerHeight && lazyImages[i].getBoundingClientRect().bottom >= 0) {
+          if (lazyImages[i].classList.contains('loaded') === false
+            && lazyImages[i].getBoundingClientRect().top <= window.innerHeight + 600 
+            && lazyImages[i].getBoundingClientRect().bottom >= -200) {
             (function () {
               var lazyImage = lazyImages[i];
               var img = new Image();

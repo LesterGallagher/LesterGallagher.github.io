@@ -25,9 +25,9 @@ An example mindmap: [https://mindviewer.esstudio.site/mindmapper.html?firestore=
 
 If you open this in multiple chrome browser tabs you will notice that the mindmaps update in realtime. I'm currently working on perfecting the exporting to image and html feature.
 
-Using this icon ![Knipsel.PNG](https://mail.google.com/mail/u/0?ui=2&ik=c5e76dc157&attid=0.1&permmsgid=msg-a:r-407193325498719098&th=16a560ae116b8a5f&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ_XDj6Bbq3tEZnIaHzKG47azPpMY6dDKvKtdGKWv2QEiy8rXQ5-TZp-vHmUL5Ye7VgT2s9ajaz2x2m2dQ81Gt2HLJ-3L30lmbFJNNODZLcR3z1xqKYpPmuxbMw&disp=emb&realattid=ii_jux0z3vl0 =46x46) icon you can change the background of your mindmap. This change is not synced to the other tabs so every user can have their own theme and custom background.
+Using the ![](/uploads/edit.png) icon you can change the background of your mindmap. This change is not synced to the other tabs so every user can have their own theme and custom background.
 
-If you click the ![Knipsel.PNG](https://mail.google.com/mail/u/0?ui=2&ik=c5e76dc157&attid=0.2&permmsgid=msg-a:r-407193325498719098&th=16a560ae116b8a5f&view=fimg&sz=s0-l75-ft&attbid=ANGjdJ8AgsiTqssDHnMm3GDkD3r9RtpuUT4W3WAHcdDUladA7ddVPgFWdQDcY0o9ZUiWTKD4ZCtNurIyxtWH-jqCtSQjpnAW3JcNuAXYzMagdgjaoCw8SeivFdLWzvU&disp=emb&realattid=ii_jux1278v1 =48x45) icon you go back to the home screen (don't forget to save you're changes by on one of the save buttons). You can download the mindmap by going to Mindviews->"Example mindmap"->Download.
+If you click the ![](/uploads/home.png) icon you go back to the home screen (don't forget to save you're changes by on one of the save buttons). You can download the mindmap by going to Mindviews->"Example mindmap"->Download.
 
 The mindmaps are stored in a human readable format. You can view the stored information by opening the ".onmm" file with [https://json-gui.esstudio.site](https://json-gui.esstudio.site "https://json-gui.esstudio.site") File->Open from disk. You can make changes to your mindmap, save and open the newly created file in mindviewer by going to "Import mindmap" and dragging the mindmap into the file dropzone.
 

@@ -150,6 +150,16 @@ figure.oa:hover figcaption {
 	background-color: rgba(58, 52, 42, 0);
 }
 
+figure.oa:hover p {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
+
+figure.oa:hover h2 {
+	transform: translate(0, 0);
+}
+
 figure.oa:hover img {
 	opacity: 0.4;
 }

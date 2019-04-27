@@ -69,7 +69,7 @@ img[data-src].lazyload.error {
 }
 
 img[data-src].lazyload.loaded {
-	animation: fadeIn 400ms linear forwards;
+	animation: fadeIn 400ms linear;
 }
 
 @keyframes fadeIn {

@@ -1,3 +1,7 @@
+---
+layout: null
+---
+
 PRIVACY POLICY ECHO SIERRA STUDIO DESKTOP APPLICATIONS
 ----------------------------------------------
 

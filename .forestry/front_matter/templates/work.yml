@@ -24,8 +24,8 @@ fields:
   name: title
   label: title
 pages:
-- _works/ienze-koekkoek.md
 - _works/share.md
+- _works/ienze-koekkoek.md
 - _works/mindmapper.md
 - _works/info.md
 - _works/peilingen.md

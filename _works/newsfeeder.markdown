@@ -7,7 +7,6 @@ title_bold: App
 image_width: 512
 image_height: 512
 weight: 90
-padded: true
 ---
 
 Combine your news

@@ -8,6 +8,6 @@ image_width: 512
 image_height: 512
 weight: 80
 title_bold: Maar
-
+lang: nl-NL
 ---
 Bespaar, Vergelijk en Verdien

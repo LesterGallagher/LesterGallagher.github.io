@@ -6,5 +6,5 @@ title_bold: Image Tool
 image_width: 1080
 image_height: 1080
 weight: 80
-
+description: A Fancy image interface to a set of Jimp methods.
 ---

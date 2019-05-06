@@ -7,6 +7,7 @@ title_bold: Kaart
 image_width: 512
 image_height: 512
 weight: 80
+lang: nl-NL
 ---
 
 Kadastrale informatie app

@@ -33,6 +33,7 @@ layout: lander
         <div class="clearfix"></div>
         <section class="grid" id="grid">
             {%- for work in works_list reversed -%}
+            {% assign lang = work.lang | default: 'en' %}
             <div class="work-item">
                 <figure class="oa">
                     {% assign width = work.image_width | default: 400 %}
@@ -44,10 +45,10 @@ layout: lander
                         </div>
                     </div>
                     <figcaption>
-                        <h2>{{ work.title }}
+                        <h2 lang="{{ lang }}" xml:lang="{{ lang }}">{{ work.title }}
                             <span>{{ work.title_bold }}</span>
                         </h2>
-                        <p>{{ work.content }}</p>
+                        <div lang="{{ lang }}" xml:lang="{{ lang }}">{{ work.content }}</div>
                         <a href="{{ work.link }}">View more</a>
                     </figcaption>
                 </figure>

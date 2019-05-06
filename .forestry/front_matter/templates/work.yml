@@ -23,6 +23,13 @@ fields:
 - type: text
   name: weight
   label: weight
+- name: lang
+  type: text
+  config:
+    required: true
+  label: lang
+  description: The language
+  default: en
 pages:
 - _works/ienze-koekkoek.md
 - _works/fancy.md

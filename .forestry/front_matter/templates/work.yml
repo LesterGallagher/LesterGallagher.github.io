@@ -9,6 +9,9 @@ fields:
   name: image
   label: image
 - type: text
+  name: title
+  label: title
+- type: text
   label: title bold
   name: title_bold
 - type: number
@@ -20,9 +23,6 @@ fields:
 - type: text
   name: weight
   label: weight
-- type: text
-  name: title
-  label: title
 pages:
 - _works/share.md
 - _works/ienze-koekkoek.md

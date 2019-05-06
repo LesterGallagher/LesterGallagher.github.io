@@ -8,3 +8,4 @@ weight: 100
 title: 'Ienze Koekkoek - '
 
 ---
+Duurzaam perspectief voor het landelijke gebied.

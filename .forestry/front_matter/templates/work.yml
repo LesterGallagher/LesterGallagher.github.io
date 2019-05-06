@@ -24,9 +24,9 @@ fields:
   name: weight
   label: weight
 pages:
+- _works/ienze-koekkoek.md
 - _works/fancy.md
 - _works/share.md
-- _works/ienze-koekkoek.md
 - _works/mindmapper.md
 - _works/info.md
 - _works/peilingen.md

@@ -23,6 +23,7 @@ I stole the debounce  function from [David Walsh](https://davidwalsh.name/) and 
 >
 > Throttled can be simply achieved by changing the way the timeout is cleared/set. eg..
 >
+>     ```javascript
 >     // Returns a function, that, as long as it continues to be invoked, will only
 >     // trigger every N milliseconds. If <code>immediate</code> is passed, trigger the 
 >     // function on the leading edge, instead of the trailing.
@@ -39,6 +40,7 @@ I stole the debounce  function from [David Walsh](https://davidwalsh.name/) and 
 >     		if (callNow) func.apply(context, args);
 >     	};
 >     };
+>     ```
 >
 > Note that the timeout is not destroyed and recreated for every call (unlike debouncing). Its destroyed after the timeout has completed and created on the first call after its been destroyed.
 

@@ -113,7 +113,48 @@ var throttle = function throttle(wait, immediate) {
 
 The comments already explain the 'immediate' parameter. The basic difference is that without the 'immediate' paramter the function will wait and then fire. If the 'immediate' parameter is set to true it will fire and then wait. Be aware that if you set the 'immediate' parameter, the function won't always fire at or after the last event because it might still be waiting because of a previous event. If 'immediate' is set to true the function will always fire after or at the last event. This can get you into trouble if you're sending data or if you have to make sure you always have the latest. Only set the 'immediate' paramter if you know what you're doing.
 
+<p class="codepen" data-height="478" data-theme-id="35834" data-default-tab="js,result" data-user="Afirus" data-slug-hash="NVMjJV" style="height: 478px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="NVMjJV">
+  <span>See the Pen <a href="https://codepen.io/Afirus/pen/NVMjJV/">
+  NVMjJV</a> by LesterGallagher (<a href="https://codepen.io/Afirus">@Afirus</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
 In some cases you want to all the data from all of the events but you still want debouncing/throttling behaviour:
+
+```
+var update = debounce(500)(function(e) {
+    // doFakeAjaxRequest(payload);
+	console.log(e);
+});
+
+let delay = 0;
+setTimeout(() => update('All'), delay += 300);
+setTimeout(() => update('of'), delay += 300);
+setTimeout(() => update('these'), delay += 300);
+setTimeout(() => update('arguments'), delay += 600);
+setTimeout(() => update('are'), delay += 300);
+setTimeout(() => update('not'), delay += 300);
+setTimeout(() => update('batched'), delay += 300);
+```
+
+If you don't want event data to be lost you can use this function to get all of the arguments since the last time the debounce/throttle function fired:
+
+```
+const batched = delayedFunc => func => {
+    const stack = [];
+    const handler = delayedFunc(() => {
+        func(stack);
+        stack.splice(0, stack.length);
+    });
+    return function () {
+        stack.push({ context: this, args: arguments });
+        handler();
+    }
+}
+```
+
+And then change your code to this:
 
 ```
 var update = batched(debounce(500))(function(stackedEvents) {
@@ -134,6 +175,10 @@ setTimeout(() => update('being'), delay += 300);
 setTimeout(() => update('batched'), delay += 300);
 ```
 
-If you don't want event data to be lost you can use this function to get all of the arguments since the last time the debounce/throttle function fired:
+Which will result in:
+
+```
+index.js:85 All of these arguments are being batched
+```
 
 

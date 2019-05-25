@@ -1,6 +1,6 @@
 ---
 title: Youtube Comment Generator
-date: 2018-08-31 02:05:00 +0000
+date: 2018-08-31T02:05:00.000+00:00
 image: "/uploads/comment.PNG"
 description: Free youtube comments generator. The created random comments are based
   on the existing comments on that video. If a youtube video has alot of comments
@@ -17,6 +17,6 @@ Searching for a good youtube comments generator?
 
 {% include adsense.html %}
 
-This website is a free youtube comments generator. The created random comments are based on the existing comments on that video. If a youtube video has alot of comments the results will be best.
+This website is a free youtube comments generator. The created random comments are based on the existing comments on that video. If a youtube video has a lot of comments the results will be best.
 
 {% include app-portal.html %}

@@ -1,7 +1,7 @@
 ---
 title: The real guide to creating a website with free hosting (2019)
 image: "/uploads/free-website.png"
-date: 2019-02-16 23:00:00 +0000
+date: 2019-02-16T23:00:00.000+00:00
 author: Sem Postma
 description: A step by step guide with pictures to easily create a blazing fast static
   website with free hosting using github, cloudflare and namecheap. This guide can
@@ -39,7 +39,7 @@ If you're not using namecheap, search for the nameserver setting, there should b
 
 ![](/uploads/namecheap-nameservers.png)
 
-Go back to cloudflare, click "continue", and wait untill cloudflare completes your nameserver setup. This can take a (very) long time. If it's not immediately working just give it an hour's worth of time.
+Go back to cloudflare, click "continue", and wait until cloudflare completes your nameserver setup. This can take a (very) long time. If it's not immediately working just give it an hour's worth of time.
 
 ![](/uploads/cname-www.png)
 
@@ -49,7 +49,7 @@ You need to add three records to your DNS table.
 2. Add another "A" record by clicking the dropdown in the top left in the above image and give it the name of your domain in my example it's "esstudio.site". Make sure you don't include any slashes or the "https://" part of the url. In the value field put in "192.30.252.154".
 3. Finally, add a CNAME record with the name "www". In the value field, put in the name of your github username plus ".github.io" If you don't have a github account, you can do this after step 3.
 
-For all the recods keep the TTL setting at "Automatic TTL".
+For all the records keep the TTL setting at "Automatic TTL".
 
 ## Step 3
 
@@ -139,11 +139,11 @@ If you're using a javascript framework or a build tool you can use git to push y
 
 #### Step 1
 
-Remove the dist directory from the project’s .gitignore file (it’s ignored by default by Yeoman).
+Remove the dist directory from the project’s \`\`\`.gitignore\`\`\` file (it’s ignored by default by Yeoman).
 
 #### Step 2
 
-Make sure git knows about your subtree (the subfolder with your site).
+Make sure git knows about your subtree (the sub folder with your site).
 
 ```bash
 git add dist && git commit -m "Initial dist subtree commit"

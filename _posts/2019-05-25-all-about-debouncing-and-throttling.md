@@ -2,7 +2,7 @@
 lang: en
 title: All about debouncing, throttling and batching
 image: "/uploads/throttle_debounce.gif"
-date: 2019-05-25 00:00:00 +0200
+date: 2019-05-24T22:00:00.000+00:00
 author: Sem Postma
 description: Failing to properly use debounce or throttle taxing tasks your javascript
   apps (or any other app for that matter) can really hurt performance. In this article
@@ -122,7 +122,7 @@ The comments already explain the 'immediate' parameter. The basic difference is 
 
 In some cases you want to all the data from all of the events but you still want debouncing/throttling behaviour:
 
-```
+```javascript
 var update = debounce(500)(function(e) {
     // doFakeAjaxRequest(payload);
 	console.log(e);
@@ -140,7 +140,7 @@ setTimeout(() => update('batched'), delay += 300);
 
 If you don't want event data to be lost you can use this function to get all of the arguments since the last time the debounce/throttle function fired:
 
-```
+```javascript
 const batched = delayedFunc => func => {
     const stack = [];
     const handler = delayedFunc(() => {
@@ -156,7 +156,7 @@ const batched = delayedFunc => func => {
 
 And then change your code to this:
 
-```
+```javascript
 var update = batched(debounce(500))(function(stackedEvents) {
 	var payload = stackedEvents.map(function(frame) {
 		return frame.args[0];
@@ -180,5 +180,3 @@ Which will result in:
 ```
 index.js:85 All of these arguments are being batched
 ```
-
-

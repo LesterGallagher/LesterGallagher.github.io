@@ -139,7 +139,7 @@ If you're using a javascript framework or a build tool you can use git to push y
 
 #### Step 1
 
-Remove the dist directory from the project’s \`\`\`.gitignore\`\`\` file (it’s ignored by default by Yeoman).
+Remove the dist directory from the project’s ```.gitignore``` file (it’s ignored by default by Yeoman).
 
 #### Step 2
 

@@ -2,7 +2,7 @@
 new_page_extension: md
 auto_deploy: false
 admin_path: ''
-webhook_url: https://maker.ifttt.com/trigger/forestry_event/with/key/c_fCYYnYKEgpnIPEwhreFS
+webhook_url: https://maker.ifttt.com/trigger/forestry/with/key/fuhBM33MbuVc8JP5wABOTjQVESdNiQe0CjNlxG1QuA9
 sections:
 - type: directory
   path: _uploads

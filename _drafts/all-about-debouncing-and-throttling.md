@@ -43,3 +43,73 @@ I stole the debounce  function from [David Walsh](https://davidwalsh.name/) and 
 In simple terms, the function rate limits the amount of events to a certain timespan. Visually a debounce function looks something like this:
 
 ![](/uploads/debounce.gif)
+
+```javascript
+"use strict";
+
+// Returns a function, that, as long as it continues to be invoked, will only
+// trigger every N milliseconds. If <code>immediate</code> is passed, trigger the
+// function on the leading edge, instead of the trailing.
+var throttle = function throttle(wait, immediate) {
+  return function(func) {
+    var timeout;
+    return function() {
+      var context = this,
+        args = arguments;
+
+      var later = function later() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+
+      var callNow = immediate && !timeout;
+      if (!timeout) timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  };
+}; 
+
+// Returns a function, that, as long as it continues to be invoked, will not
+// be triggered. The function will be called after it stops being called for
+// N milliseconds. If `immediate` is passed, trigger the function on the
+// leading edge, instead of the trailing.
+
+var debounce = function debounce(wait, immediate) {
+  return function(func) {
+    var timeout;
+    return function() {
+      var context = this,
+        args = arguments;
+
+      var later = function later() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+
+      var callNow = immediate && !timeout;
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
+    };
+  };
+};
+
+var batched = function batched(delayedFunc) {
+  return function(func) {
+    var stack = [];
+    var handler = delayedFunc(function() {
+      func(stack);
+      stack.splice(0, stack.length);
+    });
+    return function() {
+      stack.push({
+        context: this,
+        args: arguments
+      });
+      handler();
+    };
+  };
+};
+```
+
+

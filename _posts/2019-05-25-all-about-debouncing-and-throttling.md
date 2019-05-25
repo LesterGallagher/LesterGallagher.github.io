@@ -180,5 +180,6 @@ setTimeout(() => update('batched'), delay += 300);
 Which will result in:
 
 ```
-index.js:85 All of these arguments are being batched
+index.js:85 All of these 
+index.js:85 arguments are being batched
 ```

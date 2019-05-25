@@ -1,10 +1,12 @@
 ---
 lang: en
-title: All about debouncing and throttling
+title: All about debouncing, throttling and batching
 image: "/uploads/throttle_debounce.gif"
 date: 2019-05-25 00:00:00 +0200
 author: Sem Postma
-description: All about debouncing and throttling
+description: Failing to properly use debounce or throttle taxing tasks your javascript
+  apps (or any other app for that matter) can really hurt performance. In this article
+  i'll list some examples of debounce and javascript functions.
 portal_title: ''
 portal_description: ''
 portal_image: ''
@@ -44,31 +46,9 @@ In simple terms, the function rate limits the amount of events to a certain time
 
 ![](/uploads/debounce.gif)
 
+The debounce snippet this:
+
 ```javascript
-"use strict";
-
-// Returns a function, that, as long as it continues to be invoked, will only
-// trigger every N milliseconds. If <code>immediate</code> is passed, trigger the
-// function on the leading edge, instead of the trailing.
-var throttle = function throttle(wait, immediate) {
-  return function(func) {
-    var timeout;
-    return function() {
-      var context = this,
-        args = arguments;
-
-      var later = function later() {
-        timeout = null;
-        if (!immediate) func.apply(context, args);
-      };
-
-      var callNow = immediate && !timeout;
-      if (!timeout) timeout = setTimeout(later, wait);
-      if (callNow) func.apply(context, args);
-    };
-  };
-}; 
-
 // Returns a function, that, as long as it continues to be invoked, will not
 // be triggered. The function will be called after it stops being called for
 // N milliseconds. If `immediate` is passed, trigger the function on the
@@ -94,22 +74,66 @@ var debounce = function debounce(wait, immediate) {
   };
 };
 
-var batched = function batched(delayedFunc) {
+// window.onscroll = debounce(200)(function() { 
+// 	console.log(window.pageYOffset ) 
+// });
+
+```
+
+The throttle snippet: 
+
+```javascript
+// Returns a function, that, as long as it continues to be invoked, will only
+// trigger every N milliseconds. If `immediate` is passed, trigger the
+// function on the leading edge, instead of the trailing.
+var throttle = function throttle(wait, immediate) {
   return function(func) {
-    var stack = [];
-    var handler = delayedFunc(function() {
-      func(stack);
-      stack.splice(0, stack.length);
-    });
+    var timeout;
     return function() {
-      stack.push({
-        context: this,
-        args: arguments
-      });
-      handler();
+      var context = this,
+        args = arguments;
+
+      var later = function later() {
+        timeout = null;
+        if (!immediate) func.apply(context, args);
+      };
+
+      var callNow = immediate && !timeout;
+      if (!timeout) timeout = setTimeout(later, wait);
+      if (callNow) func.apply(context, args);
     };
   };
 };
+
+// window.onscroll = throttle(200)(function() { 
+// 	console.log(window.pageYOffset ) 
+// });
+
 ```
+
+The comments already explain the 'immediate' parameter. The basic difference is that without the 'immediate' paramter the function will wait and then fire. If the 'immediate' parameter is set to true it will fire and then wait. Be aware that if you set the 'immediate' parameter, the function won't always fire at or after the last event because it might still be waiting because of a previous event. If 'immediate' is set to true the function will always fire after or at the last event. This can get you into trouble if you're sending data or if you have to make sure you always have the latest. Only set the 'immediate' paramter if you know what you're doing.
+
+In some cases you want to all the data from all of the events but you still want debouncing/throttling behaviour:
+
+```
+var update = batched(debounce(500))(function(stackedEvents) {
+	var payload = stackedEvents.map(function(frame) {
+		return frame.args[0];
+	}).join(' ');
+    // doFakeAjaxRequest(payload);
+    console.log(payload);
+});
+
+let delay = 0;
+setTimeout(() => update('All'), delay += 300);
+setTimeout(() => update('of'), delay += 300);
+setTimeout(() => update('these'), delay += 300);
+setTimeout(() => update('arguments'), delay += 600);
+setTimeout(() => update('are'), delay += 300);
+setTimeout(() => update('being'), delay += 300);
+setTimeout(() => update('batched'), delay += 300);
+```
+
+If you don't want event data to be lost you can use this function to get all of the arguments since the last time the debounce/throttle function fired:
 
 

@@ -11,7 +11,7 @@ portal_image: ''
 portal_link: ''
 
 ---
-Failing to properly use debounce or throttle taxing tasks your javascript apps (or any other app for that matter) can really hurt performance. In this article i'll list some examples of debounce and javascript functions. 
+Failing to properly use debounce or throttle taxing tasks your javascript apps (or any other app for that matter) can really hurt performance. In this article i'll list some examples of debounce and javascript functions.
 
 If you are not up to date with debounce and throttle function, you check out[ this css.tricks article](https://css-tricks.com/debouncing-throttling-explained-examples/) by [dcorbacho](https://css-tricks.com/author/dcorbacho/ "https://css-tricks.com/author/dcorbacho/"). A debounce or throttle function is actually just a way of limiting how much a function can be called. The window scroll event for example can fire hundreds of times for every interaction. If you're doing some heavy javascript layout tasks, every time this event is fired, you're websiteis going to be very janky. Another place where debounce and throttling functions are often used is with limiting ajax calls. Most autocomplete search boxes use some kind of debounce or throttle function because sending a request for every keypress will hurt your app a lot.
 
@@ -40,4 +40,6 @@ I stole the debounce  function from [David Walsh](https://davidwalsh.name/) and 
 >
 > Note that the timeout is not destroyed and recreated for every call (unlike debouncing). Its destroyed after the timeout has completed and created on the first call after its been destroyed.
 
-Visually a debounce function looks something like this: 
+In simple terms, the function rate limits the amount of events to a certain timespan. Visually a debounce function looks something like this:
+
+![](/uploads/debounce.gif)

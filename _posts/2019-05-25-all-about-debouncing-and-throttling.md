@@ -46,7 +46,7 @@ In simple terms, the function rate limits the amount of events to a certain time
 
 ![](/uploads/debounce.gif)
 
-The debounce snippet this:
+The debounce snippet:
 
 ```javascript
 // Returns a function, that, as long as it continues to be invoked, will not

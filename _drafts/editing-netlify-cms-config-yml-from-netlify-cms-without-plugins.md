@@ -25,22 +25,16 @@ Don't use this in production. This could lead to data loss. This is an experimen
 
 Add this to your config.yml:
 
-<div style="max-height: 1000px">
-<script src="https://gist-it.appspot.com/https://github.com/LesterGallagher/netlify-cms-config-generator/blob/master/config.yml"></script>
-</div>
+<div style="max-height: 1000px; overflow: hidden"> <script src="https://gist-it.appspot.com/https://github.com/LesterGallagher/netlify-cms-config-generator/blob/master/config.yml"></script> </div>
 
 I created a small [node utilify](https://github.com/LesterGallagher/netlify-cms-config-generator) for creating the config from 2 different files:
 
 The "partial-config" file:
 
-<div style="max-height: 1000px">
-<script src="https://gist-it.appspot.com/http://github.com/LesterGallagher/netlify-cms-config-generator/blob/master/partial-config.yml"></script>
-</div>
+<div style="max-height: 1000px; overflow: hidden"> <script src="https://gist-it.appspot.com/http://github.com/LesterGallagher/netlify-cms-config-generator/blob/master/partial-config.yml"></script> </div>
 
 And the "fields" file:
 
-<div style="max-height: 1000px">
-<script src="https://gist-it.appspot.com/https://github.com/LesterGallagher/netlify-cms-config-generator/blob/master/fields.yml"></script>
-</div>
+<div style="max-height: 1000px; overflow: hidden"> <script src="https://gist-it.appspot.com/https://github.com/LesterGallagher/netlify-cms-config-generator/blob/master/fields.yml"></script> </div>
 
 Feel free to fork, tweak or otherwise change the code.

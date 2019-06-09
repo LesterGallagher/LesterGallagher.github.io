@@ -24,6 +24,10 @@ img {
 	-webkit-transition: all .2s linear;
 }
 
+iframe {
+    max-width: 100%;
+}
+
 .nopadding {
 	padding: 0;
 }

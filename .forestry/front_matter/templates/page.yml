@@ -27,6 +27,6 @@ fields:
   name: portal_link
   label: portal_link
 pages:
-- links.md
-- other-profiles.md
 - newsfeeder.md
+- other-profiles.md
+- links.md

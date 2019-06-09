@@ -20,7 +20,7 @@ fields:
 - type: number
   label: image height
   name: image_height
-- type: text
+- type: number
   name: weight
   label: weight
 - name: lang

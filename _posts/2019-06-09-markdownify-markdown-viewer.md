@@ -31,3 +31,5 @@ You can check out the latest releases on [Github](https://github.com/LesterGalla
 [![A newsfeeder follow button for markdownify releases.](/uploads/newsfeeder.png "Open releases for markdownify feed in newsfeeder.")](https://newsfeeder.esstudio.site?feed=https%3A%2F%2Fgithub.com%2FLesterGallagher%2Fmarkdownify%2Freleases.atom&site=https%3A%2F%2Fgithub.com%2FLesterGallagher%2Fmarkdownify%2Freleases&description=&title=markdownify%20Release%20Notes&icon=https%3A%2F%2Fgithub.com%2Ffavicon.ico "Open markdownify releases feed in the newsfeeder app.")
 
 Download latest version: [https://www.microsoft.com/p/markdownify/9npgxqvzj8c0](https://www.microsoft.com/p/markdownify/9npgxqvzj8c0 "https://www.microsoft.com/p/markdownify/9npgxqvzj8c0")
+
+<p></p>

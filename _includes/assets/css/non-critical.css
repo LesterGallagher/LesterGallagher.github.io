@@ -1,4 +1,7 @@
 
+.gist-maxheight .Box-body {
+    max-height: 1000px;   
+}
 
 #noscript-modal {
     position: fixed; 

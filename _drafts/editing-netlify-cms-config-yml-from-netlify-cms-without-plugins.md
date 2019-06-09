@@ -25,7 +25,7 @@ Don't use this in production. This could lead to data loss. This is an experimen
 
 Add this to your config.yml:
 
-<div style="max-height: 1000px; overflow: auto"> 
+<div class="gist-maxheight"> 
 {% gist 1c9a908c142b7f873e01fd6f2cfe5c1b config.yml %}
 </div>
 

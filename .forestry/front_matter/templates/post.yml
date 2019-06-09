@@ -34,6 +34,7 @@ fields:
   label: Language
   default: en
 pages:
+- _posts/editing-netlify-cms-config-yml-from-netlify-cms-without-plugins.md
 - _posts/2019-06-09-markdownify-markdown-viewer.md
 - _posts/2019-05-25-all-about-debouncing-and-throttling.md
 - _posts/2018-09-10-3d-texturing-using-curvature-maps.md

@@ -25,16 +25,10 @@ Don't use this in production. This could lead to data loss. This is an experimen
 
 Add this to your config.yml:
 
-<div style="max-height: 1000px; overflow: auto"> <script src="https://gist-it.appspot.com/https://github.com/LesterGallagher/netlify-cms-config-generator/blob/master/config.yml"></script> </div>
+<div style="max-height: 1000px; overflow: auto"> 
+{% gist 1c9a908c142b7f873e01fd6f2cfe5c1b config.yml %}
+</div>
 
-I created a small [node utilify](https://github.com/LesterGallagher/netlify-cms-config-generator) for creating the config from 2 different files:
-
-The "partial-config" file:
-
-<div style="max-height: 1000px; overflow: auto"> <script src="https://gist-it.appspot.com/http://github.com/LesterGallagher/netlify-cms-config-generator/blob/master/partial-config.yml"></script> </div>
-
-And the "fields" file:
-
-<div style="max-height: 1000px; overflow: auto"> <script src="https://gist-it.appspot.com/https://github.com/LesterGallagher/netlify-cms-config-generator/blob/master/fields.yml"></script> </div>
+I created a small [node utilify](https://github.com/LesterGallagher/netlify-cms-config-generator) for creating the config from 2 different (less bulky) files.
 
 Feel free to fork, tweak or otherwise change the code.

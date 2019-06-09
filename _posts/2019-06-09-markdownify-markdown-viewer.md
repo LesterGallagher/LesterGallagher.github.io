@@ -22,13 +22,9 @@ Markdownify is a simple and effective markdown/text file viewer. You can open an
 
 ## Other releases:
 
-You can check out the latest releases on [Github](https://github.com/LesterGallagher/markdownify/releases "Latest Markdownify releases") or follow the latest releases through the Newsfeeder app.
+You can check out the latest releases on [Github](https://github.com/LesterGallagher/markdownify/releases "Latest Markdownify releases") or follow the latest releases through the Newsfeeder app:
 
-### Latest releases feed
-
-&nbsp;
-
-<iframe style="background-color: #f5593d; width: 400px; height: 600px; box-shadow: 0 0 20px rgba(0,0,0,0.4)" src="https://newsfeeder.esstudio.site?feed=https%3A%2F%2Fgithub.com%2FLesterGallagher%2Fmarkdownify%2Freleases.atom&amp;site=https%3A%2F%2Fgithub.com%2FLesterGallagher%2Fmarkdownify%2Freleases&amp;description=&amp;title=markdownify%20Release%20Notes&amp;icon=https%3A%2F%2Fgithub.com%2Ffavicon.ico" frameborder="0"></iframe>
+<iframe style="background-color: #f5593d; width: 400px; height: 600px; box-shadow: 0 0 20px rgba(0,0,0,0.4)" src="https://newsfeeder.esstudio.site?feed=https%3A%2F%2Fgithub.com%2FLesterGallagher%2Fmarkdownify%2Freleases.atom&site=https%3A%2F%2Fgithub.com%2FLesterGallagher%2Fmarkdownify%2Freleases&description=&title=markdownify%20Release%20Notes&icon=https%3A%2F%2Fgithub.com%2Ffavicon.ico" frameborder="0"></iframe>
 
 [![A newsfeeder follow button for markdownify releases.](/uploads/newsfeeder.png "Open releases for markdownify feed in newsfeeder.")](https://newsfeeder.esstudio.site?feed=https%3A%2F%2Fgithub.com%2FLesterGallagher%2Fmarkdownify%2Freleases.atom&site=https%3A%2F%2Fgithub.com%2FLesterGallagher%2Fmarkdownify%2Freleases&description=&title=markdownify%20Release%20Notes&icon=https%3A%2F%2Fgithub.com%2Ffavicon.ico "Open markdownify releases feed in the newsfeeder app.")
 

@@ -19,6 +19,8 @@ Turns out you can almost do it. It wasn't completely possible due to these 2 iss
 * [self-referential / circular data structures cause "RangeError: Maximum call stack size exceeded" error](https://github.com/netlify/netlify-cms/issues/2360)
 * [Hidden fields don't work when added through a list widget with variable types](https://github.com/netlify/netlify-cms/issues/2363)
 
+{% include adsense.html %}
+
 Because Netlify CMS can't handle self-referential / circular data structures in the config.yml the file becomes very big and fields only work 1 depth down. For example my config can't handle an object in an object in an object. You can get around this by increasing the depth but the file will become exponentially bigger. As it is, the file already has \~5000 😵 lines of code. Of course the upside is that you don't have to look at it anymore...
 
 Don't use this in production. This could lead to data loss. This is an experiment, not a viable solution.
@@ -32,3 +34,5 @@ Add this to your config.yml:
 I created a small [node utility](https://github.com/LesterGallagher/netlify-cms-config-generator) for creating the config from 2 different (less bulky) files.
 
 Feel free to fork, tweak or otherwise change the code.
+
+{% include adsense.html %}

@@ -30,15 +30,7 @@ I stole the debounce  function from [David Walsh](https://davidwalsh.name/) and 
 >     	var timeout;
 >     	return function() {
 >     		var context = this, args = arguments;
->     		var later = function() {
->     			timeout = null;
->     			if (!immediate) func.apply(context, args);
->     		};
->     		var callNow = immediate && !timeout;
->     		if ( !timeout ) timeout = setTimeout( later, wait );
->     		if (callNow) func.apply(context, args);
->     	};
->     };
+>     ...
 >
 > Note that the timeout is not destroyed and recreated for every call (unlike debouncing). Its destroyed after the timeout has completed and created on the first call after its been destroyed.
 
@@ -48,66 +40,63 @@ In simple terms, the function rate limits the amount of events to a certain time
 
 The debounce snippet:
 
-```javascript
-// Returns a function, that, as long as it continues to be invoked, will not
-// be triggered. The function will be called after it stops being called for
-// N milliseconds. If `immediate` is passed, trigger the function on the
-// leading edge, instead of the trailing.
-
-var debounce = function debounce(wait, immediate) {
-  return function(func) {
-    var timeout;
-    return function() {
-      var context = this,
-        args = arguments;
-
-      var later = function later() {
-        timeout = null;
-        if (!immediate) func.apply(context, args);
+    // Returns a function, that, as long as it continues to be invoked, will not
+    // be triggered. The function will be called after it stops being called for
+    // N milliseconds. If `immediate` is passed, trigger the function on the
+    // leading edge, instead of the trailing.
+    
+    var debounce = function debounce(wait, immediate) {
+      return function(func) {
+        var timeout;
+        return function() {
+          var context = this,
+            args = arguments;
+    
+          var later = function later() {
+            timeout = null;
+            if (!immediate) func.apply(context, args);
+          };
+    
+          var callNow = immediate && !timeout;
+          clearTimeout(timeout);
+          timeout = setTimeout(later, wait);
+          if (callNow) func.apply(context, args);
+        };
       };
-
-      var callNow = immediate && !timeout;
-      clearTimeout(timeout);
-      timeout = setTimeout(later, wait);
-      if (callNow) func.apply(context, args);
     };
-  };
-};
-
-// window.onscroll = debounce(200)(function() { 
-// 	console.log(window.pageYOffset ) 
-// });
-```
+    
+    // window.onscroll = debounce(200)(function() { 
+    // 	console.log(window.pageYOffset ) 
+    // });
 
 The throttle snippet:
 
-```javascript
-// Returns a function, that, as long as it continues to be invoked, will only
-// trigger every N milliseconds. If `immediate` is passed, trigger the
-// function on the leading edge, instead of the trailing.
-var throttle = function throttle(wait, immediate) {
-  return function(func) {
-    var timeout;
-    return function() {
-      var context = this,
-        args = arguments;
-
-      var later = function later() {
-        timeout = null;
-        if (!immediate) func.apply(context, args);
+    // Returns a function, that, as long as it continues to be invoked, will only
+    // trigger every N milliseconds. If `immediate` is passed, trigger the
+    // function on the leading edge, instead of the trailing.
+    var throttle = function throttle(wait, immediate) {
+      return function(func) {
+        var timeout;
+        return function() {
+          var context = this,
+            args = arguments;
+    
+          var later = function later() {
+            timeout = null;
+            if (!immediate) func.apply(context, args);
+          };
+    
+          var callNow = immediate && !timeout;
+          clearTimeout(timeout);
+          if (!timeout) timeout = setTimeout(later, wait);
+          if (callNow) func.apply(context, args);
+        };
       };
-
-      var callNow = immediate && !timeout;
-      if (!timeout) timeout = setTimeout(later, wait);
-      if (callNow) func.apply(context, args);
     };
-  };
-};
-
-// window.onscroll = throttle(200)(function() { 
-// 	console.log(window.pageYOffset ) 
-// });
-```
+    
+    // window.onscroll = throttle(200)(function() { 
+    // 	console.log(window.pageYOffset ) 
+    // });
 
 The comments already explain the 'immediate' parameter. The basic difference is that without the 'immediate' parameter the function will wait and then fire. If the 'immediate' parameter is set to true it will fire and then wait. Be aware that if you set the 'immediate' parameter, the function won't always fire at or after the last event because it might still be waiting because of a previous event. If 'immediate' is set to true the function will always fire after or at the last event. This can get you into trouble if you're sending data or if you have to make sure you always have the latest. Only set the 'immediate' parameter if you know what you're doing.
 
@@ -151,6 +140,67 @@ const batched = delayedFunc => func => {
     }
 }
 ```
+
+Use the following snippets:
+
+The debounce snippet:
+
+    // Returns a function, that, as long as it continues to be invoked, will not
+    // be triggered. The function will be called after it stops being called for
+    // N milliseconds. If `immediate` is passed, trigger the function on the
+    // leading edge, instead of the trailing.
+    
+    var debounce = function debounce(wait, immediate) {
+      return function(func) {
+        var timeout;
+        return function() {
+          var context = this,
+            args = arguments;
+    
+          var later = function later() {
+            timeout = null;
+            if (!immediate) func.apply(context, args);
+          };
+    
+          var callNow = immediate && !timeout;
+          clearTimeout(timeout);
+          timeout = setTimeout(later, wait);
+          if (callNow) func.apply(context, args);
+        };
+      };
+    };
+    
+    // window.onscroll = debounce(200)(function() { 
+    // 	console.log(window.pageYOffset ) 
+    // });
+
+The throttle snippet:
+
+    // Returns a function, that, as long as it continues to be invoked, will only
+    // trigger every N milliseconds. If `immediate` is passed, trigger the
+    // function on the leading edge, instead of the trailing.
+    var throttle = function throttle(wait, immediate) {
+      return function(func) {
+        var timeout;
+        return function() {
+          var context = this,
+            args = arguments;
+    
+          var later = function later() {
+            timeout = null;
+            if (!immediate) func.apply(context, args);
+          };
+    
+          var callNow = immediate && !timeout;
+          if (!timeout) timeout = setTimeout(later, wait);
+          if (callNow) func.apply(context, args);
+        };
+      };
+    };
+    
+    // window.onscroll = throttle(200)(function() { 
+    // 	console.log(window.pageYOffset ) 
+    // });
 
 And then change your code to this:
 

@@ -45,23 +45,21 @@ The debounce snippet:
     // N milliseconds. If `immediate` is passed, trigger the function on the
     // leading edge, instead of the trailing.
     
-    var debounce = function debounce(wait, immediate) {
-      return function(func) {
-        var timeout;
-        return function() {
-          var context = this,
-            args = arguments;
+    var debounce = function debounce(func, wait, immediate) {
+      var timeout;
+      return function() {
+        var context = this,
+          args = arguments;
     
-          var later = function later() {
-            timeout = null;
-            if (!immediate) func.apply(context, args);
-          };
-    
-          var callNow = immediate && !timeout;
-          clearTimeout(timeout);
-          timeout = setTimeout(later, wait);
-          if (callNow) func.apply(context, args);
+        var later = function later() {
+          timeout = null;
+          if (!immediate) func.apply(context, args);
         };
+    
+        var callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.apply(context, args);
       };
     };
     
@@ -74,25 +72,25 @@ The throttle snippet:
     // Returns a function, that, as long as it continues to be invoked, will only
     // trigger every N milliseconds. If `immediate` is passed, trigger the
     // function on the leading edge, instead of the trailing.
-    var throttle = function throttle(wait, immediate) {
-      return function(func) {
-        var timeout;
-        return function() {
-          var context = this,
-            args = arguments;
     
-          var later = function later() {
-            timeout = null;
-            if (!immediate) func.apply(context, args);
-          };
+    var throttle = function throttle(func, wait, immediate) {
+      var timeout;
+      return function() {
+        var context = this,
+          args = arguments;
     
-          var callNow = immediate && !timeout;
-          clearTimeout(timeout);
-          if (!timeout) timeout = setTimeout(later, wait);
-          if (callNow) func.apply(context, args);
+        var later = function later() {
+          timeout = null;
+          if (!immediate) func.apply(context, args);
         };
+    
+        var callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.apply(context, args);
       };
     };
+    
     
     // window.onscroll = throttle(200)(function() { 
     // 	console.log(window.pageYOffset ) 
@@ -192,6 +190,7 @@ The throttle snippet:
           };
     
           var callNow = immediate && !timeout;
+          clearTimeout(timeout);
           if (!timeout) timeout = setTimeout(later, wait);
           if (callNow) func.apply(context, args);
         };

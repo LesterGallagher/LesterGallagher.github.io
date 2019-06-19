@@ -1,7 +1,7 @@
 ---
 lang: en
 link: https://www.microsoft.com/p/markdownify/9npgxqvzj8c0
-image: "/uploads/md-editor.png"
+image: "/uploads/md-editor-1.png"
 title: 'Markdownify - '
 title_bold: " Markdown Viewer"
 image_width: 512

@@ -1,7 +1,7 @@
 ---
 lang: en
 title: Markdown viewer for windows
-image: "/uploads/md-editor.png"
+image: "/uploads/md-editor-1.png"
 date: 2019-06-08T22:00:00.000+00:00
 author: Sem Postma
 description: Markdownify is a simple and effective markdown/text file viewer. You

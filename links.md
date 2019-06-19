@@ -9,7 +9,7 @@ image_height: ''
 permalink: "/links"
 description: Esstudio social and public profiles.
 layout: page
-
+lang: en
 ---
 # A list of links and echo sierra studio social profiles:
 

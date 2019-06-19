@@ -49,6 +49,10 @@ iframe {
 	bottom: 0;
 }
 
+.text-primary {
+	color: #fb5353;
+}
+
 .highlighter-rouge .highlight {
 	overflow-x: auto;
 	padding: 5px;
@@ -267,6 +271,10 @@ a:hover {
 	color: #fb5353;
 }
 
+a.btn:hover {
+	color: #fff;
+}
+
 a:focus,
 img:focus,
 button:focus,
@@ -286,20 +294,22 @@ button:focus,
 	text-shadow: none;
 }
 
-/*===== Header ===*/
+/*===== .navbar ===*/
 
-header {
+.navbar {
 	padding-top: 80px;
-	padding-bottom: 39px
+	padding-bottom: 39px;
+	z-index: 80000;
+	position: relative;
 }
 
-header h1>a {
+.navbar h1>a {
 	max-width: 66px;
 	display: block;
 	float: left
 }
 
-header nav {
+.navbar nav {
 	padding-top: 10px;
 	transition-delay: 0s;
 	transition-duration: 0.6s;
@@ -436,6 +446,13 @@ header nav {
 	transform: rotate(-135deg);
 }
 
+.home-page .navbar {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+}
+
 
 /*===== main ===*/
 
@@ -490,7 +507,7 @@ footer {
 footer>h1 a {
 	margin: 0 auto;
 	display: block;
-	max-width: 66px;
+	max-width: 96px;
 }
 
 footer nav {
@@ -648,7 +665,7 @@ section.blog-content figure img {
 	display: block;
 	border: none;
 	outline: none;
-	width: 200px;
+	min-width: 200px;
 	line-height: 60px;
 	text-transform: uppercase;
 	font-size: 21px;
@@ -659,6 +676,12 @@ section.blog-content figure img {
 	margin: 41px auto;
 	margin-bottom: 0;
 	cursor: pointer;
+	text-align: center;
+}
+
+a.btn {
+	padding: 0px 20px;
+    display: inline-block;
 }
 
 .contact-header {
@@ -760,65 +783,87 @@ section.blog-content figure img {
 	color: #fff;
 	margin-bottom: 80px;
 	padding-bottom: 80px;
+	position: relative;
+	overflow: hidden;
 }
 
-.lander-banner .newsfeeder {
-	
+.lander-text {
+	text-align: center;
+	color: #454545;
 }
 
-.lander-banner .newsfeeder h1 {
+.lander-text .seperate {
+	margin-top: 40px;
+	margin-bottom: 120px;
+}
+
+.lander-text img {
+	display: inline-block;
+}
+
+.lander-text hr {
+	border-top: 3px solid #fb5353;
+	max-width: 30px;
+	display: block;
+}
+
+.lander-text h2 {
+	margin-bottom: 50px;
+}
+
+.lander-banner  h1 {
 	font-size: 5em;
 	margin-top: 0;
 }
 
-.lander-banner .newsfeeder img {
+.lander-banner img {
 	margin: auto;
 	margin-top: 80px;
 }
 
 @media screen and (min-width: 768px) {
-	.lander-banner .newsfeeder img {
-		margin-top: -110px;
+	.lander-banner img {
+		margin-top: 20px;
 	}
-	.lander-banner .newsfeeder h1 {
+	.lander-banner h1 {
 		font-size: 3.5em;
-		margin-top: 130px;
+		margin-top: 315px;
 	}
 }
 
 @media screen and (min-width: 1200px) {
-	.lander-banner .newsfeeder img {
+	.lander-banner img {
 	}
-	.lander-banner .newsfeeder h1 {
+	.lander-banner h1 {
 		font-size: 5em;
 	}
 }
 
 @media screen and (max-width: 530px) {
-	.lander-banner .newsfeeder h1 {
+	.lander-banner h1 {
 		font-size: 4em;
 	}
 }
 
 @media screen and (max-width: 400px) {
-	.lander-banner .newsfeeder h1 {
+	.lander-banner h1 {
 		font-size: 3em;
 	}
 }
 
-.lander-banner .logo {
+.home-page .logo {
 	filter: invert(1);
 }
 
-.lander-banner #menu-button span {
+.home-page #menu-button span {
 	background-color: #fff;
 }
 
-.lander-banner #menu-button.open span {
+.home-page #menu-button.open span {
 	background-color: #111111;
 }
 
-.lander-banner .newsfeeder .btn-white {
+.home-page .btn-white {
 	margin: 0;
 	margin-top: 40px;
 	background-color: transparent;
@@ -833,7 +878,54 @@ section.blog-content figure img {
 	font-weight: normal;
 }
 
-.lander-banner .newsfeeder .btn-white:hover {
+.lander-banner {
+	text-shadow: 0 0 4px rgba(0, 0, 0, .3);
+}
+
+.lander-banner-rocket {
+	position: absolute;
+	right: 0;
+	top: -2px;
+	margin-top: 0!important;
+	height: calc(100% + 4px);
+}
+
+.navbar .languages {
+	background: #fff;
+	border: 1px solid #ccc;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translateX(-50%);
+	padding: 5px 15px;
+	border-top: none;
+}
+
+.navbar .languages ul {
+	list-style: none;
+}
+
+.navbar .languages li {
+	display: inline-block;
+	padding-left: 0;
+}
+
+html.en .lang.en, html.nl .lang.nl {
+    color: #fb5353;
+}
+
+.navbar .languages li a > * {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.navbar .languages img {
+	height: 1em;
+}
+
+.home-page .btn-white:hover {
 	background-color: #fff;
 	color: #ec493e;
 }

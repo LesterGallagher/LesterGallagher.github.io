@@ -1,9 +1,9 @@
 ---
 title: Contact
-permalink: "/contact/"
+permalink: "/nl/contact/"
 layout: default
 description: Echo Sierra Studio's contact page. Get in contact with us.
-lang: en
+lang: nl
 ref: contact
 ---
 
@@ -13,7 +13,7 @@ ref: contact
             <article class="contact-header">
                 <header>
                     <h2>
-                        <span>Hey There!</span> I love to hear you.</h2>
+                        <span>Hey daar!</span> laat een berichtje achter.</h2>
                 </header>
                 {% include social.html %}
             </article>
@@ -23,15 +23,15 @@ ref: contact
         <div class="contact-form-wrapper">
             <div id="message"></div>
             <form method="post" action="https://getsimpleform.com/messages?form_api_token=cae925a354022c6ea4a04edb5baf0247" name="cform" id="cform">
-                <input class="hidden" type='hidden' name='redirect_to' value='{{ "/contact-thankyou" | absolute_url }}' />
+                <input class="hidden" type='hidden' name='redirect_to' value='{{ "/nl/contact-thankyou" | absolute_url }}' />
                 <div class="row">
                     <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
-                        <input name="name" id="name" type="text" minlength="3" required maxlength="400" placeholder="What's your name?"> </div>
+                        <input name="name" id="name" type="text" minlength="3" required maxlength="400" placeholder="Wat is je naam?"> </div>
                     <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
-                        <input name="email" id="email" type="email" required maxlength="400" placeholder="What's your email?"> </div>
+                        <input name="email" id="email" type="email" required maxlength="400" placeholder="Wat is jouw e-mail?"> </div>
                 </div>
                 <div class="clearfix"></div>
-                <textarea name="comments" id="comments" cols="" rows="" required minlength="20" maxlength="400" placeholder="What's on your mind?"></textarea>
+                <textarea name="comments" id="comments" cols="" rows="" required minlength="20" maxlength="400" placeholder="Wat is je bericht?"></textarea>
                 <div class="clearfix"></div>
                 <input class="btn" name="" type="submit" value="Send email">
                 <div id="simple-msg"></div>

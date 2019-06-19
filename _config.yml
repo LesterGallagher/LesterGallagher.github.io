@@ -95,7 +95,6 @@ enforce_ssl: esstudio.site
 plugins:
 - jekyll-feed
 - jekyll-gist
-- jekyll-sitemap
 markdown: kramdown
 highlighter: rouge
 kramdown:

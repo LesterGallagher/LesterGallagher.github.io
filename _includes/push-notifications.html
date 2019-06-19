@@ -7,9 +7,27 @@
             </svg>
         </div>
         <div class="text">
-            <h4>Subscribe</h4>
-            <h5>Want to stay up to date?</h5>
-            <small>Get notifications when we publish new posts.</small>
+            <h4>
+                {% if page.lang == 'nl' %}
+                Abonneren
+                {% else %}
+                Subscribe
+                {% endif %}
+            </h4>
+            <h5>
+                {% if page.lang == 'nl' %}
+                Wil je op de hoogte blijven?
+                {% else %}
+                Want to stay up to date?
+                {% endif %}
+            </h5>
+            <small>
+                {% if page.lang == 'nl' %}
+                Ontvang meldingen wanneer we nieuwe berichten publiceren.
+                {% else %}
+                Get notifications when we publish new posts.
+                {% endif %}
+            </small>
         </div>
     </button>
 </div>

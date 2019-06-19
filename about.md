@@ -6,8 +6,17 @@ greytitle: us
 description: My primary development skill is coding/programming in languages like
   C#, Javascript, Typescript, HTML and CSS. I'm also skilled in 2D and 3D art (mostly
   using Gimp and Blender).
-
+ref: about
+lang: en
 ---
-My main focus when I'm writing a web-app, is to make the web-app responsive, learn about new tools and trying to use new techniques. SPA's, Build tools and other front-end tools are things i would like to learn more about. I mostly end up using some sort of combination of Node js tools to build the front-end of a web-app.
+
+I develop custom software, media and work together with companies and individuals to develop new innovative solutions. 
+I focus on helping sustainable and social initiatives in the field of IT, in particular marketing, 
+SEO, mobile / web development, accessibility, social media and performance optimization. 
+I develop and contribute to open source software in the field of web / mobile / native development and dev-ops.
+
+Kvk number: 75086972
+
+BTW number: NL228836554B01
 
 [Social Profiles](/social-profiles)

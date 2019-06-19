@@ -1,21 +1,21 @@
 ---
-title: Home
+title: ESStudio
 classname: home
 layout: lander
-lang: en
-permalink: /
+lang: nl
+permalink: /nl/
 ref: home
 ---
-{% assign works_list = site.works | sort: "weight" %}
+<!-- {% assign works_list = site.works | sort: "weight" %} -->
 <main class="container home">
     <div class="works-wrapper row">
         <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
             <article>
                 <header>
                     <h2>
-                        <span>{{ site.abbrv }}</span> Projects.</h2>
+                        <span>{{ site.abbrv }}</span> Projecten</h2>
                 </header>
-                <p>Home page of {{ site.title }} and lander page for all projects (and useless thingies) by ESStudio.</p>
+                <p>Startpagina van {{site.title}} en lander-pagina voor alle projecten (en nutteloze dingetjes) door ESStudio.</p>
             </article>
         </section>
         <section class="col-xs-12 col-sm-6 col-md-6 col-lg-6 grid">
@@ -28,8 +28,8 @@ ref: home
                 
                 <figcaption>
                     <h2>Sem Postma <span> Portfolio</span></h2>
-                    <p>Personal Portfolio.</p>
-                    <a href="https://bunkersem.github.io/portfolio/">View more</a>
+                    <p>Persoonlijk Portfolio.</p>
+                    <a href="https://bunkersem.github.io/portfolio/">Bekijk meer</a>
                 </figcaption>
             </figure>
         </section>
@@ -52,7 +52,7 @@ ref: home
                             <span>{{ work.title_bold }}</span>
                         </h2>
                         <div lang="{{ lang }}" xml:lang="{{ lang }}">{{ work.content }}</div>
-                        <a href="{{ work.link }}">View more</a>
+                        <a href="{{ work.link }}">Bekijk meer</a>
                     </figcaption>
                 </figure>
             </div>

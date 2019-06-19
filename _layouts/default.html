@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+{% assign lang = page.lang | default: site.lang | default: "en" %}
+<html lang="{{ lang }}" class="{{ page.ref }}-page {{ lang }}">
   {% include head.html %}
   <body>
-    	{% include header.html %}
+      {% include header.html %}
       {{ content }}
     {% include footer.html %}
   </body>

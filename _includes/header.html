@@ -1,28 +1,54 @@
-{% assign default_paths = site.pages | map: "path" %} {% assign page_paths = site.header_pages | default: default_paths %}
+{% assign default_paths = site.pages | map: "path" %}
+{% assign page_paths = site.header_pages | default: default_paths %}
 
-<header>
+<div class="navbar">
+    <ul class="languages">
+        {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+        {% for post in posts %}
+        <li class="lang {{ post.lang }}">
+            <a href="{{ post.url }}">
+                <img height="40" src="/assets/img/languages/{{ page.lang }}.png" alt="logo for language: {{ page.lang }}">
+                {{ post.lang }}
+            </a>
+        </li>
+        {% endfor %}
+
+        {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+        {% for page in pages %}
+        <li class="lang {{ page.lang }}">
+            <a href="{{ page.url }}">
+                <img height="40" src="/assets/img/languages/{{ page.lang }}.png" alt="logo for language: {{ page.lang }}">
+                {{ page.lang }}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
     <div class="container">
         <h1>
             <a href="{{ "/"  | absolute_url }}" title="{{ site.title }}">
-                <img class="lazyload logo" alt="logo" width="66" height="66" data-src="{{ "/assets/img/logo.png" | absolute_url }}" />
+                <img class="lazyload logo" alt="logo" width="66" height="66"
+                    data-src="{{ "/assets/img/logo.png" | absolute_url }}" />
             </a>
         </h1>
         <nav class="navy">
             <div id="menu-button"><span></span><span></span><span></span>Navigation</div>
             <ul id="nav-items">
-                <li{% if page.title == "Work" %} class="nav-active"{% endif %}>
-                    <a href="{{ "/"  | absolute_url }}" title="Work">Work</a>
+                {% if page.lang %}
+                {% for ref in site.data.navbar.menu %}
+                {% assign refPage=site.pages | where:"ref", ref | where:'lang', page.lang | first %}
+                <li{% if page.ref == ref %} class="nav-active" {% endif %}>
+                    <a href="{{ refPage.url }}">{{ refPage.title }}</a>
                 </li>
-                <li{% if page.title == "About" %} class="nav-active"{% endif %}>
-                    <a href="{{ "about/" | absolute_url }}" title="About">About</a>
+                {% endfor %}
+                {% else %}
+                {% for ref in site.data.navbar.menu %}
+                {% assign refPage=site.pages | where:"ref", ref | where:'lang', 'en' | first %}
+                <li{% if page.ref == ref %} class="nav-active" {% endif %}>
+                    <a href="{{ refPage.url }}">{{ refPage.title }}</a>
                 </li>
-                <li{% if page.title == "Blog" %} class="nav-active"{% endif %}>
-                    <a href="{{ "blog/" | absolute_url }}" title="Blog">Blog</a>
-                </li>
-                <li{% if page.title == "Contact" %} class="nav-active"{% endif %}>
-                    <a href="{{ "contact/" | absolute_url }}" title="Contact">Contact</a>
-                </li>
+                {% endfor %}
+                {% endif %}
             </ul>
         </nav>
     </div>
-</header>
+</div>

@@ -59,6 +59,15 @@
   <link as="script" rel="preload" href="/assets/js/main.js">
   <link rel="stylesheet" href="/assets/css/main.css">
 
+  {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+  {% for post in posts %}
+  <link rel="alternate" hreflang="{{ post.lang }}" href="{{ post.url }}" />
+  {% endfor %}
+  {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+  {% for page in pages %}
+  <link rel="alternate" hreflang="{{ page.lang }}" href="{{ page.url }}" />
+  {% endfor %}
+
   {% feed_meta %}
   {% if jekyll.environment == 'production' and site.google_analytics %}
   {% include google-analytics.html %}

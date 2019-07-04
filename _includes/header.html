@@ -2,6 +2,7 @@
 {% assign page_paths = site.header_pages | default: default_paths %}
 
 <div class="navbar">
+    {% if page.ref %}
     <ul class="languages">
         {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
         {% for post in posts %}
@@ -23,6 +24,7 @@
         </li>
         {% endfor %}
     </ul>
+    {% endif %}
     <div class="container">
         <h1>
             <a href="{{ "/"  | absolute_url }}" title="{{ site.title }}">

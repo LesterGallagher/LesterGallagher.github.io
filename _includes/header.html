@@ -7,7 +7,7 @@
         {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
         {% for post in posts %}
         <li class="lang {{ post.lang }}">
-            <a href="{{ post.url }}">
+            <a href="{{ post.url }}" onclick="event.preventDefault();window.location='{{ post.url }}'+window.location.search;">
                 <img height="40" src="/assets/img/languages/{{ page.lang }}.png" alt="logo for language: {{ page.lang }}">
                 {{ post.lang }}
             </a>
@@ -17,7 +17,7 @@
         {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
         {% for page in pages %}
         <li class="lang {{ page.lang }}">
-            <a href="{{ page.url }}">
+            <a href="{{ page.url }}" onclick="event.preventDefault();window.location='{{ page.url }}'+window.location.search;">
                 <img height="40" src="/assets/img/languages/{{ page.lang }}.png" alt="logo for language: {{ page.lang }}">
                 {{ page.lang }}
             </a>

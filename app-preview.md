@@ -71,14 +71,17 @@ lang: en
         return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
     };
     var url = getUrlParameter('url');
-    document.getElementById('device-frame').setAttribute('src', url);
+    
+    var device = getUrlParameter('device');
+    if (device) document.getElementById('device').setAttribute('class', 'device ' + device);
+    
+    document.getElementById('device-frame').setAttribute('src', url + '/' + device);
 
     Array.from(document.querySelectorAll('.device-link')).forEach(function(anchor) {
         anchor.setAttribute('href', anchor.getAttribute('href') + '&url=' + url);
     });
 
-    var device = getUrlParameter('device');
-    if (device) document.getElementById('device').setAttribute('class', 'device ' + device);
+    
 
 </script>
 

@@ -7,7 +7,6 @@ portal_title: ''
 portal_description: ''
 portal_image: ''
 portal_link: ''
-published: false
 
 ---
 Do you want to do more with your WordPress blog/website. I will transform your WordPress content into a full-fledged mobile app which can be published on the Google Play Store, Windows Store and the App Store.

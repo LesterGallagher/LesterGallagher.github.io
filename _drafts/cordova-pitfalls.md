@@ -2,7 +2,7 @@
 lang: en
 title: Cordova Pitfalls
 image: ''
-date: 
+date: 2019-08-09 00:00:00 +0200
 author: ''
 description: ''
 portal_title: ''

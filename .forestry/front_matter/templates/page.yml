@@ -27,6 +27,5 @@ fields:
   name: portal_link
   label: portal_link
 pages:
-- newsfeeder.md
-- other-profiles.md
+- create-a-mobile-app-based-on-your-wordpress-site.md
 - links.md

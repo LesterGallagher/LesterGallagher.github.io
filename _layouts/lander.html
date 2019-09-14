@@ -35,9 +35,9 @@ layout: default
       <h2>Services</h2>
 
       <div class="container-fluid">
-        <div class="row">
-          <div class="col-xs col-sm-4">
-            <img alt="Apps" height="30" src="/assets/img/mobile-phone.png">
+        <div class="row services">
+          <div class="col-xs col-sm-4 service">
+            <img alt="Apps" height="100" src="/assets/img/mobile-phone.png">
 
             <h3>Apps</h3>
 
@@ -45,7 +45,7 @@ layout: default
 
             <p>
               {% if page.lang == 'nl' %}
-              
+
               Ik ontwikkel hybride / native apps voor verschillende platformen.
 
               {% else %}
@@ -55,34 +55,34 @@ layout: default
               {% endif %}
             </p>
           </div>
-          <div class="col-xs col-sm-4">
-            <img alt="Globe" height="30" src="/assets/img/globe.png">
+          <div class="col-xs col-sm-4 service">
+            <img alt="Globe" height="100" src="/assets/img/globe.png">
 
             <h3>Website</h3>
 
             <hr>
 
             <p>
-                {% if page.lang == 'nl' %}
-              
-                Ik ontwikkel webshops, blogs en meer.
-  
-                {% else %}
-  
-                I develop webshops, blogs and more.
+              {% if page.lang == 'nl' %}
 
-                {% endif %}
+              Ik ontwikkel webshops, blogs en meer.
+
+              {% else %}
+
+              I develop webshops, blogs and more.
+
+              {% endif %}
             </p>
           </div>
-          <div class="col-xs col-sm-4">
-            <img alt="Desktop" height="30" src="/assets/img/desktop.png">
+          <div class="col-xs col-sm-4 service">
+            <img alt="Desktop" height="100" src="/assets/img/desktop.png">
             <h3>Desktop</h3>
 
             <hr>
 
             <p>
               {% if page.lang == 'nl' %}
-            
+
               Ik ontwikkel (native) desktop-apps.
 
               {% else %}
@@ -91,6 +91,10 @@ layout: default
 
               {% endif %}
             </p>
+          </div>
+          <div class="col-xs-12">
+            {% assign refPage = site.pages | where: "ref", "contact" | where: "lang", page.lang | first %}
+            <a class="btn" href="{{ refPage.url }}">{{ refPage.title }}</a>
           </div>
         </div>
       </div>
@@ -101,7 +105,7 @@ layout: default
 
 <div class="lander-banner">
   <div class="newsfeeder container">
-    <div class="col-sm-6 col-xs-12 nopadding">
+    <div class="col-sm-6 col-xs-12 nopadding" style="padding-right: 10px">
       <h1>Newsfeeder</h1>
       <p class="lead">
         {% if page.lang == 'nl' %}
@@ -118,9 +122,10 @@ layout: default
 
         {% endif %}
       </p>
-      <a target="_blank" href="https://newsfeeder.esstudio.site" class="btn btn-white">Open Newsfeeder</a>
+      <a target="_blank" href="https://newsfeeder.esstudio.site" class="btn btn-white" style="margin-bottom: 50px">Open
+        Newsfeeder</a>
     </div>
-    <div class="col-sm-6 col-xs-12 nopadding">
+    <div class="col-sm-6 col-xs-12">
       <img src="/uploads/newsfeeder-screenshot.png" class="img-responsive" alt="Newsfeeder screenshot banner.">
     </div>
   </div>

@@ -127,7 +127,9 @@ figure.oa h2 {
 	font-weight: 400;
 	margin: 20% 0 10px 0;
 	-webkit-transition: -webkit-transform 0.35s;
+	transition: -webkit-transform 0.35s;
 	transition: transform 0.35s;
+	transition: transform 0.35s, -webkit-transform 0.35s;
 	-webkit-transform: translate3d(0, 100%, 0);
 	transform: translate3d(0, 100%, 0);
 }
@@ -141,7 +143,9 @@ figure.oa p {
 	font-weight: 400;
 	opacity: 0;
 	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, -webkit-transform 0.35s;
 	transition: opacity 0.35s, transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
 	-webkit-transform: scale(0);
 	transform: scale(0);
 }
@@ -157,7 +161,8 @@ figure.oa:hover p {
 }
 
 figure.oa:hover h2 {
-	transform: translate(0, 0);
+	-webkit-transform: translate(0, 0);
+	        transform: translate(0, 0);
 }
 
 figure.oa:hover img {
@@ -190,7 +195,7 @@ figure.oa:hover img {
 		font-size: 20px;
 	}
 	figure.oa p {
-		font-size: 13px;
+		font-size: 14px;
 		padding: 2%;
 		display: block;
 		width: 90%;
@@ -209,10 +214,10 @@ figure.oa:hover img {
 		padding: 0em
 	}
 	figure.oa h2 {
-		font-size: 15px;
+		font-size: 20px;
 	}
 	figure.oa p {
-		font-size: 13px;
+		font-size: 14px;
 		padding: 2%;
 		display: block;
 		width: 90%;

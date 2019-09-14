@@ -14,9 +14,12 @@
     height: 100%; 
     overflow: auto; 
     background-color: rgba(0, 0, 0, 0.9); 
+    -webkit-transition: 
+    padding-top 100ms ease-out; 
     transition: 
     padding-top 100ms ease-out; 
-    box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+            box-sizing: border-box; 
     font-family: sans-serif, Verdana, Geneva, Tahoma;
 
 }
@@ -28,20 +31,23 @@
     max-width: 700px; 
     padding: 40px; 
     background: white;
-     box-sizing: border-box;
+     -webkit-box-sizing: border-box;
+             box-sizing: border-box;
 }
 
 #noscript-modal .modal-content h2 {
     color: rgb(236, 78, 32); 
     margin-top: 6px; 
     margin-bottom: 36px; 
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box; 
+            box-sizing: border-box;
 }
 
 #noscript-modal .modal-content a {
     background-color: transparent; 
     color: rgb(1, 111, 185); 
-    box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+            box-sizing: border-box; 
     text-decoration: none;
 
 }
@@ -92,6 +98,7 @@ input[type="range"].flat-range-slider {
 	-webkit-appearance: none;
 	width: 160px;
 	height: 20px;
+	background: -webkit-gradient(linear, left top, right top, from(#c24040), to(#c24040));
 	background: linear-gradient(to right, #c24040 0%, #c24040 100%);
 	background-size: 150px 10px;
 	background-position: center;
@@ -107,7 +114,8 @@ input[type="range"].flat-range-slider::-webkit-slider-thumb {
 	background: #f35353;
 	position: relative;
 	z-index: 3;
-	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+	        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
 }
 
 input[type="range"].flat-range-slider::-webkit-slider-thumb:after {
@@ -119,6 +127,7 @@ input[type="range"].flat-range-slider::-webkit-slider-thumb:after {
 	right: 20px;
 	top: 5px;
 	background: #fb5353;
+	background: -webkit-gradient(linear, left top, right top, color-stop(1%, #f088fc), color-stop(70%, #AC6CFF));
 	background: linear-gradient(to right, #f088fc 1%, #AC6CFF 70%);
 }
 
@@ -136,7 +145,8 @@ section.blog-content:hover figure img {
 	max-width: 100%; 
 	margin: 35px auto; 
 	border-radius: 8px; 
-	box-shadow: 0 0 5px #ccc; 
+	-webkit-box-shadow: 0 0 5px #ccc; 
+	        box-shadow: 0 0 5px #ccc; 
 	padding: 20px; 
 	background: #fff; 
 	text-align: center;
@@ -148,7 +158,8 @@ section.blog-content:hover figure img {
 }
 
 .app-portal a.btn {
-	box-shadow: 0 0 60px -10px #000
+	-webkit-box-shadow: 0 0 60px -10px #000;
+	        box-shadow: 0 0 60px -10px #000
 }
 
 .app-portal a.btn > * {

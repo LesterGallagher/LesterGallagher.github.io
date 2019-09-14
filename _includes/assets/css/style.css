@@ -2,7 +2,8 @@
 *,
 *::after,
 *::before {
-	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 html {
@@ -66,18 +67,25 @@ iframe {
 	border-radius: 0;
 }
 
-img[data-src].lazyload {
+img.lazyload {
 	opacity: 0;
+	-webkit-transition: opacity 1s;
 	transition: opacity 1s;
 }
 
-img[data-src].lazyload.loaded,
-img[data-src].lazyload.error {
+img.lazyload.loaded,
+img.lazyload.error {
 	opacity: 1;
 }
 
-img[data-src].lazyload.loaded {
-	animation: fadeIn 400ms linear;
+img.lazyload.loaded {
+	-webkit-animation: fadeIn 400ms linear;
+	        animation: fadeIn 400ms linear;
+}
+
+@-webkit-keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
 }
 
 @keyframes fadeIn {
@@ -85,8 +93,17 @@ img[data-src].lazyload.loaded {
 	to { opacity: 1; }
 }
 
-img[data-src].lazyload:not([src]) {
+img.lazyload:not([src]) {
 	visibility: hidden;
+}
+
+.services .service img {
+	transition: 300ms ease all;
+	transform: scale(0.7)
+}
+
+.services .service:hover img {
+	transform: scale(1)
 }
 
 figure.oa:hover img {
@@ -261,10 +278,14 @@ a {
 	text-decoration: none;
 	outline: none;
 	color: inherit;
-	transition-delay: 0s;
-	transition-duration: 0.6s;
+	-webkit-transition-delay: 0s;
+	        transition-delay: 0s;
+	-webkit-transition-duration: 0.6s;
+	        transition-duration: 0.6s;
+	-webkit-transition-property: all;
 	transition-property: all;
-	transition-timing-function: ease;
+	-webkit-transition-timing-function: ease;
+	        transition-timing-function: ease;
 }
 
 a:hover {
@@ -280,12 +301,6 @@ img:focus,
 button:focus,
 .btn:focus {
 	outline: none;
-}
-
-::-moz-selection {
-	background-color: #fb5353;
-	color: #fff;
-	text-shadow: none;
 }
 
 ::selection {
@@ -311,10 +326,14 @@ button:focus,
 
 .navbar nav {
 	padding-top: 10px;
-	transition-delay: 0s;
-	transition-duration: 0.6s;
+	-webkit-transition-delay: 0s;
+	        transition-delay: 0s;
+	-webkit-transition-duration: 0.6s;
+	        transition-duration: 0.6s;
+	-webkit-transition-property: all;
 	transition-property: all;
-	transition-timing-function: ease;
+	-webkit-transition-timing-function: ease;
+	        transition-timing-function: ease;
 }
 
 #nav-items {
@@ -331,27 +350,40 @@ button:focus,
 	padding: 0;
 	margin: 0;
 	padding-top: 199px;
-	transform-origin: center top;
+	-webkit-transform-origin: center top;
+	        transform-origin: center top;
 }
 
 #nav-items.open {
 	display: block;
-	animation: flyin 400ms ease-out;
+	-webkit-animation: flyin 400ms ease-out;
+	        animation: flyin 400ms ease-out;
 }
 
 #nav-items.close {
 	display: block;
-	animation: flyout 500ms ease-out;
+	-webkit-animation: flyout 500ms ease-out;
+	        animation: flyout 500ms ease-out;
+}
+
+@-webkit-keyframes flyin {
+	0% { opacity: 0; -webkit-transform: scaleY(0); transform: scaleY(0); } 
+	100% { opacity: 1; -webkit-transform: scaleY(1); transform: scaleY(1); } 
 }
 
 @keyframes flyin {
-	0% { opacity: 0; transform: scaleY(0); } 
-	100% { opacity: 1; transform: scaleY(1); } 
+	0% { opacity: 0; -webkit-transform: scaleY(0); transform: scaleY(0); } 
+	100% { opacity: 1; -webkit-transform: scaleY(1); transform: scaleY(1); } 
+}
+
+@-webkit-keyframes flyout {
+	0% { opacity: 1; -webkit-transform: scaleY(1); transform: scaleY(1); } 
+	100% { opacity: 0; -webkit-transform: scaleY(0); transform: scaleY(0); } 
 }
 
 @keyframes flyout {
-	0% { opacity: 1; transform: scaleY(1); } 
-	100% { opacity: 0; transform: scaleY(0); } 
+	0% { opacity: 1; -webkit-transform: scaleY(1); transform: scaleY(1); } 
+	100% { opacity: 0; -webkit-transform: scaleY(0); transform: scaleY(0); } 
 }
 
 #nav-items>li {
@@ -380,12 +412,8 @@ button:focus,
 	position: relative;
 	z-index: 8000;
 	-webkit-transform: rotate(0deg);
-	-moz-transform: rotate(0deg);
-	-o-transform: rotate(0deg);
 	transform: rotate(0deg);
 	-webkit-transition: .5s ease-in-out;
-	-moz-transition: .5s ease-in-out;
-	-o-transition: .5s ease-in-out;
 	transition: .5s ease-in-out;
 	cursor: pointer;
 }
@@ -400,12 +428,8 @@ button:focus,
 	opacity: 1;
 	left: 0;
 	-webkit-transform: rotate(0deg);
-	-moz-transform: rotate(0deg);
-	-o-transform: rotate(0deg);
 	transform: rotate(0deg);
 	-webkit-transition: .25s ease-in-out;
-	-moz-transition: .25s ease-in-out;
-	-o-transition: .25s ease-in-out;
 	transition: .25s ease-in-out;
 }
 
@@ -428,8 +452,6 @@ button:focus,
 #menu-button.open span:nth-child(1) {
 	top: 10px;
 	-webkit-transform: rotate(135deg);
-	-moz-transform: rotate(135deg);
-	-o-transform: rotate(135deg);
 	transform: rotate(135deg);
 }
 
@@ -441,8 +463,6 @@ button:focus,
 #menu-button.open span:nth-child(3) {
 	top: 10px;
 	-webkit-transform: rotate(-135deg);
-	-moz-transform: rotate(-135deg);
-	-o-transform: rotate(-135deg);
 	transform: rotate(-135deg);
 }
 
@@ -743,7 +763,9 @@ a.btn {
 
 .web-push-notifications .subscribe {
 	height: 100%;
-	appearance: none;
+	-webkit-appearance: none;
+	   -moz-appearance: none;
+	        appearance: none;
 	border: none;
 	background: #fff;
 	padding: 0;
@@ -805,6 +827,7 @@ a.btn {
 	border-top: 3px solid #fb5353;
 	max-width: 30px;
 	display: block;
+	margin: 20px auto;
 }
 
 .lander-text h2 {
@@ -851,7 +874,8 @@ a.btn {
 }
 
 .home-page .logo {
-	filter: invert(1);
+	-webkit-filter: invert(1);
+	        filter: invert(1);
 }
 
 .home-page #menu-button span {
@@ -897,7 +921,8 @@ a.btn {
 	position: absolute;
 	left: 50%;
 	top: 0;
-	transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	        transform: translateX(-50%);
 	padding: 5px 15px;
 	border-top: none;
 }

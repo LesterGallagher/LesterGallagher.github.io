@@ -3,7 +3,7 @@
 var publicVapidKey = 'BABOUEnL-6mHr6Sf60UnNQS0cWHPmFXNmwTV2jHIoHAwdqOLJzGnbs-qr_BBxx1ePVozJa8qQzQamriCs5uU9EY';
 
 if (navigator['serviceWorker']) {
-	navigator.serviceWorker.register(swUrl, { scope: '/' }).then(function (registration) {
+	navigator.serviceWorker.register(swUrl).then(function (registration) {
 		console.log('Service worker successfully registered on scope', registration.scope);
 
 		registration.pushManager.getSubscription().then(function (subscription) {

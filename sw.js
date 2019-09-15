@@ -20,17 +20,17 @@ self.addEventListener('fetch', function (event) {
                         }).then(function (dynResponse) {
                             if (dynResponse) return dynResponse;
                             else return networkResponse;
-                        });
+                        }).catch(console.error)
                     }
                     if (event.request.method === 'GET') {
                         var cachedResponse = networkResponse.clone();
                         caches.open(DYNAMIC_CACHE).then(function (dynCache) {
                             dynCache.put(event.request, cachedResponse);
-                        });
+                        }).catch(console.error)
                     }
                     return networkResponse;
-                });
-            });
+                }).catch(console.error)
+            }).catch(console.error)
         })
     );
 });

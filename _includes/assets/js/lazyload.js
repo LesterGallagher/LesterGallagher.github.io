@@ -1,25 +1,28 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   var lazyImages = [].slice.call(document.getElementsByClassName("lazyload"));
   var active = false;
 
   function lazyLoad() {
     if (active === false) {
       active = true;
-      setTimeout(function() {
+      setTimeout(function () {
         for (var i = lazyImages.length - 1; i >= 0; i--) {
           if (
-            lazyImages[i].classList.contains("loaded") === false &&
+            !lazyImages[i].classList.contains("loaded") &&
             lazyImages[i].getBoundingClientRect().top <=
-              window.innerHeight + 600 &&
-            lazyImages[i].getBoundingClientRect().bottom >= -200
+            window.innerHeight + 1200
           ) {
-            (function() {
+            (function () {
               var lazyImage = lazyImages[i];
               var img = new Image();
 
-              img.onload = img.onerror = function() {
+              img.onload = img.onerror = function () {
                 lazyImage.src = img.src;
                 lazyImage.classList.add("loaded");
+
+                var event = document.createEvent('Event');
+                event.initEvent('lazyloaded', true, true);
+                lazyImage.dispatchEvent(event);
               };
 
               img.src = lazyImage.getAttribute("data-src");

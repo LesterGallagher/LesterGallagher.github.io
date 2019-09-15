@@ -31,7 +31,7 @@ ref: blog
                     <figure>
                         <div class="post-date">
                             <span>{{ post.date | date: "%d" }}</span> {{ post.date | date: "%B %Y" }} </div>
-                        <img src="{{ post.image | absolute_url }}" alt="{{ post.title }} image" class="img-responsive" /> </figure>
+                        <img data-src="{{ post.image | absolute_url }}" alt="{{ post.title }} image" class="img-responsive lazyload" /> </figure>
                 </a>
                 <article>{{ post.title | escape }}</article>
             </section>

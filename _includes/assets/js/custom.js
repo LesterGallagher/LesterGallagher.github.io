@@ -27,7 +27,7 @@ if (navigator['serviceWorker']) {
 						// https://www.npmjs.com/package/web-push#using-vapid-key-for-applicationserverkey
 						applicationServerKey: urlBase64ToUint8Array(publicVapidKey)
 					}).then(function (subscription) {
-						return fetch('https://ess-server.herokuapp.com/api/notifications/esstudio/subscribe', {
+						return fetch('https://api.esstudio.site/api/notifications/esstudio/subscribe', {
 							method: 'POST',
 							body: JSON.stringify(subscription),
 							headers: {
@@ -66,14 +66,21 @@ window.addEventListener('load', function () {
 			{ mq: '768px', columns: 2, gutter: 0 },
 		];
 		try {
-			var instance = window.instance = Bricks({
+			var instance = window.brickJsInstance = Bricks({
 				container: grid,
 				packed: 'data-packed',
 				sizes: sizes
 			});
-			window.addEventListener('resize', instance.pack);
-			window.addEventListener('orientationchange', instance.pack);
-			instance.pack();
+			var prevFrame;
+			function pack() {
+				cancelAnimationFrame(prevFrame);
+				prevFrame = requestAnimationFrame(instance.pack);
+			}
+
+			window.addEventListener('resize', pack);
+			window.addEventListener('orientationchange', pack);
+			window.addEventListener('lazyloaded', pack);
+			pack();
 		} catch (err) { console.error(err) }
 	}
 

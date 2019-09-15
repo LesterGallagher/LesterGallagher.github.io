@@ -1,6 +1,5 @@
 ---
 ---
-
 var DYNAMIC_CACHE = 'esstudio-dynamic-cache-{{ site.time | date: "%s" }}';
 var STATIC_CACHE = 'esstudio-static-cache-{{ site.time | date: "%s" }}';
 
@@ -8,31 +7,35 @@ var STATIC_CACHE = 'esstudio-static-cache-{{ site.time | date: "%s" }}';
 self.addEventListener('fetch', function (event) {
     // try to find response object in the cache
     // associated with current request
-    event.respondWith(
-        caches.open(STATIC_CACHE).then(function (cache) {
-            return cache.match(event.request).then(function (response) {
-                if (response) return response;
+    try {
+        event.respondWith(
+            caches.open(STATIC_CACHE).then(function (cache) {
+                return cache.match(event.request).then(function (response) {
+                    if (response) return response;
 
-                return fetch(event.request).catch(console.warn).then(function (networkResponse) {
-                    if (!networkResponse || (networkResponse.status !== 200 && !networkResponse.ok)) {
-                        return caches.open(DYNAMIC_CACHE).then(function (dynCache) {
-                            return dynCache.match(event.request);
-                        }).then(function (dynResponse) {
-                            if (dynResponse) return dynResponse;
-                            else return networkResponse;
-                        }).catch(console.error)
-                    }
-                    if (event.request.method === 'GET') {
-                        var cachedResponse = networkResponse.clone();
-                        caches.open(DYNAMIC_CACHE).then(function (dynCache) {
-                            dynCache.put(event.request, cachedResponse);
-                        }).catch(console.error)
-                    }
-                    return networkResponse;
+                    return fetch(event.request).catch(console.warn).then(function (networkResponse) {
+                        if (!networkResponse || (networkResponse.status !== 200 && !networkResponse.ok)) {
+                            return caches.open(DYNAMIC_CACHE).then(function (dynCache) {
+                                return dynCache.match(event.request);
+                            }).then(function (dynResponse) {
+                                if (dynResponse) return dynResponse;
+                                else return networkResponse;
+                            }).catch(console.error)
+                        }
+                        if (event.request.method === 'GET') {
+                            var cachedResponse = networkResponse.clone();
+                            caches.open(DYNAMIC_CACHE).then(function (dynCache) {
+                                dynCache.put(event.request, cachedResponse);
+                            }).catch(console.error)
+                        }
+                        return networkResponse;
+                    }).catch(console.error)
                 }).catch(console.error)
             }).catch(console.error)
-        }).catch(console.error)
-    );
+        );
+    } catch (err) {
+        console.error(err);
+    }
 });
 
 self.addEventListener('activate', function (event) {
@@ -55,17 +58,17 @@ self.addEventListener('install', function (event) {
         caches.open(STATIC_CACHE).then(function (cache) {
             return cache.addAll(
                 [
-                    "{{ "/" | absolute_url }}",
-                    "{{ "/assets/css/main.css" | absolute_url }}",
-                    "{{ "/assets/img/logo.png" | absolute_url }}",
+                    "{{ " / " | absolute_url }}",
+                    "{{ " / assets / css / main.css" | absolute_url }}",
+                    "{{ " / assets / img / logo.png" | absolute_url }}",
                     "https://cdn.polyfill.io/v2/polyfill.min.js",
-                    "{{ "/assets/js/main.js" | absolute_url }}",
-                    "{{ "/assets/minima-social-icons.svg" | absolute_url }}",
-                    "{{ "/assets/img/home-images/portfolio.jpg" | absolute_url }}",
-                    "{{ "/uploads/my_logo_512.png" | absolute_url }}",
-                    "{{ "/about/" | absolute_url }}",
-                    "{{ "/blog/" | absolute_url }}",
-                    "{{ "/contact/" | absolute_url }}"
+                    "{{ " / assets / js / main.js" | absolute_url }}",
+                    "{{ " / assets / minima - social - icons.svg" | absolute_url }}",
+                    "{{ " / assets / img / home - images / portfolio.jpg" | absolute_url }}",
+                    "{{ " / uploads / my_logo_512.png" | absolute_url }}",
+                    "{{ " / about / " | absolute_url }}",
+                    "{{ " / blog / " | absolute_url }}",
+                    "{{ " / contact / " | absolute_url }}"
                 ]
             );
         })

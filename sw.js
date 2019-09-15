@@ -31,7 +31,7 @@ self.addEventListener('fetch', function (event) {
                     return networkResponse;
                 }).catch(console.error)
             }).catch(console.error)
-        })
+        }).catch(console.error)
     );
 });
 

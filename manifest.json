@@ -2,7 +2,7 @@
 ---
 
 {
-    "default_locale": "{{ site.lang | default: "en" }}",
+    "default_locale": "{{ site.lang | default: site.lang }}",
     "description": "{{ site.description }}",
     "short_name": "{{ site.abbrv }}",
     "start_url": "./",

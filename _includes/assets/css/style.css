@@ -181,6 +181,12 @@ figure.oa:hover img.loaded {
 }
 
 html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+html,
 body,
 div,
 span,
@@ -251,8 +257,6 @@ audio,
 video,
 input,
 main {
-	margin: 0;
-	padding: 0;
 	vertical-align: baseline;
 	border: 0;
 	outline: 0;
@@ -914,6 +918,8 @@ a.btn {
 }
 
 .navbar .languages {
+	margin: 0;
+	padding: 0;
 	background: #fff;
 	border: 1px solid #ccc;
 	border-bottom-left-radius: 10px;

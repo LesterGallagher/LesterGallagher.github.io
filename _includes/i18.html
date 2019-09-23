@@ -1,0 +1,1 @@
+{% assign msg = site.data.internationalization[include._][page.lang] %}{% if msg %}{{ msg }}{% elsif site.data.internationalization[include._] %}{{ site.data.internationalization[include._].en }}{% else %}{{ include._ }}{% endif %}

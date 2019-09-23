@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<main class="main-inner-wrapper container {{ page.title | downcase }}-page">
+  <div class="row">
+    <section class="col-xs-12">
+      <header>
+        <h2>
+          <span>{{ page.title }}</span> {{ page.greytitle }}</h2>
+      </header>
+      <p>{{ page.description }}</p>
+    </section>
+  </div>
+  <div class="row">
+    <section class="col-xs-12">
+      {{ content }}
+    </section>
+  </div>
+</main>

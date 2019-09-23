@@ -6,45 +6,37 @@
     </h1>
     <nav>
         <ul>
-            <li>
-                <a href="{{ "/" | absolute_url }}" title="Work">Work</a>
-            </li>
-            <li>
-                <a href="{{ "/about" | absolute_url }}" title="About">About</a>
-            </li>
-            <li>
-                <a href="{{ "/blog" | absolute_url }}" title="Blog">Blog</a>
-            </li>
-            <li>
-                <a href="{{ "/contact" | absolute_url }}" title="Contact">Contact</a>
-            </li>
+        {% assign default_paths = site.pages | map: "path" %}
+        {% assign page_paths = site.header_pages | default: default_paths %}
+        {% assign lang = page.lang %}
+        {% if lang %}{% else %}{% assign lang = site.lang %}{% endif %}
+        
+        {% for ref in site.data.navbar.menu %}
+        {% assign refPage=site.pages | where:"ref", ref | where:'lang', lang | first %}
+        <li{% if page.ref == ref %} class="nav-active" {% endif %}>
+            <a href="{{ refPage.url }}">{{ refPage.title }}</a>
+        </li>
+        {% endfor %}
         </ul>
     </nav>
     {% include social.html %}
     <div style="margin-top: 10px"></div>
-    <p class="copy-right affiliate">&copy; 2018 Sem Postma All rights Resved.
-        - <a href="{{ '/privacy-policy' | absolute_url }}">Privacy Policy</a>
-        - <a href="{{ '/terms-of-service' | absolute_url }}">Terms of Service</a>
-        - <a target="_blank" href="https://click.linksynergy.com/fs-bin/click?id=gX56itLGvIE&offerid=579862.416&type=3&subid=0">IT Courses</a>
-        - <a target="_blank" href="https://click.linksynergy.com/fs-bin/click?id=gX56itLGvIE&offerid=145238.10000683&type=3&subid=0">IT eBooks</a>
-        - <a target="_blank" href="https://click.linksynergy.com/fs-bin/click?id=gX56itLGvIE&offerid=584883.23&type=3&subid=0">Hosting</a>
-        - <a target="_blank" href="https://click.linksynergy.com/fs-bin/click?id=gX56itLGvIE&offerid=584883.23&type=3&subid=0">Cheap Domain Names</a>
-        - <a target="_blank" href="https://click.linksynergy.com/fs-bin/click?id=gX56itLGvIE&offerid=584883.4&type=3&subid=0">Anti-DDoS Service</a>
-        - <a target="_blank" href="https://click.linksynergy.com/fs-bin/click?id=gX56itLGvIE&offerid=584883.6&type=3&subid=0">Cloud Database</a>
-        - <a target="_blank" href="https://click.linksynergy.com/fs-bin/click?id=gX56itLGvIE&offerid=584883.6&type=3&subid=0">Cloud CDN</a>
-        - <a target="_blank" href="https://click.linksynergy.com/fs-bin/click?id=gX56itLGvIE&offerid=584883.7&type=3&subid=0">Shop Security</a>
+    <p class="copy-right affiliate">&copy; 2018 Sem Postma {% include i18.html _="rights" %}
+        - <a href="{{ '/privacy' | absolute_url }}">{% include i18.html _="privacy" %}</a>
+        - <a href="{{ '/terms-of-service' | absolute_url }}">{% include i18.html _="website_terms" %}</a>
+        - <a href="{{ '/nl/algemene-voorwaarden' | absolute_url }}">{% include i18.html _="terms" %}</a>
     </p>
 </footer>
 
 <noscript>
     <div id="noscript-modal" class="modal" role="dialog" aria-expanded="true">
         <div class="modal-content">
-            <h2>Important!</h2>
+            <h2>{% include i18.html _="important" %}!</h2>
             <p class="noscript-msg">
-                This website requires javascript.
+                {% include i18.html _="javascript_required" %}
                 <br>
                 <a href="https://www.enable-javascript.com/" target="_blank">
-                    You can find instructions on how to enable javascript here.</a>
+                    {% include i18.html _="javascript_instructions" %}</a>
             </p>
         </div>
     </div>

@@ -35,21 +35,14 @@
         <nav class="navy">
             <div id="menu-button"><span></span><span></span><span></span>Navigation</div>
             <ul id="nav-items">
-                {% if page.lang %}
+                {% assign lang = page.lang %}
+                {% if lang %}{% else %}{% assign lang = site.lang %}{% endif %}
                 {% for ref in site.data.navbar.menu %}
-                {% assign refPage=site.pages | where:"ref", ref | where:'lang', page.lang | first %}
+                {% assign refPage=site.pages | where:"ref", ref | where:'lang', lang | first %}
                 <li{% if page.ref == ref %} class="nav-active" {% endif %}>
                     <a href="{{ refPage.url }}">{{ refPage.title }}</a>
                 </li>
                 {% endfor %}
-                {% else %}
-                {% for ref in site.data.navbar.menu %}
-                {% assign refPage=site.pages | where:"ref", ref | where:'lang', 'en' | first %}
-                <li{% if page.ref == ref %} class="nav-active" {% endif %}>
-                    <a href="{{ refPage.url }}">{{ refPage.title }}</a>
-                </li>
-                {% endfor %}
-                {% endif %}
             </ul>
         </nav>
     </div>

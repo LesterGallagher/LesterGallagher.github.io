@@ -9,10 +9,6 @@ if (navigator['serviceWorker']) {
 		registration.pushManager.getSubscription().then(function (subscription) {
 			if (subscription !== null) return;
 
-			// <div class="web-push-notifications">
-			// 	<button class="subscribe">Subscribe</button>
-			// </div>
-
 			document.querySelectorAll('.web-push-notifications').forEach(function (elem) {
 				elem.classList.add('show');
 			});

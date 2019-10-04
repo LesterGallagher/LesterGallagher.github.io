@@ -86,6 +86,34 @@ window.addEventListener('load', function () {
 	}
 });
 
+document.addEventListener('lazyload', function (e) {
+	var lazy = e.target;
+	if (lazy.tagName !== 'IMG') return;
+	var img = new Image();
+
+	img.onload = img.onerror = function () {
+		lazy.src = img.src;
+		lazy.classList.add("loaded");
+
+		var event = document.createEvent('Event');
+		event.initEvent('lazyloaded', true, true);
+		lazy.dispatchEvent(event);
+	};
+
+	img.src = lazy.getAttribute("data-src");
+});
+
+(function () {
+	var techStackSvg = document.getElementById('teck-stack-svg');
+	if (techStackSvg !== null) {
+		techStackSvg.addEventListener('lazyload', function () {
+			document.body.appendChild
+				(document.createElement('script'))
+				.setAttribute('src', "/assets/js/techstack.js");
+		});
+	}
+})();
+
 function urlBase64ToUint8Array(base64String) {
 	const padding = '='.repeat((4 - base64String.length % 4) % 4);
 	const base64 = (base64String + padding)

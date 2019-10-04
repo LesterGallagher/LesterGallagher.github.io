@@ -44,3 +44,5 @@
 
 <script src="https://cdn.polyfill.io/v2/polyfill.min.js"></script>
 <script src="{{ "/assets/js/main.js" | absolute_url }}" type="text/javascript"></script>
+{% for script in page.scripts %}<script src="{{ script | absolute_url }}"></script>
+{% endfor %}

@@ -1,7 +1,7 @@
 ---
 title: Downloading, saving and opening files with Cordova
 image: "/uploads/cordova-file-download-and-open.jpeg"
-date: 2019-02-16 00:00:00 +0100
+date: 2019-02-15T23:00:00.000+00:00
 author: Sem Postma
 description: Downloading/Saving/Opening files with Cordova in javascript and polyfill
   the achor's download attribute for android webview.
@@ -9,6 +9,7 @@ portal_title: ''
 portal_description: ''
 portal_image: ''
 portal_link: ''
+lang: ''
 
 ---
 In the browser, downloading files is actually quite easy.  You can just do:
@@ -26,13 +27,13 @@ function download(filename, data, mimeType) {
   var blob = new Blob([data], {
     type: mimeType
   });
-  document.addEventListener("deviceready", function() {
-    if (window.cordova && cordova.platformId !== "browser") {
+  if (window.cordova && cordova.platformId !== "browser") {
+    document.addEventListener("deviceready", function () {
       // save file using codova-plugin-file
-    } else {
-      saveAs(blob, filename);
-    }
-  });
+    });
+  } else {
+    saveAs(blob, filename);
+  }
 };
 ```
 
@@ -43,8 +44,8 @@ function download(filename, data, mimeType) {
   var blob = new Blob([data], {
     type: mimeType
   });
-  document.addEventListener("deviceready", function() {
-    if (window.cordova && cordova.platformId !== "browser") {
+  if (window.cordova && cordova.platformId !== "browser") {
+  	document.addEventListener("deviceready", function() {
       var storageLocation = "";
 
       switch (device.platform) {
@@ -81,23 +82,22 @@ function download(filename, data, mimeType) {
           console.error(err);
         }
       );
+    });
     } else {
       saveAs(blob, filename);
     }
-  });
 }
 ```
 
 To finish the function we write the data to the file and then we open it using the file opener plugin. So the full example is:
 
 ```javascript
-
 function download(filename, data, mimeType) {
   var blob = new Blob([data], {
     type: mimeType
   });
-  document.addEventListener("deviceready", function() {
-    if (window.cordova && cordova.platformId !== "browser") {
+  if (window.cordova && cordova.platformId !== "browser") {
+    document.addEventListener("deviceready", function () {
       var storageLocation = "";
 
       switch (device.platform) {
@@ -114,18 +114,18 @@ function download(filename, data, mimeType) {
 
       window.resolveLocalFileSystemURL(
         folderPath,
-        function(dir) {
+        function (dir) {
           dir.getFile(
             filename,
             {
               create: true
             },
-            function(file) {
+            function (file) {
               file.createWriter(
-                function(fileWriter) {
+                function (fileWriter) {
                   fileWriter.write(blob);
 
-                  fileWriter.onwriteend = function() {
+                  fileWriter.onwriteend = function () {
                     var url = file.toURL();
                     cordova.plugins.fileOpener2.open(url, mimeType, {
                       error: function error(err) {
@@ -138,33 +138,33 @@ function download(filename, data, mimeType) {
                     });
                   };
 
-                  fileWriter.onerror = function(err) {
+                  fileWriter.onerror = function (err) {
                     alert("Unable to download");
                     console.error(err);
                   };
                 },
-                function(err) {
+                function (err) {
                   // failed
                   alert("Unable to download");
                   console.error(err);
                 }
               );
             },
-            function(err) {
+            function (err) {
               alert("Unable to download");
               console.error(err);
             }
           );
         },
-        function(err) {
+        function (err) {
           alert("Unable to download");
           console.error(err);
         }
       );
-    } else {
-      saveAs(blob, filename);
-    }
-  });
+    });
+  } else {
+    saveAs(blob, filename);
+  }
 }
 ```
 

@@ -106,11 +106,9 @@ document.addEventListener('lazyload', function (e) {
 (function () {
 	var techStackSvg = document.getElementById('teck-stack-svg');
 	if (techStackSvg !== null) {
-		techStackSvg.addEventListener('lazyload', function () {
-			document.body.appendChild
-				(document.createElement('script'))
-				.setAttribute('src', "/assets/js/techstack.js");
-		});
+		document.body.appendChild
+		(document.createElement('script'))
+		.setAttribute('src', "/assets/js/techstack.js");
 	}
 })();
 

@@ -51,13 +51,13 @@ Laatste veranderingen:
 * Automatische zoom naar kadaster raster hoogte
 * Kleine UI fixes
 
-Deze applicatie is open source en kan [hier op Github](https://github.com/LesterGallagher/kadaster-app) gevonden worden.
+Deze applicatie is open source en kan [hier op Github](https://github.com/sempostma/kadaster-app) gevonden worden.
 
 <!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/LesterGallagher/kadaster-app" data-icon="octicon-star" data-show-count="true" aria-label="Star LesterGallagher/kadaster-app on GitHub">Star</a>
+<a class="github-button" href="https://github.com/sempostma/kadaster-app" data-icon="octicon-star" data-show-count="true" aria-label="Star sempostma/kadaster-app on GitHub">Star</a>
 <!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/LesterGallagher/kadaster-app/subscription" data-icon="octicon-eye" data-show-count="true" aria-label="Watch LesterGallagher/kadaster-app on GitHub">Watch</a>
+<a class="github-button" href="https://github.com/sempostma/kadaster-app/subscription" data-icon="octicon-eye" data-show-count="true" aria-label="Watch sempostma/kadaster-app on GitHub">Watch</a>
 <!-- Place this tag where you want the button to render. -->
-<a class="github-button" href="https://github.com/LesterGallagher" data-show-count="true" aria-label="Follow @LesterGallagher on GitHub">Follow @LesterGallagher</a>
+<a class="github-button" href="https://github.com/sempostma" data-show-count="true" aria-label="Follow @sempostma on GitHub">Follow @sempostma</a>
 
 <script async defer src="https://buttons.github.io/buttons.js"></script>

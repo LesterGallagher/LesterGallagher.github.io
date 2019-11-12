@@ -140,15 +140,15 @@ And your done!
 
 Full example:
 
-<p data-height="335" data-theme-id="0" data-slug-hash="aKejNP" data-default-tab="css,result" data-user="Afirus" data-embed-version="2" data-pen-title="Pure CSS Progress Circle" class="codepen">See the Pen <a href="https://codepen.io/Afirus/pen/aKejNP/">Pure CSS Progress Circle</a> by LesterGallagher (<a href="https://codepen.io/Afirus">@Afirus</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="335" data-theme-id="0" data-slug-hash="aKejNP" data-default-tab="css,result" data-user="Afirus" data-embed-version="2" data-pen-title="Pure CSS Progress Circle" class="codepen">See the Pen <a href="https://codepen.io/Afirus/pen/aKejNP/">Pure CSS Progress Circle</a> by sempostma (<a href="https://codepen.io/Afirus">@Afirus</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 
 Animation example:
 
-<p data-height="265" data-theme-id="0" data-slug-hash="eKqjxX" data-default-tab="css,result" data-user="Afirus" data-embed-version="2" data-pen-title="Animated CSS Progress Circle" class="codepen">See the Pen <a href="https://codepen.io/Afirus/pen/eKqjxX/">Animated CSS Progress Circle</a> by LesterGallagher (<a href="https://codepen.io/Afirus">@Afirus</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="265" data-theme-id="0" data-slug-hash="eKqjxX" data-default-tab="css,result" data-user="Afirus" data-embed-version="2" data-pen-title="Animated CSS Progress Circle" class="codepen">See the Pen <a href="https://codepen.io/Afirus/pen/eKqjxX/">Animated CSS Progress Circle</a> by sempostma (<a href="https://codepen.io/Afirus">@Afirus</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 
 Pie chart example:
 
-<p data-height="265" data-theme-id="0" data-slug-hash="mKNjYW" data-default-tab="css,result" data-user="Afirus" data-embed-version="2" data-pen-title="Pie Progress CSS" class="codepen">See the Pen <a href="https://codepen.io/Afirus/pen/mKNjYW/">Pie Progress CSS</a> by LesterGallagher (<a href="https://codepen.io/Afirus">@Afirus</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="265" data-theme-id="0" data-slug-hash="mKNjYW" data-default-tab="css,result" data-user="Afirus" data-embed-version="2" data-pen-title="Pie Progress CSS" class="codepen">See the Pen <a href="https://codepen.io/Afirus/pen/mKNjYW/">Pie Progress CSS</a> by sempostma (<a href="https://codepen.io/Afirus">@Afirus</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 
 Live example: [http://esstudio.site/tana-soundboad/](http://esstudio.site/tana-soundboad/).
 

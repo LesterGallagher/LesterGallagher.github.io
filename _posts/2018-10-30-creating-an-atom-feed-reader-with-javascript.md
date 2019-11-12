@@ -122,7 +122,7 @@ document.getElementById('items').innerHTML = html.join('');
 
 You can checkout the full example, with code below. I've also added some extra css and html markup.
 
-<p data-height="265" data-theme-id="0" data-slug-hash="mzYKYW" data-default-tab="css,result" data-user="Afirus" data-pen-title="Atom Feed Reader" class="codepen">See the Pen <a href="https://codepen.io/Afirus/pen/mzYKYW/">Atom Feed Reader</a> by LesterGallagher (<a href="https://codepen.io/Afirus">@Afirus</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="265" data-theme-id="0" data-slug-hash="mzYKYW" data-default-tab="css,result" data-user="Afirus" data-pen-title="Atom Feed Reader" class="codepen">See the Pen <a href="https://codepen.io/Afirus/pen/mzYKYW/">Atom Feed Reader</a> by sempostma (<a href="https://codepen.io/Afirus">@Afirus</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 The RSS reader I talked about earlier is a serverless javascript website/app called [NewsFeeder](https://esstudio.site/newsfeeder/). I't parses Atom and RSS feeds, it's free, it's safe and has no sign-up.

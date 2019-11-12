@@ -284,7 +284,7 @@ function getMousePos(canvas, evt) {
 }
 ```
 
-<p data-height="265" data-theme-id="0" data-slug-hash="aQojMo" data-default-tab="js,result" data-user="Afirus" data-pen-title="Grid Pathfinding" class="codepen">See the Pen <a href="https://codepen.io/Afirus/pen/aQojMo/">Grid Pathfinding</a> by LesterGallagher (<a href="https://codepen.io/Afirus">@Afirus</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="265" data-theme-id="0" data-slug-hash="aQojMo" data-default-tab="js,result" data-user="Afirus" data-pen-title="Grid Pathfinding" class="codepen">See the Pen <a href="https://codepen.io/Afirus/pen/aQojMo/">Grid Pathfinding</a> by sempostma (<a href="https://codepen.io/Afirus">@Afirus</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 {% include javascript_affiliate.html %}

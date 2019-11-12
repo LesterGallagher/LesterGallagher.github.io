@@ -14,7 +14,7 @@ portal_link: ''
 ---
 This tutorial covers how you set up the html2js-loader and webpack. If you don't know what html2js does, you can read [this blog post](https://esstudio.site/2018/11/14/html2js-loader.html) or use the [online converter tool](https://html2js.esstudio.site/).
 
-* [Github repo](https://github.com/LesterGallagher/html2js-loader)
+* [Github repo](https://github.com/sempostma/html2js-loader)
 * [NPM package](https://www.npmjs.com/package/html2js-loader)
 
 To get started you can use the following instructions.
@@ -27,7 +27,7 @@ npm i -D html2js-loader webpack webpack-cli
 or clone the tutorial repository.
 
 ```bash
-git clone https://github.com/LesterGallagher/html2js-loader-demo-tutorial.git
+git clone https://github.com/sempostma/html2js-loader-demo-tutorial.git
 ```
 
 When the loader and webpack have finished installing, add the following line to your scripts:

@@ -104,7 +104,7 @@ The comments already explain the 'immediate' parameter. The basic difference is 
 
 <p class="codepen" data-height="478" data-theme-id="35834" data-default-tab="js,result" data-user="Afirus" data-slug-hash="NVMjJV" style="height: 478px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="NVMjJV">
 <span>See the Pen <a href="https://codepen.io/Afirus/pen/NVMjJV/">
-NVMjJV</a> by LesterGallagher (<a href="https://codepen.io/Afirus">@Afirus</a>)
+NVMjJV</a> by sempostma (<a href="https://codepen.io/Afirus">@Afirus</a>)
 on <a href="https://codepen.io">CodePen</a>.</span>
 </p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>

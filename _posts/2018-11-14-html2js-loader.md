@@ -51,7 +51,7 @@ const createArticle = require('./template.html'); // or import createArticle fro
 document.querySelector('#some-selector').innerHTML = createArticle();
 ```
 
-This combines the best of both worlds. It's easy to maintain, easy to read and fast. If you're not using a fancy build tool like webpack can copy [this code snippet](https://github.com/LesterGallagher/html2js/blob/master/src/index.js) and implement it yourself. You can also use [https://html2js.esstudio.site](this) online converter if you just need to convert once.
+This combines the best of both worlds. It's easy to maintain, easy to read and fast. If you're not using a fancy build tool like webpack can copy [this code snippet](https://github.com/sempostma/html2js/blob/master/src/index.js) and implement it yourself. You can also use [https://html2js.esstudio.site](this) online converter if you just need to convert once.
 
 [![npm](/uploads/npm.png)](https://www.npmjs.com/package/html2js-loader)
 

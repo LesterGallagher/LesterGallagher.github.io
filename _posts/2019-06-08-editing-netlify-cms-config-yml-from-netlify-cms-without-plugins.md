@@ -31,7 +31,7 @@ Add this to your config.yml:
 {% gist 1c9a908c142b7f873e01fd6f2cfe5c1b config.yml %}
 </div>
 
-I created a small [node utility](https://github.com/LesterGallagher/netlify-cms-config-generator) for creating the config from 2 different (less bulky) files.
+I created a small [node utility](https://github.com/sempostma/netlify-cms-config-generator) for creating the config from 2 different (less bulky) files.
 
 Feel free to fork, tweak or otherwise change the code.
 

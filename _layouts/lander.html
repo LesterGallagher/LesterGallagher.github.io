@@ -95,6 +95,10 @@ layout: default
           <div class="col-xs-12">
             {% assign refPage = site.pages | where: "ref", "contact" | where: "lang", page.lang | first %}
             <a class="btn" href="{{ refPage.url }}">{{ refPage.title }}</a>
+            <br>
+            <br>
+            {% assign refPage = site.pages | where: "ref", "pricing" | where: "lang", page.lang | first %}
+            <a class="text-primary" href="{{ refPage.url }}">{{ refPage.title }}</a>
           </div>
         </div>
       </div>

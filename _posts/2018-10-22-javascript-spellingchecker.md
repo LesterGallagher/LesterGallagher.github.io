@@ -88,7 +88,7 @@ reset.addEventListener('click', function() {
 
 #### Full example:
 
-<p data-height="265" data-theme-id="0" data-slug-hash="VEGdqo" data-default-tab="js,result" data-user="Afirus" data-pen-title="Client-side spellchecking, contenteditable DIV" class="codepen">See the Pen <a href="https://codepen.io/Afirus/pen/VEGdqo/">Client-side spellchecking, contenteditable DIV</a> by LesterGallagher (<a href="https://codepen.io/Afirus">@Afirus</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="265" data-theme-id="0" data-slug-hash="VEGdqo" data-default-tab="js,result" data-user="Afirus" data-pen-title="Client-side spellchecking, contenteditable DIV" class="codepen">See the Pen <a href="https://codepen.io/Afirus/pen/VEGdqo/">Client-side spellchecking, contenteditable DIV</a> by sempostma (<a href="https://codepen.io/Afirus">@Afirus</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 {% include adsense.html %}

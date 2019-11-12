@@ -13,7 +13,7 @@ portal_link: ''
 
 
 
-<p data-height="265" data-theme-id="0" data-slug-hash="oQvaoP" data-default-tab="js,result" data-user="Afirus" data-pen-title="Web Crawling" class="codepen">See the Pen <a href="https://codepen.io/Afirus/pen/oQvaoP/">Web Crawling</a> by LesterGallagher (<a href="https://codepen.io/Afirus">@Afirus</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="265" data-theme-id="0" data-slug-hash="oQvaoP" data-default-tab="js,result" data-user="Afirus" data-pen-title="Web Crawling" class="codepen">See the Pen <a href="https://codepen.io/Afirus/pen/oQvaoP/">Web Crawling</a> by sempostma (<a href="https://codepen.io/Afirus">@Afirus</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 

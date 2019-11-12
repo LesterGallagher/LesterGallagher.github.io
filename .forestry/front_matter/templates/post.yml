@@ -34,7 +34,7 @@ fields:
   label: Language
   default: en
 pages:
-- _posts/export-illustrator-file-to-all-important-file-formats.md
+- _posts/2019-11-12-export-illustrator-file-to-all-important-file-formats.md
 - _posts/2019-02-16-downloading-saving-and-opening-files-with-cordova.md
 - _posts/2018-09-27-atc-manager-2---tutorials-and-general-aviation.md
 - _posts/2018-10-22-atc-manager-2-tutorial.md

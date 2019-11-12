@@ -17,15 +17,15 @@ portal_link: ''
 
 **Installation:** Copy this file to your illustrator scripts folder:
 
-For windows: C:\\Program Files\\Adobe\\Adobe Illustrator CC 2019\\Presets\\<your locale>\\Scripts
+_For windows:_ C:\\Program Files\\Adobe\\Adobe Illustrator CC 2019\\Presets\\<your locale>\\Scripts
 
-For Mac: Applications/Adobe Illustrator CC/Presets/<your locale>/Scripts
+_For Mac:_ Applications/Adobe Illustrator CC/Presets/<your locale>/Scripts
 
 **Usage:** File->Scripts->Final Export
 
 **Questions?** Send me an email.
 
-**Download link:** [ZIP](https://gist.github.com/sempostma/4ee699a78a5cd0ccac150f95d78b0e9d/archive/3b6a5a282315706b5c08c5f626cddc174dfe1c47.zip)
+**Download link:** [ZIP](https://gist.github.com/sempostma/4ee699a78a5cd0ccac150f95d78b0e9d/archive/3b6a5a282315706b5c08c5f626cddc174dfe1c47.zip "Script downloaden")
 
 **Output file structure:**
 

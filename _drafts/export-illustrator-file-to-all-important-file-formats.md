@@ -1,10 +1,12 @@
 ---
 lang: en
 title: Export illustrator file to all important file formats.
-image: ''
-date: 
+image: "/uploads/adobe-illustrator-cc.svg"
+date: 2019-11-12 00:00:00 +0100
 author: ''
-description: ''
+description: 'Export Illustrator document to a buch of different file formats and
+  resolutions. File formats include: .ai, .pdf, .png, .jpg and .svg. Installation:
+  Copy this file to your illustrator scripts folder.'
 portal_title: ''
 portal_description: ''
 portal_image: ''
@@ -19,7 +21,9 @@ For windows: C:\\Program Files\\Adobe\\Adobe Illustrator CC 2019\\Presets\\<your
 
 For Mac: Applications/Adobe Illustrator CC/Presets/<your locale>/Scripts
 
-**Usage:** File->Scripts->Final ExportQuestions? Send me an email.
+**Usage:** File->Scripts->Final Export
+
+**Questions?** Send me an email.
 
 **Download link:** [ZIP](https://gist.github.com/sempostma/4ee699a78a5cd0ccac150f95d78b0e9d/archive/3b6a5a282315706b5c08c5f626cddc174dfe1c47.zip)
 

@@ -42,8 +42,8 @@ fields:
       path: 
   label: Languages
 pages:
-- app-development.md
 - logo-and-app-design.md
+- app-development.md
 - website-inhoud-formulier.md
 - create-a-mobile-app-based-on-your-wordpress-site.md
 - links.md

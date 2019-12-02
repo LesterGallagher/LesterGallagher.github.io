@@ -2,7 +2,7 @@
 title: 'Logo and App Design '
 description: ''
 permalink: "/logo-and-app-design"
-layout: ''
+layout: full-page
 portal_title: ''
 portal_description: ''
 portal_image: ''

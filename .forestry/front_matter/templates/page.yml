@@ -26,6 +26,20 @@ fields:
 - type: text
   name: portal_link
   label: portal_link
+- name: lang
+  type: select
+  default: ''
+  config:
+    required: false
+    options:
+    - nl
+    - en
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Languages
 pages:
 - app-development.md
 - logo-and-app-design.md

@@ -13,7 +13,7 @@ lang: ''
 The development of a mobile or web app is done in three different stages.
 
 * Domain assessment
-* App Design
+* Design
 * Implementation
 * Review/Testing
 
@@ -25,4 +25,12 @@ We are forward thinking and are adaptive to changes.
 
 ### Domain assessment
 
-We will determine the requirements for the application and lay out a rough model of the system, data and the app. This might also include reading up on specific topics and prototyping. This item in the lifecycle is mostly to plan certain aspects such that  
+We will determine the requirements for the application and lay out a rough model of the system, data and the app. This might also include reading up on specific topics and prototyping. This item in the lifecycle is mostly to plan certain aspects such that we avoid technical debt, vendor lock-in, anti patterns and other pitfalls.
+
+### Design
+
+In this stage we will develop tools, media, a styling plan and other content for the application. This often includes a QA with our customer.
+
+### Implementation
+
+Check out: [https://esstudio.site/logo-and-app-design](https://esstudio.site/logo-and-app-design "https://esstudio.site/logo-and-app-design") for more information.

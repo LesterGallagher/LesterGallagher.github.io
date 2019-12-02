@@ -1,12 +1,13 @@
 ---
 title: 'Logo and App Design '
 description: ''
+permalink: "/logo-and-app-design"
 layout: ''
 portal_title: ''
 portal_description: ''
 portal_image: ''
 portal_link: ''
-published: false
+lang: ''
 
 ---
 **ICONS**

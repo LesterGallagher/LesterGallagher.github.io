@@ -27,10 +27,20 @@ We are forward thinking and are adaptive to changes.
 
 We will determine the requirements for the application and lay out a rough model of the system, data and the app. This might also include reading up on specific topics and prototyping. This item in the lifecycle is mostly to plan certain aspects such that we avoid technical debt, vendor lock-in, anti patterns and other pitfalls.
 
+![](/uploads/app_3-02.png)
+
+_Image created by_ ©_Echo Sierra Studio._
+
 ### Design
 
 In this stage we will develop tools, media, a styling plan and other content for the application. This often includes a QA with our customer.
 
+Check out: [https://esstudio.site/logo-and-app-design](https://esstudio.site/logo-and-app-design "https://esstudio.site/logo-and-app-design") for more information.
+
+![](/uploads/app_3-03-03.png)
+
+_Image created by_ ©_Echo Sierra Studio._
+
 ### Implementation
 
-Check out: [https://esstudio.site/logo-and-app-design](https://esstudio.site/logo-and-app-design "https://esstudio.site/logo-and-app-design") for more information.
+![](/uploads/app_1-02.png)_Image created by_ ©_Echo Sierra Studio._

@@ -2,7 +2,7 @@
 title: Website inhoud formulier
 description: Formulier voor het makkelijk invullen van website informatie.
 permalink: "/website-inhoud-formulier"
-layout: page
+layout: default
 portal_title: ''
 portal_description: ''
 portal_image: ''

@@ -2,7 +2,7 @@
 title: App Development
 description: 'Echo Sierra Studio '
 permalink: "/app-development"
-layout: default
+layout: full-page
 portal_title: ''
 portal_description: ''
 portal_image: ''

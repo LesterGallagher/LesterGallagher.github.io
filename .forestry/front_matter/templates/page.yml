@@ -3,32 +3,33 @@ label: Page
 hide_body: false
 fields:
 - type: text
-  label: title
+  label: Title
   name: title
 - type: textarea
   name: description
-  label: description
+  label: Description
 - type: text
   name: permalink
-  label: permalink
+  label: Permalink
 - type: text
   name: layout
-  label: layout
+  label: Layout
+  default: default
 - type: text
-  label: portal_title
+  label: Portal link (optioneel)
   name: portal_title
 - type: text
-  label: portal_description
+  label: Portal description (optioneel)
   name: portal_description
 - type: file
-  label: portal_image
+  label: Portal image (optional)
   name: portal_image
 - type: text
   name: portal_link
-  label: portal_link
+  label: Portal link (optional)
 - name: lang
   type: select
-  default: ''
+  default: en
   config:
     required: false
     options:
@@ -41,8 +42,8 @@ fields:
       path: 
   label: Languages
 pages:
-- app-development.md
 - logo-and-app-design.md
+- app-development.md
 - website-inhoud-formulier.md
 - create-a-mobile-app-based-on-your-wordpress-site.md
 - links.md

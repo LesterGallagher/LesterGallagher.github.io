@@ -43,4 +43,6 @@ _Image created by_ ©_Echo Sierra Studio._
 
 ### Implementation
 
-![](/uploads/app_1-02.png)_Image created by_ ©_Echo Sierra Studio._
+![](/uploads/app_1-02.png)
+
+_Image created by_ ©_Echo Sierra Studio._

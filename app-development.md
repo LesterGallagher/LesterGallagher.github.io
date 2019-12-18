@@ -10,7 +10,7 @@ portal_link: ''
 lang: ''
 
 ---
-The development of a mobile or web app is done in three different stages.
+The development of a mobile app or web app is done in three different stages.
 
 * Domain assessment
 * Design
@@ -21,7 +21,7 @@ The development of a mobile or web app is done in three different stages.
 
 Each lifecycle item is an iterative and recursive process. For example, the Design stag will also follow the domain assessment -> implementation -> design -> review/testing lifecycle. The lifecycle is of importance for every stage of development.
 
-We are forward thinking and are adaptive to changes. 
+We are forward thinking and are adaptive to changes.
 
 ### Domain assessment
 

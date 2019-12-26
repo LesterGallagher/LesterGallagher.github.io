@@ -114,6 +114,10 @@ figure.oa:hover img.loaded {
 	opacity: 0.4;
 }
 
+.main-inner-wrapper img {
+    max-width: 100%;
+}
+
 /**
  * Icons
  */

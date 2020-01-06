@@ -18,6 +18,10 @@ layout: page
         box-sizing:
     }
 
+    .buttons {
+        list-style: none;
+    }
+
     .buttons li {
         padding: 5px;
         margin: 5px;
@@ -75,7 +79,10 @@ layout: page
     <!-- <li><a class="device-link" style="background-color: #83878a;" href="?device=device-macbook-pro device-spacegray">device-macbook-pro device-spacegray</a></li> -->
     <!-- <li><a class="device-link" style="background-color: null" href="?device=device-surface-studio">device-surface-studio</a></li> -->
     <!-- <li><a class="device-link" style="background-color: null" href="?device=device-imac-pro">device-imac-pro</a></li> -->
+
 </ul>
+
+<button class="btn" onclick="window.location.reload(true)">Refresh</button>
 
 <script type="text/javascript">
     function urlWithoutHashAndQuery(url) {

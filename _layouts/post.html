@@ -4,12 +4,14 @@ layout: default
 
 <div class="blog-details container">
   <article>
-    <header class="blog-header text-center">
+    <header class="blog-header">
       <h3>
-        <span>{{ page.date | date: "%d" }}</span> {{ page.date | date: "%B %Y" }}
-        <h2> {{ page.title }}</h2>
+        <b><span>{{ page.date | date: "%d" }}</span> {{ page.date | date: "%B %Y" }}</b><br/>
+      </h3>
+      <h2>{{ page.title }}</h2>
+      {% if page.author %}<p>Door: <span>{{ page.author }}</span></p>{% endif %}
     </header>
-    <figure class="nopadding">
+    <figure class="nomargin">
       <img src="{{ page.image  | absolute_url }}" alt="{{ page.title }} image" class="img-responsive" /> </figure>
     <div class="enter-content">
       {{ content }}

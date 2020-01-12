@@ -33,6 +33,10 @@ iframe {
 	padding: 0;
 }
 
+.nomargin {
+	margin: 0;
+}
+
 .img-responsive {
 	max-width: 100%;
 }
@@ -725,12 +729,15 @@ a.btn {
 
 .blog-header h3 {
 	color: #404040;
-	font-weight: 800;
 	padding-bottom: 24px;
 	display: block
 }
 
-.blog-header h3 span {
+.blog-header b {
+	font-weight: 800;
+}
+
+.blog-header span {
 	color: #fb5353
 }
 

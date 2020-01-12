@@ -1,5 +1,5 @@
 ---
-layout: ''
+layout: page
 lang: en
 title: Key value wrapper around IndexedDB
 description: Creating a transactional promise based and fast IndexedDB key value wrapper

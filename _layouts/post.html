@@ -9,7 +9,7 @@ layout: default
         <span>{{ page.date | date: "%d" }}</span> {{ page.date | date: "%B %Y" }}
         <h2> {{ page.title }}</h2>
     </header>
-    <figure>
+    <figure class="nopadding">
       <img src="{{ page.image  | absolute_url }}" alt="{{ page.title }} image" class="img-responsive" /> </figure>
     <div class="enter-content">
       {{ content }}

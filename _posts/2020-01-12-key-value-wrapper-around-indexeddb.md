@@ -12,9 +12,24 @@ date: '2020-01-12 00:00:00 +0100'
 author: Sem Postma
 
 ---
-Localstorage because localstorage's CRUD operations are synchronous so they pause rendering, script execution, etc. If you want to anyhting more complex than a string in localstorage, you will have to serialize/deserialize your data which also causes an extra performance impact. Storing blobs and files is even more tricky, you will have to convert blobs and files to bloated base64 strings. You can solve all of this by using IndexedDB, but you will soon notice there's a giant difference between the two API's, this wrapper attempts to gap those differences.
+Local-storage can be slow because local-storage's CRUD operations are synchronous so they pause rendering, script execution, etc. If you want to anything more complex than a string in local-storage, you will have to serialize/de-serialize your data which also causes an extra performance impact. Storing blobs and files is even more tricky, you will have to convert blobs and files to bloated base64 strings. You can solve all of this by using IndexedDB, but you will soon notice there's a giant difference between the two API's, this wrapper attempts to gap those differences.
 
 \*Make sure to use the following polyfills when necessary: [https://github.com/eligrey/Blob.js](https://github.com/eligrey/Blob.js "https://github.com/eligrey/Blob.js") and [https://github.com/stefanpenner/es6-promise](https://github.com/stefanpenner/es6-promise "https://github.com/stefanpenner/es6-promise")*
+
+Example:
+
+```javascript
+const cacheStore = require('./indexeddb-wrapper-file') // es6
+import cacheStore from './indexeddb-wrapper-file' // commonjs
+var cacheStore = window.cacheStore // compiled javascript
+
+cacheStore.set('my_key', { myAwesome: 'complexObject' })
+	.then(function() {
+  		return cacheStore.get('my_key')
+	}).then(function(myKey) {
+      	console.log('myKey', myKey)
+    })
+```
 
 _After deleting the store in devtools you might see an error in the console, you should bump the "VERSION" any time you delete database stores so the browser knows it should create new object stores._
 

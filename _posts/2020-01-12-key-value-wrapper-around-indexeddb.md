@@ -12,7 +12,7 @@ date: 2020-01-12 00:00:00 +0100
 author: Sem Postma
 
 ---
-Local-storage can be slow because local-storage's CRUD operations are synchronous so they pause rendering, script execution, etc. If you want to anything more complex than a string in local-storage, you will have to serialize/de-serialize your data which also causes an extra performance impact. Storing blobs and files is even more tricky, you will have to convert blobs and files to bloated base64 strings. You can solve all of this by using IndexedDB, but you will soon notice there's a giant difference between the two API's, this wrapper attempts to gap those differences.
+Local-storage can be slow because local-storage's CRUD operations are synchronous so they pause rendering, script execution, etc. If you want to do anything more complex than storing a string in local-storage, you will have to serialize/de-serialize your data, which also causes an extra performance impact. Storing blobs and files is even more tricky, you will have to convert blobs and files to bloated base64 strings. You can solve all of this by using IndexedDB, but you will soon notice there's a giant difference between the two API's. This wrapper attempts to gap those differences.
 
 _Make sure to use the following polyfills when necessary:_ [_https://github.com/eligrey/Blob.js_](https://github.com/eligrey/Blob.js "https://github.com/eligrey/Blob.js") _and_ [_https://github.com/stefanpenner/es6-promise_](https://github.com/stefanpenner/es6-promise "https://github.com/stefanpenner/es6-promise")
 
@@ -415,4 +415,3 @@ Compiled Javascript:
   window.cacheStore = _default;
 })();
 ```
-

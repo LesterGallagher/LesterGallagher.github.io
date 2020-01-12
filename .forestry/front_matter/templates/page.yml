@@ -42,6 +42,7 @@ fields:
       path: 
   label: Languages
 pages:
+- _posts/key-value-wrapper-around-indexeddb.md
 - app-development.md
 - create-a-mobile-app-based-on-your-wordpress-site.md
 - links.md

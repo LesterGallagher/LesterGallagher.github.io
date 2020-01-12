@@ -8,7 +8,7 @@ portal_description: ''
 portal_image: ''
 portal_link: ''
 image: "/uploads/indexeddb.png"
-date: '2020-01-12 00:00:00 +0100'
+date: 2020-01-12 00:00:00 +0100
 author: Sem Postma
 
 ---

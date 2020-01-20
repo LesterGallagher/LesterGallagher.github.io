@@ -26,6 +26,8 @@ _Important: Data sets should not have invalid characters for filenames like:_ \\
 
 If you're getting this error: ` current values have not been captured and will be discarded upon switching data sets. Proceed?`, please refer to ["Clean data sets"](#clean-data-sets)
 
+{% include adsense.html %}
+
 ## Clean data sets
 
 * Download the following script: [https://gist.github.com/sempostma/30ea44b8fbce7033752cb80b8eb1ffb1/archive/d1405b86decd4c4462e5ca224c8506d62cdb3ad4.zip](https://gist.github.com/sempostma/30ea44b8fbce7033752cb80b8eb1ffb1/archive/d1405b86decd4c4462e5ca224c8506d62cdb3ad4.zip "https://gist.github.com/sempostma/30ea44b8fbce7033752cb80b8eb1ffb1/archive/d1405b86decd4c4462e5ca224c8506d62cdb3ad4.zip")

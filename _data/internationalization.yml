@@ -1,5 +1,6 @@
+---
 messages:
-  rights: 
+  rights:
     en: All rights reserved.
     nl: Alle rechten voorbehouden.
   privacy:
@@ -24,7 +25,7 @@ messages:
     en: Graphic Design
     nl: Graphic Design
   services_graphic_design_description:
-    en: Ik create graphic designs.
+    en: I create graphic designs.
     nl: Ik maak grafische ontwerpen.
   services_branding_title:
     en: Branding
@@ -32,5 +33,3 @@ messages:
   services_branding_description:
     en: I will develop your corporate identity (logo, color palette, flyers, etc.).
     nl: Ik ontwikkel uw huisstijl (logo, kleurenpalet, flyers, enz.).
-
-

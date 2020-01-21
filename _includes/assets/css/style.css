@@ -6,6 +6,12 @@
 	        box-sizing: border-box;
 }
 
+input {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
 html {
 	-ms-text-size-adjust: 100%;
 	-webkit-text-size-adjust: 100%;
@@ -789,13 +795,23 @@ a.btn {
 	border: 1px solid #ddd;
 	cursor: pointer;
 	font-family: sans-serif;
+	display: flex;
 }
 
 .web-push-notifications .text {
 	display: inline-block;
-	padding: 5px;
 	text-align: left;
 	opacity: 0.8;
+}
+
+.web-push-notifications-center {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.web-push-notifications .text * {
+	margin: 3px;
 }
 
 .web-push-notifications .icon {

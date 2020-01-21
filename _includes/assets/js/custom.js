@@ -103,6 +103,64 @@ document.addEventListener('lazyload', function (e) {
 	img.src = lazy.getAttribute("data-src");
 });
 
+(function() {
+	var timeout, nth, reclickTime = 600;
+
+	function waitForClick() {
+		nth = 0
+		timeout = null
+	}
+
+	waitForClick()
+
+	document.addEventListener('click', function(e) {
+		const path = Array.prototype.slice.call(e.path || e.composedPath(), 0)
+		let matches = false;
+		for(let i = 0; i < path.length && !matches; i++) {
+			matches = path[i] 
+				&& path[i].hasAttribute 
+				&& path[i].hasAttribute('class') 
+				&& path[i].getAttribute('class').indexOf('cache-buster-trick') !== -1
+		}
+		if (matches) {
+			console.log(timeout, nth)
+			if (timeout) clearTimeout(timeout)
+			nth++
+			if (nth >= 5) {
+				waitForClick()
+				if (confirm('Funny trick huh, bust all cache?')) {
+					navigator.serviceWorker.getRegistrations().then(function(registrations) {
+						for(let registration of registrations) {
+							try {
+								registration.unregister()
+							} catch(err) { console.error(err) }
+						}
+					}).catch(function(err) { alert(err) })
+						.then(function() {
+							return window.indexedDB.databases()
+						})
+						.then(function(r) {
+							localStorage.clear()
+							sessionStorage.clear()
+							var cookies = document.cookie.split(";");
+
+							for (var i = 0; i < cookies.length; i++) {
+									var cookie = cookies[i];
+									var eqPos = cookie.indexOf("=");
+									var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+									document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+							}
+							for (var i = 0; i < r.length; i++) window.indexedDB.deleteDatabase(r[i].name);
+							location.reload(true)
+						})
+				}
+			} else {
+				timeout = setTimeout(waitForClick, reclickTime)
+			}
+		}
+	})
+})();
+
 (function () {
 	var techStackSvg = document.getElementById('teck-stack-svg');
 	if (techStackSvg !== null) {

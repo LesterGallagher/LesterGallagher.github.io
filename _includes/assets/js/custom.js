@@ -2,7 +2,7 @@
 
 var publicVapidKey = 'BABOUEnL-6mHr6Sf60UnNQS0cWHPmFXNmwTV2jHIoHAwdqOLJzGnbs-qr_BBxx1ePVozJa8qQzQamriCs5uU9EY';
 
-if (navigator['serviceWorker']) {
+if (navigator['serviceWorker'] && location.hostname !== 'localhost' && location.hostname !== '127.1.1.0') {
 	navigator.serviceWorker.register(swUrl).then(function (registration) {
 		console.log('Service worker successfully registered on scope', registration.scope);
 

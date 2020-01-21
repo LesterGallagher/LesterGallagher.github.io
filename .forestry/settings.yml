@@ -4,6 +4,10 @@ auto_deploy: false
 admin_path: ''
 webhook_url: https://maker.ifttt.com/trigger/forestry/with/key/fuhBM33MbuVc8JP5wABOTjQVESdNiQe0CjNlxG1QuA9
 sections:
+- type: document
+  path: _data/internationzalization.yml
+  label: Inernationzalization
+  match: "**/*"
 - type: directory
   path: _uploads
   label: Uploads

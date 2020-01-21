@@ -1,35 +1,36 @@
-rights: 
-  en: All rights reserved.
-  nl: Alle rechten voorbehouden.
-privacy:
-  en: Privacy policy
-  nl: Privacybeleid
-terms:
-  en: Terms of service
-  nl: Algemene voorwaarden
-website_terms:
-  en: Websites's Terms of service.
-  nl: Algemene voorwaarden van de website.
-important:
-  en: Important
-  nl: Belangrijk
-javascript_required:
-  en: This website requires javascript.
-  nl: Deze website gebruikt javascript.
-javascript_instructions:
-  en: You can find instructions on how to enable javascript here.
-  nl: Hier vindt u instructies voor het inschakelen van JavaScript.
-services_graphic_design_title:
-  en: Graphic Design
-  nl: Graphic Design
-services_graphic_design_description:
-  en: Ik create graphic designs.
-  nl: Ik maak grafische ontwerpen.
-services_branding_title:
-  en: Branding
-  nl: Huisstijl
-services_branding_description:
-  en: I will develop your corporate identity (logo, color palette, flyers, etc.).
-  nl: Ik ontwikkel uw huisstijl (logo, kleurenpalet, flyers, enz.).
+messages:
+  rights: 
+    en: All rights reserved.
+    nl: Alle rechten voorbehouden.
+  privacy:
+    en: Privacy policy
+    nl: Privacybeleid
+  terms:
+    en: Terms of service
+    nl: Algemene voorwaarden
+  website_terms:
+    en: Websites's Terms of service.
+    nl: Algemene voorwaarden van de website.
+  important:
+    en: Important
+    nl: Belangrijk
+  javascript_required:
+    en: This website requires javascript.
+    nl: Deze website gebruikt javascript.
+  javascript_instructions:
+    en: You can find instructions on how to enable javascript here.
+    nl: Hier vindt u instructies voor het inschakelen van JavaScript.
+  services_graphic_design_title:
+    en: Graphic Design
+    nl: Graphic Design
+  services_graphic_design_description:
+    en: Ik create graphic designs.
+    nl: Ik maak grafische ontwerpen.
+  services_branding_title:
+    en: Branding
+    nl: Huisstijl
+  services_branding_description:
+    en: I will develop your corporate identity (logo, color palette, flyers, etc.).
+    nl: Ik ontwikkel uw huisstijl (logo, kleurenpalet, flyers, enz.).
 
 

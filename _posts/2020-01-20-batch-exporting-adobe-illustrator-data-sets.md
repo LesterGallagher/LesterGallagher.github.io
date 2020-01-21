@@ -24,7 +24,7 @@ _Important: Data sets should not have invalid characters for filenames like:_ \\
 * File Name: Choose either File + Data Set Name or Data Set Name. _Make sure your dataset names have valid filename characters so none of these: \\ / : * ? " < > |_
 * Click "Ok"
 
-If you're getting this error: ` current values have not been captured and will be discarded upon switching data sets. Proceed?`, please refer to ["Clean data sets"](#clean-data-sets)
+If you're getting this error: `current values have not been captured and will be discarded upon switching data sets. Proceed?`, please refer to ["Clean data sets"](#clean-data-sets)
 
 {% include adsense.html %}
 
@@ -36,6 +36,6 @@ If you're getting this error: ` current values have not been captured and will b
 * Restart Illustrator
 * Run: "File->Scripts->Clean Datasets"
 
-**Source:** 
+**Source:**
 
 {% gist 30ea44b8fbce7033752cb80b8eb1ffb1 %}

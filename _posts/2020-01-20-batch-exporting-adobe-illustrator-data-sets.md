@@ -5,7 +5,7 @@ title: Batch exporting Adobe Illustrator data sets
 image: "/uploads/adobe-illustrator-cc.svg"
 date: 2020-01-19T23:00:00.000+00:00
 author: Sem Postma
-description: Bath export data-driven documents with large data sets.
+description: Batch export data-driven documents with large data sets.
 portal_title: ''
 portal_description: ''
 portal_image: ''

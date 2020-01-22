@@ -3,22 +3,23 @@ lang: en
 layout: post
 title: Batch exporting Adobe Illustrator data sets
 image: "/uploads/adobe-illustrator-cc.svg"
-date: 2020-01-20 00:00:00 +0100
+date: 2020-01-19T23:00:00.000+00:00
 author: Sem Postma
 description: Bath export data-driven documents with large data sets.
 portal_title: ''
 portal_description: ''
 portal_image: ''
 portal_link: ''
+
 ---
 _Important: Data sets should not have invalid characters for filenames like:_ \\ / : * ? " < > |
 
 * Open a random document
 * Create a new "Save" action where you simply save the file as a pdf document, _Don't forget to uncheck "View PDF after saving"_
-* Select the action and click on hamburger button (the 3 horizontal lines) in the top right, click "Batch"
+* Select the action and click on the hamburger button (the 3 horizontal lines) in the top right, click "Batch"
 * Select your "Save" action
 * Choose "Data Sets" as the source (you should see "No options available")
-* Choose a desetination
+* Choose a destination
 * Check Override Action "Save" Command
 * File Name: Choose either File + Data Set Name or Data Set Name. _Make sure your dataset names have valid filename characters so none of these: \\ / : * ? " < > |_
 * Click "Ok"

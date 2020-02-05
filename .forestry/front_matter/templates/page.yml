@@ -41,6 +41,11 @@ fields:
       file: 
       path: 
   label: Languages
+- name: ref
+  type: text
+  config:
+    required: false
+  label: Ref
 pages:
 - app-development.md
 - create-a-mobile-app-based-on-your-wordpress-site.md

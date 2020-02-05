@@ -26,6 +26,20 @@ fields:
       file: 
       path: 
   label: Layout
+- name: lang
+  type: select
+  default: en
+  config:
+    required: false
+    options:
+    - nl
+    - en
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Languages
 - type: text
   name: permalink
   label: Permalink
@@ -41,20 +55,6 @@ fields:
 - type: text
   name: portal_link
   label: Portal link (optional)
-- name: lang
-  type: select
-  default: en
-  config:
-    required: false
-    options:
-    - nl
-    - en
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Languages
 - name: ref
   type: text
   config:

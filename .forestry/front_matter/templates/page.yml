@@ -8,13 +8,27 @@ fields:
 - type: textarea
   name: description
   label: Description
+- name: layout
+  type: select
+  default: page
+  config:
+    required: true
+    options:
+    - page
+    - full-page
+    - lander
+    - app-preview
+    - default
+    - post
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Layout
 - type: text
   name: permalink
   label: Permalink
-- type: text
-  name: layout
-  label: Layout
-  default: default
 - type: text
   label: Portal link (optioneel)
   name: portal_title

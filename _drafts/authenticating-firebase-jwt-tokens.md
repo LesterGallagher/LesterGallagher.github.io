@@ -15,7 +15,11 @@ ref: authenticating-firebase-jwt-tokens
 ---
 There might be circumstances where you would want to verify if a certain user is authenticated with firebase.
 
-### Example JSON
+You don't need the firebase admin module to verify and decode firebase JWT tokens. In the example below you can find a full implementation of this. In the example below I'm only using the default node.js modules http, https and crypto
+
+{% gist b5b6492ddb805d71daa5e60f32c7788c %}
+
+### Example response JSON
 
 ```json
 {
@@ -41,6 +45,6 @@ There might be circumstances where you would want to verify if a certain user is
 }
 ```
 
-You don't need the firebase admin module to verify and decode firebase JWT tokens. In the example below you can find a full implementation of this. In the example below I'm only using the default node.js modules http, https and crypto
+You can optionally check if the "iss" value is equal to "https://securetoken.google.com/<your_project_id>" to assure the user is signed with a specific firebase project.
 
-{% gist b5b6492ddb805d71daa5e60f32c7788c %}
+

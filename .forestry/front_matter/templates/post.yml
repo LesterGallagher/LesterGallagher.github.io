@@ -7,28 +7,28 @@ fields:
   label: Title
 - type: file
   name: image
-  label: image
+  label: Image
 - type: datetime
   name: date
   label: Date
 - type: text
   name: author
-  label: author
+  label: Author
 - type: textarea
-  label: description
+  label: Description
   name: description
 - type: text
-  label: portal_title
+  label: Portal title
   name: portal_title
 - type: text
-  label: portal_description
+  label: Portal description
   name: portal_description
 - type: file
-  label: portal_image
+  label: Portal image
   name: portal_image
 - type: text
   name: portal_link
-  label: portal_link
+  label: Portal link
 - type: text
   name: lang
   label: Language

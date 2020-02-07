@@ -13,5 +13,6 @@ portal_link: ''
 ref: authenticating-firebase-jwt-tokens
 
 ---
+You don't need the firebase admin module to verify and decode firebase JWT tokens. In the example below you can find a full implementation of this, just using the default node.js modules (http, https and crypto).
 
 {% gist b5b6492ddb805d71daa5e60f32c7788c %}

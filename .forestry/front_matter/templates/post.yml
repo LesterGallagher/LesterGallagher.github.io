@@ -39,6 +39,11 @@ fields:
     required: true
   label: Layout
   default: post
+- name: ref
+  type: text
+  config:
+    required: false
+  label: Ref
 pages:
 - _posts/2018-09-10-3d-texturing-using-curvature-maps.md
 - _posts/2018-09-27-atc-manager-2---tutorials-and-general-aviation.md

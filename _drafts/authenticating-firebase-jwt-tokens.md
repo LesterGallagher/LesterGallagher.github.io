@@ -3,8 +3,8 @@ lang: en
 layout: post
 title: Authenticating Firebase JWT Tokens
 image: "/uploads/node-jwt-firebase.png"
-date: 
-author: ''
+date: 2020-02-07 00:00:00 +0100
+author: Sem Postma
 description: ''
 portal_title: ''
 portal_description: ''

@@ -13,6 +13,34 @@ portal_link: ''
 ref: authenticating-firebase-jwt-tokens
 
 ---
-You don't need the firebase admin module to verify and decode firebase JWT tokens. In the example below you can find a full implementation of this, just using the default node.js modules (http, https and crypto).
+There might be circumstances where you would want to verify if a certain user is authenticated with firebase.
+
+### Example JSON
+
+```json
+{
+    "data": {
+        "iss": "https://securetoken.google.com/<project_id>",
+        "aud": "<project_id>",
+        "auth_time": 1581009428,
+        "user_id": "9jnxi9kmz76ajnc4do47emrk8s1s",
+        "sub": "9jnxi9kmz76ajnc4do47emrk8s1s",
+        "iat": 1581082417,
+        "exp": 1581086017,
+        "email": "test@example.com",
+        "email_verified": true,
+        "firebase": {
+            "identities": {
+                "email": [
+                    "test@example.com"
+                ]
+            },
+            "sign_in_provider": "password"
+        }
+    }
+}
+```
+
+You don't need the firebase admin module to verify and decode firebase JWT tokens. In the example below you can find a full implementation of this. In the example below I'm only using the default node.js modules http, https and crypto
 
 {% gist b5b6492ddb805d71daa5e60f32c7788c %}

@@ -44,6 +44,8 @@ fields:
   config:
     required: false
   label: Ref
+  description: Used to link different translations of the same page. Make sure the
+    "Ref" is always the same across all translation pages.
 pages:
 - _posts/2018-09-10-3d-texturing-using-curvature-maps.md
 - _posts/2018-09-27-atc-manager-2---tutorials-and-general-aviation.md

@@ -10,7 +10,7 @@ portal_title: ''
 portal_description: ''
 portal_image: ''
 portal_link: ''
-ref: authenticating firebase jwt tokens
+ref: authenticating-firebase-jwt-tokens
 
 ---
 

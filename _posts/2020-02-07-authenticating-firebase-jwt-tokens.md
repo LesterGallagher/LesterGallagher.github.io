@@ -19,6 +19,8 @@ You don't need the firebase admin module to verify and decode firebase JWT token
 
 {% gist b5b6492ddb805d71daa5e60f32c7788c %}
 
+{% include adsense.html %}
+
 ### Example response JSON
 
 ```json
@@ -46,5 +48,4 @@ You don't need the firebase admin module to verify and decode firebase JWT token
 ```
 
 You can optionally check if the "iss" value is equal to "https://securetoken.google.com/<your_project_id>" to assure the user is signed with a specific firebase project.
-
 

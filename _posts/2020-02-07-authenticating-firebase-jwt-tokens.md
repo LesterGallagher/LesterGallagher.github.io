@@ -47,4 +47,4 @@ You don't need the firebase admin module to verify and decode firebase JWT token
 }
 ```
 
-You can optionally check if the "iss" value is equal to "https://securetoken.google.com/<your_project_id>" to ensure the user is signed in with a specific firebase project.
+You can optionally check if the "iss" value is equal to "`https://securetoken.google.com/<project_id>`" to ensure the user is signed in with a specific firebase project.

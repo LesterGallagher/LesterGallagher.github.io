@@ -4,6 +4,7 @@ lang: en
 title: Adobe Illustrator Script Installer Privacy Policy
 description: This privacy policy governs your use of "Adobe Illustrator Script Installer"
   by "Echo Sierra Studio".
+permalink: "/privacy/adobe-illustrator-script-installer-privacy-policy"
 portal_title: ''
 portal_description: ''
 portal_image: ''

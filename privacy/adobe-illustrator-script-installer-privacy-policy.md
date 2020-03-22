@@ -9,7 +9,7 @@ portal_title: ''
 portal_description: ''
 portal_image: ''
 portal_link: ''
-ref: ''
+ref: adobe-illustrator-script-installer-privacy-policy
 
 ---
 ## ADOBE ILLUSTRATOR SCRIPT INSTALLER PRIVACY POLICY

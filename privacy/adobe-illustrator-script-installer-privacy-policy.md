@@ -9,7 +9,6 @@ portal_description: ''
 portal_image: ''
 portal_link: ''
 ref: ''
-published: false
 
 ---
 ## ADOBE ILLUSTRATOR SCRIPT INSTALLER PRIVACY POLICY

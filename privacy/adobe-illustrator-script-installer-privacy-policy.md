@@ -12,10 +12,6 @@ portal_link: ''
 ref: adobe-illustrator-script-installer-privacy-policy
 
 ---
-## ADOBE ILLUSTRATOR SCRIPT INSTALLER PRIVACY POLICY
-
-This privacy policy governs your use of "Adobe Illustrator Script Installer" by "Echo Sierra Studio".
-
 #### **User Provided Information**
 
 The Applications do not require the user to provide information or to create an account.

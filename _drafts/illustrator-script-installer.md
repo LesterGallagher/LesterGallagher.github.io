@@ -11,7 +11,7 @@ portal_title: Illustrator Script Installer
 portal_description: Easily install Illustrator Scripts
 portal_image: "/uploads/isi.png"
 portal_link: https://github.com/sempostma/illustrator-script-installer
-ref: ''
+ref: illustrator-script-installer-post
 
 ---
 Easily manage the installation of Illustrator Scripts. A Windows Store version is coming soon.

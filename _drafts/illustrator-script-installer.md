@@ -14,3 +14,12 @@ portal_link: https://github.com/sempostma/illustrator-script-installer
 ref: ''
 
 ---
+Easily manage the installation of Illustrator Scripts. A Windows Store version is coming soon.
+
+Start by selecting or automatically searching for you Adobe Illustrator Directory. After that, you can use the "Add script" button to add new scripts to your installation. You can add scripts from text, files or popular script repositories.
+
+{% include adsense.html %}
+
+{% include app-portal.html %}
+
+Feel free to leave suggestions by sending an email to illustratorscriptinstaller_support@esstudio.site

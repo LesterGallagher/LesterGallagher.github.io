@@ -10,7 +10,7 @@ description: A minimal Adobe Illustrator Script installer, which takes care of t
 portal_title: Illustrator Script Installer
 portal_description: Easily install Illustrator Scripts
 portal_image: "/uploads/isi.png"
-portal_link: https://github.com/sempostma/illustrator-script-installer
+portal_link: https://github.com/sempostma/illustrator-script-installer/releases
 ref: illustrator-script-installer-post
 
 ---

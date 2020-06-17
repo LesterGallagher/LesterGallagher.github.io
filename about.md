@@ -8,7 +8,7 @@ description: My primary development skill is coding/programming in languages lik
   using Gimp and Blender).
 ref: about
 lang: en
-cannonical_url: https://esstudio.nl/
+canonical_url: https://esstudio.nl/
 ---
 I develop custom software, media and work together with companies and individuals to develop new innovative solutions.
 I focus on helping sustainable and social initiatives in the field of IT, in particular marketing,

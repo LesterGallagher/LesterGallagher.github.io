@@ -60,6 +60,11 @@ fields:
   config:
     required: false
   label: Ref
+- name: canonical_url
+  type: text
+  config:
+    required: false
+  label: Canonical Url
 pages:
 - app-development.md
 - create-a-mobile-app-based-on-your-wordpress-site.md

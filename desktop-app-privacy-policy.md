@@ -1,10 +1,16 @@
 ---
 title: Privacy Policy Echo Sierra Studio Desktop Applications
-description: This privacy policy governs your use of the desktop software applications that we're created by Echo Seirra Studio. 
-layout: null
+description: This privacy policy governs your use of the desktop software applications
+  that we're created by Echo Seirra Studio. 
+layout: full-page
 lang: en
----
+ref: echo-sierra-desktop-apps-privacy-policy
+portal_title: ''
+portal_description: ''
+portal_image: ''
+portal_link: ''
 
+---
 PRIVACY POLICY ECHO SIERRA STUDIO DESKTOP APPLICATIONS
 ----------------------------------------------
 

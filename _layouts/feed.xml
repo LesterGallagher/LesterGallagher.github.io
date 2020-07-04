@@ -40,7 +40,7 @@
   {% endif %}
 
   {% assign posts = site[page.collection] | where_exp: "post", "post.draft != true" | sort: "date" | reverse %}
-  {% assign count = 10 %}
+  {% assign count = page.count | default: 10 %}
   {% for post in posts %}
     {% if page.category %}
       {% if post.categories contains page.category %}{% else %}

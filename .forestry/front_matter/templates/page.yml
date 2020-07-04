@@ -8,25 +8,24 @@ fields:
 - type: textarea
   name: description
   label: Description
-- type: text
-  name: permalink
-  label: Permalink
-- type: text
-  name: layout
+- name: layout
+  type: select
+  default: page
+  config:
+    required: true
+    options:
+    - page
+    - full-page
+    - lander
+    - app-preview
+    - default
+    - post
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
   label: Layout
-  default: default
-- type: text
-  label: Portal link (optioneel)
-  name: portal_title
-- type: text
-  label: Portal description (optioneel)
-  name: portal_description
-- type: file
-  label: Portal image (optional)
-  name: portal_image
-- type: text
-  name: portal_link
-  label: Portal link (optional)
 - name: lang
   type: select
   default: en
@@ -41,9 +40,39 @@ fields:
       file: 
       path: 
   label: Languages
+- type: text
+  name: permalink
+  label: Permalink
+- type: text
+  label: Portal link (optioneel)
+  name: portal_title
+- type: text
+  label: Portal description (optioneel)
+  name: portal_description
+- type: file
+  label: Portal image (optional)
+  name: portal_image
+- type: text
+  name: portal_link
+  label: Portal link (optional)
+- name: ref
+  type: text
+  config:
+    required: false
+  label: Ref
+- name: canonical_url
+  type: text
+  config:
+    required: false
+  label: Canonical Url
 pages:
 - app-development.md
 - create-a-mobile-app-based-on-your-wordpress-site.md
+- desktop-app-privacy-policy.md
 - links.md
 - logo-and-app-design.md
+- privacy/adobe-illustrator-script-installer-privacy-policy.md
+- privacy/file.html
+- privacy/mahatma-healing-privacy-policy.html
+- terms-of-service.html
 - website-inhoud-formulier.md

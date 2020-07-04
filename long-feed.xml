@@ -1,0 +1,6 @@
+---
+layout: feed
+collection: posts
+count: 100
+permalink: long-feed
+---

@@ -4,6 +4,9 @@ auto_deploy: false
 admin_path: ''
 webhook_url: https://maker.ifttt.com/trigger/forestry/with/key/fuhBM33MbuVc8JP5wABOTjQVESdNiQe0CjNlxG1QuA9
 sections:
+- type: document
+  path: _data/internationalization.yml
+  label: Inernationzalization
 - type: directory
   path: _uploads
   label: Uploads
@@ -27,7 +30,6 @@ public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
-instant_preview: 
 build:
   preview_env:
   - JEKYLL_ENV=staging
@@ -37,8 +39,3 @@ build:
   mount_path: "/srv"
   instant_preview_command: bundle exec jekyll serve --drafts --unpublished --future
     --port 8080 --host 0.0.0.0 -d _site
-  publish_command: bundle exec jekyll build -d _site
-  publish_env:
-  - JEKYLL_ENV=production
-  output_directory: _site
-  preview_command: bundle exec jekyll build --drafts --unpublished --future -d _site

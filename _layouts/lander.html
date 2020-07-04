@@ -36,7 +36,7 @@ layout: default
 
       <div class="container-fluid">
         <div class="row services">
-          <div class="col-xs col-sm-4 service">
+          <div class="col-xs-12 col-sm-4 service">
             <img alt="Apps" height="100" src="/assets/img/mobile-phone.png">
 
             <h3>Apps</h3>
@@ -55,8 +55,8 @@ layout: default
               {% endif %}
             </p>
           </div>
-          <div class="col-xs col-sm-4 service">
-            <img alt="Globe" height="100" src="/assets/img/globe.png">
+          <div class="col-xs-12 col-sm-4 service">
+            <img alt="Globe" class="cache-buster-trick" height="100" src="/assets/img/globe.png">
 
             <h3>Website</h3>
 
@@ -74,7 +74,7 @@ layout: default
               {% endif %}
             </p>
           </div>
-          <div class="col-xs col-sm-4 service">
+          <div class="col-xs-12 col-sm-4 service">
             <img alt="Desktop" height="100" src="/assets/img/desktop.png">
             <h3>Desktop</h3>
 
@@ -90,6 +90,35 @@ layout: default
               I develop (native) desktop apps.
 
               {% endif %}
+            </p>
+          </div>
+        </div>
+        <div class="row services">
+          <div class="col-xs-12 col-sm-2"></div>
+          <div class="col-xs-12 col-sm-4 service">
+            <img alt="Graphic Design" height="100" src="/assets/img/graphic-design.png">
+
+            <h3>
+              {% include i18.html _="services_graphic_design_title" %}
+            </h3>
+
+            <hr>
+
+            <p>
+              {% include i18.html _="services_graphic_design_description" %}
+            </p>
+          </div>
+          <div class="col-xs-12 col-sm-4 service">
+            <img alt="Branding" height="100" src="/assets/img/huisstijl-en-branding.png">
+
+            <h3>
+              {% include i18.html _="services_branding_title" %}
+            </h3>
+
+            <hr>
+
+            <p>
+              {% include i18.html _="services_branding_description" %}
             </p>
           </div>
           <div class="col-xs-12">

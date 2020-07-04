@@ -7,32 +7,45 @@ fields:
   label: Title
 - type: file
   name: image
-  label: image
+  label: Image
 - type: datetime
   name: date
   label: Date
 - type: text
   name: author
-  label: author
+  label: Author
 - type: textarea
-  label: description
+  label: Description
   name: description
 - type: text
-  label: portal_title
+  label: Portal title
   name: portal_title
 - type: text
-  label: portal_description
+  label: Portal description
   name: portal_description
 - type: file
-  label: portal_image
+  label: Portal image
   name: portal_image
 - type: text
   name: portal_link
-  label: portal_link
+  label: Portal link
 - type: text
   name: lang
   label: Language
   default: en
+- name: layout
+  type: text
+  config:
+    required: true
+  label: Layout
+  default: post
+- name: ref
+  type: text
+  config:
+    required: false
+  label: Ref
+  description: Used to link different translations of the same page. Make sure the
+    "Ref" is always the same across all translation pages.
 pages:
 - _posts/2018-09-10-3d-texturing-using-curvature-maps.md
 - _posts/2018-09-27-atc-manager-2---tutorials-and-general-aviation.md
@@ -55,6 +68,11 @@ pages:
 - _posts/2019-06-08-editing-netlify-cms-config-yml-from-netlify-cms-without-plugins.md
 - _posts/2019-06-09-markdownify-markdown-viewer.md
 - _posts/2019-11-12-export-illustrator-file-to-all-important-file-formats.md
+- _posts/2020-01-12-key-value-wrapper-around-indexeddb.md
+- _posts/2020-01-20-batch-exporting-adobe-illustrator-data-sets.md
+- _posts/2020-02-07-authenticating-firebase-jwt-tokens.md
+- _posts/2020-03-23-illustrator-script-installer.md
 - _posts/cordova-pitfalls.md
+- _posts/organizing-large-scale-react-apps.md
 - _posts/webcrawling-and-webscraping-with-javascript.md
 - _posts/windows-menubar.md

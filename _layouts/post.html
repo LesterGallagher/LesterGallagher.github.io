@@ -4,19 +4,23 @@ layout: default
 
 <div class="blog-details container">
   <article>
-    <header class="blog-header text-center">
+    <header class="blog-header">
       <h3>
-        <span>{{ page.date | date: "%d" }}</span> {{ page.date | date: "%B %Y" }}
-        <h2> {{ page.title }}</h2>
+        <b><span>{{ page.date | date: "%d" }}</span> {{ page.date | date: "%B %Y" }}</b><br/>
+      </h3>
+      <h2>{{ page.title }}</h2>
+      {% if page.author and page.author != "" %}<p>Door: <span>{{ page.author }}</span></p>{% endif %}
     </header>
-    <figure>
-      <img src="{{ page.image  | absolute_url }}" alt="{{ page.title }} image" class="img-responsive" /> </figure>
+    <figure class="nomargin">
+      <img src="{{ page.image  | absolute_url }}" alt="{{ page.title }} image" class="img-responsive" /> 
+    </figure>
     <div class="enter-content">
       {{ content }}
     </div>
     {% include share.html size=small %}
     <a href="/feed" title="rss feed link" target="blank"><img class="inline-block" height="28" src="/assets/img/rss.png" alt="rss icon"></a>
-    <a href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fesstudio.site%2Ffeed" class="inline-block" target="blank"><img id="feedlyFollow" src="https://s3.feedly.com/img/follows/feedly-follow-rectangle-flat-medium_2x.png" alt="follow us in feedly" width="71" height="28"></a>
+    <a href="https://feedly.com/i/subscription/feed%2Fhttps%3A%2F%2Fesstudio.site%2Ffeed" class="inline-block" target="blank">
+      <img id="feedlyFollow" src="https://s3.feedly.com/img/follows/feedly-follow-rectangle-flat-medium_2x.png" alt="follow us in feedly" width="71" height="28"></a>
     {% include disqus.html %}
   </article>
 </div>

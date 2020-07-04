@@ -163,21 +163,21 @@ layout: default
     </div>
   </div>
 </div>
-<dialog open class="dialog">
+<div open class="dialog" id="new-website-dialog" role="dialog">
   {% if page.lang == 'nl' %}
 
-  <h1>Nieuwe website!</h1>
+  <h2>Nieuwe website!</h2>
   <p>We hebben inmiddels een nieuwe website, deze website is niet meer up-to-date.</p>
-  <a role="button" href="https://esstudio.nl" class="btn">Naar nieuwe website</button>
+  <a role="button" href="https://esstudio.nl" class="btn">Naar nieuwe website</a>
   <button class="btn close">Sluiten</button>
 
   {% else %}
 
-  <h1>New website!</h1>
+  <h2>New website!</h2>
   <p>We now have a new website, this website is no longer up to date.</p>
-  <a role="button" href="https://esstudio.nl/en" class="btn">Open website</button>
+  <a role="button" href="https://esstudio.nl/en" class="btn">Open website</a>
   <button class="btn close">Close</button>
 
   {% endif %}
-</dialog>
+</div>
 {{ content }}

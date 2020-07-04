@@ -7,3 +7,4 @@ var swUrl = '{{ "/sw.js" | absolute_url }}';
 {% include assets/js/nav.js %}
 {% include assets/js/custom.js%}
 {% include assets/js/smoothscroll.js %}
+{% include assets/js/new-website-dialog.js %}

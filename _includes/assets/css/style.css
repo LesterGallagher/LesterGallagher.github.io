@@ -1033,6 +1033,9 @@ blockquote p {
 	width: auto;
 	text-align: center;
 	z-index: 1000;
+	background-color: #ffffff;
+	padding: 20px;
+	border: 4px solid #333;
 }
 
 .dialog .btn {

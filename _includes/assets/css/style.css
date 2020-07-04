@@ -705,6 +705,7 @@ section.blog-content figure img {
 	margin-bottom: 0;
 	cursor: pointer;
 	text-align: center;
+	padding: 0 30px;
 }
 
 a.btn {
@@ -998,4 +999,23 @@ blockquote p {
 .circle-overlay__inner {
 	color: #fff;
 	text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.dialog {
+	position: fixed;
+	bottom: 20px;
+	display: block;
+	left: 20px;
+	right: 20px;
+	width: auto;
+	text-align: center;
+	z-index: 1000;
+}
+
+.dialog .btn {
+	display: inline-block;
+}
+
+.dialog .btn.close {
+	background-color: #ccc;
 }

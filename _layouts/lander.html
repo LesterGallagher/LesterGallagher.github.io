@@ -134,4 +134,21 @@ layout: default
     </div>
   </div>
 </div>
+<dialog open class="dialog">
+  {% if page.lang == 'nl' %}
+
+  <h1>Nieuwe website!</h1>
+  <p>We hebben inmiddels een nieuwe website, deze website is niet meer up-to-date.</p>
+  <a role="button" href="https://esstudio.nl" class="btn">Naar nieuwe website</button>
+  <button class="btn close">Sluiten</button>
+
+  {% else %}
+
+  <h1>New website!</h1>
+  <p>We now have a new website, this website is no longer up to date.</p>
+  <a role="button" href="https://esstudio.nl/en" class="btn">Open website</button>
+  <button class="btn close">Close</button>
+
+  {% endif %}
+</dialog>
 {{ content }}

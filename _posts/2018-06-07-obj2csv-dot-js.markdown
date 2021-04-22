@@ -1,13 +1,13 @@
 ---
 title: Converting JSON to CSV in Javascript
-date: 2018-06-07 13:45:00 +02:00
+date: '2018-06-07T11:45:00.000Z'
 tags:
-- csv
-- json
-- web
-- javascript
-- programming
-image: "/uploads/icon-sm-7efc02.png"
+  - csv
+  - json
+  - web
+  - javascript
+  - programming
+image: /uploads/icon-sm-7efc02.png
 ---
 
 Checkout the website: [JSON2CSV](http://esstudio.site/json2csv) or the [full example](#full-example).

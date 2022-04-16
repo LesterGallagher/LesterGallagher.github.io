@@ -46,6 +46,13 @@ fields:
   label: Ref
   description: Used to link different translations of the same page. Make sure the
     "Ref" is always the same across all translation pages.
+- name: categories
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: Categories
 pages:
 - _posts/2018-09-10-3d-texturing-using-curvature-maps.md
 - _posts/2018-09-27-atc-manager-2---tutorials-and-general-aviation.md
@@ -72,7 +79,6 @@ pages:
 - _posts/2020-01-20-batch-exporting-adobe-illustrator-data-sets.md
 - _posts/2020-02-07-authenticating-firebase-jwt-tokens.md
 - _posts/2020-03-23-illustrator-script-installer.md
-- _posts/atc-manager-continued.md
 - _posts/cordova-pitfalls.md
 - _posts/organizing-large-scale-react-apps.md
 - _posts/webcrawling-and-webscraping-with-javascript.md

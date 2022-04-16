@@ -3,7 +3,7 @@ lang: en
 layout: post
 title: ATC Manager Continued
 image: "/uploads/dev.png"
-date: 2022-04-15 22:00:00 +0000
+date: 2022-04-15T22:00:00.000+00:00
 author: Sem Postma
 description: It has been a long time but I have finally gotten more time to develop
   the game further.
@@ -12,7 +12,7 @@ portal_description: ''
 portal_image: ''
 portal_link: ''
 categories:
-    - atc manager
+- atc manager 2
 ref: atc-manager-continued
 
 ---

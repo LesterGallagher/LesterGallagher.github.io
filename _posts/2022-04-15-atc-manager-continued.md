@@ -11,6 +11,8 @@ portal_title: ''
 portal_description: ''
 portal_image: ''
 portal_link: ''
+categories:
+    - atc manager
 ref: atc-manager-continued
 
 ---
